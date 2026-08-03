@@ -5,12 +5,7 @@ import { services, industries, caseStudies, resources, testimonials, site } from
 import { db } from "@/db";
 import { sql } from "drizzle-orm";
 
-export const dynamic = "force-dynamic";
-
 export default async function HomePage() {
-  // Prove the DB path is wired up at request time.
-  await db.execute(sql`select 1`);
-
   const featuredStudies = caseStudies.slice(0, 4);
   const latestPosts = resources.slice(0, 3);
 

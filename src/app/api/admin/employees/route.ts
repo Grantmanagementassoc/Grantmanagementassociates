@@ -1,5 +1,0 @@
-import { NextResponse } from "next/server";
-import { db } from "@/db";
-import { adminUsers } from "@/db/schema";
-import { requireAdmin,hashPassword,ALL_PERMISSIONS } from "@/lib/admin-auth";
-export async function POST(req:Request){try{const me=await requireAdmin("employees");if(me.role!=="owner"&&me.role!=="admin")return NextResponse.json({error:"Only owners and admins can create accounts."},{status:403});const b=await req.json();if(!b.name||!b.email||typeof b.password!=="string"||b.password.length<12)return NextResponse.json({error:"Name, email, and a 12+ character temporary password are required."},{status:400});const role=["admin","staff"].includes(b.role)?b.role:"staff";const permissions=role==="admin"?[...ALL_PERMISSIONS]:(Array.isArray(b.permissions)?b.permissions.filter((p:string)=>ALL_PERMISSIONS.includes(p as never)):[]);const [row]=await db.insert(adminUsers).values({name:b.name,email:b.email.toLowerCase().trim(),passwordHash:hashPassword(b.password),role,permissions}).returning({id:adminUsers.id});return NextResponse.json(row);}catch{return NextResponse.json({error:"Unable to create account. Email may already exist."},{status:400});}}
