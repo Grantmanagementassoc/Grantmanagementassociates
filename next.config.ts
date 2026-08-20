@@ -10,6 +10,8 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  // @ts-ignore - Next.js types might not be fully up to date for this property
+  // Removed invalid turbopack key
   async headers() {
     return [
       {

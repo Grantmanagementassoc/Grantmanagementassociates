@@ -75,6 +75,7 @@ export const primaryNav: NavGroup[] = [
     ],
   },
   { label: "Case Studies", href: "/case-studies" },
+  { label: "Blog", href: "/blog" },
   { label: "Resources", href: "/resources" },
   { label: "Responsible AI", href: "/responsible-ai" },
 ];
@@ -101,6 +102,7 @@ export const footerNav = [
   {
     title: "Resources",
     links: [
+      { label: "Blog", href: "/blog" },
       { label: "Insights & News", href: "/resources" },
       { label: "Case Studies", href: "/case-studies" },
       { label: "Funding Assessment", href: "/assessment" },
