@@ -32,11 +32,10 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           <h1 className="text-3xl md:text-5xl font-bold font-display text-foreground leading-tight mb-6">{article.title}</h1>
         </header>
 
-        <div className="prose prose-invert prose-cyan max-w-none text-muted-foreground">
-          {article.bodyText.split('\n').map((paragraph, idx) => (
-            paragraph.trim() ? <p key={idx} className="text-lg leading-relaxed mb-6">{paragraph}</p> : null
-          ))}
-        </div>
+        <div 
+          className="prose prose-invert prose-cyan max-w-none text-muted-foreground"
+          dangerouslySetInnerHTML={{ __html: article.bodyText }}
+        />
       </div>
     </main>
   );

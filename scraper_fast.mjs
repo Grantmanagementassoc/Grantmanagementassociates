@@ -28,7 +28,8 @@ async function scrapePage(url, page) {
       toRemove.forEach(el => el.remove());
       
       const title = document.title;
-      const bodyText = document.body.innerText;
+      const postDesc = document.querySelector('[data-hook="post-description"]');
+      const bodyText = postDesc ? postDesc.innerHTML : document.body.innerText;
       
       const images = Array.from(document.querySelectorAll('img')).map(img => ({
         src: img.src,

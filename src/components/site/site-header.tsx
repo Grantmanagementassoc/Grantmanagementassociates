@@ -50,7 +50,7 @@ export function SiteHeader() {
                 <Link
                   href={item.href ?? "#"}
                   className={`px-3 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
-                    pathname === item.href ? "text-foreground bg-black/5 dark:bg-white/10" : "text-muted hover:text-foreground hover:bg-black/5 dark:hover:bg-white/5"
+                    pathname === item.href ? "text-foreground" : "text-muted hover:text-foreground"
                   }`}
                 >
                   {item.label}

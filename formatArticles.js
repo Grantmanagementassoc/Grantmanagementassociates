@@ -15,7 +15,9 @@ catKeys.forEach(ck => {
   validCategories.add(catName);
   
   postKeys.forEach(pk => {
-    if (rawData[ck].bodyText.includes(rawData[pk].title) || rawData[pk].bodyText.toLowerCase().includes(catName.toLowerCase())) {
+    // We strip HTML just for category matching
+    const plainText = rawData[pk].bodyText ? rawData[pk].bodyText.replace(/<[^>]*>?/gm, '') : '';
+    if (plainText.includes(rawData[pk].title) || plainText.toLowerCase().includes(catName.toLowerCase())) {
       if (!articleCategories[pk]) articleCategories[pk] = catName;
     }
   });
@@ -30,15 +32,20 @@ postKeys.forEach(url => {
   const slug = p.slug || url.split('/').pop();
   const category = articleCategories[url] || "General";
   
-  let excerpt = p.bodyText.substring(0, 200).replace(/\n/g, ' ').trim() + '...';
-  excerpt = excerpt.replace(/top of page/gi, '').replace(/Skip to Main Content/gi, '').replace(/Search/gi, '').replace(/bottom of page/gi, '').trim();
-  excerpt = excerpt.replace(/^\s*Opportunity Title:\s*/i, '');
-  excerpt = excerpt.replace(/\s{2,}/g, ' ').trim();
+  // Extract plain text for the excerpt
+  let plainText = p.bodyText.replace(/<[^>]*>?/gm, ' ');
+  plainText = plainText.replace(/top of page/gi, '').replace(/Skip to Main Content/gi, '').replace(/Search/gi, '').replace(/bottom of page/gi, '').trim();
+  plainText = plainText.replace(/^\s*Opportunity Title:\s*/i, '');
+  plainText = plainText.replace(/\s{2,}/g, ' ').trim();
 
+  let excerpt = plainText.substring(0, 200).trim() + '...';
+
+  // Keep the rich HTML for the bodyText but clean up artifacts
   let body = p.bodyText;
-  body = body.replace(/top of page/gi, '').replace(/Skip to Main Content/gi, '').replace(/Search/gi, '').replace(/bottom of page/gi, '').trim();
-  body = body.replace(/^\s*Opportunity Title:\s*/i, '');
-  body = body.replace(/\s{2,}/g, ' ').trim();
+  body = body.replace(/top of page/gi, '')
+             .replace(/Skip to Main Content/gi, '')
+             .replace(/>\s*Search\s*</gi, '><')
+             .replace(/bottom of page/gi, '');
   
   articles.push({
     slug,
