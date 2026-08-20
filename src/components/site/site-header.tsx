@@ -31,9 +31,9 @@ export function SiteHeader() {
         scrolled ? "glass-strong border-b border-white/5" : "bg-transparent"
       }`}
     >
-      <div className="mx-auto max-w-7xl px-6 flex items-center justify-between h-16 md:h-20">
+      <div className="mx-auto max-w-7xl px-6 flex items-center justify-between h-20 md:h-24">
         <Link href="/" className="flex items-center gap-2 group" aria-label="GMA home">
-          <Logo className="w-48 h-10" />
+          <Logo className="w-80 h-16 md:w-96 md:h-20" />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-1" aria-label="Primary">
