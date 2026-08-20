@@ -28,6 +28,9 @@ const articles = posts.map(p => {
   const category = determineCategory(p.title + ' ' + p.bodyText.substring(0, 500));
   
   let excerpt = p.bodyText.substring(0, 150).replace(/\n/g, ' ').trim() + '...';
+  excerpt = excerpt.replace(/top of page/gi, '').replace(/Skip to Main Content/gi, '').replace(/Search/gi, '').replace(/bottom of page/gi, '').trim();
+  excerpt = excerpt.replace(/^\s*Opportunity Title:\s*/i, '');
+  excerpt = excerpt.replace(/\s{2,}/g, ' ').trim();
   
   return {
     slug,
