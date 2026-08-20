@@ -31,9 +31,9 @@ export function SiteHeader() {
         scrolled ? "glass-strong border-b border-white/5" : "bg-transparent"
       }`}
     >
-      <div className="mx-auto max-w-7xl px-6 flex items-center justify-between h-20 md:h-24">
-        <Link href="/" className="flex items-center gap-2 group" aria-label="GMA home">
-          <Logo className="w-80 h-16 md:w-96 md:h-20" />
+      <div className="mx-auto max-w-[1440px] px-6 flex items-center justify-between h-20 md:h-24">
+        <Link href="/" className="flex items-center gap-2 group flex-shrink-0" aria-label="GMA home">
+          <Logo className="w-64 h-12 md:w-72 md:h-14" />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-1" aria-label="Primary">
@@ -48,7 +48,7 @@ export function SiteHeader() {
               >
                 <Link
                   href={item.href ?? "#"}
-                  className={`px-3 py-2 rounded-full text-sm font-medium transition-colors ${
+                  className={`px-3 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
                     pathname === item.href ? "text-white bg-white/10" : "text-slate-300 hover:text-white hover:bg-white/5"
                   }`}
                 >
@@ -78,9 +78,9 @@ export function SiteHeader() {
           })}
         </nav>
 
-        <div className="hidden lg:flex items-center gap-2">
-          <Link href="/contact" className="btn-secondary text-sm">Contact</Link>
-          <Link href="/assessment" className="btn-primary text-sm">Free Strategy Call →</Link>
+        <div className="hidden lg:flex items-center gap-2 flex-shrink-0">
+          <Link href="/contact" className="btn-secondary text-sm whitespace-nowrap">Contact</Link>
+          <Link href="/assessment" className="btn-primary text-sm whitespace-nowrap">Free Strategy Call →</Link>
         </div>
 
         <button
