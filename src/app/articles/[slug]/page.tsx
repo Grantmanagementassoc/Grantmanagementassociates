@@ -9,9 +9,10 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function ArticlePage({ params }: { params: { slug: string } }) {
-  const decodedSlug = decodeURIComponent(params.slug);
-  const article = articles.find((a) => a.slug === params.slug || a.slug === decodedSlug || encodeURIComponent(a.slug) === params.slug);
+export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
+  const resolvedParams = await params;
+  const decodedSlug = decodeURIComponent(resolvedParams.slug);
+  const article = articles.find((a) => a.slug === resolvedParams.slug || a.slug === decodedSlug || encodeURIComponent(a.slug) === resolvedParams.slug);
 
   if (!article) {
     notFound();
