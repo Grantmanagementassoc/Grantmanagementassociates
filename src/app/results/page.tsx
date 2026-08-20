@@ -35,7 +35,7 @@ export default function CaseStudiesPage() {
       </section>
 
       <Section>
-        <ResultsClient items={caseStudies} />
+        <ResultsClient items={results} />
       </Section>
 
       <Section>
