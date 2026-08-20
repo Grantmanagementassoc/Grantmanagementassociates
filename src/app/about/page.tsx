@@ -95,21 +95,50 @@ export default function AboutPage() {
           title={<>The team behind <span className="text-gradient-brand">the win rate</span>.</>}
           subtitle="Former federal program officers, PhDs, and lifelong grants professionals."
         />
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {team.map((m) => (
-            <GlassCard key={m.name} className="flex flex-col">
+        <div className="mt-16 flex flex-col items-center">
+          {/* CEO Card */}
+          <div className="w-full max-w-xl relative">
+            <GlassCard className="flex flex-col relative z-10 border-cyan-500/30 shadow-[0_0_30px_rgba(0,240,255,0.1)]">
               <div className="flex items-center gap-4">
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-cyan-glow/30 to-sapphire/30 flex items-center justify-center text-lg font-semibold text-foreground border border-glass-border">
-                  {m.initials}
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-cyan-glow to-sapphire flex items-center justify-center text-xl font-bold text-white shadow-lg">
+                  {team[0].initials}
                 </div>
                 <div>
-                  <div className="font-semibold text-foreground">{m.name}</div>
-                  <div className="text-xs text-muted mt-0.5">{m.role}</div>
+                  <div className="text-xl font-bold text-foreground">{team[0].name}</div>
+                  <div className="text-sm text-cyan-300 mt-1 font-medium tracking-wide uppercase">{team[0].role}</div>
                 </div>
               </div>
-              <p className="mt-4 text-sm text-muted leading-relaxed">{m.bio}</p>
+              <p className="mt-6 text-sm text-muted leading-relaxed whitespace-pre-line">{team[0].bio}</p>
             </GlassCard>
-          ))}
+            {/* Vertical trunk line */}
+            <div className="hidden lg:block absolute left-1/2 bottom-[-3rem] w-px h-12 bg-gradient-to-b from-cyan-500/50 to-glass-border" />
+          </div>
+
+          {/* Horizontal branching line */}
+          <div className="hidden lg:block w-full max-w-[75%] relative h-px bg-glass-border mt-12 mb-6">
+            <div className="absolute left-0 top-0 w-px h-6 bg-glass-border" />
+            <div className="absolute left-[33.33%] top-0 w-px h-6 bg-glass-border" />
+            <div className="absolute left-[66.66%] top-0 w-px h-6 bg-glass-border" />
+            <div className="absolute right-0 top-0 w-px h-6 bg-glass-border" />
+          </div>
+
+          {/* Remaining Team Grid */}
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 w-full mt-6 lg:mt-0">
+            {team.slice(1).map((m) => (
+              <GlassCard key={m.name} className="flex flex-col relative z-10 hover:border-cyan-500/30 transition-colors">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-glow/20 to-sapphire/20 flex items-center justify-center text-base font-semibold text-foreground border border-glass-border">
+                    {m.initials}
+                  </div>
+                  <div>
+                    <div className="font-semibold text-foreground">{m.name}</div>
+                    <div className="text-xs text-cyan-300/80 mt-0.5">{m.role}</div>
+                  </div>
+                </div>
+                <p className="mt-4 text-xs text-muted leading-relaxed line-clamp-[10] hover:line-clamp-none transition-all">{m.bio}</p>
+              </GlassCard>
+            ))}
+          </div>
         </div>
       </Section>
 
