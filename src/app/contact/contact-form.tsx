@@ -101,8 +101,8 @@ function Select({ label, name, options }: { label: string; name: string; options
         defaultValue=""
         className="w-full rounded-full bg-white/5 border border-white/10 px-4 py-2.5 text-sm text-white outline-none focus:border-cyan-400/50 transition-colors"
       >
-        <option value="" disabled>Select…</option>
-        {options.map((o) => <option key={o} value={o}>{o}</option>)}
+        <option value="" disabled className="bg-[#0a0f17] text-white">Select…</option>
+        {options.map((o) => <option key={o} value={o} className="bg-[#0a0f17] text-white">{o}</option>)}
       </select>
     </div>
   );

@@ -40,22 +40,22 @@ export function CaseStudiesClient({ items }: { items: CaseStudy[] }) {
           className="rounded-full bg-white/5 border border-white/10 px-4 py-2.5 text-sm text-white placeholder:text-slate-500 outline-none focus:border-cyan-400/50"
         />
         <select value={industry} onChange={(e) => setIndustry(e.target.value)} className="rounded-full bg-white/5 border border-white/10 px-4 py-2.5 text-sm text-white outline-none focus:border-cyan-400/50">
-          <option value="all">All industries</option>
-          {industries.map((i) => <option key={i.slug} value={i.slug}>{i.name}</option>)}
+          <option value="all" className="bg-[#0a0f17] text-white">All industries</option>
+          {industries.map((i) => <option key={i.slug} value={i.slug} className="bg-[#0a0f17] text-white">{i.name}</option>)}
         </select>
         <select value={type} onChange={(e) => setType(e.target.value)} className="rounded-full bg-white/5 border border-white/10 px-4 py-2.5 text-sm text-white outline-none focus:border-cyan-400/50">
-          <option value="all">All funding types</option>
-          <option value="Federal">Federal</option>
-          <option value="State">State</option>
-          <option value="Local">Local</option>
-          <option value="Private">Private</option>
+          <option value="all" className="bg-[#0a0f17] text-white">All funding types</option>
+          <option value="Federal" className="bg-[#0a0f17] text-white">Federal</option>
+          <option value="State" className="bg-[#0a0f17] text-white">State</option>
+          <option value="Local" className="bg-[#0a0f17] text-white">Local</option>
+          <option value="Private" className="bg-[#0a0f17] text-white">Private</option>
         </select>
         <select value={range} onChange={(e) => setRange(e.target.value)} className="rounded-full bg-white/5 border border-white/10 px-4 py-2.5 text-sm text-white outline-none focus:border-cyan-400/50">
-          <option value="all">All amounts</option>
-          <option value="sub-1m">Under $1M</option>
-          <option value="1-10m">$1M–$10M</option>
-          <option value="10-100m">$10M–$100M</option>
-          <option value="100m-plus">$100M+</option>
+          <option value="all" className="bg-[#0a0f17] text-white">All amounts</option>
+          <option value="sub-1m" className="bg-[#0a0f17] text-white">Under $1M</option>
+          <option value="1-10m" className="bg-[#0a0f17] text-white">$1M–$10M</option>
+          <option value="10-100m" className="bg-[#0a0f17] text-white">$10M–$100M</option>
+          <option value="100m-plus" className="bg-[#0a0f17] text-white">$100M+</option>
         </select>
       </div>
 
