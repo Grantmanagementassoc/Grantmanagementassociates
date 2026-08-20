@@ -31,21 +31,9 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
         </header>
 
         <div className="prose prose-invert prose-cyan max-w-none text-muted-foreground">
-          <p className="text-xl leading-relaxed">{article.excerpt}</p>
-          <div className="mt-12 glass p-8 rounded-2xl border-cyan-500/20 text-center">
-            <h3 className="text-xl font-semibold text-foreground mb-4">Read the full article</h3>
-            <p className="text-muted-foreground mb-6">
-              This article was published on the Grant Management Associates website.
-            </p>
-            <a 
-              href={`https://www.grantmanagementassoc.com/post/${article.slug}`} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-block bg-cyan-500 hover:bg-cyan-600 text-white font-medium px-6 py-3 rounded-full transition-colors"
-            >
-              View on Website
-            </a>
-          </div>
+          {article.bodyText.split('\n').map((paragraph, idx) => (
+            paragraph.trim() ? <p key={idx} className="text-lg leading-relaxed mb-6">{paragraph}</p> : null
+          ))}
         </div>
       </div>
     </main>

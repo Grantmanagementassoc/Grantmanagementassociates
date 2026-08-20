@@ -65,7 +65,7 @@ export function ResultsClient({ items }: { items: CaseStudy[] }) {
 
       <div className="mt-8 grid gap-6 md:grid-cols-2">
         {filtered.map((cs) => (
-          <Link key={cs.slug} href={`/case-studies/${cs.slug}`} className="group">
+          <div key={cs.slug} className="group">
             <GlassCard className="h-full">
               <div className="flex items-start justify-between gap-4">
                 <div>
@@ -79,7 +79,7 @@ export function ResultsClient({ items }: { items: CaseStudy[] }) {
               </div>
               <p className="mt-4 text-sm text-muted line-clamp-2">{cs.challenge}</p>
             </GlassCard>
-          </Link>
+          </div>
         ))}
       </div>
 

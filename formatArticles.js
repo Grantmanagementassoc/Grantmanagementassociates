@@ -1,56 +1,69 @@
 const fs = require('fs');
 const path = require('path');
 
-const dataPath = path.join(__dirname, 'src', 'data', 'scraped_content.json');
-const data = JSON.parse(fs.readFileSync(dataPath, 'utf-8'));
+const dataFile = path.join(__dirname, 'src', 'data', 'scraped_content.json');
+const rawData = JSON.parse(fs.readFileSync(dataFile, 'utf-8'));
 
-const posts = Object.keys(data).filter(k => k.includes('/post/')).map(k => {
-  const d = data[k];
-  return {
-    url: k,
-    title: d.title.split('-')[0].trim() || 'Untitled Post',
-    bodyText: d.bodyText || ''
-  };
+const postKeys = Object.keys(rawData).filter(k => k.includes('/post/'));
+const catKeys = Object.keys(rawData).filter(k => k.includes('/categories/'));
+
+const validCategories = new Set();
+const articleCategories = {};
+
+catKeys.forEach(ck => {
+  const catName = ck.split('/').pop().replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+  validCategories.add(catName);
+  
+  postKeys.forEach(pk => {
+    if (rawData[ck].bodyText.includes(rawData[pk].title) || rawData[pk].bodyText.toLowerCase().includes(catName.toLowerCase())) {
+      if (!articleCategories[pk]) articleCategories[pk] = catName;
+    }
+  });
 });
 
-function determineCategory(text) {
-  const lower = text.toLowerCase();
-  if (lower.includes('infrastructure') || lower.includes('transportation') || lower.includes('transit')) return 'Infrastructure';
-  if (lower.includes('energy') || lower.includes('nuclear') || lower.includes('solar')) return 'Energy';
-  if (lower.includes('defense') || lower.includes('dod') || lower.includes('military')) return 'Defense';
-  if (lower.includes('broadband') || lower.includes('digital') || lower.includes('internet')) return 'Broadband';
-  return 'Funding Strategy';
-}
+const articles = [];
 
-const articles = posts.map(p => {
-  const urlObj = new URL(p.url);
-  const slug = urlObj.pathname.split('/').pop();
-  const category = determineCategory(p.title + ' ' + p.bodyText.substring(0, 500));
+postKeys.forEach(url => {
+  const p = rawData[url];
+  if (!p.title || !p.bodyText) return;
   
-  let excerpt = p.bodyText.substring(0, 150).replace(/\n/g, ' ').trim() + '...';
+  const slug = p.slug || url.split('/').pop();
+  const category = articleCategories[url] || "General";
+  
+  let excerpt = p.bodyText.substring(0, 200).replace(/\n/g, ' ').trim() + '...';
   excerpt = excerpt.replace(/top of page/gi, '').replace(/Skip to Main Content/gi, '').replace(/Search/gi, '').replace(/bottom of page/gi, '').trim();
   excerpt = excerpt.replace(/^\s*Opportunity Title:\s*/i, '');
   excerpt = excerpt.replace(/\s{2,}/g, ' ').trim();
+
+  let body = p.bodyText;
+  body = body.replace(/top of page/gi, '').replace(/Skip to Main Content/gi, '').replace(/Search/gi, '').replace(/bottom of page/gi, '').trim();
+  body = body.replace(/^\s*Opportunity Title:\s*/i, '');
+  body = body.replace(/\s{2,}/g, ' ').trim();
   
-  return {
+  articles.push({
     slug,
-    title: p.title,
+    title: p.title.replace(/\| Grant Management Associates/i, '').trim(),
     excerpt,
+    bodyText: body,
     category
-  };
+  });
 });
 
-const tsContent = `export type Article = {
+validCategories.add("General");
+const categoriesArray = Array.from(validCategories).sort();
+
+const fileContent = `export type Article = {
   slug: string;
   title: string;
   excerpt: string;
+  bodyText: string;
   category: string;
 };
 
-export const articles: Article[] = ${JSON.stringify(articles, null, 2)};
+export const categories: string[] = ${JSON.stringify(categoriesArray, null, 2)};
 
-export const categories = Array.from(new Set(articles.map(a => a.category))).sort();
+export const articles: Article[] = ${JSON.stringify(articles, null, 2)};
 `;
 
-fs.writeFileSync(path.join(__dirname, 'src', 'lib', 'scraped-articles.ts'), tsContent);
-console.log('Successfully generated scraped-articles.ts with ' + articles.length + ' articles.');
+fs.writeFileSync(path.join(__dirname, 'src', 'lib', 'scraped-articles.ts'), fileContent);
+console.log(`Successfully generated scraped-articles.ts with ${articles.length} articles and ${categoriesArray.length} categories.`);

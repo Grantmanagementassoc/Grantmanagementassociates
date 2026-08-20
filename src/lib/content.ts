@@ -2655,31 +2655,31 @@ export const team = [
   {
     name: "Kristin Cooper",
     role: "Founder & Chief Executive Officer",
-    bio: "Kristin founded GMA in 2009 and has led the firm to secure over $2.5 billion in funding for clients with a 90.2% win rate. She developed GMA's proprietary Key Considerations Analysis (KCA) methodology.",
+    bio: "Kristin Cooper is a funding strategist and government affairs expert with over 30 years of experience helping organizations compete for and win federal, state, and foundation funding. She founded Grant Management Associates in 2009 with a clear mission: bring strategic intelligence to the grant funding process — not just good writing, but the analytical rigor to know which opportunities are worth pursuing and the methodology to win them.\n\nUnder Kristin's leadership, GMA has secured over $2.5 billion in funding for clients with a 90.2% win rate — one of the highest in the industry. She developed GMA's proprietary Key Considerations Analysis (KCA) methodology, which evaluates competitive positioning, organizational fit, and scoring criteria before a single word of a proposal is written. This 'Go/No-Go' approach is why GMA's clients don't waste resources on lost causes — and why they win at an extraordinary rate when they do pursue.\n\nBefore founding GMA, Kristin served as a Full Professor at California State University, Chico's College of Engineering, where she directed grant-funded programs across five colleges. She was the founding director of CSU Chico's Environmental Resource Program and the Concrete Management Program. Kristin also served as a registered federal lobbyist, where she was instrumental in securing a $100 million line item in the Department of Energy budget.\n\nToday, Kristin leads GMA's evolution into a funding intelligence platform — integrating AI-powered grant matching with decades of human strategic judgment. She oversees a team that spans defense, energy, infrastructure, agriculture, and workforce development — the sectors where federal dollars are flowing and where GMA's clients are winning.",
     initials: "KC",
   },
   {
     name: "Danielle Sotelo",
     role: "Chief of Staff",
-    bio: "Sixteen years of grant experience with over $300M in grants won. Manages GMA’s grant teams and draws from 58 grant specialists, including fourteen Ph.D.s.",
+    bio: "Danielle has sixteen years of grant experience and won over $300M in grants in a number of different areas, including infrastructure, transportation, housing, public safety, natural disaster funding, education, alternative fuels, and others. She manages GMA’s grant teams and draws from our 58 grant specialists, including fourteen Ph.D.s. Danielle is also a project manager on many of GMA’s most difficult grant applications. Ms. Sotelo holds a BA in International Studies with an emphasis in Political Science and a certificate in Dispute Resolution from Pepperdine University.",
     initials: "DS",
   },
   {
     name: "Brad Zerbe",
     role: "Senior Funding Strategist",
-    bio: "Over thirty years of experience in grant writing, fundraising, lending, and business consulting. Has won over $400 million in grants.",
+    bio: "Brad Zerbe has over thirty years of experience in grant writing, fundraising, lending, and business consulting. He is the former political director for the nation’s largest PAC, and finance director for the chairman of the U.S. Senate Finance Committee. He is a former registered federal, state, and state procurement lobbyist. He has worked for three of the nation’s five largest financial institutions in securities and banking compliance.\n\nBrad has graded grants in national competitions and served as Chairman and CEO of nonprofit organizations and won over $400 million in grants. In college, he competed in debate, finishing second in the nation, and won his school’s highest scholarship for leadership.",
     initials: "BZ",
   },
   {
     name: "Sonia Vohnout",
     role: "DOW National Security Expert",
-    bio: "A nationally recognized expert in SBIR/STTR programs and commercialization strategy with over 30 years of experience helping clients secure funding from DOW, Navy, DARPA, NASA, and NIH.",
+    bio: "A nationally recognized expert in SBIR/STTR programs, commercialization strategy, and non-dilutive funding. With more than 30 years of experience and a strong technical background in systems engineering, she has helped clients secure tens of millions in funding from DOW, Navy, DARPA, NASA, NIH, and other federal agencies. Sonia has assisted more than fifty companies in bringing their technology innovations into the commercial marketplace.",
     initials: "SV",
   },
   {
     name: "Sarthak Tandon",
     role: "Executive Assistant to the CEO",
-    bio: "Highly experienced operations and business support professional supporting operational coordination, client communication, and efficient workflow management.",
+    bio: "Sarthak Tandon is a highly experienced operations and business support professional with experience in administrative coordination, client communication, workflow management, and executive support. At Grant Management Associates, Sarthak supports operational coordination and client-facing processes while contributing to efficient workflow management and team collaboration. He has worked extensively in process-driven environments, supporting day-to-day operations through structured systems, proactive communication, and detail-oriented execution.",
     initials: "ST",
   },
 ];
