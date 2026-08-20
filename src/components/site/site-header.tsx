@@ -33,7 +33,7 @@ export function SiteHeader() {
     >
       <div className="mx-auto max-w-7xl px-6 flex items-center justify-between h-16 md:h-20">
         <Link href="/" className="flex items-center gap-2 group" aria-label="GMA home">
-          <Logo className="h-8 w-auto" />
+          <Logo className="w-48 h-10" />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-1" aria-label="Primary">
@@ -57,7 +57,7 @@ export function SiteHeader() {
                 </Link>
                 {hasChildren && openMenu === item.label && (
                   <div className="absolute left-1/2 -translate-x-1/2 top-full pt-3 w-[560px]">
-                    <div className="glass-strong rounded-2xl p-4 grid grid-cols-2 gap-1 shadow-2xl">
+                    <div className="bg-[#0a0f17] border border-white/10 rounded-2xl p-4 grid grid-cols-2 gap-1 shadow-2xl">
                       {item.children!.map((c) => (
                         <Link
                           key={c.href}
@@ -97,7 +97,7 @@ export function SiteHeader() {
       </div>
 
       {mobileOpen && (
-        <div className="lg:hidden glass-strong border-t border-white/5 max-h-[80vh] overflow-y-auto">
+        <div className="lg:hidden bg-[#0a0f17] border-t border-white/10 max-h-[80vh] overflow-y-auto">
           <div className="px-6 py-4 space-y-1">
             {primaryNav.map((item) => (
               <div key={item.label} className="border-b border-white/5 last:border-0 py-2">
