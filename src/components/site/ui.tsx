@@ -123,7 +123,7 @@ export function CTACard({
   secondary?: { label: string; href: string };
 }) {
   return (
-    <div className="relative overflow-hidden rounded-3xl border border-glass-border bg-gradient-to-br from-slate-100 via-white to-slate-50 dark:from-ink-800 dark:via-ink-900 dark:to-black p-10 md:p-14">
+    <div className="relative overflow-hidden rounded-3xl border border-glass-border bg-glass-bg p-10 md:p-14">
       <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-cyan-glow/10 blur-3xl" />
       <div className="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-sapphire/10 blur-3xl" />
       <div className="relative grid md:grid-cols-[1.5fr_1fr] gap-8 items-end">
