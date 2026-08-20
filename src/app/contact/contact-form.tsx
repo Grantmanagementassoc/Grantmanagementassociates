@@ -62,7 +62,7 @@ export function ContactForm() {
           required
           rows={5}
           placeholder="Tell us about your project, funding target, and timeline…"
-          className="w-full rounded-2xl bg-black/5 dark:bg-white/5 border border-glass-border px-4 py-3 text-sm text-foreground placeholder:text-muted outline-none focus:border-cyan-400/50 transition-colors"
+          className="w-full rounded-2xl bg-black/5 dark:bg-black/5 dark:bg-white/5 border border-glass-border px-4 py-3 text-sm text-foreground placeholder:text-muted outline-none focus:border-cyan-400/50 transition-colors"
         />
       </div>
       <div className="flex items-center justify-between gap-4 pt-2">
@@ -86,7 +86,7 @@ function Field({ label, name, type = "text", required = false }: { label: string
         name={name}
         type={type}
         required={required}
-        className="w-full rounded-full bg-black/5 dark:bg-white/5 border border-glass-border px-4 py-2.5 text-sm text-foreground placeholder:text-muted outline-none focus:border-cyan-400/50 transition-colors"
+        className="w-full rounded-full bg-black/5 dark:bg-black/5 dark:bg-white/5 border border-glass-border px-4 py-2.5 text-sm text-foreground placeholder:text-muted outline-none focus:border-cyan-400/50 transition-colors"
       />
     </div>
   );
@@ -99,7 +99,7 @@ function Select({ label, name, options }: { label: string; name: string; options
       <select
         name={name}
         defaultValue=""
-        className="w-full rounded-full bg-black/5 dark:bg-white/5 border border-glass-border px-4 py-2.5 text-sm text-foreground outline-none focus:border-cyan-400/50 transition-colors"
+        className="w-full rounded-full bg-black/5 dark:bg-black/5 dark:bg-white/5 border border-glass-border px-4 py-2.5 text-sm text-foreground outline-none focus:border-cyan-400/50 transition-colors"
       >
         <option value="" disabled className="bg-background text-foreground">Select…</option>
         {options.map((o) => <option key={o} value={o} className="bg-background text-foreground">{o}</option>)}

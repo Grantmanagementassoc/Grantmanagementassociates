@@ -18,10 +18,10 @@ export default function IndustriesPage() {
           <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Industries" }]} />
           <div className="max-w-3xl">
             <Eyebrow>Industries</Eyebrow>
-            <h1 className="mt-6 text-5xl md:text-7xl font-semibold text-white leading-[0.98]">
+            <h1 className="mt-6 text-5xl md:text-7xl font-semibold text-foreground leading-[0.98]">
               Expertise across <br /><span className="text-gradient-brand">every funded sector.</span>
             </h1>
-            <p className="mt-8 text-lg md:text-xl text-slate-300 leading-relaxed">
+            <p className="mt-8 text-lg md:text-xl text-muted leading-relaxed">
               Sector-specialist teams — not generalists — bring domain knowledge from day one.
             </p>
           </div>
@@ -34,13 +34,13 @@ export default function IndustriesPage() {
             <Link key={ind.slug} href={`/industries/${ind.slug}`} className="group">
               <GlassCard className="h-full flex flex-col">
                 <div className="text-3xl">{ind.icon}</div>
-                <h3 className="mt-4 text-lg font-semibold text-white group-hover:text-cyan-300 transition-colors">{ind.name}</h3>
-                <p className="mt-2 text-xs text-slate-400 leading-relaxed line-clamp-3">{ind.blurb}</p>
-                <div className="mt-4 pt-3 border-t border-white/5 flex gap-4">
+                <h3 className="mt-4 text-lg font-semibold text-foreground group-hover:text-cyan-300 transition-colors">{ind.name}</h3>
+                <p className="mt-2 text-xs text-muted leading-relaxed line-clamp-3">{ind.blurb}</p>
+                <div className="mt-4 pt-3 border-t border-black/5 dark:border-white/5 flex gap-4">
                   {ind.stats.map((s) => (
                     <div key={s.label}>
                       <div className="text-sm font-semibold text-gradient-gold">{s.value}</div>
-                      <div className="text-[10px] uppercase tracking-widest text-slate-500 mt-0.5">{s.label}</div>
+                      <div className="text-[10px] uppercase tracking-widest text-muted mt-0.5">{s.label}</div>
                     </div>
                   ))}
                 </div>

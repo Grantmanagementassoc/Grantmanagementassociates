@@ -18,10 +18,10 @@ export default function AboutPage() {
           <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "About" }]} />
           <div className="max-w-3xl">
             <Eyebrow>About GMA</Eyebrow>
-            <h1 className="mt-6 text-5xl md:text-7xl font-semibold text-white leading-[0.98]">
+            <h1 className="mt-6 text-5xl md:text-7xl font-semibold text-foreground leading-[0.98]">
               Building funding success <br /><span className="text-gradient-brand">since {site.founded}.</span>
             </h1>
-            <p className="mt-8 text-lg md:text-xl text-slate-300 leading-relaxed">
+            <p className="mt-8 text-lg md:text-xl text-muted leading-relaxed">
               We're a funding intelligence and strategy firm helping organizations — from Fortune 500 companies to Tribal Nations,
               transit agencies to clean-energy startups — architect winning funding strategies.
             </p>
@@ -47,8 +47,8 @@ export default function AboutPage() {
               { t: "Client-first outcomes", d: "We only recommend what we would pursue if the funding were ours." },
             ].map((v) => (
               <GlassCard key={v.t}>
-                <div className="text-sm font-semibold text-white">{v.t}</div>
-                <p className="mt-2 text-sm text-slate-400 leading-relaxed">{v.d}</p>
+                <div className="text-sm font-semibold text-foreground">{v.t}</div>
+                <p className="mt-2 text-sm text-muted leading-relaxed">{v.d}</p>
               </GlassCard>
             ))}
           </div>
@@ -78,8 +78,8 @@ export default function AboutPage() {
               <div key={t.year} className={`relative pl-14 md:pl-0 md:grid md:grid-cols-2 md:gap-12 ${i % 2 === 0 ? "" : "md:[direction:rtl]"}`}>
                 <div className={`md:[direction:ltr] ${i % 2 === 0 ? "md:text-right md:pr-12" : "md:pl-12"}`}>
                   <div className="text-xs font-mono text-cyan-300">{t.year}</div>
-                  <h3 className="mt-1 text-xl font-semibold text-white">{t.title}</h3>
-                  <p className="mt-2 text-sm text-slate-400 leading-relaxed">{t.body}</p>
+                  <h3 className="mt-1 text-xl font-semibold text-foreground">{t.title}</h3>
+                  <p className="mt-2 text-sm text-muted leading-relaxed">{t.body}</p>
                 </div>
                 <div className={`absolute left-4 md:left-1/2 top-1 md:-translate-x-1/2 w-3 h-3 rounded-full bg-cyan-glow shadow-[0_0_20px_rgba(0,240,255,0.6)]`} aria-hidden />
               </div>
@@ -99,15 +99,15 @@ export default function AboutPage() {
           {team.map((m) => (
             <GlassCard key={m.name} className="flex flex-col">
               <div className="flex items-center gap-4">
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-cyan-glow/30 to-sapphire/30 flex items-center justify-center text-lg font-semibold text-white border border-white/10">
+                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-cyan-glow/30 to-sapphire/30 flex items-center justify-center text-lg font-semibold text-foreground border border-glass-border">
                   {m.initials}
                 </div>
                 <div>
-                  <div className="font-semibold text-white">{m.name}</div>
-                  <div className="text-xs text-slate-400 mt-0.5">{m.role}</div>
+                  <div className="font-semibold text-foreground">{m.name}</div>
+                  <div className="text-xs text-muted mt-0.5">{m.role}</div>
                 </div>
               </div>
-              <p className="mt-4 text-sm text-slate-400 leading-relaxed">{m.bio}</p>
+              <p className="mt-4 text-sm text-muted leading-relaxed">{m.bio}</p>
             </GlassCard>
           ))}
         </div>
@@ -119,10 +119,10 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <Eyebrow>Certifications</Eyebrow>
-              <h2 className="mt-4 text-3xl md:text-4xl font-semibold text-white">
+              <h2 className="mt-4 text-3xl md:text-4xl font-semibold text-foreground">
                 Certified <span className="text-gradient-gold">Women-Owned</span> Small Business.
               </h2>
-              <p className="mt-4 text-slate-300 leading-relaxed">
+              <p className="mt-4 text-muted leading-relaxed">
                 GMA is a federally certified Women-Owned Small Business (WOSB) and a registered NWBOC Women's Business Enterprise —
                 supporting your supplier diversity, small-business set-aside, and community benefits goals.
               </p>
@@ -131,8 +131,8 @@ export default function AboutPage() {
               {site.certifications.map((c) => (
                 <div key={c} className="glass rounded-2xl p-6 text-center">
                   <div className="text-3xl">🏛️</div>
-                  <div className="mt-3 text-sm font-semibold text-white">{c.split(" — ")[0]}</div>
-                  <div className="mt-1 text-xs text-slate-400">{c.split(" — ")[1]}</div>
+                  <div className="mt-3 text-sm font-semibold text-foreground">{c.split(" — ")[0]}</div>
+                  <div className="mt-1 text-xs text-muted">{c.split(" — ")[1]}</div>
                 </div>
               ))}
             </div>

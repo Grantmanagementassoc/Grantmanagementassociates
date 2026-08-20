@@ -19,7 +19,7 @@ export function Section({
 
 export function Eyebrow({ children }: { children: ReactNode }) {
   return (
-    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-glass-border bg-black/5 dark:bg-white/5 text-[11px] uppercase tracking-[0.18em] text-muted">
+    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-glass-border bg-black/5 dark:bg-black/5 dark:bg-white/5 text-[11px] uppercase tracking-[0.18em] text-muted">
       <span className="h-1.5 w-1.5 rounded-full bg-cyan-glow animate-pulse-glow" />
       {children}
     </div>
@@ -97,7 +97,7 @@ export function Breadcrumbs({ items }: { items: { label: string; href?: string }
 
 export function Accordion({ items }: { items: { q: string; a: string }[] }) {
   return (
-    <div className="divide-y divide-black/5 dark:divide-white/5 border-y border-black/5 dark:border-white/5">
+    <div className="divide-y divide-black/5 dark:divide-white/5 border-y border-black/5 dark:border-black/5 dark:border-white/5">
       {items.map((it, i) => (
         <details key={i} className="group py-5">
           <summary className="flex cursor-pointer items-center justify-between gap-4 list-none">

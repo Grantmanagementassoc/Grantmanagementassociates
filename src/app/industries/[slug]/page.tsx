@@ -32,9 +32,9 @@ export default async function IndustryDetail({ params }: { params: Promise<Param
           <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Industries", href: "/industries" }, { label: ind.name }]} />
           <div className="max-w-3xl">
             <div className="text-6xl">{ind.icon}</div>
-            <h1 className="mt-6 text-4xl md:text-6xl font-semibold text-white leading-tight">{ind.name}</h1>
+            <h1 className="mt-6 text-4xl md:text-6xl font-semibold text-foreground leading-tight">{ind.name}</h1>
             <p className="mt-6 text-xl text-cyan-300">{ind.blurb}</p>
-            <p className="mt-6 text-lg text-slate-300 leading-relaxed">{ind.detail}</p>
+            <p className="mt-6 text-lg text-muted leading-relaxed">{ind.detail}</p>
           </div>
         </div>
       </section>
@@ -44,14 +44,14 @@ export default async function IndustryDetail({ params }: { params: Promise<Param
           {ind.stats.map((s) => (
             <GlassCard key={s.label}>
               <div className="text-3xl font-semibold text-gradient-gold">{s.value}</div>
-              <div className="mt-1 text-xs uppercase tracking-widest text-slate-400">{s.label}</div>
+              <div className="mt-1 text-xs uppercase tracking-widest text-muted">{s.label}</div>
             </GlassCard>
           ))}
           <GlassCard>
-            <div className="text-xs uppercase tracking-widest text-slate-400">Primary agencies</div>
+            <div className="text-xs uppercase tracking-widest text-muted">Primary agencies</div>
             <div className="mt-2 flex flex-wrap gap-2">
               {ind.agencies.map((a) => (
-                <span key={a} className="text-xs px-2.5 py-1 rounded-full border border-white/10 bg-white/5 text-slate-200">{a}</span>
+                <span key={a} className="text-xs px-2.5 py-1 rounded-full border border-glass-border bg-black/5 dark:bg-white/5 text-muted">{a}</span>
               ))}
             </div>
           </GlassCard>
@@ -67,12 +67,12 @@ export default async function IndustryDetail({ params }: { params: Promise<Param
                 <GlassCard>
                   <div className="flex justify-between items-start">
                     <div>
-                      <div className="text-xs uppercase tracking-widest text-slate-400">{cs.year} · {cs.agency}</div>
-                      <h3 className="mt-2 text-lg font-semibold text-white group-hover:text-cyan-300">{cs.client}</h3>
+                      <div className="text-xs uppercase tracking-widest text-muted">{cs.year} · {cs.agency}</div>
+                      <h3 className="mt-2 text-lg font-semibold text-foreground group-hover:text-cyan-300">{cs.client}</h3>
                     </div>
                     <div className="text-2xl font-semibold text-gradient-gold">{cs.amount}</div>
                   </div>
-                  <p className="mt-3 text-sm text-slate-400 line-clamp-2">{cs.challenge}</p>
+                  <p className="mt-3 text-sm text-muted line-clamp-2">{cs.challenge}</p>
                 </GlassCard>
               </Link>
             ))}

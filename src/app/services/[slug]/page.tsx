@@ -33,9 +33,9 @@ export default async function ServiceDetailPage({ params }: { params: Promise<Pa
           <div className="grid md:grid-cols-[1.4fr_1fr] gap-12 items-end">
             <div>
               <div className="text-5xl">{service.icon}</div>
-              <h1 className="mt-6 text-4xl md:text-6xl font-semibold text-white leading-[0.98]">{service.title}</h1>
+              <h1 className="mt-6 text-4xl md:text-6xl font-semibold text-foreground leading-[0.98]">{service.title}</h1>
               <p className="mt-6 text-lg text-cyan-300">{service.tagline}</p>
-              <p className="mt-6 text-lg text-slate-300 leading-relaxed max-w-2xl">{service.summary}</p>
+              <p className="mt-6 text-lg text-muted leading-relaxed max-w-2xl">{service.summary}</p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link href="/contact" className="btn-primary">Start a conversation →</Link>
                 <Link href="/assessment" className="btn-secondary">Take the assessment</Link>
@@ -43,12 +43,12 @@ export default async function ServiceDetailPage({ params }: { params: Promise<Pa
             </div>
             <div className="grid gap-3">
               <GlassCard>
-                <div className="text-xs uppercase tracking-widest text-slate-400">Typical timeline</div>
-                <div className="mt-2 text-xl font-semibold text-white">{service.timeline}</div>
+                <div className="text-xs uppercase tracking-widest text-muted">Typical timeline</div>
+                <div className="mt-2 text-xl font-semibold text-foreground">{service.timeline}</div>
               </GlassCard>
               <GlassCard>
-                <div className="text-xs uppercase tracking-widest text-slate-400">Outcomes</div>
-                <ul className="mt-2 space-y-1.5 text-sm text-slate-300">
+                <div className="text-xs uppercase tracking-widest text-muted">Outcomes</div>
+                <ul className="mt-2 space-y-1.5 text-sm text-muted">
                   {service.outcomes.map((o) => (
                     <li key={o} className="flex gap-2"><span className="text-cyan-300">▸</span>{o}</li>
                   ))}
@@ -65,8 +65,8 @@ export default async function ServiceDetailPage({ params }: { params: Promise<Pa
           {service.process.map((step, i) => (
             <GlassCard key={step.title}>
               <div className="font-mono text-xs text-cyan-300">STEP {String(i + 1).padStart(2, "0")}</div>
-              <h3 className="mt-2 text-xl font-semibold text-white">{step.title}</h3>
-              <p className="mt-3 text-sm text-slate-400 leading-relaxed">{step.body}</p>
+              <h3 className="mt-2 text-xl font-semibold text-foreground">{step.title}</h3>
+              <p className="mt-3 text-sm text-muted leading-relaxed">{step.body}</p>
             </GlassCard>
           ))}
         </div>
@@ -75,10 +75,10 @@ export default async function ServiceDetailPage({ params }: { params: Promise<Pa
       <Section>
         <div className="grid md:grid-cols-2 gap-8">
           <GlassCard hover={false}>
-            <div className="text-xs uppercase tracking-widest text-slate-400">Deliverables</div>
+            <div className="text-xs uppercase tracking-widest text-muted">Deliverables</div>
             <ul className="mt-4 space-y-3">
               {service.deliverables.map((d) => (
-                <li key={d} className="flex items-start gap-3 text-slate-300">
+                <li key={d} className="flex items-start gap-3 text-muted">
                   <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-cyan-glow shrink-0" />
                   {d}
                 </li>
@@ -86,7 +86,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<Pa
             </ul>
           </GlassCard>
           <GlassCard hover={false}>
-            <div className="text-xs uppercase tracking-widest text-slate-400">FAQ</div>
+            <div className="text-xs uppercase tracking-widest text-muted">FAQ</div>
             <div className="mt-2">
               <Accordion items={service.faq} />
             </div>
@@ -101,8 +101,8 @@ export default async function ServiceDetailPage({ params }: { params: Promise<Pa
             <Link key={r.slug} href={`/services/${r.slug}`} className="group">
               <GlassCard className="h-full">
                 <div className="text-2xl">{r.icon}</div>
-                <h3 className="mt-3 text-lg font-semibold text-white group-hover:text-cyan-300 transition-colors">{r.title}</h3>
-                <p className="mt-2 text-sm text-slate-400">{r.tagline}</p>
+                <h3 className="mt-3 text-lg font-semibold text-foreground group-hover:text-cyan-300 transition-colors">{r.title}</h3>
+                <p className="mt-2 text-sm text-muted">{r.tagline}</p>
               </GlassCard>
             </Link>
           ))}

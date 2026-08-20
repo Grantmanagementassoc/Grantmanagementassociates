@@ -18,10 +18,10 @@ export default function CareersPage() {
           <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Careers" }]} />
           <div className="max-w-3xl">
             <Eyebrow>Careers</Eyebrow>
-            <h1 className="mt-6 text-5xl md:text-7xl font-semibold text-white leading-[0.98]">
+            <h1 className="mt-6 text-5xl md:text-7xl font-semibold text-foreground leading-[0.98]">
               Join the team that's secured <br /><span className="text-gradient-gold">{site.totalSecured}.</span>
             </h1>
-            <p className="mt-8 text-lg md:text-xl text-slate-300 leading-relaxed">
+            <p className="mt-8 text-lg md:text-xl text-muted leading-relaxed">
               Remote-first. Ethics-first. Impact-first. If you care about funding the future, we'd love to hear from you.
             </p>
           </div>
@@ -42,8 +42,8 @@ export default function CareersPage() {
             { t: "Real ownership", d: "Senior team profit-share program." },
           ].map((b) => (
             <GlassCard key={b.t}>
-              <div className="font-semibold text-white">{b.t}</div>
-              <div className="mt-2 text-sm text-slate-400">{b.d}</div>
+              <div className="font-semibold text-foreground">{b.t}</div>
+              <div className="mt-2 text-sm text-muted">{b.d}</div>
             </GlassCard>
           ))}
         </div>
@@ -57,10 +57,10 @@ export default function CareersPage() {
               <div className="glass card-hover rounded-2xl p-6 grid md:grid-cols-[1.4fr_1fr_1fr_auto] items-center gap-4">
                 <div>
                   <div className="text-xs uppercase tracking-widest text-cyan-300">{r.dept}</div>
-                  <div className="mt-1 text-lg font-semibold text-white group-hover:text-cyan-300 transition-colors">{r.title}</div>
+                  <div className="mt-1 text-lg font-semibold text-foreground group-hover:text-cyan-300 transition-colors">{r.title}</div>
                 </div>
-                <div className="text-sm text-slate-400">{r.location}</div>
-                <div className="text-sm text-slate-400">{r.type}</div>
+                <div className="text-sm text-muted">{r.location}</div>
+                <div className="text-sm text-muted">{r.type}</div>
                 <div className="text-cyan-300 text-sm justify-self-start md:justify-self-end">View role →</div>
               </div>
             </Link>

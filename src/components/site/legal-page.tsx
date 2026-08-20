@@ -22,18 +22,18 @@ export function LegalPage({
         <div className="relative mx-auto max-w-4xl px-6">
           <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: breadcrumb }]} />
           <Eyebrow>{eyebrow}</Eyebrow>
-          <h1 className="mt-4 text-4xl md:text-6xl font-semibold text-white leading-[1.02]">{title}</h1>
-          <p className="mt-4 text-sm text-slate-400">Last updated: {updated}</p>
+          <h1 className="mt-4 text-4xl md:text-6xl font-semibold text-foreground leading-[1.02]">{title}</h1>
+          <p className="mt-4 text-sm text-muted">Last updated: {updated}</p>
         </div>
       </section>
 
       <Section className="max-w-4xl !pt-8">
         <div className="glass rounded-2xl p-6 mb-8">
-          <div className="text-xs uppercase tracking-widest text-slate-400 mb-3">Contents</div>
+          <div className="text-xs uppercase tracking-widest text-muted mb-3">Contents</div>
           <ol className="space-y-1.5">
             {sections.map((s, i) => (
               <li key={i}>
-                <a href={`#s${i}`} className="text-sm text-slate-300 hover:text-white transition-colors">
+                <a href={`#s${i}`} className="text-sm text-muted hover:text-foreground transition-colors">
                   {i + 1}. {s.heading}
                 </a>
               </li>
@@ -43,8 +43,8 @@ export function LegalPage({
         <div className="space-y-12">
           {sections.map((s, i) => (
             <div key={i} id={`s${i}`}>
-              <h2 className="text-2xl font-semibold text-white">{i + 1}. {s.heading}</h2>
-              <div className="mt-4 text-slate-300 leading-relaxed space-y-4">{s.body}</div>
+              <h2 className="text-2xl font-semibold text-foreground">{i + 1}. {s.heading}</h2>
+              <div className="mt-4 text-muted leading-relaxed space-y-4">{s.body}</div>
             </div>
           ))}
         </div>

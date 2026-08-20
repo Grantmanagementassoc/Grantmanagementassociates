@@ -13,7 +13,7 @@ export default function SitemapPage() {
         <div className="relative mx-auto max-w-4xl px-6">
           <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Sitemap" }]} />
           <Eyebrow>Sitemap</Eyebrow>
-          <h1 className="mt-4 text-4xl md:text-6xl font-semibold text-white leading-[1.02]">Everything, in one place.</h1>
+          <h1 className="mt-4 text-4xl md:text-6xl font-semibold text-foreground leading-[1.02]">Everything, in one place.</h1>
         </div>
       </section>
 
@@ -23,7 +23,7 @@ export default function SitemapPage() {
             <div className="text-xs uppercase tracking-widest text-cyan-300">Company</div>
             <ul className="mt-4 space-y-2">
               {[["/", "Home"], ["/about", "About"], ["/careers", "Careers"], ["/partners", "Partners"], ["/contact", "Contact"]].map(([href, label]) => (
-                <li key={href}><Link className="text-slate-300 hover:text-white" href={href}>{label}</Link></li>
+                <li key={href}><Link className="text-muted hover:text-foreground" href={href}>{label}</Link></li>
               ))}
             </ul>
           </GlassCard>
@@ -31,9 +31,9 @@ export default function SitemapPage() {
           <GlassCard hover={false}>
             <div className="text-xs uppercase tracking-widest text-cyan-300">Services</div>
             <ul className="mt-4 space-y-2">
-              <li><Link className="text-slate-300 hover:text-white" href="/services">All services</Link></li>
+              <li><Link className="text-muted hover:text-foreground" href="/services">All services</Link></li>
               {services.map((s) => (
-                <li key={s.slug}><Link className="text-slate-300 hover:text-white" href={`/services/${s.slug}`}>{s.title}</Link></li>
+                <li key={s.slug}><Link className="text-muted hover:text-foreground" href={`/services/${s.slug}`}>{s.title}</Link></li>
               ))}
             </ul>
           </GlassCard>
@@ -41,9 +41,9 @@ export default function SitemapPage() {
           <GlassCard hover={false}>
             <div className="text-xs uppercase tracking-widest text-cyan-300">Industries</div>
             <ul className="mt-4 space-y-2">
-              <li><Link className="text-slate-300 hover:text-white" href="/industries">All industries</Link></li>
+              <li><Link className="text-muted hover:text-foreground" href="/industries">All industries</Link></li>
               {industries.map((i) => (
-                <li key={i.slug}><Link className="text-slate-300 hover:text-white" href={`/industries/${i.slug}`}>{i.name}</Link></li>
+                <li key={i.slug}><Link className="text-muted hover:text-foreground" href={`/industries/${i.slug}`}>{i.name}</Link></li>
               ))}
             </ul>
           </GlassCard>
@@ -51,9 +51,9 @@ export default function SitemapPage() {
           <GlassCard hover={false}>
             <div className="text-xs uppercase tracking-widest text-cyan-300">Case Studies</div>
             <ul className="mt-4 space-y-2">
-              <li><Link className="text-slate-300 hover:text-white" href="/case-studies">All case studies</Link></li>
+              <li><Link className="text-muted hover:text-foreground" href="/case-studies">All case studies</Link></li>
               {caseStudies.map((c) => (
-                <li key={c.slug}><Link className="text-slate-300 hover:text-white" href={`/case-studies/${c.slug}`}>{c.client}</Link></li>
+                <li key={c.slug}><Link className="text-muted hover:text-foreground" href={`/case-studies/${c.slug}`}>{c.client}</Link></li>
               ))}
             </ul>
           </GlassCard>
@@ -61,9 +61,9 @@ export default function SitemapPage() {
           <GlassCard hover={false}>
             <div className="text-xs uppercase tracking-widest text-cyan-300">Resources</div>
             <ul className="mt-4 space-y-2">
-              <li><Link className="text-slate-300 hover:text-white" href="/resources">All resources</Link></li>
+              <li><Link className="text-muted hover:text-foreground" href="/resources">All resources</Link></li>
               {resources.map((r) => (
-                <li key={r.slug}><Link className="text-slate-300 hover:text-white" href={`/resources/${r.slug}`}>{r.title}</Link></li>
+                <li key={r.slug}><Link className="text-muted hover:text-foreground" href={`/resources/${r.slug}`}>{r.title}</Link></li>
               ))}
             </ul>
           </GlassCard>
@@ -72,7 +72,7 @@ export default function SitemapPage() {
             <div className="text-xs uppercase tracking-widest text-cyan-300">Tools & Legal</div>
             <ul className="mt-4 space-y-2">
               {[["/assessment", "Funding Assessment"], ["/responsible-ai", "Responsible AI"], ["/privacy-policy", "Privacy Policy"], ["/terms", "Terms of Service"], ["/accessibility", "Accessibility"]].map(([href, label]) => (
-                <li key={href}><Link className="text-slate-300 hover:text-white" href={href}>{label}</Link></li>
+                <li key={href}><Link className="text-muted hover:text-foreground" href={href}>{label}</Link></li>
               ))}
             </ul>
           </GlassCard>
@@ -81,7 +81,7 @@ export default function SitemapPage() {
             <div className="text-xs uppercase tracking-widest text-cyan-300">Open Roles</div>
             <ul className="mt-4 space-y-2">
               {openRoles.map((r) => (
-                <li key={r.slug}><Link className="text-slate-300 hover:text-white" href={`/careers/${r.slug}`}>{r.title}</Link></li>
+                <li key={r.slug}><Link className="text-muted hover:text-foreground" href={`/careers/${r.slug}`}>{r.title}</Link></li>
               ))}
             </ul>
           </GlassCard>

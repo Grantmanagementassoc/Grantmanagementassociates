@@ -16,10 +16,10 @@ export default function PartnersPage() {
           <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Partners" }]} />
           <div className="max-w-3xl">
             <Eyebrow>Partners</Eyebrow>
-            <h1 className="mt-6 text-5xl md:text-7xl font-semibold text-white leading-[0.98]">
+            <h1 className="mt-6 text-5xl md:text-7xl font-semibold text-foreground leading-[0.98]">
               Strategic partnerships <br /><span className="text-gradient-brand">for greater impact.</span>
             </h1>
-            <p className="mt-8 text-lg md:text-xl text-slate-300 leading-relaxed">
+            <p className="mt-8 text-lg md:text-xl text-muted leading-relaxed">
               Extend your service line with GMA's white-label grant capabilities. Refer, co-brand, or fully white-label.
             </p>
           </div>
@@ -36,8 +36,8 @@ export default function PartnersPage() {
           ].map((p) => (
             <GlassCard key={p.t}>
               <div className="text-2xl">🤝</div>
-              <h3 className="mt-3 text-xl font-semibold text-white">{p.t}</h3>
-              <p className="mt-3 text-sm text-slate-400 leading-relaxed">{p.d}</p>
+              <h3 className="mt-3 text-xl font-semibold text-foreground">{p.t}</h3>
+              <p className="mt-3 text-sm text-muted leading-relaxed">{p.d}</p>
             </GlassCard>
           ))}
         </div>
@@ -52,8 +52,8 @@ export default function PartnersPage() {
             { t: "Full enablement", d: "One-pagers, talk tracks, and joint-selling training for your team." },
           ].map((b) => (
             <GlassCard key={b.t}>
-              <div className="text-lg font-semibold text-white">{b.t}</div>
-              <p className="mt-2 text-slate-400 leading-relaxed">{b.d}</p>
+              <div className="text-lg font-semibold text-foreground">{b.t}</div>
+              <p className="mt-2 text-muted leading-relaxed">{b.d}</p>
             </GlassCard>
           ))}
         </div>

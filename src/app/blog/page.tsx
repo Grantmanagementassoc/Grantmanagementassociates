@@ -45,13 +45,13 @@ export default function BlogList() {
   }
 
   return (
-    <main className="min-h-screen bg-ink-950 text-white noise pt-24 pb-12">
+    <main className="min-h-screen bg-background text-foreground noise pt-24 pb-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <header className="mb-16 text-center relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold text-gradient-brand mb-6 font-display drop-shadow-[0_0_15px_rgba(0,240,255,0.4)]">
             Our Insights & Updates
           </h1>
-          <p className="text-xl text-slate-300 max-w-2xl mx-auto">
+          <p className="text-xl text-muted max-w-2xl mx-auto">
             Stay up to date with the latest grant opportunities, case studies, and industry trends.
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-cyan-glow to-sapphire mx-auto rounded-full mt-8 shadow-[0_0_10px_rgba(0,240,255,0.8)]"></div>
@@ -62,7 +62,7 @@ export default function BlogList() {
             <Link href={post.slug} key={idx} className="block group">
               <article className="glass-strong card-hover h-full rounded-xl overflow-hidden border border-[rgba(255,255,255,0.1)] shadow-[0_0_20px_rgba(59,130,246,0.15)] flex flex-col transition-all duration-300 relative">
                 {/* Image Thumbnail */}
-                <div className="relative h-48 w-full overflow-hidden bg-ink-900/50">
+                <div className="relative h-48 w-full overflow-hidden bg-background/50">
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent to-ink-950/90 z-10"></div>
                   {post.image ? (
                     <img 
@@ -79,10 +79,10 @@ export default function BlogList() {
 
                 {/* Content */}
                 <div className="p-6 flex-grow flex flex-col relative z-20 -mt-10">
-                  <h2 className="text-xl font-bold font-display text-white group-hover:text-cyan-glow transition-colors duration-300 drop-shadow-[0_0_8px_rgba(255,255,255,0.4)] mb-3">
+                  <h2 className="text-xl font-bold font-display text-foreground group-hover:text-cyan-glow transition-colors duration-300 drop-shadow-[0_0_8px_rgba(255,255,255,0.4)] mb-3">
                     {post.title}
                   </h2>
-                  <p className="text-slate-300 text-sm flex-grow opacity-90 leading-relaxed">
+                  <p className="text-muted text-sm flex-grow opacity-90 leading-relaxed">
                     {post.excerpt}
                   </p>
                   
@@ -97,7 +97,7 @@ export default function BlogList() {
         </div>
         
         {blogPosts.length === 0 && (
-          <div className="text-center text-slate-400 mt-20">
+          <div className="text-center text-muted mt-20">
             No blog posts were found in the scraped data.
           </div>
         )}

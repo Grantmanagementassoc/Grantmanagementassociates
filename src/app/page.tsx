@@ -164,7 +164,7 @@ export default async function HomePage() {
 
       {/* RESPONSIBLE AI */}
       <Section>
-        <div className="relative overflow-hidden rounded-3xl border border-black/10 dark:border-white/10 bg-gradient-to-br from-ink-900 to-black p-10 md:p-14">
+        <div className="relative overflow-hidden rounded-3xl border border-black/10 dark:border-glass-border bg-gradient-to-br from-ink-900 to-black p-10 md:p-14">
           <div className="absolute inset-0 grid-lines opacity-20 pointer-events-none" aria-hidden />
           <div className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-cyan-glow/10 blur-3xl" aria-hidden />
           <div className="relative grid md:grid-cols-2 gap-10 items-center">
@@ -237,7 +237,7 @@ export default async function HomePage() {
                 <div className="text-3xl text-cyan-300 leading-none">&ldquo;</div>
                 <p className="mt-4 text-muted leading-relaxed">{t.quote}</p>
               </div>
-              <div className="mt-6 pt-6 border-t border-black/5 dark:border-white/5">
+              <div className="mt-6 pt-6 border-t border-black/5 dark:border-black/5 dark:border-white/5">
                 <div className="text-sm font-semibold text-foreground">{t.author}</div>
                 <div className="text-xs text-muted mt-1">{t.role}</div>
               </div>
@@ -265,7 +265,7 @@ export default async function HomePage() {
                   {r.title}
                 </h3>
                 <p className="mt-3 text-sm text-muted leading-relaxed line-clamp-3">{r.excerpt}</p>
-                <div className="mt-6 pt-4 border-t border-black/5 dark:border-white/5 text-xs text-muted flex justify-between">
+                <div className="mt-6 pt-4 border-t border-black/5 dark:border-black/5 dark:border-white/5 text-xs text-muted flex justify-between">
                   <span>{new Date(r.date).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}</span>
                   <span>{r.readMinutes} min read</span>
                 </div>

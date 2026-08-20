@@ -29,7 +29,7 @@ export function SiteHeader() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "glass-strong border-b border-white/5" : "bg-transparent"
+        scrolled ? "glass-strong border-b border-black/5 dark:border-white/5" : "bg-transparent"
       }`}
     >
       <div className="mx-auto max-w-[1440px] px-6 flex items-center justify-between h-20 md:h-24">
@@ -50,7 +50,7 @@ export function SiteHeader() {
                 <Link
                   href={item.href ?? "#"}
                   className={`px-3 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
-                    pathname === item.href ? "text-foreground bg-black/5 dark:bg-white/10" : "text-muted hover:text-foreground hover:bg-black/5 dark:hover:bg-white/5"
+                    pathname === item.href ? "text-foreground bg-black/5 dark:bg-white/10" : "text-muted hover:text-foreground hover:bg-black/5 dark:hover:bg-black/5 dark:bg-white/5"
                   }`}
                 >
                   {item.label}
@@ -58,12 +58,12 @@ export function SiteHeader() {
                 </Link>
                 {hasChildren && openMenu === item.label && (
                   <div className="absolute left-1/2 -translate-x-1/2 top-full pt-3 w-[560px]">
-                    <div className="bg-background border border-black/5 dark:border-white/10 rounded-2xl p-4 grid grid-cols-2 gap-1 shadow-2xl">
+                    <div className="bg-background border border-black/5 dark:border-glass-border rounded-2xl p-4 grid grid-cols-2 gap-1 shadow-2xl">
                       {item.children!.map((c) => (
                         <Link
                           key={c.href}
                           href={c.href}
-                          className="block rounded-xl p-3 hover:bg-white/5 transition-colors"
+                          className="block rounded-xl p-3 hover:bg-black/5 dark:bg-white/5 transition-colors"
                         >
                           <div className="text-sm font-medium text-foreground">{c.label}</div>
                           {c.description && (
@@ -86,7 +86,7 @@ export function SiteHeader() {
         </div>
 
         <button
-          className="lg:hidden text-white p-2"
+          className="lg:hidden text-foreground p-2"
           onClick={() => setMobileOpen((v) => !v)}
           aria-label="Toggle menu"
         >
@@ -99,10 +99,10 @@ export function SiteHeader() {
       </div>
 
       {mobileOpen && (
-        <div className="lg:hidden bg-background border-t border-black/5 dark:border-white/10 max-h-[80vh] overflow-y-auto">
+        <div className="lg:hidden bg-background border-t border-black/5 dark:border-glass-border max-h-[80vh] overflow-y-auto">
           <div className="px-6 py-4 space-y-1">
             {primaryNav.map((item) => (
-              <div key={item.label} className="border-b border-black/5 dark:border-white/5 last:border-0 py-2">
+              <div key={item.label} className="border-b border-black/5 dark:border-black/5 dark:border-white/5 last:border-0 py-2">
                 <Link href={item.href ?? "#"} className="block py-2 text-foreground font-medium">{item.label}</Link>
                 {item.children && (
                   <div className="pl-3 space-y-1">

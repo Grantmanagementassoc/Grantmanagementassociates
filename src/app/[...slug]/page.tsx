@@ -51,7 +51,7 @@ export default async function ScrapedPage({ params }: { params: Promise<{ slug: 
   }
 
   return (
-    <main className="min-h-screen bg-ink-950 text-white noise pt-24 pb-12">
+    <main className="min-h-screen bg-background text-foreground noise pt-24 pb-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
         <article className="glass-strong card-hover p-8 sm:p-12 rounded-2xl relative overflow-hidden">
           {/* Cyberpunk background glow effect */}
@@ -75,11 +75,11 @@ export default async function ScrapedPage({ params }: { params: Promise<{ slug: 
             </div>
           )}
           
-          <div className="prose prose-lg prose-invert prose-headings:font-display prose-headings:text-cyan-glow prose-a:text-sapphire prose-a:link-underline max-w-none relative z-10 text-slate-300">
+          <div className="prose prose-lg prose-invert prose-headings:font-display prose-headings:text-cyan-glow prose-a:text-sapphire prose-a:link-underline max-w-none relative z-10 text-muted">
             {pageData.bodyText.split('\n').map((paragraph: string, idx: number) => {
               if (!paragraph.trim()) return null;
               if (paragraph.length < 50 && paragraph.endsWith(':')) {
-                return <h3 key={idx} className="text-2xl font-semibold mt-10 mb-4 text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]">{paragraph}</h3>;
+                return <h3 key={idx} className="text-2xl font-semibold mt-10 mb-4 text-foreground drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]">{paragraph}</h3>;
               }
               return <p key={idx} className="mb-6 leading-relaxed opacity-90">{paragraph}</p>;
             })}
@@ -89,7 +89,7 @@ export default async function ScrapedPage({ params }: { params: Promise<{ slug: 
             <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 gap-6 relative z-10">
               {pageData.images.slice(1, 5).map((img: any, idx: number) => (
                 img.src && (
-                  <div key={idx} className="rounded-lg overflow-hidden border border-[rgba(0,240,255,0.2)] hover:border-cyan-glow hover:shadow-[0_0_15px_rgba(0,240,255,0.5)] transition-all duration-300 cursor-pointer group bg-ink-900/50">
+                  <div key={idx} className="rounded-lg overflow-hidden border border-[rgba(0,240,255,0.2)] hover:border-cyan-glow hover:shadow-[0_0_15px_rgba(0,240,255,0.5)] transition-all duration-300 cursor-pointer group bg-background/50">
                     <img src={img.src} alt={img.alt || 'Gallery image'} className="w-full h-56 object-cover opacity-75 group-hover:opacity-100 mix-blend-luminosity group-hover:mix-blend-normal transition-all duration-300" />
                   </div>
                 )

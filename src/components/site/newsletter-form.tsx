@@ -28,17 +28,17 @@ export function NewsletterForm({ source = "footer" }: { source?: string }) {
 
   return (
     <form onSubmit={onSubmit} className="w-full max-w-sm">
-      <label className="text-xs uppercase tracking-widest text-slate-400 mb-2 block">
+      <label className="text-xs uppercase tracking-widest text-muted mb-2 block">
         Weekly funding brief
       </label>
-      <div className="flex items-center gap-2 rounded-full border border-white/10 bg-white/5 pl-4 pr-1 py-1 focus-within:border-cyan-400/50 transition-colors">
+      <div className="flex items-center gap-2 rounded-full border border-glass-border bg-black/5 dark:bg-white/5 pl-4 pr-1 py-1 focus-within:border-cyan-400/50 transition-colors">
         <input
           type="email"
           required
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="you@organization.org"
-          className="bg-transparent flex-1 text-sm text-white placeholder:text-slate-500 outline-none py-1.5"
+          className="bg-transparent flex-1 text-sm text-foreground placeholder:text-muted outline-none py-1.5"
           disabled={status === "loading"}
         />
         <button

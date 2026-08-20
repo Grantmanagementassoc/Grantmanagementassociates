@@ -18,10 +18,10 @@ export default function ServicesPage() {
           <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Services" }]} />
           <div className="max-w-3xl">
             <Eyebrow>Services</Eyebrow>
-            <h1 className="mt-6 text-5xl md:text-7xl font-semibold text-white leading-[0.98]">
+            <h1 className="mt-6 text-5xl md:text-7xl font-semibold text-foreground leading-[0.98]">
               Comprehensive <br /><span className="text-gradient-brand">grant management.</span>
             </h1>
-            <p className="mt-8 text-lg md:text-xl text-slate-300 leading-relaxed">
+            <p className="mt-8 text-lg md:text-xl text-muted leading-relaxed">
               From opportunity identification through post-award management — pick the stage where you need the most leverage.
             </p>
           </div>
@@ -34,10 +34,10 @@ export default function ServicesPage() {
             <Link key={s.slug} href={`/services/${s.slug}`} className="group">
               <GlassCard className="h-full flex flex-col">
                 <div className="text-3xl">{s.icon}</div>
-                <h3 className="mt-4 text-xl font-semibold text-white group-hover:text-cyan-300 transition-colors">{s.title}</h3>
+                <h3 className="mt-4 text-xl font-semibold text-foreground group-hover:text-cyan-300 transition-colors">{s.title}</h3>
                 <p className="mt-2 text-sm text-cyan-300/80">{s.tagline}</p>
-                <p className="mt-4 text-sm text-slate-400 leading-relaxed line-clamp-3">{s.summary}</p>
-                <div className="mt-6 pt-4 border-t border-white/5 text-xs text-cyan-300 flex items-center gap-1">
+                <p className="mt-4 text-sm text-muted leading-relaxed line-clamp-3">{s.summary}</p>
+                <div className="mt-6 pt-4 border-t border-black/5 dark:border-white/5 text-xs text-cyan-300 flex items-center gap-1">
                   Learn more <span className="transition-transform group-hover:translate-x-1">→</span>
                 </div>
               </GlassCard>
@@ -56,7 +56,7 @@ export default function ServicesPage() {
           {["Discover", "Match", "Decide", "Execute", "Manage"].map((step, i) => (
             <div key={step} className="glass rounded-2xl p-6">
               <div className="font-mono text-xs text-cyan-300">0{i + 1}</div>
-              <div className="mt-2 text-lg font-semibold text-white">{step}</div>
+              <div className="mt-2 text-lg font-semibold text-foreground">{step}</div>
             </div>
           ))}
         </div>

@@ -18,10 +18,10 @@ export default function ContactPage() {
           <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Contact" }]} />
           <div className="max-w-3xl">
             <Eyebrow>Contact</Eyebrow>
-            <h1 className="mt-6 text-5xl md:text-7xl font-semibold text-white leading-[0.98]">
+            <h1 className="mt-6 text-5xl md:text-7xl font-semibold text-foreground leading-[0.98]">
               Let's build your <br /><span className="text-gradient-brand">funding strategy.</span>
             </h1>
-            <p className="mt-8 text-lg md:text-xl text-slate-300 leading-relaxed">
+            <p className="mt-8 text-lg md:text-xl text-muted leading-relaxed">
               Every engagement starts with a free 30-minute strategy call. We respond within one business day.
             </p>
           </div>
@@ -38,25 +38,25 @@ export default function ContactPage() {
           </GlassCard>
           <div className="space-y-4">
             <GlassCard hover={false}>
-              <div className="text-xs uppercase tracking-widest text-slate-400">Direct</div>
+              <div className="text-xs uppercase tracking-widest text-muted">Direct</div>
               <div className="mt-3 space-y-2">
-                <a href={site.phoneHref} className="block text-lg text-white hover:text-cyan-300 transition-colors">{site.phone}</a>
-                <a href={site.emailHref} className="block text-sm text-slate-300 hover:text-white transition-colors">{site.email}</a>
+                <a href={site.phoneHref} className="block text-lg text-foreground hover:text-cyan-300 transition-colors">{site.phone}</a>
+                <a href={site.emailHref} className="block text-sm text-muted hover:text-foreground transition-colors">{site.email}</a>
               </div>
             </GlassCard>
             {site.addresses.map((a) => (
               <GlassCard key={a.city} hover={false}>
-                <div className="text-xs uppercase tracking-widest text-slate-400">{a.label}</div>
-                <div className="mt-2 text-white font-semibold">{a.city}, {a.state}</div>
-                <div className="mt-1 text-sm text-slate-400">{a.line1}</div>
-                <div className="text-sm text-slate-400">{a.city}, {a.state} {a.zip}</div>
+                <div className="text-xs uppercase tracking-widest text-muted">{a.label}</div>
+                <div className="mt-2 text-foreground font-semibold">{a.city}, {a.state}</div>
+                <div className="mt-1 text-sm text-muted">{a.line1}</div>
+                <div className="text-sm text-muted">{a.city}, {a.state} {a.zip}</div>
               </GlassCard>
             ))}
             <GlassCard hover={false}>
-              <div className="text-xs uppercase tracking-widest text-slate-400">Response promise</div>
+              <div className="text-xs uppercase tracking-widest text-muted">Response promise</div>
               <div className="mt-3 flex items-center gap-3">
                 <div className="w-2 h-2 rounded-full bg-cyan-300 animate-pulse" />
-                <div className="text-sm text-slate-200">One business day. Every message reviewed by a strategist.</div>
+                <div className="text-sm text-muted">One business day. Every message reviewed by a strategist.</div>
               </div>
             </GlassCard>
           </div>
@@ -67,7 +67,7 @@ export default function ContactPage() {
         <div className="grid md:grid-cols-[1fr_1.4fr] gap-12">
           <div>
             <Eyebrow>FAQ</Eyebrow>
-            <h2 className="mt-4 text-3xl md:text-4xl font-semibold text-white">Before you reach out.</h2>
+            <h2 className="mt-4 text-3xl md:text-4xl font-semibold text-foreground">Before you reach out.</h2>
           </div>
           <Accordion
             items={[

@@ -16,13 +16,13 @@ export default function ResponsibleAIPage() {
           <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Responsible AI" }]} />
           <div className="max-w-3xl">
             <Eyebrow>Our commitment</Eyebrow>
-            <h1 className="mt-6 text-5xl md:text-7xl font-semibold text-white leading-[0.98]">
+            <h1 className="mt-6 text-5xl md:text-7xl font-semibold text-foreground leading-[0.98]">
               Ethical AI. Human expertise. <br /><span className="text-gradient-brand">Uncompromising security.</span>
             </h1>
-            <p className="mt-8 text-lg md:text-xl text-slate-300 leading-relaxed">
+            <p className="mt-8 text-lg md:text-xl text-muted leading-relaxed">
               At Grant Management Associates, your privacy, security, and the integrity of your grant applications are our highest priorities.
               As AI evolves rapidly, some firms have rushed to adopt low-cost tools like DeepSeek — raising serious concerns about data privacy
-              and offshore data storage. <span className="text-white">We do things differently.</span>
+              and offshore data storage. <span className="text-foreground">We do things differently.</span>
             </p>
           </div>
         </div>
@@ -39,8 +39,8 @@ export default function ResponsibleAIPage() {
             { t: "SOC 2 & enterprise controls", d: "Our AI partners meet enterprise-grade security requirements including SOC 2 Type II attestations." },
           ].map((f) => (
             <GlassCard key={f.t} hover={false}>
-              <div className="text-lg font-semibold text-white">{f.t}</div>
-              <p className="mt-3 text-slate-300 leading-relaxed">{f.d}</p>
+              <div className="text-lg font-semibold text-foreground">{f.t}</div>
+              <p className="mt-3 text-muted leading-relaxed">{f.d}</p>
             </GlassCard>
           ))}
         </div>
@@ -59,8 +59,8 @@ export default function ResponsibleAIPage() {
           ].map((c) => (
             <GlassCard key={c.t} hover={false}>
               <div className="text-2xl">🧠</div>
-              <div className="mt-3 text-lg font-semibold text-white">{c.t}</div>
-              <p className="mt-2 text-sm text-slate-400 leading-relaxed">{c.d}</p>
+              <div className="mt-3 text-lg font-semibold text-foreground">{c.t}</div>
+              <p className="mt-2 text-sm text-muted leading-relaxed">{c.d}</p>
             </GlassCard>
           ))}
         </div>

@@ -74,13 +74,13 @@ export function AssessmentForm() {
         <div className="text-center">
           <div className="text-xs uppercase tracking-widest text-cyan-300">Your funding potential score</div>
           <div className="mt-4 text-7xl md:text-8xl font-semibold text-gradient-brand">{result.score}</div>
-          <div className="mt-2 text-slate-400 text-sm">out of 100</div>
+          <div className="mt-2 text-muted text-sm">out of 100</div>
         </div>
         <div className="mt-10">
-          <div className="text-sm font-semibold text-white uppercase tracking-widest">Personalized recommendations</div>
+          <div className="text-sm font-semibold text-foreground uppercase tracking-widest">Personalized recommendations</div>
           <ul className="mt-4 space-y-3">
             {result.recommendations.map((r, i) => (
-              <li key={i} className="flex gap-3 text-slate-200">
+              <li key={i} className="flex gap-3 text-muted">
                 <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-cyan-glow shrink-0" />
                 {r}
               </li>
@@ -100,9 +100,9 @@ export function AssessmentForm() {
       {/* Progress */}
       <div className="flex items-center justify-between mb-2">
         <div className="text-xs uppercase tracking-widest text-cyan-300">Step {step + 1} of {steps.length}</div>
-        <div className="text-xs text-slate-400">{steps[step]}</div>
+        <div className="text-xs text-muted">{steps[step]}</div>
       </div>
-      <div className="h-1 rounded-full bg-white/5 overflow-hidden">
+      <div className="h-1 rounded-full bg-black/5 dark:bg-white/5 overflow-hidden">
         <div className="h-full bg-gradient-to-r from-cyan-glow to-sapphire transition-all duration-500" style={{ width: `${progress}%` }} />
       </div>
 
@@ -183,7 +183,7 @@ export function AssessmentForm() {
               <Text label="Work email" value={data.contactEmail} onChange={(v) => update("contactEmail", v)} type="email" required />
             </div>
             <Text label="Phone (optional)" value={data.contactPhone} onChange={(v) => update("contactPhone", v)} type="tel" />
-            <p className="text-xs text-slate-500">We'll email your personalized results and only follow up if you request a call.</p>
+            <p className="text-xs text-muted">We'll email your personalized results and only follow up if you request a call.</p>
             {error && <p className="text-sm text-rose-300">{error}</p>}
           </div>
         )}
@@ -206,14 +206,14 @@ export function AssessmentForm() {
 function Text({ label, value, onChange, required, placeholder, type = "text" }: { label: string; value: string; onChange: (v: string) => void; required?: boolean; placeholder?: string; type?: string }) {
   return (
     <div>
-      <label className="text-xs uppercase tracking-widest text-slate-400 block mb-2">{label}{required && <span className="text-cyan-300"> *</span>}</label>
+      <label className="text-xs uppercase tracking-widest text-muted block mb-2">{label}{required && <span className="text-cyan-300"> *</span>}</label>
       <input
         type={type}
         value={value}
         onChange={(e) => onChange(e.target.value)}
         required={required}
         placeholder={placeholder}
-        className="w-full rounded-full bg-white/5 border border-white/10 px-4 py-2.5 text-sm text-white placeholder:text-slate-500 outline-none focus:border-cyan-400/50 transition-colors"
+        className="w-full rounded-full bg-black/5 dark:bg-white/5 border border-glass-border px-4 py-2.5 text-sm text-foreground placeholder:text-muted outline-none focus:border-cyan-400/50 transition-colors"
       />
     </div>
   );
@@ -222,14 +222,14 @@ function Text({ label, value, onChange, required, placeholder, type = "text" }: 
 function Textarea({ label, value, onChange, required, placeholder }: { label: string; value: string; onChange: (v: string) => void; required?: boolean; placeholder?: string }) {
   return (
     <div>
-      <label className="text-xs uppercase tracking-widest text-slate-400 block mb-2">{label}{required && <span className="text-cyan-300"> *</span>}</label>
+      <label className="text-xs uppercase tracking-widest text-muted block mb-2">{label}{required && <span className="text-cyan-300"> *</span>}</label>
       <textarea
         value={value}
         onChange={(e) => onChange(e.target.value)}
         required={required}
         placeholder={placeholder}
         rows={4}
-        className="w-full rounded-2xl bg-white/5 border border-white/10 px-4 py-3 text-sm text-white placeholder:text-slate-500 outline-none focus:border-cyan-400/50 transition-colors"
+        className="w-full rounded-2xl bg-black/5 dark:bg-white/5 border border-glass-border px-4 py-3 text-sm text-foreground placeholder:text-muted outline-none focus:border-cyan-400/50 transition-colors"
       />
     </div>
   );
@@ -238,10 +238,10 @@ function Textarea({ label, value, onChange, required, placeholder }: { label: st
 function Radio({ label, value, onChange, options }: { label: string; value: string; onChange: (v: string) => void; options: { v: string; l: string }[] }) {
   return (
     <div>
-      <label className="text-xs uppercase tracking-widest text-slate-400 block mb-3">{label}</label>
+      <label className="text-xs uppercase tracking-widest text-muted block mb-3">{label}</label>
       <div className="grid sm:grid-cols-2 gap-2">
         {options.map((o) => (
-          <label key={o.v} className={`cursor-pointer rounded-2xl border px-4 py-3 text-sm transition-all ${value === o.v ? "border-cyan-glow bg-cyan-glow/10 text-white" : "border-white/10 bg-white/5 text-slate-300 hover:border-white/20"}`}>
+          <label key={o.v} className={`cursor-pointer rounded-2xl border px-4 py-3 text-sm transition-all ${value === o.v ? "border-cyan-glow bg-cyan-glow/10 text-foreground" : "border-glass-border bg-black/5 dark:bg-white/5 text-muted hover:border-white/20"}`}>
             <input type="radio" className="sr-only" checked={value === o.v} onChange={() => onChange(o.v)} />
             {o.l}
           </label>

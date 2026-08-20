@@ -17,10 +17,10 @@ export default function AssessmentPage() {
           <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Assessment" }]} />
           <div className="text-center max-w-2xl mx-auto">
             <Eyebrow>2-minute assessment</Eyebrow>
-            <h1 className="mt-6 text-4xl md:text-6xl font-semibold text-white leading-[1.02]">
+            <h1 className="mt-6 text-4xl md:text-6xl font-semibold text-foreground leading-[1.02]">
               Your <span className="text-gradient-brand">funding potential</span>, scored in 2 minutes.
             </h1>
-            <p className="mt-6 text-lg text-slate-300 leading-relaxed">
+            <p className="mt-6 text-lg text-muted leading-relaxed">
               Answer five short questions and we'll return a personalized funding potential score plus recommended next steps — no sales call unless you request one.
             </p>
           </div>

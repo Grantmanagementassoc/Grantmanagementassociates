@@ -18,10 +18,10 @@ export default function CaseStudiesPage() {
           <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Case Studies" }]} />
           <div className="max-w-3xl">
             <Eyebrow>Signature wins</Eyebrow>
-            <h1 className="mt-6 text-5xl md:text-7xl font-semibold text-white leading-[0.98]">
+            <h1 className="mt-6 text-5xl md:text-7xl font-semibold text-foreground leading-[0.98]">
               Proven results. <br /><span className="text-gradient-gold">Real impact.</span>
             </h1>
-            <p className="mt-8 text-lg md:text-xl text-slate-300 leading-relaxed">
+            <p className="mt-8 text-lg md:text-xl text-muted leading-relaxed">
               A representative sample of the {site.totalSecured} in federal, state, and foundation funding GMA has secured for clients since {site.founded}.
             </p>
           </div>
