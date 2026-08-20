@@ -2,27 +2,27 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Section, Eyebrow, GlassCard, Breadcrumbs, CTACard, BackgroundGrid } from "@/components/site/ui";
-import { caseStudies, industries } from "@/lib/content";
+import { results, industries } from "@/lib/content";
 
 type Params = { slug: string };
 
 export async function generateStaticParams() {
-  return caseStudies.map((c) => ({ slug: c.slug }));
+  return results.map((c) => ({ slug: c.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
   const { slug } = await params;
-  const c = caseStudies.find((x) => x.slug === slug);
+  const c = results.find((x) => x.slug === slug);
   if (!c) return { title: "Case Study" };
   return { title: `${c.client} — ${c.amount}`, description: c.challenge };
 }
 
 export default async function CaseStudyDetail({ params }: { params: Promise<Params> }) {
   const { slug } = await params;
-  const cs = caseStudies.find((x) => x.slug === slug);
+  const cs = results.find((x) => x.slug === slug);
   if (!cs) return notFound();
   const ind = industries.find((i) => i.slug === cs.industry);
-  const related = caseStudies.filter((c) => c.slug !== cs.slug && c.industry === cs.industry).slice(0, 2);
+  const related = results.filter((c) => c.slug !== cs.slug && c.industry === cs.industry).slice(0, 2);
 
   return (
     <>

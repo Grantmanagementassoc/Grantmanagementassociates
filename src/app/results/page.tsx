@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Section, Eyebrow, Breadcrumbs, CTACard, Stat, BackgroundGrid } from "@/components/site/ui";
-import { caseStudies, site } from "@/lib/content";
+import { results, site } from "@/lib/content";
 import { ResultsClient } from "./results-client";
 
 export const metadata: Metadata = {

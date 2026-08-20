@@ -394,7 +394,7 @@ export type CaseStudy = {
   quote?: { text: string; author: string; role: string };
 };
 
-export const caseStudies: CaseStudy[] = [
+export const results: CaseStudy[] = [
   {
     slug: "grant-0-spatial-informatics-group-llc",
     client: "Spatial Informatics Group, LLC",
@@ -2709,3 +2709,99 @@ export function formatUSD(n: number) {
   if (n >= 1_000) return `$${(n / 1_000).toFixed(0)}K`;
   return `$${n}`;
 }
+
+
+export const caseStudies: CaseStudy[] = [
+  {
+    slug: "mp-assets-microporous",
+    client: "MP Assets Corporation (Microporous)",
+    industry: "manufacturing",
+    amount: "$160,000,000",
+    amountNumber: 160_000_000,
+    year: 2023,
+    type: "Federal",
+    agency: "DOE Battery Manufacturing (IIJA §40207)",
+    challenge:
+      "Scale U.S. production of lithium-ion battery separators to reduce reliance on foreign supply — with a compressed FOA timeline and a highly technical NEPA posture.",
+    approach:
+      "GMA led a 60-day sprint: technical narrative, budget, community benefits plan, and NEPA-ready siting narrative. Coordinated 14 letters of support from utilities, state officials, and OEMs.",
+    result:
+      "$160M award — one of the largest DOE Battery Manufacturing grants in the program. Enabled a new manufacturing facility and hundreds of new jobs.",
+    quote: {
+      text: "GMA didn't just write a proposal — they orchestrated the entire submission across our engineering, legal, and executive teams.",
+      author: "Program Director",
+      role: "MP Assets Corporation",
+    },
+  },
+  {
+    slug: "golden-empire-transit",
+    client: "Golden Empire Transit District",
+    industry: "transportation",
+    amount: "$117,877,595",
+    amountNumber: 117_877_595,
+    year: 2024,
+    type: "Federal",
+    agency: "FTA Low-No Emission Vehicle Program",
+    challenge:
+      "Fully electrify a mid-sized California transit fleet, including depot infrastructure, workforce retraining, and grid interconnection — under an oversubscribed program.",
+    approach:
+      "GMA structured a phased 5-year deployment, secured 22 partnership commitments, and built a defensible operational cost model.",
+    result: "$117.9M — a top-quartile Low-No award enabling full fleet electrification.",
+  },
+  {
+    slug: "jma-wireless-chips",
+    client: "JMA Wireless",
+    industry: "technology",
+    amount: "$43,940,612",
+    amountNumber: 43_940_612,
+    year: 2024,
+    type: "Federal",
+    agency: "Commerce / NTIA — Public Wireless Supply Chain Innovation Fund",
+    challenge:
+      "Position a U.S.-owned Open RAN manufacturer for federal support in a crowded field of global incumbents.",
+    approach:
+      "GMA framed the national-security narrative, engineered the cost-share model, and coordinated Congressional letters.",
+    result: "$43.9M — enabling expanded U.S. Open RAN manufacturing capacity and R&D.",
+  },
+  {
+    slug: "berkshire-hathaway-energy",
+    client: "Berkshire Hathaway Energy / MidAmerican",
+    industry: "clean-energy",
+    amount: "$37,800,000",
+    amountNumber: 37_800_000,
+    year: 2023,
+    type: "Federal",
+    agency: "DOE — Grid Resilience & Innovation Partnerships (GRIP)",
+    challenge:
+      "Compete against 400+ applicants for a limited pool of GRIP funding with a novel grid-resilience demonstration.",
+    approach:
+      "GMA led the technical narrative, benefit-cost analysis, and community benefits plan on a 90-day sprint.",
+    result: "$37.8M — funding a multi-state grid resilience deployment.",
+  },
+  {
+    slug: "tribal-nation-microgrid",
+    client: "Confidential Tribal Nation",
+    industry: "tribal",
+    amount: "$18,400,000",
+    amountNumber: 18_400_000,
+    year: 2024,
+    type: "Federal",
+    agency: "DOE Office of Indian Energy",
+    challenge: "Design and fund a resilient tribal microgrid to serve critical facilities during regional outages.",
+    approach: "Culturally-grounded stakeholder engagement, engineering scoping, and DOE-IE narrative with Tribal Council governance path.",
+    result: "$18.4M — Tribal energy sovereignty milestone.",
+  },
+  {
+    slug: "regional-hospital-arpah",
+    client: "Regional Academic Medical Center",
+    industry: "healthcare",
+    amount: "$12,600,000",
+    amountNumber: 12_600_000,
+    year: 2024,
+    type: "Federal",
+    agency: "ARPA-H",
+    challenge: "Translate a promising diagnostic platform from bench to clinic under ARPA-H's aggressive milestone model.",
+    approach: "Milestone-driven budget, DoD-style program plan, and multi-site clinical partnerships.",
+    result: "$12.6M — moving the platform into human trials.",
+  },
+];
