@@ -85,6 +85,14 @@
   }
 }
 
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-50% - 0.75rem)); }
+}
+.animate-marquee {
+  animation: marquee 40s linear infinite;
+}
+
 @layer utilities {
   .text-gradient-brand {
     background: linear-gradient(90deg, #0ea5e9 0%, #22c55e 100%);

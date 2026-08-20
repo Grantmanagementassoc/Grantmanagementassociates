@@ -141,20 +141,23 @@ export default async function HomePage() {
           {featuredStudies.map((cs) => (
             <Link key={cs.slug} href={`/case-studies/${cs.slug}`} className="group">
               <GlassCard className="h-full">
-                <div className="flex items-start justify-between gap-4">
+                <div className="flex flex-col h-full justify-between gap-4">
                   <div>
-                    <div className="text-xs uppercase tracking-widest text-muted">{cs.type} · {cs.year}</div>
-                    <h3 className="mt-2 text-xl font-semibold text-foreground group-hover:text-cyan-300 transition-colors">{cs.client}</h3>
-                    <p className="mt-2 text-sm text-muted">{cs.agency}</p>
+                    <div className="flex items-start justify-between gap-4">
+                      <div>
+                        <div className="text-xs uppercase tracking-widest text-muted">{cs.type} · {cs.year}</div>
+                        <h3 className="mt-2 text-xl font-semibold text-foreground group-hover:text-cyan-300 transition-colors line-clamp-2">{cs.client}</h3>
+                        <p className="mt-2 text-sm text-muted line-clamp-1">{cs.agency}</p>
+                      </div>
+                      <div className="text-right shrink-0">
+                        <div className="text-3xl md:text-4xl font-semibold text-gradient-gold">{cs.amount}</div>
+                        <div className="text-[10px] uppercase tracking-widest text-muted mt-1">awarded</div>
+                      </div>
+                    </div>
                   </div>
-                  <div className="text-right">
-                    <div className="text-3xl md:text-4xl font-semibold text-gradient-gold">{cs.amount}</div>
-                    <div className="text-[10px] uppercase tracking-widest text-muted mt-1">awarded</div>
+                  <div className="mt-6 flex items-center gap-2 text-xs text-cyan-300 font-medium">
+                    Read the case study <span className="transition-transform group-hover:translate-x-1">→</span>
                   </div>
-                </div>
-                <p className="mt-4 text-sm text-muted line-clamp-2 leading-relaxed">{cs.challenge}</p>
-                <div className="mt-6 flex items-center gap-2 text-xs text-cyan-300 font-medium">
-                  Read the case study <span className="transition-transform group-hover:translate-x-1">→</span>
                 </div>
               </GlassCard>
             </Link>
@@ -190,9 +193,9 @@ export default async function HomePage() {
                 { t: "Human-in-the-loop", d: "AI assists — experts decide." },
                 { t: "Client data ownership", d: "Your IP stays yours." },
               ].map((f) => (
-                <div key={f.t} className="glass rounded-2xl p-5">
-                  <div className="text-sm font-semibold text-foreground">{f.t}</div>
-                  <div className="mt-2 text-xs text-muted leading-relaxed">{f.d}</div>
+                <div key={f.t} className="bg-white/5 border border-white/10 rounded-2xl p-5 backdrop-blur-md">
+                  <div className="text-sm font-semibold text-white">{f.t}</div>
+                  <div className="mt-2 text-xs text-white/70 leading-relaxed">{f.d}</div>
                 </div>
               ))}
             </div>
@@ -224,27 +227,36 @@ export default async function HomePage() {
       </Section>
 
       {/* TESTIMONIALS */}
-      <Section>
-        <SectionTitle
-          eyebrow="What clients say"
-          title={<>Trusted at the <span className="text-gradient-brand">highest-stakes moments</span>.</>}
-          align="center"
-        />
-        <div className="mt-14 grid gap-6 md:grid-cols-3">
-          {testimonials.map((t, i) => (
-            <div key={i} className="glass rounded-2xl p-8 flex flex-col justify-between">
-              <div>
-                <div className="text-3xl text-cyan-300 leading-none">&ldquo;</div>
-                <p className="mt-4 text-muted leading-relaxed">{t.quote}</p>
-              </div>
-              <div className="mt-6 pt-6 border-t border-black/5 dark:border-black/5 dark:border-white/5">
-                <div className="text-sm font-semibold text-foreground">{t.author}</div>
-                <div className="text-xs text-muted mt-1">{t.role}</div>
-              </div>
-            </div>
-          ))}
+      <section className="py-24 md:py-32 overflow-hidden">
+        <div className="mx-auto max-w-7xl px-6 mb-14">
+          <SectionTitle
+            eyebrow="What clients say"
+            title={<>Trusted at the <span className="text-gradient-brand">highest-stakes moments</span>.</>}
+            align="center"
+          />
         </div>
-      </Section>
+        
+        <div className="relative w-full overflow-hidden flex">
+          {/* Fading edges */}
+          <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[var(--bg-main)] to-transparent z-10 pointer-events-none" />
+          <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-[var(--bg-main)] to-transparent z-10 pointer-events-none" />
+          
+          <div className="flex w-max animate-marquee gap-6 px-3">
+            {[...testimonials, ...testimonials].map((t, i) => (
+              <div key={i} className="glass rounded-2xl p-8 flex flex-col justify-between w-[350px] md:w-[400px] shrink-0">
+                <div>
+                  <div className="text-3xl text-cyan-300 leading-none">&ldquo;</div>
+                  <p className="mt-4 text-muted leading-relaxed text-sm line-clamp-6">{t.quote}</p>
+                </div>
+                <div className="mt-6 pt-6 border-t border-black/5 dark:border-white/5">
+                  <div className="text-sm font-semibold text-foreground">{t.author}</div>
+                  <div className="text-xs text-muted mt-1 line-clamp-1">{t.role}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* LATEST INSIGHTS */}
       <Section>

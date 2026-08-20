@@ -7,7 +7,7 @@ export function Logo({ className = "h-12 w-auto" }: { className?: string }) {
         src="/logo.png" 
         alt="GMA Logo" 
         fill
-        className="object-contain object-left invert dark:invert-0"
+        className="object-contain object-left"
         priority
       />
     </div>
