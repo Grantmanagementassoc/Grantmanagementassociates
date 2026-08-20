@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { primaryNav, site } from "@/lib/content";
 import { Logo } from "./logo";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 export function SiteHeader() {
   const [scrolled, setScrolled] = useState(false);
@@ -49,7 +50,7 @@ export function SiteHeader() {
                 <Link
                   href={item.href ?? "#"}
                   className={`px-3 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
-                    pathname === item.href ? "text-white bg-white/10" : "text-slate-300 hover:text-white hover:bg-white/5"
+                    pathname === item.href ? "text-foreground bg-black/5 dark:bg-white/10" : "text-muted hover:text-foreground hover:bg-black/5 dark:hover:bg-white/5"
                   }`}
                 >
                   {item.label}
@@ -57,16 +58,16 @@ export function SiteHeader() {
                 </Link>
                 {hasChildren && openMenu === item.label && (
                   <div className="absolute left-1/2 -translate-x-1/2 top-full pt-3 w-[560px]">
-                    <div className="bg-[#0a0f17] border border-white/10 rounded-2xl p-4 grid grid-cols-2 gap-1 shadow-2xl">
+                    <div className="bg-background border border-black/5 dark:border-white/10 rounded-2xl p-4 grid grid-cols-2 gap-1 shadow-2xl">
                       {item.children!.map((c) => (
                         <Link
                           key={c.href}
                           href={c.href}
                           className="block rounded-xl p-3 hover:bg-white/5 transition-colors"
                         >
-                          <div className="text-sm font-medium text-white">{c.label}</div>
+                          <div className="text-sm font-medium text-foreground">{c.label}</div>
                           {c.description && (
-                            <div className="text-xs text-slate-400 mt-1 leading-relaxed">{c.description}</div>
+                            <div className="text-xs text-muted mt-1 leading-relaxed">{c.description}</div>
                           )}
                         </Link>
                       ))}
@@ -79,6 +80,7 @@ export function SiteHeader() {
         </nav>
 
         <div className="hidden lg:flex items-center gap-2 flex-shrink-0">
+          <ThemeToggle />
           <Link href="/contact" className="btn-secondary text-sm whitespace-nowrap">Contact</Link>
           <Link href="/assessment" className="btn-primary text-sm whitespace-nowrap">Free Strategy Call →</Link>
         </div>
@@ -97,15 +99,15 @@ export function SiteHeader() {
       </div>
 
       {mobileOpen && (
-        <div className="lg:hidden bg-[#0a0f17] border-t border-white/10 max-h-[80vh] overflow-y-auto">
+        <div className="lg:hidden bg-background border-t border-black/5 dark:border-white/10 max-h-[80vh] overflow-y-auto">
           <div className="px-6 py-4 space-y-1">
             {primaryNav.map((item) => (
-              <div key={item.label} className="border-b border-white/5 last:border-0 py-2">
-                <Link href={item.href ?? "#"} className="block py-2 text-white font-medium">{item.label}</Link>
+              <div key={item.label} className="border-b border-black/5 dark:border-white/5 last:border-0 py-2">
+                <Link href={item.href ?? "#"} className="block py-2 text-foreground font-medium">{item.label}</Link>
                 {item.children && (
                   <div className="pl-3 space-y-1">
                     {item.children.map((c) => (
-                      <Link key={c.href} href={c.href} className="block py-1.5 text-sm text-slate-400 hover:text-white">
+                      <Link key={c.href} href={c.href} className="block py-1.5 text-sm text-muted hover:text-foreground">
                         {c.label}
                       </Link>
                     ))}
@@ -117,9 +119,9 @@ export function SiteHeader() {
               <Link href="/contact" className="btn-secondary justify-center">Contact</Link>
               <Link href="/assessment" className="btn-primary justify-center">Free Strategy Call →</Link>
             </div>
-            <div className="pt-4 text-xs text-slate-500">
-              <a href={site.phoneHref} className="block hover:text-white">{site.phone}</a>
-              <a href={site.emailHref} className="block hover:text-white">{site.email}</a>
+            <div className="pt-4 text-xs text-muted">
+              <a href={site.phoneHref} className="block hover:text-foreground">{site.phone}</a>
+              <a href={site.emailHref} className="block hover:text-foreground">{site.email}</a>
             </div>
           </div>
         </div>

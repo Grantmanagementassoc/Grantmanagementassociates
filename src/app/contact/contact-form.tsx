@@ -56,17 +56,17 @@ export function ContactForm() {
         ]} />
       </div>
       <div>
-        <label className="text-xs uppercase tracking-widest text-slate-400 block mb-2">What can we help with?</label>
+        <label className="text-xs uppercase tracking-widest text-muted block mb-2">What can we help with?</label>
         <textarea
           name="message"
           required
           rows={5}
           placeholder="Tell us about your project, funding target, and timeline…"
-          className="w-full rounded-2xl bg-white/5 border border-white/10 px-4 py-3 text-sm text-white placeholder:text-slate-500 outline-none focus:border-cyan-400/50 transition-colors"
+          className="w-full rounded-2xl bg-black/5 dark:bg-white/5 border border-glass-border px-4 py-3 text-sm text-foreground placeholder:text-muted outline-none focus:border-cyan-400/50 transition-colors"
         />
       </div>
       <div className="flex items-center justify-between gap-4 pt-2">
-        <p className="text-xs text-slate-500">We respond within one business day.</p>
+        <p className="text-xs text-muted">We respond within one business day.</p>
         <button type="submit" disabled={status === "loading"} className="btn-primary disabled:opacity-60">
           {status === "loading" ? "Sending…" : "Send message →"}
         </button>
@@ -81,12 +81,12 @@ export function ContactForm() {
 function Field({ label, name, type = "text", required = false }: { label: string; name: string; type?: string; required?: boolean }) {
   return (
     <div>
-      <label className="text-xs uppercase tracking-widest text-slate-400 block mb-2">{label}{required && <span className="text-cyan-300"> *</span>}</label>
+      <label className="text-xs uppercase tracking-widest text-muted block mb-2">{label}{required && <span className="text-cyan-300"> *</span>}</label>
       <input
         name={name}
         type={type}
         required={required}
-        className="w-full rounded-full bg-white/5 border border-white/10 px-4 py-2.5 text-sm text-white placeholder:text-slate-500 outline-none focus:border-cyan-400/50 transition-colors"
+        className="w-full rounded-full bg-black/5 dark:bg-white/5 border border-glass-border px-4 py-2.5 text-sm text-foreground placeholder:text-muted outline-none focus:border-cyan-400/50 transition-colors"
       />
     </div>
   );
@@ -95,14 +95,14 @@ function Field({ label, name, type = "text", required = false }: { label: string
 function Select({ label, name, options }: { label: string; name: string; options: string[] }) {
   return (
     <div>
-      <label className="text-xs uppercase tracking-widest text-slate-400 block mb-2">{label}</label>
+      <label className="text-xs uppercase tracking-widest text-muted block mb-2">{label}</label>
       <select
         name={name}
         defaultValue=""
-        className="w-full rounded-full bg-white/5 border border-white/10 px-4 py-2.5 text-sm text-white outline-none focus:border-cyan-400/50 transition-colors"
+        className="w-full rounded-full bg-black/5 dark:bg-white/5 border border-glass-border px-4 py-2.5 text-sm text-foreground outline-none focus:border-cyan-400/50 transition-colors"
       >
-        <option value="" disabled className="bg-[#0a0f17] text-white">Select…</option>
-        {options.map((o) => <option key={o} value={o} className="bg-[#0a0f17] text-white">{o}</option>)}
+        <option value="" disabled className="bg-background text-foreground">Select…</option>
+        {options.map((o) => <option key={o} value={o} className="bg-background text-foreground">{o}</option>)}
       </select>
     </div>
   );

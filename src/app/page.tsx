@@ -21,17 +21,17 @@ export default async function HomePage() {
           <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
             <Eyebrow>AI-Powered Grant Matching · Go/No-Go Strategy · Proposal Execution</Eyebrow>
 
-            <h1 className="mt-6 text-5xl md:text-7xl lg:text-8xl font-semibold text-white leading-[0.95] tracking-tight animate-fade-up">
+            <h1 className="mt-6 text-5xl md:text-7xl lg:text-8xl font-semibold text-foreground leading-[0.95] tracking-tight animate-fade-up">
               Funding intelligence.
               <br />
               <span className="text-gradient-brand">Winning strategy.</span>
             </h1>
 
-            <p className="mt-8 text-lg md:text-xl text-slate-300 max-w-2xl leading-relaxed animate-fade-up" style={{ animationDelay: "120ms" }}>
+            <p className="mt-8 text-lg md:text-xl text-muted max-w-2xl leading-relaxed animate-fade-up" style={{ animationDelay: "120ms" }}>
               GMA has helped organizations secure over{" "}
-              <span className="text-white font-medium">{site.totalSecured}</span> in federal, state, and foundation
+              <span className="text-foreground font-medium">{site.totalSecured}</span> in federal, state, and foundation
               funding since {site.founded} — with a{" "}
-              <span className="text-white font-medium">{site.winRate}</span> win rate on submitted proposals.
+              <span className="text-foreground font-medium">{site.winRate}</span> win rate on submitted proposals.
             </p>
 
             <div className="mt-10 flex flex-wrap items-center justify-center gap-3 animate-fade-up" style={{ animationDelay: "220ms" }}>
@@ -51,7 +51,7 @@ export default async function HomePage() {
 
       {/* CLIENT LOGO TICKER */}
       <div className="mx-auto max-w-7xl px-6">
-        <p className="text-center text-xs uppercase tracking-widest text-slate-500 mb-6">
+        <p className="text-center text-xs uppercase tracking-widest text-muted mb-6">
           Trusted by organizations at every scale
         </p>
         <LogoTicker />
@@ -75,8 +75,8 @@ export default async function HomePage() {
               <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-sapphire/15 blur-3xl pointer-events-none" aria-hidden />
               <div className="relative">
                 <div className="text-4xl">{services[0].icon}</div>
-                <h3 className="mt-6 text-3xl md:text-4xl font-semibold text-white">{services[0].title}</h3>
-                <p className="mt-4 text-slate-300 max-w-lg leading-relaxed">{services[0].summary}</p>
+                <h3 className="mt-6 text-3xl md:text-4xl font-semibold text-foreground">{services[0].title}</h3>
+                <p className="mt-4 text-muted max-w-lg leading-relaxed">{services[0].summary}</p>
               </div>
               <div className="relative mt-8 flex items-center gap-2 text-cyan-300 font-medium">
                 Explore <span className="transition-transform group-hover:translate-x-1">→</span>
@@ -89,8 +89,8 @@ export default async function HomePage() {
               <GlassCard className="h-full flex flex-col justify-between">
                 <div>
                   <div className="text-2xl">{s.icon}</div>
-                  <h3 className="mt-4 text-lg font-semibold text-white">{s.title}</h3>
-                  <p className="mt-2 text-sm text-slate-400 leading-relaxed line-clamp-3">{s.tagline}</p>
+                  <h3 className="mt-4 text-lg font-semibold text-foreground">{s.title}</h3>
+                  <p className="mt-2 text-sm text-muted leading-relaxed line-clamp-3">{s.tagline}</p>
                 </div>
                 <div className="mt-4 text-xs text-cyan-300 font-medium flex items-center gap-1">
                   Learn more <span className="transition-transform group-hover:translate-x-1">→</span>
@@ -117,8 +117,8 @@ export default async function HomePage() {
           ].map((step, i) => (
             <div key={step.n} className="glass rounded-2xl p-6 relative">
               <div className="text-xs font-mono text-cyan-300">{step.n}</div>
-              <h3 className="mt-2 text-xl font-semibold text-white">{step.t}</h3>
-              <p className="mt-3 text-sm text-slate-400 leading-relaxed">{step.d}</p>
+              <h3 className="mt-2 text-xl font-semibold text-foreground">{step.t}</h3>
+              <p className="mt-3 text-sm text-muted leading-relaxed">{step.d}</p>
               {i < 3 && (
                 <div className="hidden md:block absolute top-1/2 -right-2 w-4 h-px bg-gradient-to-r from-white/20 to-transparent" />
               )}
@@ -143,16 +143,16 @@ export default async function HomePage() {
               <GlassCard className="h-full">
                 <div className="flex items-start justify-between gap-4">
                   <div>
-                    <div className="text-xs uppercase tracking-widest text-slate-400">{cs.type} · {cs.year}</div>
-                    <h3 className="mt-2 text-xl font-semibold text-white group-hover:text-cyan-300 transition-colors">{cs.client}</h3>
-                    <p className="mt-2 text-sm text-slate-400">{cs.agency}</p>
+                    <div className="text-xs uppercase tracking-widest text-muted">{cs.type} · {cs.year}</div>
+                    <h3 className="mt-2 text-xl font-semibold text-foreground group-hover:text-cyan-300 transition-colors">{cs.client}</h3>
+                    <p className="mt-2 text-sm text-muted">{cs.agency}</p>
                   </div>
                   <div className="text-right">
                     <div className="text-3xl md:text-4xl font-semibold text-gradient-gold">{cs.amount}</div>
-                    <div className="text-[10px] uppercase tracking-widest text-slate-500 mt-1">awarded</div>
+                    <div className="text-[10px] uppercase tracking-widest text-muted mt-1">awarded</div>
                   </div>
                 </div>
-                <p className="mt-4 text-sm text-slate-300 line-clamp-2 leading-relaxed">{cs.challenge}</p>
+                <p className="mt-4 text-sm text-muted line-clamp-2 leading-relaxed">{cs.challenge}</p>
                 <div className="mt-6 flex items-center gap-2 text-xs text-cyan-300 font-medium">
                   Read the case study <span className="transition-transform group-hover:translate-x-1">→</span>
                 </div>
@@ -164,16 +164,16 @@ export default async function HomePage() {
 
       {/* RESPONSIBLE AI */}
       <Section>
-        <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-ink-900 to-black p-10 md:p-14">
+        <div className="relative overflow-hidden rounded-3xl border border-black/10 dark:border-white/10 bg-gradient-to-br from-ink-900 to-black p-10 md:p-14">
           <div className="absolute inset-0 grid-lines opacity-20 pointer-events-none" aria-hidden />
           <div className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-cyan-glow/10 blur-3xl" aria-hidden />
           <div className="relative grid md:grid-cols-2 gap-10 items-center">
             <div>
               <Eyebrow>Responsible AI</Eyebrow>
-              <h2 className="mt-4 text-3xl md:text-5xl font-semibold text-white leading-tight">
+              <h2 className="mt-4 text-3xl md:text-5xl font-semibold text-foreground leading-tight">
                 Ethical AI. Human expertise. <span className="text-gradient-brand">Uncompromising security.</span>
               </h2>
-              <p className="mt-4 text-slate-300 leading-relaxed">
+              <p className="mt-4 text-muted leading-relaxed">
                 We never route your sensitive information to offshore tools like DeepSeek. GMA uses only proven,
                 U.S.-based AI partners — always intentionally, always transparently, always to enhance (not replace)
                 human judgment.
@@ -191,8 +191,8 @@ export default async function HomePage() {
                 { t: "Client data ownership", d: "Your IP stays yours." },
               ].map((f) => (
                 <div key={f.t} className="glass rounded-2xl p-5">
-                  <div className="text-sm font-semibold text-white">{f.t}</div>
-                  <div className="mt-2 text-xs text-slate-400 leading-relaxed">{f.d}</div>
+                  <div className="text-sm font-semibold text-foreground">{f.t}</div>
+                  <div className="mt-2 text-xs text-muted leading-relaxed">{f.d}</div>
                 </div>
               ))}
             </div>
@@ -215,8 +215,8 @@ export default async function HomePage() {
             <Link key={ind.slug} href={`/industries/${ind.slug}`} className="group">
               <GlassCard className="h-full">
                 <div className="text-3xl">{ind.icon}</div>
-                <h3 className="mt-3 text-base font-semibold text-white">{ind.name}</h3>
-                <p className="mt-2 text-xs text-slate-400 leading-relaxed line-clamp-2">{ind.blurb}</p>
+                <h3 className="mt-3 text-base font-semibold text-foreground">{ind.name}</h3>
+                <p className="mt-2 text-xs text-muted leading-relaxed line-clamp-2">{ind.blurb}</p>
               </GlassCard>
             </Link>
           ))}
@@ -235,11 +235,11 @@ export default async function HomePage() {
             <div key={i} className="glass rounded-2xl p-8 flex flex-col justify-between">
               <div>
                 <div className="text-3xl text-cyan-300 leading-none">&ldquo;</div>
-                <p className="mt-4 text-slate-200 leading-relaxed">{t.quote}</p>
+                <p className="mt-4 text-muted leading-relaxed">{t.quote}</p>
               </div>
-              <div className="mt-6 pt-6 border-t border-white/5">
-                <div className="text-sm font-semibold text-white">{t.author}</div>
-                <div className="text-xs text-slate-400 mt-1">{t.role}</div>
+              <div className="mt-6 pt-6 border-t border-black/5 dark:border-white/5">
+                <div className="text-sm font-semibold text-foreground">{t.author}</div>
+                <div className="text-xs text-muted mt-1">{t.role}</div>
               </div>
             </div>
           ))}
@@ -261,11 +261,11 @@ export default async function HomePage() {
             <Link key={r.slug} href={`/resources/${r.slug}`} className="group">
               <GlassCard className="h-full flex flex-col">
                 <div className="text-[11px] uppercase tracking-widest text-cyan-300">{r.category}</div>
-                <h3 className="mt-3 text-lg font-semibold text-white group-hover:text-cyan-300 transition-colors leading-tight">
+                <h3 className="mt-3 text-lg font-semibold text-foreground group-hover:text-cyan-300 transition-colors leading-tight">
                   {r.title}
                 </h3>
-                <p className="mt-3 text-sm text-slate-400 leading-relaxed line-clamp-3">{r.excerpt}</p>
-                <div className="mt-6 pt-4 border-t border-white/5 text-xs text-slate-500 flex justify-between">
+                <p className="mt-3 text-sm text-muted leading-relaxed line-clamp-3">{r.excerpt}</p>
+                <div className="mt-6 pt-4 border-t border-black/5 dark:border-white/5 text-xs text-muted flex justify-between">
                   <span>{new Date(r.date).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}</span>
                   <span>{r.readMinutes} min read</span>
                 </div>

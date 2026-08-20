@@ -4,6 +4,7 @@ import { Inter, Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { SiteHeader } from "@/components/site/site-header";
 import { SiteFooter } from "@/components/site/site-footer";
+import { ThemeProvider } from "@/components/theme-provider";
 import { site } from "@/lib/content";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
@@ -53,14 +54,16 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     })),
   };
   return (
-    <html lang="en" className={`${inter.variable} ${display.variable} ${mono.variable}`}>
+    <html lang="en" className={`${inter.variable} ${display.variable} ${mono.variable}`} suppressHydrationWarning>
       <body className="antialiased">
         <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-white focus:text-black focus:px-4 focus:py-2 focus:rounded">
           Skip to main content
         </a>
-        <SiteHeader />
-        <main id="main">{children}</main>
-        <SiteFooter />
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <SiteHeader />
+          <main id="main">{children}</main>
+          <SiteFooter />
+        </ThemeProvider>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
