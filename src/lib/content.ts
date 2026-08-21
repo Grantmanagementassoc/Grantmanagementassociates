@@ -2661,24 +2661,28 @@ export const team = [
     role: "Chief of Staff",
     bio: "Danielle has sixteen years of grant experience and won over $300M in grants in a number of different areas, including infrastructure, transportation, housing, public safety, natural disaster funding, education, alternative fuels, and others. She manages GMA’s grant teams and draws from our 58 grant specialists, including fourteen Ph.D.s. Danielle is also a project manager on many of GMA’s most difficult grant applications. Ms. Sotelo holds a BA in International Studies with an emphasis in Political Science and a certificate in Dispute Resolution from Pepperdine University.",
     initials: "DS",
+    image: '/images/team/danielle.svg',
   },
   {
     name: "Brad Zerbe",
     role: "Senior Funding Strategist",
     bio: "Brad Zerbe has over thirty years of experience in grant writing, fundraising, lending, and business consulting. He is the former political director for the nation’s largest PAC, and finance director for the chairman of the U.S. Senate Finance Committee. He is a former registered federal, state, and state procurement lobbyist. He has worked for three of the nation’s five largest financial institutions in securities and banking compliance.\n\nBrad has graded grants in national competitions and served as Chairman and CEO of nonprofit organizations and won over $400 million in grants. In college, he competed in debate, finishing second in the nation, and won his school’s highest scholarship for leadership.",
     initials: "BZ",
+    image: '/images/team/brad.svg',
   },
   {
     name: "Sonia Vohnout",
     role: "DOW National Security Expert",
     bio: "A nationally recognized expert in SBIR/STTR programs, commercialization strategy, and non-dilutive funding. With more than 30 years of experience and a strong technical background in systems engineering, she has helped clients secure tens of millions in funding from DOW, Navy, DARPA, NASA, NIH, and other federal agencies. Sonia has assisted more than fifty companies in bringing their technology innovations into the commercial marketplace.",
     initials: "SV",
+    image: '/images/team/sonia.svg',
   },
   {
     name: "Sarthak Tandon",
     role: "Executive Assistant to the CEO",
     bio: "Sarthak Tandon is a highly experienced operations and business support professional with experience in administrative coordination, client communication, workflow management, and executive support. At Grant Management Associates, Sarthak supports operational coordination and client-facing processes while contributing to efficient workflow management and team collaboration. He has worked extensively in process-driven environments, supporting day-to-day operations through structured systems, proactive communication, and detail-oriented execution.",
     initials: "ST",
+    image: '/images/team/sarthak.svg',
   },
 ];
 
