@@ -12,7 +12,24 @@ export async function generateStaticParams() {
 export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
   const resolvedParams = await params;
   const decodedSlug = decodeURIComponent(resolvedParams.slug);
-  const article = articles.find((a) => a.slug === resolvedParams.slug || a.slug === decodedSlug || encodeURIComponent(a.slug) === resolvedParams.slug);
+  let article = articles.find((a) => a.slug === resolvedParams.slug || a.slug === decodedSlug || encodeURIComponent(a.slug) === resolvedParams.slug);
+  
+  if (article && !article.bodyText) {
+    try {
+      const fs = require('fs');
+      const path = require('path');
+      const dataPath = path.join(process.cwd(), 'src', 'data', 'scraped_content.json');
+      if (fs.existsSync(dataPath)) {
+        const content = JSON.parse(fs.readFileSync(dataPath, 'utf-8'));
+        const postUrl = `https://www.grantmanagementassoc.com/post/${article.slug}`;
+        if (content[postUrl] && content[postUrl].bodyText) {
+          article = { ...article, bodyText: content[postUrl].bodyText };
+        }
+      }
+    } catch (e) {
+      console.error("Could not load bodyText from scraped_content.json", e);
+    }
+  }
 
   if (!article) {
     notFound();
@@ -32,7 +49,23 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           <h1 className="text-3xl md:text-5xl font-bold font-display text-foreground leading-tight mb-6">{article.title}</h1>
         </header>
 
-        <div className="prose prose-invert prose-lg prose-cyan max-w-none prose-headings:font-semibold prose-a:text-cyan-400 prose-img:rounded-xl" dangerouslySetInnerHTML={{ __html: article.bodyText || "" }} />
+        {article.bodyText ? (
+          <div className="prose prose-invert prose-lg prose-cyan max-w-none prose-headings:font-semibold prose-a:text-cyan-400 prose-img:rounded-xl" dangerouslySetInnerHTML={{ __html: article.bodyText }} />
+        ) : (
+          <div className="glass p-10 rounded-2xl text-center max-w-2xl mx-auto mt-12">
+            <p className="text-xl text-muted leading-relaxed mb-8">
+              {article.excerpt}
+            </p>
+            <a 
+              href={`https://www.linkedin.com/pulse/${article.slug}`} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="btn-primary inline-flex items-center"
+            >
+              Read full article on LinkedIn <span className="ml-2">→</span>
+            </a>
+          </div>
+        )}
       </div>
     </main>
   );
