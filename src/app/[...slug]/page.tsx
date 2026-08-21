@@ -59,7 +59,7 @@ export default async function ScrapedPage({ params }: { params: Promise<{ slug: 
           
           <header className="mb-12 text-center relative z-10">
             <h1 className="text-4xl md:text-5xl font-bold text-gradient-brand mb-6 font-display drop-shadow-[0_0_15px_rgba(0,240,255,0.4)]">
-              {pageData.title.split('-')[0].trim()}
+              {pageData.title ? pageData.title.split('-')[0].trim() : (slug[slug.length-1] || '').replace(/-/g, ' ')}
             </h1>
             <div className="w-24 h-1 bg-gradient-to-r from-cyan-glow to-sapphire mx-auto rounded-full shadow-[0_0_10px_rgba(0,240,255,0.8)]"></div>
           </header>
@@ -76,7 +76,7 @@ export default async function ScrapedPage({ params }: { params: Promise<{ slug: 
           )}
           
           <div className="prose prose-lg prose-invert prose-headings:font-display prose-headings:text-cyan-glow prose-a:text-sapphire prose-a:link-underline max-w-none relative z-10 text-muted">
-            {pageData.bodyText.split('\n').map((paragraph: string, idx: number) => {
+            {(pageData.bodyText || '').split('\n').map((paragraph: string, idx: number) => {
               if (!paragraph.trim()) return null;
               if (paragraph.length < 50 && paragraph.endsWith(':')) {
                 return <h3 key={idx} className="text-2xl font-semibold mt-10 mb-4 text-foreground drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]">{paragraph}</h3>;
