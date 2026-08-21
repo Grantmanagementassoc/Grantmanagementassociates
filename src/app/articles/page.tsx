@@ -1,14 +1,12 @@
-import { getLinkedInPosts } from "@/lib/linkedin";
+import { articles, categories } from "@/lib/scraped-articles";
 import { ArticlesClient } from "./articles-client";
 
 export const metadata = {
-  title: "Articles & Updates — LinkedIn Feed",
-  description: "Stay up to date with the latest grant opportunities, strategies, and industry trends directly from our CEO's LinkedIn.",
+  title: "Articles — Insights & Updates",
+  description: "Stay up to date with the latest grant opportunities, case studies, and industry trends.",
 };
 
-export default async function ArticlesPage() {
-  const posts = await getLinkedInPosts();
-
+export default function ArticlesPage() {
   return (
     <main className="min-h-screen bg-background text-foreground noise pt-32 pb-16 md:pt-40 md:pb-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
@@ -18,11 +16,11 @@ export default async function ArticlesPage() {
             Insights & Updates
           </h1>
           <p className="text-xl text-muted max-w-2xl mx-auto leading-relaxed">
-            Stay up to date with the latest strategies and industry trends.
+            Stay up to date with the latest grant opportunities, strategies, and industry trends.
           </p>
         </header>
 
-        <ArticlesClient items={posts} />
+        <ArticlesClient items={articles} categories={categories} />
       </div>
     </main>
   );
