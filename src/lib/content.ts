@@ -10,7 +10,6 @@ export const site = {
   url: "https://www.grantmanagementassoc.com",
   founded: 2009,
   totalSecured: "$2.5B+",
-  winRate: "90.2%",
   activePrograms: "10,000+",
   yearsExperience: new Date().getFullYear() - 2009,
   phone: "+1 (877) 462-4636",
@@ -75,7 +74,7 @@ export const primaryNav: NavGroup[] = [
     ],
   },
   { label: "Case Studies", href: "/case-studies" },
-  { label: "Articles", href: "/articles" },
+  { label: "Funding Intelligence", href: "/articles" },
   { label: "Results", href: "/results" },
 ];
 
@@ -101,7 +100,7 @@ export const footerNav = [
   {
     title: "Resources",
     links: [
-      { label: "Articles", href: "/articles" },
+      { label: "Funding Intelligence", href: "/articles" },
       { label: "Case Studies", href: "/case-studies" },
       { label: "Results", href: "/results" },
       { label: "Funding Assessment", href: "/assessment" },
@@ -139,9 +138,8 @@ export const services: Service[] = [
     tagline: "Proposals that win — and awards that get managed to close-out.",
     summary:
       "Full lifecycle proposal development, submission, and post-award management. Our writers average 12+ years of federal experience and pair with subject-matter experts across energy, transportation, healthcare, and tech.",
-    icon: "✍️",
+    icon: "PenTool",
     outcomes: [
-      "90.2% overall win rate across submitted proposals",
       "Compliant, review-ready packages every time",
       "Post-award reporting, drawdowns, and audit support",
     ],
@@ -165,7 +163,7 @@ export const services: Service[] = [
     tagline: "Stop hunting. Start matching.",
     summary:
       "Our AI-powered Grant Matching Engine continuously scans 10,000+ federal, state, and foundation programs and ranks them by fit, competitiveness, and effort-to-award ratio.",
-    icon: "🎯",
+    icon: "Target",
     outcomes: ["Weekly opportunity briefings", "Ranked pipeline by probability", "Deadline calendar with reminders"],
     process: [
       { title: "Profile Build", body: "We ingest your capabilities, geography, project pipeline, and prior award history." },
@@ -185,7 +183,7 @@ export const services: Service[] = [
     tagline: "Know before you commit — save six figures in wasted proposal cost.",
     summary:
       "Our proprietary Key Considerations Analysis evaluates 22 weighted factors and returns a Go, No-Go, or Conditional recommendation in 5 business days.",
-    icon: "🧭",
+    icon: "Compass",
     outcomes: ["Objective, data-driven recommendation", "Competitive landscape scan", "Effort vs. probability score"],
     process: [
       { title: "FOA Decomposition", body: "We break down the funding opportunity against your project's real posture." },
@@ -204,7 +202,7 @@ export const services: Service[] = [
     tagline: "White-label grant services for consultancies, law firms, and CPAs.",
     summary:
       "Extend your service line without hiring a grants team. Refer, co-brand, or fully white-label our capabilities.",
-    icon: "🤝",
+    icon: "Handshake",
     outcomes: ["Recurring referral revenue", "Client retention lift", "Zero delivery overhead"],
     process: [
       { title: "Alliance Design", body: "We map your client base to funding categories where GMA has proven wins." },
@@ -223,7 +221,7 @@ export const services: Service[] = [
     tagline: "10,000+ programs. Your best fit. In minutes.",
     summary:
       "GMA's proprietary matching engine combines semantic understanding of your capabilities with structured scoring across eligibility, geography, budget, and historical award patterns.",
-    icon: "🧠",
+    icon: "Brain",
     outcomes: ["Top-10 ranked opportunities", "Fit + probability scoring", "Explainable match reasoning"],
     process: [
       { title: "Ingest", body: "Your capability statement, project descriptions, and org profile." },
@@ -242,7 +240,7 @@ export const services: Service[] = [
     tagline: "DOE, DOT, USDA, EPA, HHS, DoD, NSF — we speak agency.",
     summary:
       "Deep bench of former federal program officers and career grants professionals. We know how reviewers actually score.",
-    icon: "🏛️",
+    icon: "Landmark",
     outcomes: ["Reviewer-perspective narrative", "Agency-specific formatting", "Successful debriefs when we don't win"],
     process: [
       { title: "Agency Strategy", body: "Which program office, which BAA, which pre-application call — we plot the sequence." },
@@ -259,7 +257,7 @@ export const services: Service[] = [
     tagline: "50 states. Thousands of municipal programs. One partner.",
     summary:
       "State DOTs, energy offices, workforce boards, and local governments each move differently. We've written and won in all 50 states.",
-    icon: "🗺️",
+    icon: "Map",
     outcomes: ["State-specific eligibility", "Local match & partnership structuring", "Legislative & appropriations tracking"],
     process: [
       { title: "State Scan", body: "Current SFY funding calendars and appropriations." },
@@ -276,7 +274,7 @@ export const services: Service[] = [
     tagline: "Retainer-based grant advisory for mission-driven organizations.",
     summary:
       "MissionMomentum by GMA is a monthly retainer program built for nonprofits that need consistent grant capacity without a full-time in-house team.",
-    icon: "💜",
+    icon: "Heart",
     outcomes: ["Steady grant pipeline", "Predictable monthly cost", "Foundation + federal coverage"],
     process: [
       { title: "Onboarding", body: "Program inventory, funder landscape, and 12-month roadmap." },
@@ -303,7 +301,7 @@ export const industries: Industry[] = [
   {
     slug: "clean-energy",
     name: "Clean Energy & Sustainability",
-    icon: "⚡",
+    icon: "Zap",
     blurb: "IRA, IIJA, and DOE Loan Programs — we've navigated them from day one.",
     detail:
       "From utility-scale solar and battery storage to advanced nuclear and hydrogen, GMA has secured hundreds of millions in DOE, DOE-LPO, and EPA funding for developers, utilities, and OEMs.",
@@ -313,7 +311,7 @@ export const industries: Industry[] = [
   {
     slug: "transportation",
     name: "Transportation & Transit",
-    icon: "🚊",
+    icon: "Train",
     blurb: "FTA Low-No, RAISE, CRISI, INFRA, Bridge, Charging & Fueling — done, done, done.",
     detail:
       "GMA has secured transformative funding for transit agencies, ports, rail operators, and airports — including a $117M FTA Low-No award for Golden Empire Transit District.",
@@ -323,7 +321,7 @@ export const industries: Industry[] = [
   {
     slug: "technology",
     name: "Technology & Innovation",
-    icon: "🛰️",
+    icon: "Satellite",
     blurb: "CHIPS, NIST, NSF, DoD RDT&E — bringing federal capital to deep tech.",
     detail:
       "Wireless infrastructure, semiconductors, quantum, AI, and advanced manufacturing. Our JMA Wireless win alone unlocked $43.9M under the CHIPS ecosystem.",
@@ -333,7 +331,7 @@ export const industries: Industry[] = [
   {
     slug: "healthcare",
     name: "Healthcare & Research",
-    icon: "🧬",
+    icon: "Dna",
     blurb: "NIH, HRSA, CDC, BARDA — from R01s to translational research consortia.",
     detail:
       "Academic medical centers, health systems, and biotech ventures rely on GMA for NIH, HRSA, and ARPA-H proposals.",
@@ -343,7 +341,7 @@ export const industries: Industry[] = [
   {
     slug: "education",
     name: "Education",
-    icon: "🎓",
+    icon: "GraduationCap",
     blurb: "ED, NSF, Perkins, TRIO, GEAR UP, and workforce Title I/II.",
     detail: "K-12 districts, community colleges, HBCUs, TCUs, and R1 universities — GMA supports the full spectrum of education funding.",
     stats: [{ label: "Education awards", value: "$95M+" }, { label: "Districts served", value: "40+" }],
@@ -352,7 +350,7 @@ export const industries: Industry[] = [
   {
     slug: "nonprofits",
     name: "Nonprofits & Community Development",
-    icon: "🌱",
+    icon: "Leaf",
     blurb: "MissionMomentum brings predictable grant capacity to lean development teams.",
     detail: "Community-based organizations, CDFIs, and mid-market nonprofits get right-sized advisory that grows with the mission.",
     stats: [{ label: "Nonprofits served", value: "180+" }, { label: "Foundation grants", value: "$62M+" }],
@@ -361,7 +359,7 @@ export const industries: Industry[] = [
   {
     slug: "tribal",
     name: "Tribal Nations",
-    icon: "🪶",
+    icon: "Feather",
     blurb: "BIA, IHS, EPA-IEED, DOE-IE, and Tribal set-asides across IIJA/IRA.",
     detail: "GMA works in partnership with Tribal governments and enterprises with cultural humility, sovereignty-first process, and deep federal expertise.",
     stats: [{ label: "Tribal partners", value: "22" }, { label: "Awards secured", value: "$85M+" }],
@@ -370,7 +368,7 @@ export const industries: Industry[] = [
   {
     slug: "manufacturing",
     name: "Manufacturing",
-    icon: "⚙️",
+    icon: "Cog",
     blurb: "MEP, DOE-AMMTO, DoD IBAS, EDA Build to Scale — capital for U.S. manufacturing.",
     detail: "Our $160M Microporous (MP Assets) DOE award is a signature manufacturing win — repeatable playbook now applied across multiple OEMs.",
     stats: [{ label: "Manufacturing awards", value: "$430M+" }, { label: "Jobs supported", value: "5,200" }],
@@ -2655,7 +2653,7 @@ export const team = [
   {
     name: "Kristin Cooper",
     role: "Founder & Chief Executive Officer",
-    bio: "Kristin Cooper is a funding strategist and government affairs expert with over 30 years of experience helping organizations compete for and win federal, state, and foundation funding. She founded Grant Management Associates in 2009 with a clear mission: bring strategic intelligence to the grant funding process — not just good writing, but the analytical rigor to know which opportunities are worth pursuing and the methodology to win them.\n\nUnder Kristin's leadership, GMA has secured over $2.5 billion in funding for clients with a 90.2% win rate — one of the highest in the industry. She developed GMA's proprietary Key Considerations Analysis (KCA) methodology, which evaluates competitive positioning, organizational fit, and scoring criteria before a single word of a proposal is written. This 'Go/No-Go' approach is why GMA's clients don't waste resources on lost causes — and why they win at an extraordinary rate when they do pursue.\n\nBefore founding GMA, Kristin served as a Full Professor at California State University, Chico's College of Engineering, where she directed grant-funded programs across five colleges. She was the founding director of CSU Chico's Environmental Resource Program and the Concrete Management Program. Kristin also served as a registered federal lobbyist, where she was instrumental in securing a $100 million line item in the Department of Energy budget.\n\nToday, Kristin leads GMA's evolution into a funding intelligence platform — integrating AI-powered grant matching with decades of human strategic judgment. She oversees a team that spans defense, energy, infrastructure, agriculture, and workforce development — the sectors where federal dollars are flowing and where GMA's clients are winning.",
+    bio: "Kristin Cooper is a funding strategist and government affairs expert with over 30 years of experience helping organizations compete for and win federal, state, and foundation funding. She founded Grant Management Associates in 2009 with a clear mission: bring strategic intelligence to the grant funding process — not just good writing, but the analytical rigor to know which opportunities are worth pursuing and the methodology to win them.\n\nUnder Kristin's leadership, GMA has secured over $2.5 billion in funding for clients. She developed GMA's proprietary Key Considerations Analysis (KCA) methodology, which evaluates competitive positioning, organizational fit, and scoring criteria before a single word of a proposal is written. This 'Go/No-Go' approach is why GMA's clients don't waste resources on lost causes — and why they win at an extraordinary rate when they do pursue.\n\nBefore founding GMA, Kristin served as a Full Professor at California State University, Chico's College of Engineering, where she directed grant-funded programs across five colleges. She was the founding director of CSU Chico's Environmental Resource Program and the Concrete Management Program. Kristin also served as a registered federal lobbyist, where she was instrumental in securing a $100 million line item in the Department of Energy budget.\n\nToday, Kristin leads GMA's evolution into a funding intelligence platform — integrating AI-powered grant matching with decades of human strategic judgment. She oversees a team that spans defense, energy, infrastructure, agriculture, and workforce development — the sectors where federal dollars are flowing and where GMA's clients are winning.",
     initials: "KC",
   },
   {

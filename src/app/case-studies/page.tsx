@@ -13,21 +13,20 @@ export default function CaseStudiesPage() {
     <>
       <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden noise">
         <BackgroundGrid />
-        <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[900px] h-[900px] rounded-full bg-gold-glow/10 blur-[120px] pointer-events-none" aria-hidden />
+        <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[900px] h-[900px] rounded-full bg-cyan-glow/10 blur-[120px] pointer-events-none" aria-hidden />
         <div className="relative mx-auto max-w-7xl px-6">
           <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Case Studies" }]} />
           <div className="max-w-3xl">
             <Eyebrow>Signature wins</Eyebrow>
             <h1 className="mt-6 text-5xl md:text-7xl font-semibold text-foreground leading-[0.98]">
-              Proven results. <br /><span className="text-gradient-gold">Real impact.</span>
+              Proven results. <br /><span className="text-gradient-brand">Real impact.</span>
             </h1>
             <p className="mt-8 text-lg md:text-xl text-muted leading-relaxed">
               A representative sample of the {site.totalSecured} in federal, state, and foundation funding GMA has secured for clients since {site.founded}.
             </p>
           </div>
-          <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
             <Stat value={site.totalSecured} label="Total secured" />
-            <Stat value={site.winRate} label="Win rate" />
             <Stat value="500+" label="Clients served" />
             <Stat value={`${site.yearsExperience}+`} label="Years" />
           </div>

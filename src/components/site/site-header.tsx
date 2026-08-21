@@ -28,7 +28,7 @@ export function SiteHeader() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-300 ${
         scrolled ? "glass-strong border-b border-black/5 dark:border-white/5" : "bg-transparent"
       }`}
     >
@@ -99,7 +99,7 @@ export function SiteHeader() {
       </div>
 
       {mobileOpen && (
-        <div className="lg:hidden bg-background border-t border-black/5 dark:border-glass-border max-h-[80vh] overflow-y-auto">
+        <div className="lg:hidden bg-[#0a0a0c] border-t border-white/10 max-h-[80vh] overflow-y-auto shadow-2xl relative z-[110]">
           <div className="px-6 py-4 space-y-1">
             {primaryNav.map((item) => (
               <div key={item.label} className="border-b border-black/5 dark:border-black/5 dark:border-white/5 last:border-0 py-2">

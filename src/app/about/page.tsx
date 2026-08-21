@@ -57,9 +57,8 @@ export default function AboutPage() {
 
       {/* STATS */}
       <Section>
-        <div className="glass rounded-3xl p-10 md:p-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="glass rounded-3xl p-10 md:p-14 grid gap-8 sm:grid-cols-3">
           <Stat value={site.totalSecured} label="Total funding secured" />
-          <Stat value={site.winRate} label="Proposal win rate" />
           <Stat value={`${site.yearsExperience}+`} label={`Years since ${site.founded}`} />
           <Stat value="500+" label="Organizations served" />
         </div>
@@ -92,7 +91,7 @@ export default function AboutPage() {
       <Section>
         <SectionTitle
           eyebrow="Leadership"
-          title={<>The team behind <span className="text-gradient-brand">the win rate</span>.</>}
+          title={<>The team behind <span className="text-gradient-brand">the strategy</span>.</>}
           subtitle="Former federal program officers, PhDs, and lifelong grants professionals."
         />
         <div className="mt-16 flex flex-col items-center">

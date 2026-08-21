@@ -4,6 +4,7 @@ import { LogoTicker } from "@/components/site/logo-ticker";
 import { services, industries, caseStudies, resources, testimonials, site } from "@/lib/content";
 import { db } from "@/db";
 import { sql } from "drizzle-orm";
+import * as Icons from "lucide-react";
 
 export default async function HomePage() {
   const featuredStudies = caseStudies.slice(0, 4);
@@ -30,8 +31,7 @@ export default async function HomePage() {
             <p className="mt-8 text-lg md:text-xl text-muted max-w-2xl leading-relaxed animate-fade-up" style={{ animationDelay: "120ms" }}>
               GMA has helped organizations secure over{" "}
               <span className="text-foreground font-medium">{site.totalSecured}</span> in federal, state, and foundation
-              funding since {site.founded} — with a{" "}
-              <span className="text-foreground font-medium">{site.winRate}</span> win rate on submitted proposals.
+              funding since {site.founded}.
             </p>
 
             <div className="mt-10 flex flex-wrap items-center justify-center gap-3 animate-fade-up" style={{ animationDelay: "220ms" }}>
@@ -39,9 +39,8 @@ export default async function HomePage() {
               <Link href="/case-studies" className="btn-secondary">See how we win</Link>
             </div>
 
-            <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 w-full max-w-4xl">
+            <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 w-full max-w-3xl mx-auto">
               <Stat value={site.totalSecured} label="Secured for clients" />
-              <Stat value={site.winRate} label="Win rate" />
               <Stat value={site.activePrograms} label="Programs tracked" />
               <Stat value={`${site.yearsExperience}+`} label="Years in practice" />
             </div>
@@ -74,7 +73,12 @@ export default async function HomePage() {
             <div className="glass card-hover rounded-3xl p-8 md:p-10 h-full flex flex-col justify-between relative overflow-hidden">
               <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-sapphire/15 blur-3xl pointer-events-none" aria-hidden />
               <div className="relative">
-                <div className="text-4xl">{services[0].icon}</div>
+                <div className="text-cyan-400">
+                  {(() => {
+                    const IconComponent = Icons[services[0].icon as keyof typeof Icons] as React.ElementType;
+                    return IconComponent ? <IconComponent size={40} strokeWidth={1.5} /> : null;
+                  })()}
+                </div>
                 <h3 className="mt-6 text-3xl md:text-4xl font-semibold text-foreground">{services[0].title}</h3>
                 <p className="mt-4 text-muted max-w-lg leading-relaxed">{services[0].summary}</p>
               </div>
@@ -84,20 +88,25 @@ export default async function HomePage() {
             </div>
           </Link>
 
-          {services.slice(1, 5).map((s) => (
-            <Link key={s.slug} href={`/services/${s.slug}`} className="group">
-              <GlassCard className="h-full flex flex-col justify-between">
-                <div>
-                  <div className="text-2xl">{s.icon}</div>
-                  <h3 className="mt-4 text-lg font-semibold text-foreground">{s.title}</h3>
-                  <p className="mt-2 text-sm text-muted leading-relaxed line-clamp-3">{s.tagline}</p>
-                </div>
+          {services.slice(1, 5).map((s) => {
+            const IconComponent = Icons[s.icon as keyof typeof Icons] as React.ElementType;
+            return (
+              <Link key={s.slug} href={`/services/${s.slug}`} className="group">
+                <GlassCard className="h-full flex flex-col justify-between">
+                  <div>
+                    <div className="text-cyan-400">
+                      {IconComponent && <IconComponent size={28} strokeWidth={1.5} />}
+                    </div>
+                    <h3 className="mt-4 text-lg font-semibold text-foreground">{s.title}</h3>
+                    <p className="mt-2 text-sm text-muted leading-relaxed line-clamp-3">{s.tagline}</p>
+                  </div>
                 <div className="mt-4 text-xs text-cyan-300 font-medium flex items-center gap-1">
                   Learn more <span className="transition-transform group-hover:translate-x-1">→</span>
                 </div>
               </GlassCard>
             </Link>
-          ))}
+            );
+          })}
         </div>
       </Section>
 
@@ -105,7 +114,7 @@ export default async function HomePage() {
       <Section>
         <SectionTitle
           eyebrow="Methodology"
-          title={<>A repeatable process behind a <span className="text-gradient-brand">90.2% win rate</span>.</>}
+          title={<>A repeatable process for <span className="text-gradient-brand">consistent success</span>.</>}
           subtitle="Every engagement follows a disciplined four-phase methodology refined across 15+ years and thousands of submissions."
         />
         <div className="mt-14 grid gap-4 md:grid-cols-4">
@@ -214,20 +223,25 @@ export default async function HomePage() {
           <Link href="/industries" className="btn-ghost">All industries →</Link>
         </div>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {industries.slice(0, 8).map((ind) => (
-            <Link key={ind.slug} href={`/industries/${ind.slug}`} className="group">
-              <GlassCard className="h-full">
-                <div className="text-3xl">{ind.icon}</div>
-                <h3 className="mt-3 text-base font-semibold text-foreground">{ind.name}</h3>
-                <p className="mt-2 text-xs text-muted leading-relaxed line-clamp-2">{ind.blurb}</p>
-              </GlassCard>
-            </Link>
-          ))}
+          {industries.slice(0, 8).map((ind) => {
+            const IconComponent = Icons[ind.icon as keyof typeof Icons] as React.ElementType;
+            return (
+              <Link key={ind.slug} href={`/industries/${ind.slug}`} className="group">
+                <GlassCard className="h-full">
+                  <div className="text-cyan-400">
+                    {IconComponent && <IconComponent size={32} strokeWidth={1.5} />}
+                  </div>
+                  <h3 className="mt-3 text-base font-semibold text-foreground">{ind.name}</h3>
+                  <p className="mt-2 text-xs text-muted leading-relaxed line-clamp-2">{ind.blurb}</p>
+                </GlassCard>
+              </Link>
+            );
+          })}
         </div>
       </Section>
 
       {/* TESTIMONIALS */}
-      <section className="py-24 md:py-32 overflow-hidden">
+      <section className="py-16 md:py-24 overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 mb-14">
           <SectionTitle
             eyebrow="What clients say"
@@ -259,7 +273,7 @@ export default async function HomePage() {
       </section>
 
       {/* LATEST INSIGHTS */}
-      <Section>
+      <Section className="!py-12 md:!py-16">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
           <SectionTitle
             eyebrow="Insights"
@@ -288,7 +302,7 @@ export default async function HomePage() {
       </Section>
 
       {/* FAQ */}
-      <Section>
+      <Section className="!py-12 md:!py-16">
         <div className="grid md:grid-cols-[1fr_1.4fr] gap-12">
           <div>
             <SectionTitle eyebrow="FAQ" title="Answers before you ask." />
