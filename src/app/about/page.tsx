@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Section, SectionTitle, Eyebrow, GlassCard, Stat, CTACard, Breadcrumbs, BackgroundGrid } from "@/components/site/ui";
 import { site, team, timeline } from "@/lib/content";
 
@@ -99,8 +100,8 @@ export default function AboutPage() {
           <div className="w-full max-w-xl relative">
             <GlassCard className="flex flex-col relative z-10 border-cyan-500/30 shadow-[0_0_30px_rgba(0,240,255,0.1)]">
               <div className="flex items-center gap-4">
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-cyan-glow to-sapphire flex items-center justify-center text-xl font-bold text-white shadow-lg">
-                  {team[0].initials}
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-cyan-glow to-sapphire flex items-center justify-center text-xl font-bold text-white shadow-lg overflow-hidden shrink-0">
+                  <Image src={team[0].image || ""} alt={team[0].name} width={64} height={64} className="object-cover w-full h-full" />
                 </div>
                 <div>
                   <div className="text-xl font-bold text-foreground">{team[0].name}</div>
@@ -126,8 +127,8 @@ export default function AboutPage() {
             {team.slice(1).map((m) => (
               <GlassCard key={m.name} className="flex flex-col relative z-10 hover:border-cyan-500/30 transition-colors">
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-glow/20 to-sapphire/20 flex items-center justify-center text-base font-semibold text-foreground border border-glass-border">
-                    {m.initials}
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-glow/20 to-sapphire/20 flex items-center justify-center text-base font-semibold text-foreground border border-glass-border overflow-hidden shrink-0">
+                    <Image src={m.image || ""} alt={m.name} width={48} height={48} className="object-cover w-full h-full" />
                   </div>
                   <div>
                     <div className="font-semibold text-foreground">{m.name}</div>

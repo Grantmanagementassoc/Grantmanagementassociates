@@ -42,6 +42,11 @@ export function ArticlesClient({ items, categories }: { items: Article[]; catego
           <Link href={`/articles/${post.slug}`} key={idx} className="block group">
             <article className="glass h-full rounded-2xl overflow-hidden flex flex-col transition-all duration-300 relative group-hover:border-cyan-400/30">
               <div className="p-8 flex-grow flex flex-col relative z-20">
+                {post.image && (
+                  <div className="w-full h-48 mb-6 rounded-xl overflow-hidden relative border border-white/5 shrink-0">
+                    <img src={post.image} alt={post.title} className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" />
+                  </div>
+                )}
                 <div className="text-xs uppercase tracking-widest text-cyan-300 font-semibold mb-4">{post.category}</div>
                 <h2 className="text-xl font-semibold text-foreground group-hover:text-cyan-300 transition-colors duration-300 mb-3">
                   {post.title}
