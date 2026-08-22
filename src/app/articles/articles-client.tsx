@@ -42,12 +42,16 @@ export function ArticlesClient({ items, categories }: { items: Article[]; catego
           <Link href={`/articles/${post.slug}`} key={idx} className="block group">
             <article className="glass h-full rounded-2xl overflow-hidden flex flex-col transition-all duration-300 relative group-hover:border-cyan-400/30">
               <div className="p-8 flex-grow flex flex-col relative z-20">
-                {post.image && (
-                  <div className="w-full h-48 mb-6 rounded-xl overflow-hidden relative border border-white/5 shrink-0">
+                {(post.image && !post.image.includes('fallback.svg') && !post.image.includes('media.licdn.com')) ? (
+                  <div className="w-full h-48 mb-6 rounded-xl overflow-hidden relative border border-white/5 shrink-0 bg-black/20">
                     <img src={post.image} alt={post.title} className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" />
                   </div>
+                ) : (
+                  <div className="w-full h-48 mb-6 rounded-xl overflow-hidden relative border border-white/5 shrink-0 bg-gradient-to-br from-cyan-900/40 to-blue-900/20 flex items-center justify-center">
+                    <div className="w-16 h-16 rounded-full border-2 border-cyan-500/20 border-t-cyan-400 animate-spin opacity-50"></div>
+                  </div>
                 )}
-                <div className="text-xs uppercase tracking-widest text-cyan-300 font-semibold mb-4">{post.category}</div>
+                <div className="text-xs uppercase tracking-widest text-cyan-500 dark:text-cyan-300 font-semibold mb-4">{post.category}</div>
                 <h2 className="text-xl font-semibold text-foreground group-hover:text-cyan-300 transition-colors duration-300 mb-3">
                   {post.title}
                 </h2>
