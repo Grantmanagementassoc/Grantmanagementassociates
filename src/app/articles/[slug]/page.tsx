@@ -44,26 +44,43 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           <span className="mr-2">←</span> Back to Articles
         </Link>
         
+        <div className="mb-12 flex justify-between items-center border-b border-black/10 dark:border-white/10 pb-6">
+          <div className="text-sm font-semibold tracking-widest uppercase text-cyan-500 dark:text-cyan-300">
+            {article.category}
+          </div>
+          {article.linkedinUrl && (
+            <a 
+              href={article.linkedinUrl} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="btn-primary text-sm shadow-lg hover:shadow-cyan-500/25"
+            >
+              Read on LinkedIn <span className="ml-1">→</span>
+            </a>
+          )}
+        </div>
+        
         <header className="mb-12">
-          <div className="text-sm font-semibold tracking-widest uppercase text-cyan-300 mb-4">{article.category}</div>
           <h1 className="text-3xl md:text-5xl font-bold font-display text-foreground leading-tight mb-6">{article.title}</h1>
         </header>
 
         {article.bodyText ? (
-          <div className="prose prose-invert prose-lg prose-cyan max-w-none prose-headings:font-semibold prose-a:text-cyan-400 prose-img:rounded-xl" dangerouslySetInnerHTML={{ __html: article.bodyText }} />
+          <div className="prose prose-invert max-w-none w-full prose-headings:font-semibold prose-a:text-cyan-500 dark:prose-a:text-cyan-400 prose-img:rounded-xl prose-img:shadow-xl prose-p:leading-relaxed prose-p:text-lg dark:text-gray-300 text-gray-800" dangerouslySetInnerHTML={{ __html: article.bodyText }} />
         ) : (
-          <div className="glass p-10 rounded-2xl text-center max-w-2xl mx-auto mt-12">
+          <div className="glass p-10 rounded-2xl text-center max-w-2xl mx-auto mt-12 shadow-xl">
             <p className="text-xl text-muted leading-relaxed mb-8">
               {article.excerpt}
             </p>
-            <a 
-              href={`https://www.linkedin.com/pulse/${article.slug}`} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="btn-primary inline-flex items-center"
-            >
-              Read full article on LinkedIn <span className="ml-2">→</span>
-            </a>
+            {article.linkedinUrl && (
+              <a 
+                href={article.linkedinUrl} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="btn-primary inline-flex items-center"
+              >
+                Read full article on LinkedIn <span className="ml-2">→</span>
+              </a>
+            )}
           </div>
         )}
       </div>
