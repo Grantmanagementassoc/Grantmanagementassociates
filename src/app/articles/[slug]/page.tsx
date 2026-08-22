@@ -65,7 +65,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         </header>
 
         {article.bodyText ? (
-          <div className="prose prose-invert max-w-none w-full prose-headings:font-semibold prose-a:text-cyan-500 dark:prose-a:text-cyan-400 prose-img:rounded-xl prose-img:shadow-xl prose-p:leading-relaxed prose-p:text-lg dark:text-gray-300 text-gray-800" dangerouslySetInnerHTML={{ __html: article.bodyText }} />
+          <div className="prose dark:prose-invert max-w-none w-full prose-headings:font-semibold prose-a:text-cyan-600 dark:prose-a:text-cyan-400 prose-img:rounded-xl prose-img:shadow-xl prose-p:leading-relaxed prose-p:text-lg dark:text-gray-300 text-gray-800" dangerouslySetInnerHTML={{ __html: article.bodyText }} />
         ) : (
           <div className="glass p-10 rounded-2xl text-center max-w-2xl mx-auto mt-12 shadow-xl">
             <p className="text-xl text-muted leading-relaxed mb-8">
