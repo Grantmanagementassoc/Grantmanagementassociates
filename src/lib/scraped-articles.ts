@@ -7,6 +7,7 @@ export type Article = {
   image?: string;
   date?: string;
   author?: string;
+  linkedinUrl?: string;
 };
 
 export const categories: string[] = [
