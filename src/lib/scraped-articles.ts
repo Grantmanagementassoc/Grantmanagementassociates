@@ -30,7 +30,7 @@ export const categories: string[] = [
 export const articles: Article[] = [
   {
     "slug": "yocha-dehe-wintun-nations-investment-madison-blueprint-kristin-cooper-q3kyc",
-    "image": "https://media.licdn.com/mediaD5612AQGw-vYcSFWo9g",
+    "image": "/images/blog/yocha-dehe-wintun-nations-investment-madison-blueprint-kristin-cooper-q3kyc.jpg",
     "title": "Yocha Dehe Wintun Nation’s Investment in Madison: A Blueprint for Community-Driven Water Funding Success",
     "category": "Water & Environmental Infrastructure",
     "date": "2026-01-22",
@@ -41,7 +41,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "why-should-you-reconsider-partnering-national-labs-cooper-carter",
-    "image": "/images/blog/fallback.svg",
+    "image": "/images/blog/why-should-you-reconsider-partnering-national-labs-cooper-carter.jpg",
     "title": "Why should you reconsider partnering with National Labs",
     "category": "General / Grant Management",
     "date": "2015-02-18",
@@ -52,7 +52,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "usda-under-trump-kristin-cooper-carter",
-    "image": "/images/blog/fallback.svg",
+    "image": "/images/blog/usda-under-trump-kristin-cooper-carter.jpg",
     "title": "USDA Under Trump",
     "category": "Agriculture & Food",
     "date": "2018-01-24",
@@ -63,7 +63,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "us-army-futures-command-ai-integration-center-broad-agency-cooper-vca8c",
-    "image": "https://media.licdn.com/mediaD5612AQF1GOrLf2BOlw",
+    "image": "/images/blog/us-army-futures-command-ai-integration-center-broad-agency-cooper-vca8c.jpg",
     "title": "U.S. Army Futures Command AI Integration Center Broad Agency Announcement: Expanding the Frontier of Military AI Research (2024–2029)",
     "category": "Defense & National Security",
     "date": "2025-08-18",
@@ -74,7 +74,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "upcoming-federal-grant-opportunities-springsummer-cooper-carter-rjvdc",
-    "image": "/images/blog/fallback.svg",
+    "image": "/images/blog/upcoming-federal-grant-opportunities-springsummer-cooper-carter-rjvdc.jpg",
     "title": "Upcoming Federal Grant Opportunities: Spring/Summer 2025 Deadlines",
     "category": "Federal Grants, Funding & Policy",
     "date": "2025-04-04",
@@ -85,7 +85,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "unpack-republican-fy-2026-energy-water-draft-budget-leaner-cooper-7huwc",
-    "image": "https://media.licdn.com/mediaD5612AQGTO_JJzIcemg",
+    "image": "/images/blog/unpack-republican-fy-2026-energy-water-draft-budget-leaner-cooper-7huwc.jpg",
     "title": "UNPACK the Republican FY 2026 Energy & Water Draft Budget: Leaner Growth, Strong Infrastructure, and ‘All‑of‑the‑Above’ Energy",
     "category": "Energy, Clean Technology & Critical Minerals",
     "date": "2025-12-05",
@@ -96,7 +96,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "unlocking-growth-everything-you-need-know-california-competes-cooper-xemgc",
-    "image": "https://media.licdn.com/mediaD5612AQH-9EhzwelP9w",
+    "image": "/images/blog/unlocking-growth-everything-you-need-know-california-competes-cooper-xemgc.jpg",
     "title": "Unlocking Growth: Everything You Need to Know About the California Competes Tax Credit",
     "category": "Economic Development & Business Growth",
     "date": "2025-07-16",
@@ -118,7 +118,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "twenty-projects-fifty-two-million-dollars-scoring-rubric-cooper-ehn5c",
-    "image": "https://media.licdn.com/mediaD5612AQGNyCFcGsy8Hw",
+    "image": "/images/blog/twenty-projects-fifty-two-million-dollars-scoring-rubric-cooper-ehn5c.jpg",
     "title": "Twenty Projects, Fifty-Two Million Dollars, and a Scoring Rubric Hiding in Plain Sight\n\nDOE just published what a winning industrial application looks",
     "category": "General / Grant Management",
     "date": "2026-08-10",
@@ -129,7 +129,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "sunshot-program-community-impact-kristin-cooper-carter",
-    "image": "/images/blog/fallback.svg",
+    "image": "/images/blog/sunshot-program-community-impact-kristin-cooper-carter.jpg",
     "title": "SunShot Program-Community Impact",
     "category": "Energy, Clean Technology & Critical Minerals",
     "date": "2016-08-01",
@@ -140,7 +140,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "summary-mckinsey-report-powering-new-era-us-energy-cooper-carter-wwz6c",
-    "image": "/images/blog/fallback.svg",
+    "image": "/images/blog/summary-mckinsey-report-powering-new-era-us-energy-cooper-carter-wwz6c.jpg",
     "title": "Summary of the McKinsey Report: \"Powering a New Era of US Energy Demand\"",
     "category": "Energy, Clean Technology & Critical Minerals",
     "date": "2025-05-05",
@@ -151,7 +151,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "summary-accf-report-implementing-president-trumps-cooper-carter-sy3yc",
-    "image": "/images/blog/fallback.svg",
+    "image": "/images/blog/summary-accf-report-implementing-president-trumps-cooper-carter-sy3yc.jpg",
     "title": "Summary of ACCF Report: \"Implementing President Trump’s Energy Dominance Agenda: Past and Future Role of the Loan Programs Office\"",
     "category": "Energy, Clean Technology & Critical Minerals",
     "date": "2025-05-05",
@@ -173,7 +173,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "solve-real-world-problems-enter-smart-cities-bases-challenge-cooper-5doxc",
-    "image": "/images/blog/fallback.svg",
+    "image": "/images/blog/solve-real-world-problems-enter-smart-cities-bases-challenge-cooper-5doxc.jpg",
     "title": "Solve Real-World Problems: Enter the Smart Cities Smart Bases Challenge",
     "category": "Community & Municipal Infrastructure",
     "date": "2025-06-19",
@@ -194,7 +194,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "seizing-techconnects-8b-critical-technology-challenge-kristin-cooper-egire",
-    "image": "/images/blog/fallback.svg",
+    "image": "/images/blog/seizing-techconnects-8b-critical-technology-challenge-kristin-cooper-egire.jpg",
     "title": "Seizing TechConnect’s $8B+ Critical Technology Challenge: How Grant Management Associates Delivers Winning Proposals",
     "category": "Energy, Clean Technology & Critical Minerals",
     "date": "2025-07-30",
@@ -205,7 +205,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "sbir-sttr-what-can-program-do-you-kristin-cooper-carter",
-    "image": "/images/blog/fallback.svg",
+    "image": "/images/blog/sbir-sttr-what-can-program-do-you-kristin-cooper-carter.jpg",
     "title": "SBIR-STTR What can this program do for you?",
     "category": "Federal Grants, Funding & Policy",
     "date": "2018-04-20",
@@ -216,7 +216,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "sbir-2017-kristin-cooper-carter",
-    "image": "/images/blog/fallback.svg",
+    "image": "/images/blog/sbir-2017-kristin-cooper-carter.jpg",
     "title": "SBIR 2017",
     "category": "Federal Grants, Funding & Policy",
     "date": "2018-01-02",
@@ -238,7 +238,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "rfp-out-your-team-missing-action-now-what-kristin-cooper-w8slc",
-    "image": "/images/blog/fallback.svg",
+    "image": "/images/blog/rfp-out-your-team-missing-action-now-what-kristin-cooper-w8slc.jpg",
     "title": "The RFP Is Out and Your Team Is Missing In Action. Now What?",
     "category": "Federal Grants, Funding & Policy",
     "date": "2025-07-08",
@@ -249,7 +249,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "resilient-funding-uncertain-times-what-weeks-federal-budget-cooper-dhk0c",
-    "image": "https://media.licdn.com/mediaD5612AQF2-CvVFQHxeA",
+    "image": "/images/blog/resilient-funding-uncertain-times-what-weeks-federal-budget-cooper-dhk0c.jpg",
     "title": "Resilient Funding in Uncertain Times: What This Week’s Federal Budget Deal Means for Water, PFAS, and Cybersecurity Grants",
     "category": "Water & Environmental Infrastructure",
     "date": "2026-02-10",
@@ -260,7 +260,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "resilience-bond-what-can-do-your-community-kristin-cooper-carter",
-    "image": "/images/blog/fallback.svg",
+    "image": "/images/blog/resilience-bond-what-can-do-your-community-kristin-cooper-carter.jpg",
     "title": "Resilience Bond - What is it and what can it do for your community?",
     "category": "Emergency Management, Disaster Resilience & Wildfire",
     "date": "2018-11-05",
@@ -271,7 +271,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "regional-centers-food-safety-training-kristin-cooper-carter",
-    "image": "/images/blog/fallback.svg",
+    "image": "/images/blog/regional-centers-food-safety-training-kristin-cooper-carter.jpg",
     "title": "Regional Centers for Food Safety Training",
     "category": "Agriculture & Food",
     "date": "2018-04-20",
@@ -303,7 +303,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "project-vault-kristin-cooper-7fj7c",
-    "image": "https://media.licdn.com/mediaD5612AQE-NVsOn2CrOg",
+    "image": "/images/blog/project-vault-kristin-cooper-7fj7c.jpg",
     "title": "Project Vault",
     "category": "General / Grant Management",
     "date": "2026-02-19",
@@ -314,7 +314,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "positioning-californias-next-wave-building-funding-how-kristin-cooper-fcgyc",
-    "image": "https://media.licdn.com/mediaD5612AQFAo8v77ajkKw",
+    "image": "/images/blog/positioning-californias-next-wave-building-funding-how-kristin-cooper-fcgyc.jpg",
     "title": "Positioning for California’s Next Wave of Building Decarbonization Funding: How Grant Management Associates Can Help You Win",
     "category": "Energy, Clean Technology & Critical Minerals",
     "date": "2026-02-06",
@@ -325,7 +325,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "part-2-whats-actually-your-community-kristin-cooper-aekzf",
-    "image": "https://media.licdn.com/mediaD4D12AQEKefwHQcE6lw",
+    "image": "/images/blog/part-2-whats-actually-your-community-kristin-cooper-aekzf.jpg",
     "title": "Part 2: What’s Actually In It For Your Community?",
     "category": "General / Grant Management",
     "date": "2026-08-05",
@@ -336,7 +336,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "observations-95m-plan-critical-clean-transportation-cooper-carter",
-    "image": "/images/blog/fallback.svg",
+    "image": "/images/blog/observations-95m-plan-critical-clean-transportation-cooper-carter.jpg",
     "title": "Observations about the $95M-Plan for Critical Clean Transportation Investments in California",
     "category": "Transportation & Transit",
     "date": "2019-09-12",
@@ -347,7 +347,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "next-wave-transmission-funding-being-shaped-now-kristin-cooper-u3lzc",
-    "image": "https://media.licdn.com/mediaD4D12AQFKyb9OflwTWw",
+    "image": "/images/blog/next-wave-transmission-funding-being-shaped-now-kristin-cooper-u3lzc.jpg",
     "title": "The Next Wave of Transmission Funding Is Being Shaped Now",
     "category": "Energy, Clean Technology & Critical Minerals",
     "date": "2026-07-30",
@@ -358,7 +358,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "new-funding-food-safety-outreach-program-fsop-kristin-cooper-carter",
-    "image": "/images/blog/fallback.svg",
+    "image": "/images/blog/new-funding-food-safety-outreach-program-fsop-kristin-cooper-carter.jpg",
     "title": "NEW FUNDING - Food Safety Outreach Program (FSOP)",
     "category": "Agriculture & Food",
     "date": "2017-05-02",
@@ -369,7 +369,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "navigating-new-feoc-rules-how-grant-management-helps-clean-cooper-ec2tc",
-    "image": "https://media.licdn.com/mediaD5612AQFcrY6tlP_awg",
+    "image": "/images/blog/navigating-new-feoc-rules-how-grant-management-helps-clean-cooper-ec2tc.jpg",
     "title": "Navigating New FEOC Rules: How Grant Management Associates Helps Clean Energy Projects Stay Compliant and Win Federal Funding",
     "category": "Energy, Clean Technology & Critical Minerals",
     "date": "2026-02-27",
@@ -380,7 +380,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "metal-inside-every-semiconductor-you-own-and-we-running-cooper-ze0hc",
-    "image": "https://media.licdn.com/mediaD5612AQEMIzTfwoSDcQ",
+    "image": "/images/blog/metal-inside-every-semiconductor-you-own-and-we-running-cooper-ze0hc.jpg",
     "title": "The Metal Inside Every Semiconductor You Own-And We are Running Out",
     "category": "Energy, Clean Technology & Critical Minerals",
     "date": "2026-07-22",
@@ -401,7 +401,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "job-creation-rural-america-kristin-cooper-carter",
-    "image": "/images/blog/fallback.svg",
+    "image": "/images/blog/job-creation-rural-america-kristin-cooper-carter.jpg",
     "title": "Job Creation in Rural America",
     "category": "Agriculture & Food",
     "date": "2017-11-02",
@@ -422,7 +422,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "how-turn-big-ideas-bucks-kristin-cooper-carter",
-    "image": "/images/blog/fallback.svg",
+    "image": "/images/blog/how-turn-big-ideas-bucks-kristin-cooper-carter.jpg",
     "title": "How to Turn Big Ideas into Big Bucks",
     "category": "General / Grant Management",
     "date": "2016-09-14",
@@ -433,7 +433,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "holiday-grant-writing-kristin-cooper-carter",
-    "image": "/images/blog/fallback.svg",
+    "image": "/images/blog/holiday-grant-writing-kristin-cooper-carter.jpg",
     "title": "Holiday Grant Writing",
     "category": "Federal Grants, Funding & Policy",
     "date": "2014-12-22",
@@ -455,7 +455,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "gma-insight-usda-grant-rule-changes-senate-farm-bill-draft-cooper-lhrpc",
-    "image": "https://media.licdn.com/mediaD5612AQF9KG4s5jU8jQ",
+    "image": "/images/blog/gma-insight-usda-grant-rule-changes-senate-farm-bill-draft-cooper-lhrpc.jpg",
     "title": "# GMA Insight: USDA Grant Rule Changes and the Senate Farm Bill Draft Raise the Stakes for Farmers and Rural Organizations",
     "category": "Agriculture & Food",
     "date": "2026-07-02",
@@ -466,7 +466,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "gma-helps-agricultural-producers-apply-disaster-kristin-cooper-carter",
-    "image": "/images/blog/fallback.svg",
+    "image": "/images/blog/gma-helps-agricultural-producers-apply-disaster-kristin-cooper-carter.jpg",
     "title": "GMA helps Agricultural Producers apply for Disaster Funding",
     "category": "Agriculture & Food",
     "date": "2018-05-01",
@@ -477,7 +477,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "gfo-25-802-qa-analysis-must-read-kristin-cooper-tw2rc",
-    "image": "/images/blog/fallback.svg",
+    "image": "/images/blog/gfo-25-802-qa-analysis-must-read-kristin-cooper-tw2rc.jpg",
     "title": "GFO 25-802 Q&A Analysis  - MUST READ",
     "category": "Federal Grants, Funding & Policy",
     "date": "2026-03-13",
@@ -488,7 +488,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "fy2026-energy-water-appropriations-act-unpacked-kristin-cooper-xc0lc",
-    "image": "https://media.licdn.com/mediaD5612AQEiLcJzC4o_zA",
+    "image": "/images/blog/fy2026-energy-water-appropriations-act-unpacked-kristin-cooper-xc0lc.jpg",
     "title": "FY2026 Energy and Water Appropriations Act - UNPACKED",
     "category": "Energy, Clean Technology & Critical Minerals",
     "date": "2026-02-24",
@@ -499,7 +499,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "funding-us-cities-kristin-cooper-carter",
-    "image": "/images/blog/fallback.svg",
+    "image": "/images/blog/funding-us-cities-kristin-cooper-carter.jpg",
     "title": "Funding for US Cities",
     "category": "Community & Municipal Infrastructure",
     "date": "2017-07-03",
@@ -510,7 +510,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "funding-release-department-interior-kristin-cooper-djw2c",
-    "image": "https://media.licdn.com/mediaD5612AQG1Ip8o51TGBw",
+    "image": "/images/blog/funding-release-department-interior-kristin-cooper-djw2c.jpg",
     "title": "Funding Release - Department of the Interior",
     "category": "Federal Grants, Funding & Policy",
     "date": "2025-06-27",
@@ -521,7 +521,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "funding-pulse-what-weeks-energy-agenda-means-future-dec-cooper-j9cbc",
-    "image": "https://media.licdn.com/mediaD5612AQGQ0c6YbN6MjA",
+    "image": "/images/blog/funding-pulse-what-weeks-energy-agenda-means-future-dec-cooper-j9cbc.jpg",
     "title": "Funding Pulse: What This Week’s Energy Agenda Means for Future Funding  Dec 1, 2025",
     "category": "Energy, Clean Technology & Critical Minerals",
     "date": "2025-12-01",
@@ -532,7 +532,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "funding-pulse-weekly-grant-policy-outlook-monday-november-cooper-o9fhc",
-    "image": "https://media.licdn.com/mediaD5612AQFe-Kg3Gl9l3Q",
+    "image": "/images/blog/funding-pulse-weekly-grant-policy-outlook-monday-november-cooper-o9fhc.jpg",
     "title": "Funding Pulse: Weekly Grant & Policy Outlook\nMonday, November 24, 2025",
     "category": "Federal Grants, Funding & Policy",
     "date": "2025-11-24",
@@ -543,7 +543,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "funding-pulse-weekly-grant-policy-outlook-kristin-cooper-zx2ic",
-    "image": "https://media.licdn.com/mediaD5612AQHi_sLN6dedGQ",
+    "image": "/images/blog/funding-pulse-weekly-grant-policy-outlook-kristin-cooper-zx2ic.jpg",
     "title": "Funding Pulse: Weekly Grant & Policy Outlook",
     "category": "Federal Grants, Funding & Policy",
     "date": "2025-11-17",
@@ -554,7 +554,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "funding-pulse-weekly-grant-policy-outlook-kristin-cooper-xonmc",
-    "image": "https://media.licdn.com/mediaD5612AQH1OuhAgHfFEA",
+    "image": "/images/blog/funding-pulse-weekly-grant-policy-outlook-kristin-cooper-xonmc.jpg",
     "title": "# Funding Pulse: Weekly Grant & Policy Outlook",
     "category": "Federal Grants, Funding & Policy",
     "date": "2026-07-13",
@@ -565,7 +565,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "funding-pulse-weekly-grant-policy-outlook-kristin-cooper-mtujc",
-    "image": "https://media.licdn.com/mediaD5612AQHgoXfNidJkWA",
+    "image": "/images/blog/funding-pulse-weekly-grant-policy-outlook-kristin-cooper-mtujc.jpg",
     "title": "Funding Pulse: Weekly Grant & Policy Outlook",
     "category": "Federal Grants, Funding & Policy",
     "date": "2026-01-13",
@@ -576,7 +576,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "funding-pulse-weekly-grant-policy-outlook-kristin-cooper-cgsjf",
-    "image": "https://media.licdn.com/mediaD4D12AQGxUXD25V0qFg",
+    "image": "/images/blog/funding-pulse-weekly-grant-policy-outlook-kristin-cooper-cgsjf.jpg",
     "title": "Funding Pulse: Weekly Grant & Policy Outlook",
     "category": "Federal Grants, Funding & Policy",
     "date": "2026-06-05",
@@ -587,7 +587,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "funding-opportunities-community-infrastructure-kristin-cooper-cpzrc",
-    "image": "/images/blog/fallback.svg",
+    "image": "/images/blog/funding-opportunities-community-infrastructure-kristin-cooper-cpzrc.jpg",
     "title": "Funding Opportunities for Community Infrastructure & Development",
     "category": "Community & Municipal Infrastructure",
     "date": "2025-07-24",
@@ -598,7 +598,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "fta-no-lo-grant-deciding-right-now-part-4-kristin-cooper-whnme",
-    "image": "https://media.licdn.com/mediaD4E12AQFcL5fc-dToaw",
+    "image": "/images/blog/fta-no-lo-grant-deciding-right-now-part-4-kristin-cooper-whnme.jpg",
     "title": "The FTA No-Lo Grant: Deciding Right Now (Part 4 of 4)",
     "category": "Transportation & Transit",
     "date": "2026-08-07",
@@ -609,7 +609,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "from-passthrough-power-player-how-states-can-win-next-kristin-cooper-wdqqc",
-    "image": "https://media.licdn.com/mediaD5612AQGd-iWYrabUsQ",
+    "image": "/images/blog/from-passthrough-power-player-how-states-can-win-next-kristin-cooper-wdqqc.jpg",
     "title": "From Pass‑Through to Power Player: How States Can Win in the Next Era of Federal Financial Assistance",
     "category": "Federal Grants, Funding & Policy",
     "date": "2026-02-12",
@@ -620,7 +620,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "fire-funding-fix-wildfire-suppression-kristin-cooper-carter",
-    "image": "/images/blog/fallback.svg",
+    "image": "/images/blog/fire-funding-fix-wildfire-suppression-kristin-cooper-carter.jpg",
     "title": "Fire Funding Fix - Wildfire Suppression",
     "category": "Emergency Management, Disaster Resilience & Wildfire",
     "date": "2018-03-23",
@@ -631,7 +631,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "fema-disaster-recovery-reform-kristin-cooper-carter",
-    "image": "/images/blog/fallback.svg",
+    "image": "/images/blog/fema-disaster-recovery-reform-kristin-cooper-carter.jpg",
     "title": "FEMA Disaster Recovery Reform",
     "category": "Emergency Management, Disaster Resilience & Wildfire",
     "date": "2018-11-05",
@@ -664,7 +664,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "environmental-impact-bonds-kristin-cooper-carter",
-    "image": "/images/blog/fallback.svg",
+    "image": "/images/blog/environmental-impact-bonds-kristin-cooper-carter.jpg",
     "title": "Environmental Impact Bonds",
     "category": "Environmental & Climate Finance",
     "date": "2018-11-05",
@@ -675,7 +675,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "dont-like-bob-did-look-free-money-from-air-force-kristin-cooper-zobfc",
-    "image": "https://media.licdn.com/mediaD5612AQHvhK91MY_sgA",
+    "image": "/images/blog/dont-like-bob-did-look-free-money-from-air-force-kristin-cooper-zobfc.jpg",
     "title": "Don’t be like Bob. Bob Did Not Look at Free Money from the Air Force.",
     "category": "Defense & National Security",
     "date": "2026-07-24",
@@ -686,7 +686,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "does-grid-deployment-office-new-leadership-brings-cooper-carter-oxg5c",
-    "image": "/images/blog/fallback.svg",
+    "image": "/images/blog/does-grid-deployment-office-new-leadership-brings-cooper-carter-oxg5c.jpg",
     "title": "DOE's Grid Deployment Office: New Leadership Brings Renewed Focus on Security and Affordability",
     "category": "Energy, Clean Technology & Critical Minerals",
     "date": "2025-04-03",
@@ -697,7 +697,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "do-miss-your-opportunity-apply-funding-under-following-kristin-cooper-elrbc",
-    "image": "/images/blog/fallback.svg",
+    "image": "/images/blog/do-miss-your-opportunity-apply-funding-under-following-kristin-cooper-elrbc.jpg",
     "title": "Do not miss your opportunity to apply for funding under the following COPS Office Notice of Funding Opportunities!",
     "category": "Community & Municipal Infrastructure",
     "date": "2025-06-17",
@@ -708,7 +708,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "defense-today-kristin-cooper-06a7c",
-    "image": "https://media.licdn.com/mediaD5612AQEw5lAUcjhX9w",
+    "image": "/images/blog/defense-today-kristin-cooper-06a7c.jpg",
     "title": "Defense Today",
     "category": "Defense & National Security",
     "date": "2025-11-24",
@@ -719,7 +719,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "defense-supply-chain-order-grant-applicants-cannot-ignore-cooper-adnff",
-    "image": "https://media.licdn.com/mediaD4D12AQEVQa5eeohusg",
+    "image": "/images/blog/defense-supply-chain-order-grant-applicants-cannot-ignore-cooper-adnff.jpg",
     "title": "The Defense Supply-Chain Order Grant Applicants Cannot Ignore",
     "category": "Defense & National Security",
     "date": "2026-08-05",
@@ -730,7 +730,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "defense-funding-surge-2025-2026-kristin-cooper-vtsdc",
-    "image": "https://media.licdn.com/mediaD5612AQH_dHXW3GdIYw",
+    "image": "/images/blog/defense-funding-surge-2025-2026-kristin-cooper-vtsdc.jpg",
     "title": "DEFENSE FUNDING SURGE 2025-2026",
     "category": "Defense & National Security",
     "date": "2026-01-02",
@@ -741,7 +741,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "critical-minerals-supply-chain-risks-longer-what-latest-cooper-y2khc",
-    "image": "https://media.licdn.com/mediaD5612AQFbZESnhdPMgw",
+    "image": "/images/blog/critical-minerals-supply-chain-risks-longer-what-latest-cooper-y2khc.jpg",
     "title": "Critical Minerals Supply Chain Risks Are No Longer Theoretical — What the Latest IEA Outlook Means for U.S. Companies in 2025 and Beyond",
     "category": "Energy, Clean Technology & Critical Minerals",
     "date": "2025-12-01",
@@ -752,7 +752,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "cops-funding-kristin-cooper-carter-xihgc",
-    "image": "/images/blog/fallback.svg",
+    "image": "/images/blog/cops-funding-kristin-cooper-carter-xihgc.jpg",
     "title": "COPS Funding",
     "category": "Public Safety & Cybersecurity",
     "date": "2025-05-19",
@@ -773,7 +773,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "californias-cerri-program-funding-grid-reliability-community-cooper-7id5c",
-    "image": "/images/blog/fallback.svg",
+    "image": "/images/blog/californias-cerri-program-funding-grid-reliability-community-cooper-7id5c.jpg",
     "title": "California’s CERRI Program: Funding Grid Reliability and Community Resilience",
     "category": "Energy, Clean Technology & Critical Minerals",
     "date": "2025-08-01",
@@ -784,7 +784,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "bus-you-dont-think-until-its-better-part-1-4-kristin-cooper-vhhqf",
-    "image": "https://media.licdn.com/mediaD4D12AQHO9RYBY4e1qw",
+    "image": "/images/blog/bus-you-dont-think-until-its-better-part-1-4-kristin-cooper-vhhqf.jpg",
     "title": "The Bus You Don't Think About: Until It's Better (Part 1 of 4)",
     "category": "Transportation & Transit",
     "date": "2026-08-04",
@@ -795,7 +795,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "beyond-disruption-how-chinas-new-mineral-export-controls-cooper-wbctc",
-    "image": "/images/blog/fallback.svg",
+    "image": "/images/blog/beyond-disruption-how-chinas-new-mineral-export-controls-cooper-wbctc.jpg",
     "title": "Beyond Disruption: How China’s New Mineral Export Controls Are Reshaping Global Strategy",
     "category": "Energy, Clean Technology & Critical Minerals",
     "date": "2025-10-20",
@@ -817,7 +817,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "age-autonomous-flight-kristin-cooper-kjwoc",
-    "image": "https://media.licdn.com/mediaD5612AQGsCFYVbmWylQ",
+    "image": "/images/blog/age-autonomous-flight-kristin-cooper-kjwoc.jpg",
     "title": "The Age of Autonomous Flight",
     "category": "Defense & National Security",
     "date": "2026-07-31",
@@ -828,7 +828,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "affordable-housing-2018-omnibus-spending-kristin-cooper-carter",
-    "image": "/images/blog/fallback.svg",
+    "image": "/images/blog/affordable-housing-2018-omnibus-spending-kristin-cooper-carter.jpg",
     "title": "Affordable Housing 2018 Omnibus Spending",
     "category": "Housing & Community Development",
     "date": "2018-03-22",
@@ -850,7 +850,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "610-million-line-56-days-win-kristin-cooper-ceo-grant-kristin-cooper-q9dvc",
-    "image": "https://media.licdn.com/mediaD5612AQG62BskPWfFfQ",
+    "image": "/images/blog/610-million-line-56-days-win-kristin-cooper-ceo-grant-kristin-cooper-q9dvc.jpg",
     "title": "$610 Million on the Line — and 56 Days to Win It\n\nBy Kristin Cooper, CEO, Grant Management Associates",
     "category": "Federal Grants, Funding & Policy",
     "date": "2026-07-27",
@@ -861,7 +861,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "the-1-25-trillion-trench-why-the-next-infrastructure-fortunes-won-t-come-from-highways",
-    "image": "https://media.licdn.com/mediaD5612AQFEUqUn0KXWHA",
+    "image": "/images/blog/the-1-25-trillion-trench-why-the-next-infrastructure-fortunes-won-t-come-from-highways.jpg",
     "title": "The $1.25 Trillion Trench: Why the Next Infrastructure Fortunes Won't Come From Highways",
     "category": "Transportation & Transit",
     "date": "2026-08-21",
@@ -872,7 +872,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "beyond-disruption-how-china-s-new-mineral-export-controls-are-reshaping-global-strategy",
-    "image": "/images/blog/fallback.svg",
+    "image": "/images/blog/beyond-disruption-how-china-s-new-mineral-export-controls-are-reshaping-global-strategy.jpg",
     "title": "Beyond Disruption: How China’s New Mineral Export Controls Are Reshaping Global Strategy",
     "category": "Energy, Clean Technology & Critical Minerals",
     "date": "2026-08-21",
@@ -893,7 +893,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "curtail-grant-writing-stress",
-    "image": "/images/blog/fallback.svg",
+    "image": "/images/blog/curtail-grant-writing-stress.jpg",
     "title": "Curtail Grant Writing Stress",
     "category": "Federal Grants, Funding & Policy",
     "date": "1970-01-01",
@@ -904,7 +904,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "20141013152952-55517318-numbers-game",
-    "image": "/images/blog/fallback.svg",
+    "image": "/images/blog/20141013152952-55517318-numbers-game.jpg",
     "title": "Numbers Game",
     "category": "General / Grant Management",
     "date": "2014-10-13",
@@ -915,7 +915,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "20141002235221-55517318-grant-writing-success",
-    "image": "/images/blog/fallback.svg",
+    "image": "/images/blog/20141002235221-55517318-grant-writing-success.jpg",
     "title": "Grant Writing Success",
     "category": "Federal Grants, Funding & Policy",
     "date": "2014-10-02",
@@ -926,7 +926,7 @@ export const articles: Article[] = [
   },
   {
     "slug": "125-trillion-trench-why-next-infrastructure-fortunes-wont-cooper-yfvnf",
-    "image": "https://media.licdn.com/mediaD4D12AQEwZbpC2SuASw",
+    "image": "/images/blog/125-trillion-trench-why-next-infrastructure-fortunes-wont-cooper-yfvnf.jpg",
     "title": "The $1.25 Trillion Trench: Why the Next Infrastructure Fortunes Won't Come From Highways",
     "category": "Transportation & Transit",
     "date": "2026-08-05",
