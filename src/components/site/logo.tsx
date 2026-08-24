@@ -16,7 +16,7 @@ export function Logo({ className = "h-10 w-auto" }: { className?: string }) {
         alt="GMA Globe" 
         width={80} 
         height={80} 
-        className="object-contain h-full w-auto drop-shadow-sm" 
+        className="object-contain h-full w-auto" 
         priority
       />
     </div>
