@@ -6,7 +6,7 @@ import { adminSessions, adminUsers } from "@/db/schema";
 import { and, eq, gt } from "drizzle-orm";
 
 const COOKIE = "gma_admin_session";
-export const ALL_PERMISSIONS = ["articles", "submissions", "employees", "tasks"] as const;
+export const ALL_PERMISSIONS = ["submissions", "employees", "tasks"] as const;
 export type Permission = (typeof ALL_PERMISSIONS)[number];
 
 export function hashPassword(password: string) {
