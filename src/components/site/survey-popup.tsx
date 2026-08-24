@@ -161,7 +161,7 @@ export function SurveyPopup() {
       />
       
       {/* Modal */}
-      <div className="relative w-full max-w-2xl max-h-[90vh] flex flex-col glass border border-glass-border rounded-2xl shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+      <div className="relative w-full max-w-2xl max-h-[90vh] flex flex-col bg-background border border-glass-border rounded-2xl shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-200">
         
         {/* Header */}
         <div className="flex items-center justify-between p-6 border-b border-glass-border bg-glass-bg shrink-0">
@@ -210,13 +210,14 @@ export function SurveyPopup() {
               {/* Name */}
               <div className="space-y-2">
                 <label htmlFor="name" className="block text-sm font-medium text-foreground">
-                  Name
+                  Name <span className="text-red-500">*</span>
                 </label>
-                <p className="text-xs text-muted mb-2">Your full name (optional but helpful for personalized outreach).</p>
+                <p className="text-xs text-muted mb-2">Your full name.</p>
                 <input 
                   type="text" 
                   id="name" 
                   name="name"
+                  required
                   placeholder="John Doe"
                   className="w-full bg-black/20 border border-glass-border rounded-lg px-4 py-2.5 text-foreground placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-cyan-500/50"
                 />
@@ -225,13 +226,14 @@ export function SurveyPopup() {
               {/* Organization */}
               <div className="space-y-2">
                 <label htmlFor="organization" className="block text-sm font-medium text-foreground">
-                  Organization
+                  Organization <span className="text-red-500">*</span>
                 </label>
                 <p className="text-xs text-muted mb-2">Your company, agency, tribe, or institution.</p>
                 <input 
                   type="text" 
                   id="organization" 
                   name="organization"
+                  required
                   placeholder="GMA Inc."
                   className="w-full bg-black/20 border border-glass-border rounded-lg px-4 py-2.5 text-foreground placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-cyan-500/50"
                 />
