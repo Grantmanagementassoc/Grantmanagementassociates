@@ -21,7 +21,7 @@ export default async function HomePage() {
         <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[900px] h-[900px] rounded-full bg-sapphire/10 blur-[120px] pointer-events-none" aria-hidden />
         <div className="absolute top-40 right-10 w-72 h-72 rounded-full bg-cyan-glow/10 blur-[80px] pointer-events-none animate-float" aria-hidden />
 
-        <div className="relative mx-auto max-w-7xl px-6">
+        <div className="relative mx-auto max-w-[1600px] px-6">
           <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
             <Eyebrow>AI-Powered Grant Matching · Go/No-Go Strategy · Proposal Execution</Eyebrow>
 
@@ -54,7 +54,7 @@ export default async function HomePage() {
       </section>
 
       {/* CLIENT LOGO TICKER */}
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-[1600px] px-6">
         <p className="text-center text-xs uppercase tracking-widest text-muted mb-6">
           Trusted by organizations at every scale
         </p>
@@ -247,7 +247,7 @@ export default async function HomePage() {
 
       {/* TESTIMONIALS */}
       <section className="py-16 md:py-24 overflow-hidden">
-        <div className="mx-auto max-w-7xl px-6 mb-14">
+        <div className="mx-auto max-w-[1600px] px-6 mb-14">
           <SectionTitle
             eyebrow="What clients say"
             title={<>Trusted at the <span className="text-gradient-brand">highest-stakes moments</span>.</>}

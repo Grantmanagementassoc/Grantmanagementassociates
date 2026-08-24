@@ -29,7 +29,7 @@ export default async function IndustryDetail({ params }: { params: Promise<Param
       <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden noise">
         <BackgroundGrid />
         <div className="absolute -top-40 right-0 w-[700px] h-[700px] rounded-full bg-sapphire/15 blur-[120px] pointer-events-none" aria-hidden />
-        <div className="relative mx-auto max-w-7xl px-6">
+        <div className="relative mx-auto max-w-[1600px] px-6">
           <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Industries", href: "/industries" }, { label: ind.name }]} />
           <div className="max-w-3xl">
             <div className="text-cyan-400">

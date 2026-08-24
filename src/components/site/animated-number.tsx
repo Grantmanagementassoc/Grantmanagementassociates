@@ -23,7 +23,7 @@ export function AnimatedNumber({ value }: { value: string }) {
     const prefix = value.substring(0, value.indexOf(numStr));
     const suffix = value.substring(value.indexOf(numStr) + numStr.length);
     
-    const duration = 2000; // 2 seconds
+    const duration = 1000; // 1 second
     const frames = 60; // 60 frames
     let frame = 0;
     

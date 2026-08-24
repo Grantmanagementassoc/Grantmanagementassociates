@@ -11,7 +11,7 @@ export function SiteFooter() {
   return (
     <footer className="relative mt-32 border-t border-black/5 dark:border-white/5 bg-gradient-to-b from-transparent to-black">
       <div className="absolute inset-x-0 top-0 h-px divider-fade" />
-      <div className="mx-auto max-w-7xl px-6 py-16">
+      <div className="mx-auto max-w-[1600px] px-6 py-16">
         <div className="grid gap-12 lg:grid-cols-[1.4fr_repeat(4,1fr)]">
           <div>
             <Logo className="h-9" />
