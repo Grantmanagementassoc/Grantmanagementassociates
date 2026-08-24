@@ -181,7 +181,7 @@ export default async function HomePage() {
 
       {/* RESPONSIBLE AI */}
       <Section>
-        <div className="relative overflow-hidden rounded-3xl border border-black/10 dark:border-glass-border bg-gradient-to-br from-slate-900 to-black p-10 md:p-14">
+        <div className="relative overflow-hidden rounded-3xl border border-black/10 dark:border-glass-border bg-[#05080f] p-10 md:p-14">
           <div className="absolute inset-0 grid-lines opacity-20 pointer-events-none" aria-hidden />
           <div className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-cyan-glow/10 blur-3xl" aria-hidden />
           <div className="relative grid md:grid-cols-2 gap-10 items-center">
