@@ -5,7 +5,6 @@ import type { ReactNode } from "react";
 
 const nav = [
   { href: "/admin", label: "Overview", icon: "□" },
-  { href: "/admin/articles", label: "Articles", icon: "A" },
   { href: "/admin/submissions", label: "Client submissions", icon: "S" },
   { href: "/admin/employees", label: "Employees & access", icon: "E" },
   { href: "/admin/tasks", label: "Team workload", icon: "T" },
