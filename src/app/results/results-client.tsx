@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { GlassCard } from "@/components/site/ui";
+import { ChevronDown } from "lucide-react";
 import type { CaseStudy } from "@/lib/content";
 import { industries } from "@/lib/content";
 
@@ -33,30 +34,41 @@ export function ResultsClient({ items }: { items: CaseStudy[] }) {
   return (
     <>
       <div className="glass rounded-2xl p-5 grid gap-3 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
-        <input
-          value={q}
-          onChange={(e) => setQ(e.target.value)}
-          placeholder="Search client, agency, or challenge…"
-          className="rounded-full bg-black/5 dark:bg-white/5 border border-glass-border px-4 py-2.5 text-sm text-foreground placeholder:text-muted outline-none focus:border-cyan-400/50"
-        />
-        <select value={industry} onChange={(e) => setIndustry(e.target.value)} className="rounded-full bg-black/5 dark:bg-white/5 border border-glass-border px-4 py-2.5 text-sm text-foreground outline-none focus:border-cyan-400/50">
-          <option value="all" className="bg-background text-foreground">All industries</option>
-          {industries.map((i) => <option key={i.slug} value={i.slug} className="bg-background text-foreground">{i.name}</option>)}
-        </select>
-        <select value={type} onChange={(e) => setType(e.target.value)} className="rounded-full bg-black/5 dark:bg-white/5 border border-glass-border px-4 py-2.5 text-sm text-foreground outline-none focus:border-cyan-400/50">
-          <option value="all" className="bg-background text-foreground">All funding types</option>
-          <option value="Federal" className="bg-background text-foreground">Federal</option>
-          <option value="State" className="bg-background text-foreground">State</option>
-          <option value="Local" className="bg-background text-foreground">Local</option>
-          <option value="Private" className="bg-background text-foreground">Private</option>
-        </select>
-        <select value={range} onChange={(e) => setRange(e.target.value)} className="rounded-full bg-black/5 dark:bg-white/5 border border-glass-border px-4 py-2.5 text-sm text-foreground outline-none focus:border-cyan-400/50">
-          <option value="all" className="bg-background text-foreground">All amounts</option>
-          <option value="sub-1m" className="bg-background text-foreground">Under $1M</option>
-          <option value="1-10m" className="bg-background text-foreground">$1M–$10M</option>
-          <option value="10-100m" className="bg-background text-foreground">$10M–$100M</option>
-          <option value="100m-plus" className="bg-background text-foreground">$100M+</option>
-        </select>
+        <div className="relative">
+          <input
+            value={q}
+            onChange={(e) => setQ(e.target.value)}
+            placeholder="Search client, agency, or challenge…"
+            className="w-full rounded-full bg-black/5 dark:bg-white/5 border border-glass-border px-4 py-3 text-base text-foreground placeholder:text-muted outline-none focus:border-cyan-400/50 transition-colors"
+          />
+        </div>
+        <div className="relative">
+          <select value={industry} onChange={(e) => setIndustry(e.target.value)} className="w-full appearance-none rounded-full bg-black/5 dark:bg-white/5 border border-glass-border px-4 py-3 pr-10 text-base text-foreground outline-none focus:border-cyan-400/50 transition-colors cursor-pointer">
+            <option value="all" className="bg-background text-foreground">All industries</option>
+            {industries.map((i) => <option key={i.slug} value={i.slug} className="bg-background text-foreground">{i.name}</option>)}
+          </select>
+          <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-muted pointer-events-none" />
+        </div>
+        <div className="relative">
+          <select value={type} onChange={(e) => setType(e.target.value)} className="w-full appearance-none rounded-full bg-black/5 dark:bg-white/5 border border-glass-border px-4 py-3 pr-10 text-base text-foreground outline-none focus:border-cyan-400/50 transition-colors cursor-pointer">
+            <option value="all" className="bg-background text-foreground">All funding types</option>
+            <option value="Federal" className="bg-background text-foreground">Federal</option>
+            <option value="State" className="bg-background text-foreground">State</option>
+            <option value="Local" className="bg-background text-foreground">Local</option>
+            <option value="Private" className="bg-background text-foreground">Private</option>
+          </select>
+          <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-muted pointer-events-none" />
+        </div>
+        <div className="relative">
+          <select value={range} onChange={(e) => setRange(e.target.value)} className="w-full appearance-none rounded-full bg-black/5 dark:bg-white/5 border border-glass-border px-4 py-3 pr-10 text-base text-foreground outline-none focus:border-cyan-400/50 transition-colors cursor-pointer">
+            <option value="all" className="bg-background text-foreground">All amounts</option>
+            <option value="sub-1m" className="bg-background text-foreground">Under $1M</option>
+            <option value="1-10m" className="bg-background text-foreground">$1M–$10M</option>
+            <option value="10-100m" className="bg-background text-foreground">$10M–$100M</option>
+            <option value="100m-plus" className="bg-background text-foreground">$100M+</option>
+          </select>
+          <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-muted pointer-events-none" />
+        </div>
       </div>
 
       <div className="mt-4 text-xs text-muted">
