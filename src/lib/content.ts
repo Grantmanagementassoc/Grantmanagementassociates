@@ -64,6 +64,7 @@ export const primaryNav: NavGroup[] = [
       { label: "Federal Grant Consulting", href: "/services/federal", description: "DOE, DOT, USDA, EPA, HHS, DoD and more." },
       { label: "State & Local Support", href: "/services/state-local", description: "Deep bench across all 50 states." },
       { label: "Nonprofit Services", href: "/services/nonprofit", description: "MissionMomentum retainer-based advisory." },
+      { label: "Capital Strategy", href: "/services/capital-strategy", description: "Prepare your organization for successful funding outcomes." },
     ],
   },
   {

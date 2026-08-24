@@ -35,15 +35,15 @@ export default function TeamPage() {
           <div className="w-full max-w-4xl relative">
             <GlassCard className="flex flex-col md:flex-row gap-8 relative z-10 border-cyan-500/30 shadow-[0_0_30px_rgba(0,240,255,0.1)]">
               <div className="flex flex-col items-center md:items-start shrink-0">
-                <div className="w-32 h-32 md:w-40 md:h-40 rounded-2xl bg-gradient-to-br from-cyan-glow to-sapphire flex items-center justify-center text-xl font-bold text-white shadow-lg overflow-hidden">
-                  <Image src={team[0].image || ""} alt={team[0].name} width={160} height={160} className="object-cover w-full h-full" />
+                <div className="w-48 h-48 md:w-64 md:h-64 rounded-3xl bg-gradient-to-br from-cyan-glow to-sapphire flex items-center justify-center text-xl font-bold text-white shadow-[0_0_40px_rgba(0,240,255,0.2)] overflow-hidden">
+                  <Image src={team[0].image || ""} alt={team[0].name} width={256} height={256} className="object-cover object-top w-full h-full" />
                 </div>
-                <div className="mt-6 text-center md:text-left">
-                  <div className="text-2xl font-bold text-foreground">{team[0].name}</div>
-                  <div className="text-sm text-cyan-300 mt-1 font-medium tracking-wide uppercase">{team[0].role}</div>
+                <div className="mt-8 text-center md:text-left">
+                  <div className="text-3xl md:text-4xl font-bold text-foreground">{team[0].name}</div>
+                  <div className="text-lg text-cyan-300 mt-2 font-semibold tracking-wide uppercase">{team[0].role}</div>
                 </div>
               </div>
-              <div className="text-base text-muted leading-relaxed prose prose-invert max-w-none prose-p:my-3 prose-h3:text-cyan-300 prose-h3:text-lg prose-ul:my-2 prose-li:my-1" dangerouslySetInnerHTML={{ __html: team[0].bio }} />
+              <div className="text-lg md:text-xl text-muted leading-relaxed prose prose-invert max-w-none prose-p:my-4 prose-h3:text-cyan-300 prose-h3:text-2xl prose-h3:mt-8 prose-ul:my-4 prose-li:my-2" dangerouslySetInnerHTML={{ __html: team[0].bio }} />
             </GlassCard>
             {/* Vertical trunk line */}
             <div className="hidden lg:block absolute left-1/2 bottom-[-3rem] w-px h-12 bg-gradient-to-b from-cyan-500/50 to-glass-border" />
