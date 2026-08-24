@@ -181,23 +181,23 @@ export default async function HomePage() {
 
       {/* RESPONSIBLE AI */}
       <Section>
-        <div className="relative overflow-hidden rounded-3xl border border-black/10 dark:border-glass-border bg-[#05080f] p-10 md:p-14">
-          <div className="absolute inset-0 grid-lines opacity-20 pointer-events-none" aria-hidden />
+        <div className="relative overflow-hidden rounded-3xl border border-black/10 dark:border-glass-border bg-gradient-to-br from-cyan-50 to-white dark:from-slate-900 dark:to-black p-10 md:p-14">
+          <div className="absolute inset-0 grid-lines opacity-10 dark:opacity-20 pointer-events-none" aria-hidden />
           <div className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-cyan-glow/10 blur-3xl" aria-hidden />
           <div className="relative grid md:grid-cols-2 gap-10 items-center">
             <div>
               <Eyebrow>Responsible AI</Eyebrow>
-              <h2 className="mt-4 text-3xl md:text-5xl font-semibold text-white leading-tight">
+              <h2 className="mt-4 text-3xl md:text-5xl font-semibold text-foreground leading-tight">
                 Ethical AI. Human expertise. <span className="text-gradient-brand">Uncompromising security.</span>
               </h2>
-              <p className="mt-4 text-white/70 leading-relaxed">
+              <p className="mt-4 text-muted leading-relaxed">
                 We never route your sensitive information to offshore tools like DeepSeek. GMA uses only proven,
                 U.S.-based AI partners — always intentionally, always transparently, always to enhance (not replace)
                 human judgment.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <Link href="/responsible-ai" className="btn-primary">Read our AI commitment</Link>
-                <Link href="/contact" className="btn-secondary !text-white !border-white/20 hover:!bg-white/10">Discuss your security concerns</Link>
+                <Link href="/contact" className="btn-secondary">Discuss your security concerns</Link>
               </div>
             </div>
             <div className="grid grid-cols-2 gap-4">
@@ -207,9 +207,9 @@ export default async function HomePage() {
                 { t: "Human-in-the-loop", d: "AI assists — experts decide." },
                 { t: "Client data ownership", d: "Your IP stays yours." },
               ].map((f) => (
-                <div key={f.t} className="bg-white/5 border border-white/10 rounded-2xl p-5 backdrop-blur-md">
-                  <div className="text-sm font-semibold text-white">{f.t}</div>
-                  <div className="mt-2 text-xs text-white/70 leading-relaxed">{f.d}</div>
+                <div key={f.t} className="bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-2xl p-5 backdrop-blur-md">
+                  <div className="text-sm font-semibold text-foreground">{f.t}</div>
+                  <div className="mt-2 text-xs text-muted leading-relaxed">{f.d}</div>
                 </div>
               ))}
             </div>
