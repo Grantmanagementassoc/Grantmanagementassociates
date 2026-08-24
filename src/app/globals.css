@@ -28,9 +28,9 @@
     --bg-main: #ffffff; /* Pure White */
     --text-main: #0f172a;
     --text-muted: #334155;
-    --glass-bg: rgba(255, 255, 255, 0.65);
-    --glass-border: rgba(14, 165, 233, 0.2);
-    --glass-strong-bg: rgba(255, 255, 255, 0.85);
+    --glass-bg: rgba(14, 165, 233, 0.03);
+    --glass-border: rgba(14, 165, 233, 0.15);
+    --glass-strong-bg: rgba(14, 165, 233, 0.05);
     
     --btn-sec-bg: rgba(14, 165, 233, 0.1);
     --btn-sec-border: rgba(14, 165, 233, 0.2);

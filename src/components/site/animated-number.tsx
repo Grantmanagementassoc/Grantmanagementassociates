@@ -1,19 +1,17 @@
 "use client";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { useInView } from "framer-motion";
 
 export function AnimatedNumber({ value }: { value: string }) {
-  const ref = useRef(null);
+  const ref = useRef<HTMLSpanElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-50px" });
-  const [displayValue, setDisplayValue] = useState("0");
   
   useEffect(() => {
-    if (!isInView) return;
+    if (!isInView || !ref.current) return;
     
-    // Extract number and formatting
     const numMatch = value.match(/[\d,.]+/);
     if (!numMatch) {
-      setDisplayValue(value);
+      ref.current.textContent = value;
       return;
     }
     
@@ -23,15 +21,16 @@ export function AnimatedNumber({ value }: { value: string }) {
     const prefix = value.substring(0, value.indexOf(numStr));
     const suffix = value.substring(value.indexOf(numStr) + numStr.length);
     
-    const duration = 1000; // 1 second
-    const frames = 60; // 60 frames
-    let frame = 0;
+    const duration = 1000;
+    let startTime: number | null = null;
     
-    const counter = setInterval(() => {
-      frame++;
-      // Easing function (easeOutExpo) for smoother animation
-      const progress = frame === frames ? 1 : 1 - Math.pow(2, -10 * (frame / frames));
-      const current = progress * targetNum;
+    const update = (currentTime: number) => {
+      if (!startTime) startTime = currentTime;
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      
+      const easedProgress = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
+      const current = easedProgress * targetNum;
       
       let formatted = "";
       if (isFloat) {
@@ -40,16 +39,19 @@ export function AnimatedNumber({ value }: { value: string }) {
         formatted = Math.round(current).toLocaleString();
       }
       
-      setDisplayValue(`${prefix}${formatted}${suffix}`);
-      
-      if (frame === frames) {
-        clearInterval(counter);
-        setDisplayValue(value); // Ensure exact final value
+      if (ref.current) {
+        ref.current.textContent = `${prefix}${formatted}${suffix}`;
       }
-    }, duration / frames);
+      
+      if (progress < 1) {
+        requestAnimationFrame(update);
+      } else if (ref.current) {
+        ref.current.textContent = value;
+      }
+    };
     
-    return () => clearInterval(counter);
+    requestAnimationFrame(update);
   }, [value, isInView]);
 
-  return <span ref={ref}>{displayValue}</span>;
+  return <span ref={ref}>0</span>;
 }

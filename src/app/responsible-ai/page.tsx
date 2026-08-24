@@ -51,7 +51,7 @@ export default function ResponsibleAIPage() {
           eyebrow="How we use AI"
           title={<>AI accelerates <span className="text-gradient-brand">discovery</span> — humans deliver <span className="text-gradient-brand">the narrative</span>.</>}
         />
-        <div className="mt-14 grid md:grid-cols-3 gap-6">
+        <div className="mt-14 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
             { t: "Opportunity matching", d: "Semantic search across 10,000+ live programs to surface high-fit opportunities in minutes, not weeks." },
             { t: "Compliance decomposition", d: "Automatically extract review criteria, formatting rules, and deadlines from complex FOAs." },
@@ -67,7 +67,7 @@ export default function ResponsibleAIPage() {
       </Section>
 
       <Section>
-        <div className="grid md:grid-cols-[1fr_1.4fr] gap-12">
+        <div className="grid lg:grid-cols-[1fr_1.4fr] gap-12">
           <SectionTitle eyebrow="FAQ" title="AI, security & privacy." />
           <Accordion
             items={[
