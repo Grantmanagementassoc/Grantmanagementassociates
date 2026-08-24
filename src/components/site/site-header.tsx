@@ -32,9 +32,9 @@ export function SiteHeader() {
         scrolled ? "border-b border-black/5 dark:border-white/5 shadow-sm" : ""
       }`}
     >
-      <div className="mx-auto max-w-[1440px] px-6 flex items-center justify-between h-16 md:h-20">
+      <div className="mx-auto max-w-[1440px] px-6 flex items-center justify-between h-24 md:h-28">
         <Link href="/" className="flex items-center gap-2 group flex-shrink-0" aria-label="GMA home">
-          <Logo className="w-56 h-10 md:w-64 md:h-12" />
+          <Logo className="w-auto h-20 md:h-24" />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-1" aria-label="Primary">

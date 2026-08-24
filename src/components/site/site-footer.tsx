@@ -15,7 +15,7 @@ export function SiteFooter() {
         <div className="grid gap-12 lg:grid-cols-[1.4fr_repeat(4,1fr)]">
           <div>
             <Link href="/" className="inline-block hover:opacity-80 transition-opacity">
-              <Logo className="h-9" />
+              <Logo className="w-auto h-16 md:h-20" />
             </Link>
             <p className="mt-4 text-sm text-muted leading-relaxed max-w-sm">
               Funding intelligence and strategy since {site.founded}. Over{" "}
