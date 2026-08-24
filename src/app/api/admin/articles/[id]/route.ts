@@ -1,9 +1,0 @@
-import { NextResponse } from "next/server";
-import { db } from "@/db";
-import { articles } from "@/db/schema";
-import { eq } from "drizzle-orm";
-import { requireAdmin } from "@/lib/admin-auth";
-function cleanSlug(v: string) { return v.toLowerCase().trim().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""); }
-type P = { id: string };
-export async function PUT(req: Request, { params }: { params: Promise<P> }) { try { await requireAdmin("articles"); const { id } = await params; const b = await req.json(); const [current] = await db.select().from(articles).where(eq(articles.id, Number(id))).limit(1); if (!current) return NextResponse.json({ error: "Not found" }, { status: 404 }); const status = b.status === "published" ? "published" : "draft"; const [row] = await db.update(articles).set({ slug: cleanSlug(b.slug || b.title), title: b.title, excerpt: b.excerpt, body: b.body, category: b.category || "Insight", author: b.author, featuredImage: b.featuredImage || null, imageAlt: b.imageAlt || null, tags: String(b.tags || "").split(",").map((x:string)=>x.trim()).filter(Boolean), metaTitle: b.metaTitle || null, metaDescription: b.metaDescription || null, status, featured: Boolean(b.featured), publishedAt: status === "published" ? (current.publishedAt || new Date()) : null, updatedAt: new Date() }).where(eq(articles.id, Number(id))).returning(); return NextResponse.json(row); } catch { return NextResponse.json({ error: "Unable to update article." }, { status: 400 }); } }
-export async function DELETE(_: Request, { params }: { params: Promise<P> }) { try { await requireAdmin("articles"); const { id } = await params; await db.delete(articles).where(eq(articles.id, Number(id))); return NextResponse.json({ ok: true }); } catch { return NextResponse.json({ error: "Unauthorized" }, { status: 401 }); } }
