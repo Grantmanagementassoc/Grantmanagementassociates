@@ -391,12 +391,14 @@ export type CaseStudy = {
   industry: string; // slug reference
   amount: string;
   amountNumber: number; // in USD for filtering
-  year: number;
-  type: "Federal" | "State" | "Local" | "Private";
+  year?: number;
+  type: "Federal" | "State" | "Local" | "Private" | string;
   agency: string;
   challenge: string;
-  approach: string;
-  result: string;
+  approach?: string;
+  result?: string;
+  solution?: string;
+  outcome?: string;
   quote?: { text: string; author: string; role: string };
 };
 
