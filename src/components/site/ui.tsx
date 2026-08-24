@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { AnimatedNumber } from "./animated-number";
 
 export function Section({
   children,
@@ -68,7 +69,7 @@ export function Stat({ value, label, sub }: { value: string; label: string; sub?
   return (
     <div className="text-center md:text-left">
       <div className="text-3xl md:text-5xl font-semibold text-foreground">
-        <span className="text-gradient-brand">{value}</span>
+        <span className="text-gradient-brand"><AnimatedNumber value={value} /></span>
       </div>
       <div className="mt-2 text-xs uppercase tracking-widest text-muted">{label}</div>
       {sub && <div className="mt-1 text-xs text-muted">{sub}</div>}
