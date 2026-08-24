@@ -32,18 +32,18 @@ export default function TeamPage() {
       <Section>
         <div className="flex flex-col items-center mt-8">
           {/* CEO Card */}
-          <div className="w-full max-w-xl relative">
-            <GlassCard className="flex flex-col relative z-10 border-cyan-500/30 shadow-[0_0_30px_rgba(0,240,255,0.1)]">
-              <div className="flex items-center gap-4">
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-cyan-glow to-sapphire flex items-center justify-center text-xl font-bold text-white shadow-lg overflow-hidden shrink-0">
-                  <Image src={team[0].image || ""} alt={team[0].name} width={64} height={64} className="object-cover w-full h-full" />
+          <div className="w-full max-w-4xl relative">
+            <GlassCard className="flex flex-col md:flex-row gap-8 relative z-10 border-cyan-500/30 shadow-[0_0_30px_rgba(0,240,255,0.1)]">
+              <div className="flex flex-col items-center md:items-start shrink-0">
+                <div className="w-32 h-32 md:w-40 md:h-40 rounded-2xl bg-gradient-to-br from-cyan-glow to-sapphire flex items-center justify-center text-xl font-bold text-white shadow-lg overflow-hidden">
+                  <Image src={team[0].image || ""} alt={team[0].name} width={160} height={160} className="object-cover w-full h-full" />
                 </div>
-                <div>
-                  <div className="text-xl font-bold text-foreground">{team[0].name}</div>
+                <div className="mt-6 text-center md:text-left">
+                  <div className="text-2xl font-bold text-foreground">{team[0].name}</div>
                   <div className="text-sm text-cyan-300 mt-1 font-medium tracking-wide uppercase">{team[0].role}</div>
                 </div>
               </div>
-              <div className="mt-6 text-sm text-muted leading-relaxed prose prose-invert prose-sm max-w-none prose-p:my-2 prose-h3:text-cyan-300 prose-h3:text-base prose-ul:my-2 prose-li:my-0.5" dangerouslySetInnerHTML={{ __html: team[0].bio }} />
+              <div className="text-base text-muted leading-relaxed prose prose-invert max-w-none prose-p:my-3 prose-h3:text-cyan-300 prose-h3:text-lg prose-ul:my-2 prose-li:my-1" dangerouslySetInnerHTML={{ __html: team[0].bio }} />
             </GlassCard>
             {/* Vertical trunk line */}
             <div className="hidden lg:block absolute left-1/2 bottom-[-3rem] w-px h-12 bg-gradient-to-b from-cyan-500/50 to-glass-border" />
@@ -58,7 +58,7 @@ export default function TeamPage() {
           </div>
 
           {/* Remaining Team Grid */}
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 w-full mt-6 lg:mt-0">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 w-full mt-6 lg:mt-0">
             {team.slice(1).map((m) => (
               <GlassCard key={m.name} className="flex flex-col relative z-10 hover:border-cyan-500/30 transition-colors">
                 <div className="flex items-center gap-4">
@@ -70,7 +70,7 @@ export default function TeamPage() {
                     <div className="text-xs text-cyan-300/80 mt-0.5">{m.role}</div>
                   </div>
                 </div>
-                <div className="mt-4 text-xs text-muted leading-relaxed prose prose-invert prose-sm max-w-none line-clamp-[10] hover:line-clamp-none transition-all prose-p:my-1" dangerouslySetInnerHTML={{ __html: m.bio }} />
+                <div className="mt-4 text-sm text-muted leading-relaxed prose prose-invert prose-base max-w-none line-clamp-[8] hover:line-clamp-none transition-all prose-p:my-2" dangerouslySetInnerHTML={{ __html: m.bio }} />
               </GlassCard>
             ))}
           </div>
