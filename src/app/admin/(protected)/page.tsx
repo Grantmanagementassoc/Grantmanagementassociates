@@ -4,13 +4,19 @@ import { articles, assessmentResponses, contactSubmissions, adminUsers, employee
 import { count, eq } from "drizzle-orm";
 
 export default async function AdminDashboard() {
-  const [[articleCount], [contactCount], [assessmentCount], [staffCount], [taskCount]] = await Promise.all([
-    db.select({ value: count() }).from(articles),
-    db.select({ value: count() }).from(contactSubmissions).where(eq(contactSubmissions.status, "new")),
-    db.select({ value: count() }).from(assessmentResponses).where(eq(assessmentResponses.status, "new")),
-    db.select({ value: count() }).from(adminUsers).where(eq(adminUsers.active, true)),
-    db.select({ value: count() }).from(employeeTasks).where(eq(employeeTasks.status, "todo")),
-  ]);
+  let statsData = [{value: 0}, {value: 0}, {value: 0}, {value: 0}, {value: 0}];
+  try {
+    statsData = await Promise.all([
+      db.select({ value: count() }).from(articles),
+      db.select({ value: count() }).from(contactSubmissions).where(eq(contactSubmissions.status, "new")),
+      db.select({ value: count() }).from(assessmentResponses).where(eq(assessmentResponses.status, "new")),
+      db.select({ value: count() }).from(adminUsers).where(eq(adminUsers.active, true)),
+      db.select({ value: count() }).from(employeeTasks).where(eq(employeeTasks.status, "todo")),
+    ]).then(res => res.map(r => r[0] || { value: 0 }));
+  } catch (error) {
+    console.error("Database connection failed on admin dashboard:", error);
+  }
+  const [articleCount, contactCount, assessmentCount, staffCount, taskCount] = statsData;
   const stats = [
     { label: "Articles", value: articleCount.value, href: "/admin/articles", note: "Published and drafts" },
     { label: "New inquiries", value: contactCount.value, href: "/admin/submissions?type=contact", note: "Require follow-up" },
