@@ -69,18 +69,18 @@ export default async function ServiceDetailPage({ params }: { params: Promise<Pa
         <Section>
           <div className="glass rounded-3xl p-8 md:p-14 border border-glass-border">
             <article 
-              className="prose prose-invert prose-lg max-w-none 
+              className="prose dark:prose-invert prose-lg max-w-none 
               prose-p:text-muted prose-p:leading-relaxed 
               prose-headings:text-foreground prose-headings:font-semibold 
               prose-strong:text-foreground prose-strong:font-semibold 
               prose-ul:grid md:prose-ul:grid-cols-2 prose-ul:gap-6 prose-ul:list-none prose-ul:pl-0 
-              prose-li:bg-white/5 prose-li:border prose-li:border-glass-border prose-li:rounded-2xl prose-li:p-6 prose-li:m-0 hover:prose-li:border-cyan-500/30 prose-li:transition-colors
+              prose-li:bg-black/5 dark:prose-li:bg-white/5 prose-li:border prose-li:border-glass-border prose-li:rounded-2xl prose-li:p-6 prose-li:m-0 hover:prose-li:border-cyan-500/30 prose-li:transition-colors
               prose-table:w-full prose-table:rounded-2xl prose-table:overflow-hidden prose-table:border-collapse prose-table:shadow-lg 
-              prose-th:bg-white/10 prose-th:p-4 prose-th:text-foreground prose-th:font-semibold prose-th:border-glass-border 
+              prose-th:bg-black/5 dark:prose-th:bg-white/10 prose-th:p-4 prose-th:text-foreground prose-th:font-semibold prose-th:border-glass-border 
               prose-td:p-4 prose-td:border-glass-border prose-td:text-muted
               prose-img:rounded-2xl prose-img:shadow-2xl prose-img:border prose-img:border-glass-border
               [&_a.btn-primary]:!bg-gradient-to-r [&_a.btn-primary]:!from-cyan-500 [&_a.btn-primary]:!to-blue-600 [&_a.btn-primary]:!text-white [&_a.btn-primary]:!border-none [&_a.btn-primary]:!shadow-[0_0_20px_rgba(0,240,255,0.4)] hover:[&_a.btn-primary]:!shadow-[0_0_40px_rgba(0,240,255,0.6)] hover:[&_a.btn-primary]:!scale-105 [&_a.btn-primary]:transition-all [&_a.btn-primary]:duration-300 [&_a.btn-primary]:!px-8 [&_a.btn-primary]:!py-4 [&_a.btn-primary]:!rounded-full [&_a.btn-primary]:!font-semibold [&_a.btn-primary]:!tracking-wide
-              [&_a]:not(.btn-primary):text-cyan-400 hover:[&_a]:not(.btn-primary):text-cyan-300"
+              [&_a]:not(.btn-primary):text-cyan-600 hover:[&_a]:not(.btn-primary):text-cyan-500 dark:[&_a]:not(.btn-primary):text-cyan-400 dark:hover:[&_a]:not(.btn-primary):text-cyan-300"
               dangerouslySetInnerHTML={{ __html: service.contentHtml }}
             />
           </div>
