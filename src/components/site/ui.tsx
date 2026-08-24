@@ -147,7 +147,7 @@ export function BackgroundGrid() {
   return (
     <>
       <div className="absolute inset-0 grid-lines opacity-10 dark:opacity-40 pointer-events-none" aria-hidden />
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background pointer-events-none" aria-hidden />
+      <div className="absolute inset-0 bg-gradient-to-b from-white/0 dark:from-black/0 via-white/0 dark:via-black/0 to-white dark:to-[#05080f] pointer-events-none" aria-hidden />
     </>
   );
 }

@@ -9,7 +9,7 @@ export function SiteFooter() {
   const pathname = usePathname();
   if (pathname.startsWith("/admin")) return null;
   return (
-    <footer className="relative mt-32 border-t border-black/5 dark:border-white/5 bg-gradient-to-b from-transparent to-black/5 dark:to-black">
+    <footer className="relative mt-32 border-t border-black/5 dark:border-white/5 bg-gradient-to-b from-white/0 dark:from-black/0 to-black/5 dark:to-black">
       <div className="absolute inset-x-0 top-0 h-px divider-fade" />
       <div className="mx-auto max-w-[1600px] px-6 py-16">
         <div className="grid gap-12 lg:grid-cols-[1.4fr_repeat(4,1fr)]">
