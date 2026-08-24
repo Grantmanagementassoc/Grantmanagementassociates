@@ -48,10 +48,10 @@ function LogoItem({ logo }: { logo: typeof LOGOS[0] }) {
 }
 
 export function LogoTicker() {
-  const items = [...LOGOS, ...LOGOS, ...LOGOS];
+  const items = [...LOGOS, ...LOGOS];
   return (
     <div className="relative overflow-hidden py-8 border-y border-black/5 dark:border-white/5 mask-fade bg-white/50 dark:bg-black/50 backdrop-blur-sm">
-      <div className="flex gap-16 items-center animate-marquee whitespace-nowrap">
+      <div className="flex gap-16 items-center animate-marquee-logos whitespace-nowrap">
         {items.map((logo, i) => (
           <LogoItem key={i} logo={logo} />
         ))}

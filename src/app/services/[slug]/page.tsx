@@ -126,7 +126,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<Pa
 
       <Section>
         <SectionTitle eyebrow="Related services" title="You might also need." />
-        <div className="mt-10 grid gap-5 md:grid-cols-3">
+        <div className="mt-10 grid gap-5 md:grid-cols-4">
           {related.map((r) => (
             <Link key={r.slug} href={`/services/${r.slug}`} className="group">
               <GlassCard className="h-full">

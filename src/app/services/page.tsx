@@ -30,7 +30,7 @@ export default function ServicesPage() {
       </section>
 
       <Section>
-        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
           {services.map((s) => (
             <Link key={s.slug} href={`/services/${s.slug}`} className="group">
               <GlassCard className="h-full flex flex-col">
