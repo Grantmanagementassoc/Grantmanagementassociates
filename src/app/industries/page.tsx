@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Section, SectionTitle, Eyebrow, GlassCard, Breadcrumbs, CTACard, BackgroundGrid } from "@/components/site/ui";
 import { industries } from "@/lib/content";
+import * as Icons from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Industries — Sector-specialist grant expertise",
@@ -33,7 +34,12 @@ export default function IndustriesPage() {
           {industries.map((ind) => (
             <Link key={ind.slug} href={`/industries/${ind.slug}`} className="group">
               <GlassCard className="h-full flex flex-col">
-                <div className="text-3xl">{ind.icon}</div>
+                <div className="text-cyan-400">
+                  {(() => {
+                    const IconComponent = Icons[ind.icon as keyof typeof Icons] as React.ElementType;
+                    return IconComponent ? <IconComponent size={32} strokeWidth={1.5} /> : null;
+                  })()}
+                </div>
                 <h3 className="mt-4 text-lg font-semibold text-foreground group-hover:text-cyan-300 transition-colors">{ind.name}</h3>
                 <p className="mt-2 text-xs text-muted leading-relaxed line-clamp-3">{ind.blurb}</p>
                 <div className="mt-4 pt-3 border-t border-black/5 dark:border-white/5 flex gap-4">

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Section, SectionTitle, Eyebrow, GlassCard, Breadcrumbs, CTACard, BackgroundGrid } from "@/components/site/ui";
 import { industries, caseStudies } from "@/lib/content";
+import * as Icons from "lucide-react";
 
 type Params = { slug: string };
 
@@ -31,7 +32,12 @@ export default async function IndustryDetail({ params }: { params: Promise<Param
         <div className="relative mx-auto max-w-7xl px-6">
           <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Industries", href: "/industries" }, { label: ind.name }]} />
           <div className="max-w-3xl">
-            <div className="text-6xl">{ind.icon}</div>
+            <div className="text-cyan-400">
+              {(() => {
+                const IconComponent = Icons[ind.icon as keyof typeof Icons] as React.ElementType;
+                return IconComponent ? <IconComponent size={64} strokeWidth={1.5} /> : null;
+              })()}
+            </div>
             <h1 className="mt-6 text-4xl md:text-6xl font-semibold text-foreground leading-tight">{ind.name}</h1>
             <p className="mt-6 text-xl text-cyan-300">{ind.blurb}</p>
             <p className="mt-6 text-lg text-muted leading-relaxed">{ind.detail}</p>

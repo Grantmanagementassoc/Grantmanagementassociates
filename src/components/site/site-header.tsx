@@ -91,15 +91,15 @@ export function SiteHeader() {
           aria-label="Toggle menu"
         >
           <div className="w-6 h-5 relative">
-            <span className={`absolute left-0 h-0.5 w-6 bg-white transition-transform ${mobileOpen ? "top-2 rotate-45" : "top-0"}`}></span>
-            <span className={`absolute left-0 top-2 h-0.5 w-6 bg-white transition-opacity ${mobileOpen ? "opacity-0" : "opacity-100"}`}></span>
-            <span className={`absolute left-0 h-0.5 w-6 bg-white transition-transform ${mobileOpen ? "top-2 -rotate-45" : "top-4"}`}></span>
+            <span className={`absolute left-0 h-0.5 w-6 bg-foreground transition-transform ${mobileOpen ? "top-2 rotate-45" : "top-0"}`}></span>
+            <span className={`absolute left-0 top-2 h-0.5 w-6 bg-foreground transition-opacity ${mobileOpen ? "opacity-0" : "opacity-100"}`}></span>
+            <span className={`absolute left-0 h-0.5 w-6 bg-foreground transition-transform ${mobileOpen ? "top-2 -rotate-45" : "top-4"}`}></span>
           </div>
         </button>
       </div>
 
       {mobileOpen && (
-        <div className="lg:hidden bg-[#0a0a0c] border-t border-white/10 max-h-[80vh] overflow-y-auto shadow-2xl relative z-[110]">
+        <div className="lg:hidden bg-background dark:bg-[#0a0a0c] border-t border-black/10 dark:border-white/10 max-h-[80vh] overflow-y-auto shadow-2xl relative z-[110]">
           <div className="px-6 py-4 space-y-1">
             {primaryNav.map((item) => (
               <div key={item.label} className="border-b border-black/5 dark:border-black/5 dark:border-white/5 last:border-0 py-2">

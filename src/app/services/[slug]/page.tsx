@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Section, SectionTitle, Eyebrow, GlassCard, Breadcrumbs, CTACard, Accordion, BackgroundGrid } from "@/components/site/ui";
 import { services } from "@/lib/content";
+import * as Icons from "lucide-react";
 
 type Params = { slug: string };
 
@@ -32,7 +33,12 @@ export default async function ServiceDetailPage({ params }: { params: Promise<Pa
           <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Services", href: "/services" }, { label: service.title }]} />
           <div className="grid md:grid-cols-[1.4fr_1fr] gap-12 items-end">
             <div>
-              <div className="text-5xl">{service.icon}</div>
+            <div className="text-cyan-400">
+              {(() => {
+                const IconComponent = Icons[service.icon as keyof typeof Icons] as React.ElementType;
+                return IconComponent ? <IconComponent size={56} strokeWidth={1.5} /> : null;
+              })()}
+            </div>
               <h1 className="mt-6 text-4xl md:text-6xl font-semibold text-foreground leading-[0.98]">{service.title}</h1>
               <p className="mt-6 text-lg text-cyan-300">{service.tagline}</p>
               <p className="mt-6 text-lg text-muted leading-relaxed max-w-2xl">{service.summary}</p>
@@ -100,7 +106,12 @@ export default async function ServiceDetailPage({ params }: { params: Promise<Pa
           {related.map((r) => (
             <Link key={r.slug} href={`/services/${r.slug}`} className="group">
               <GlassCard className="h-full">
-                <div className="text-2xl">{r.icon}</div>
+                <div className="text-cyan-400">
+                  {(() => {
+                    const IconComponent = Icons[r.icon as keyof typeof Icons] as React.ElementType;
+                    return IconComponent ? <IconComponent size={24} strokeWidth={1.5} /> : null;
+                  })()}
+                </div>
                 <h3 className="mt-3 text-lg font-semibold text-foreground group-hover:text-cyan-300 transition-colors">{r.title}</h3>
                 <p className="mt-2 text-sm text-muted">{r.tagline}</p>
               </GlassCard>

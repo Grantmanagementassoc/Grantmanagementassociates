@@ -100,6 +100,7 @@ export const footerNav = [
   {
     title: "Resources",
     links: [
+      { label: "All Resources", href: "/resources" },
       { label: "Articles", href: "/articles" },
       { label: "Case Studies", href: "/case-studies" },
       { label: "Results", href: "/results" },
@@ -2644,7 +2645,7 @@ export const testimonials = [
   { quote: "We were faced with a daunting DOE application and pulling together a complex proposal on an exceedingly tight timeline. While we had considerable resources in-house, we still turned to GMA. They helped us to navigate the mysteries of the process, focus on what was most important, and stay on track. Diana is an exceptionally talented editor and coach -- responsible, smart, and able to cut to the quick when need be. If we win this grant it will be owing in no mall measure to the guidance we received from GMA.", author: "Tobias Hecht", role: "PhD, Senior Project Manager ReJoule, Inc." },
   { quote: "Successfully competing for grants starts with the application process. Your chances of winning a grant are directly related to the quality of the written applications. If you want to improve your competitive position, there is no better way than to engage Grant Management Associated. They deliver!", author: "Marco Aieta", role: "Senior Vice President Carrollo Engineers" },
   { quote: "Thanks to the GMA Team.  Our completion of the submission package was only possible due to your support.  We appreciate all of your help and encouragement.  We will look forward to working together again in the future.", author: "Steve Barnes", role: "CFO Golden Empire Transit District - (GET) aka - GetBus" },
-  { quote: "I wanted to take a moment to outline just how impactful Grant Management Associates — and specifically Kristin Cooper — have been for us. Her precision, speed, and ability to translate complex funding pathways into actionable strategy have already created real momentum. She’s not just a grant writer; she’s a force multiplier. Every interaction with her reinforces how critical it is to have the right people in the right seats when navigating a competitive funding environment.", author: "Testimony by Darryl K. Seabolt", role: "CEO SeaVest Companies, Inc" },
+  { quote: "I wanted to take a moment to outline just how impactful Grant Management Associates — and specifically Kristin Cooper — have been for us. Her precision, speed, and ability to translate complex funding pathways into actionable strategy have already created real momentum. She’s not just a grant writer; she’s a force multiplier. Every interaction with her reinforces how critical it is to have the right people in the right seats when navigating a competitive funding environment.", author: "Darryl K. Seabolt", role: "CEO SeaVest Companies, Inc" },
 ];
 
 

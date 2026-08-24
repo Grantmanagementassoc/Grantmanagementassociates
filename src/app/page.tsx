@@ -250,12 +250,12 @@ export default async function HomePage() {
           />
         </div>
         
-        <div className="relative w-full overflow-hidden flex">
+        <div className="relative w-full overflow-hidden flex group">
           {/* Fading edges */}
           <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[var(--bg-main)] to-transparent z-10 pointer-events-none" />
           <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-[var(--bg-main)] to-transparent z-10 pointer-events-none" />
           
-          <div className="flex w-max animate-marquee hover:[animation-play-state:paused] gap-6 px-3">
+          <div className="flex w-max animate-marquee group-hover:[animation-play-state:paused] gap-6 px-3">
             {[...testimonials, ...testimonials].map((t, i) => (
               <div key={i} className="glass rounded-2xl p-8 flex flex-col justify-between w-[350px] md:w-[400px] shrink-0">
                 <div>

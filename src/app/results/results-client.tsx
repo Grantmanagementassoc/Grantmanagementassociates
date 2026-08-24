@@ -69,8 +69,8 @@ export function ResultsClient({ items }: { items: CaseStudy[] }) {
             <GlassCard className="h-full">
               <div className="flex items-start justify-between gap-4">
                 <div>
-                  <div className="text-xs uppercase tracking-widest text-muted">{cs.type} · {cs.year}</div>
-                  <h3 className="mt-2 text-xl font-semibold text-foreground group-hover:text-cyan-300">{cs.client}</h3>
+                  <h3 className="text-xl font-bold text-foreground group-hover:text-cyan-300">{cs.client}</h3>
+                  <div className="mt-2 text-xs uppercase tracking-widest text-muted">{cs.type} · {cs.year}</div>
                   <p className="mt-1 text-sm text-muted">{cs.agency}</p>
                 </div>
                 <div className="text-right">
