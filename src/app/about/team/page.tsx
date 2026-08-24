@@ -43,7 +43,7 @@ export default function TeamPage() {
                   <div className="text-sm text-cyan-300 mt-1 font-medium tracking-wide uppercase">{team[0].role}</div>
                 </div>
               </div>
-              <p className="mt-6 text-sm text-muted leading-relaxed whitespace-pre-line">{team[0].bio}</p>
+              <div className="mt-6 text-sm text-muted leading-relaxed prose prose-invert prose-sm max-w-none prose-p:my-2 prose-h3:text-cyan-300 prose-h3:text-base prose-ul:my-2 prose-li:my-0.5" dangerouslySetInnerHTML={{ __html: team[0].bio }} />
             </GlassCard>
             {/* Vertical trunk line */}
             <div className="hidden lg:block absolute left-1/2 bottom-[-3rem] w-px h-12 bg-gradient-to-b from-cyan-500/50 to-glass-border" />
@@ -70,7 +70,7 @@ export default function TeamPage() {
                     <div className="text-xs text-cyan-300/80 mt-0.5">{m.role}</div>
                   </div>
                 </div>
-                <p className="mt-4 text-xs text-muted leading-relaxed line-clamp-[10] hover:line-clamp-none transition-all">{m.bio}</p>
+                <div className="mt-4 text-xs text-muted leading-relaxed prose prose-invert prose-sm max-w-none line-clamp-[10] hover:line-clamp-none transition-all prose-p:my-1" dangerouslySetInnerHTML={{ __html: m.bio }} />
               </GlassCard>
             ))}
           </div>

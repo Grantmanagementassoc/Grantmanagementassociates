@@ -50,20 +50,26 @@ export default async function CaseStudyDetail({ params }: { params: Promise<Para
       </section>
 
       <Section>
-        <div className="grid md:grid-cols-3 gap-6">
-          <GlassCard hover={false}>
-            <Eyebrow>Challenge</Eyebrow>
-            <p className="mt-4 text-muted leading-relaxed">{cs.challenge}</p>
-          </GlassCard>
-          <GlassCard hover={false}>
-            <Eyebrow>Approach</Eyebrow>
-            <p className="mt-4 text-muted leading-relaxed">{cs.approach || cs.solution}</p>
-          </GlassCard>
-          <GlassCard hover={false}>
-            <Eyebrow>Result</Eyebrow>
-            <p className="mt-4 text-muted leading-relaxed">{cs.result || cs.outcome}</p>
-          </GlassCard>
-        </div>
+        {cs.contentHtml ? (
+          <div className="glass rounded-3xl p-8 md:p-14 border border-glass-border">
+            <article className="prose prose-invert prose-lg max-w-none text-muted prose-img:rounded-xl prose-img:shadow-md" dangerouslySetInnerHTML={{ __html: cs.contentHtml }} />
+          </div>
+        ) : (
+          <div className="grid md:grid-cols-3 gap-6">
+            <GlassCard hover={false}>
+              <Eyebrow>Challenge</Eyebrow>
+              <p className="mt-4 text-muted leading-relaxed">{cs.challenge}</p>
+            </GlassCard>
+            <GlassCard hover={false}>
+              <Eyebrow>Approach</Eyebrow>
+              <p className="mt-4 text-muted leading-relaxed">{cs.approach || cs.solution}</p>
+            </GlassCard>
+            <GlassCard hover={false}>
+              <Eyebrow>Result</Eyebrow>
+              <p className="mt-4 text-muted leading-relaxed">{cs.result || cs.outcome}</p>
+            </GlassCard>
+          </div>
+        )}
       </Section>
 
       {cs.quote && (
