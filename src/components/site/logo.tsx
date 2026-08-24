@@ -12,7 +12,7 @@ export function Logo({ className = "h-10 w-auto" }: { className?: string }) {
         </span>
       </div>
       <Image 
-        src="/globe.png" 
+        src="/new-logo.png" 
         alt="GMA Globe" 
         width={80} 
         height={80} 
