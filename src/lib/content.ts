@@ -953,7 +953,6 @@ export const results: CaseStudy[] = [
     amountNumber: 3600000,
     year: 2024,
     type: "State",
-    agency: "California Department of Housing and Community Development - CalHOME Grant",
     agency: "California Department of Housing and Community Development",
     challenge: "Rebuilding mobile homes destroyed in a forest fire in Shasta County.",
     approach: "GMA provided comprehensive grant strategy and application development.",
