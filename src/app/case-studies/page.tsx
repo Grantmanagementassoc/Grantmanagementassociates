@@ -25,9 +25,10 @@ export default function CaseStudiesPage() {
               A representative sample of the {site.totalSecured} in federal, state, and foundation funding GMA has secured for clients since {site.founded}.
             </p>
           </div>
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-8">
             <Stat value={site.totalSecured} label="Total secured" />
             <Stat value="500+" label="Clients served" />
+            <Stat value="60+" label="Experts, including 15 PhDs" />
             <Stat value={`${site.yearsExperience}+`} label="Years" />
           </div>
         </div>

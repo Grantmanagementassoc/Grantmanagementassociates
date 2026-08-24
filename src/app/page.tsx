@@ -43,9 +43,10 @@ export default async function HomePage() {
               <Link href="/case-studies" className="btn-secondary">See how we win</Link>
             </div>
 
-            <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 w-full max-w-3xl mx-auto">
+            <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 w-full max-w-5xl mx-auto">
               <Stat value={site.totalSecured} label="Secured for clients" />
               <Stat value={site.activePrograms} label="Programs tracked" />
+              <Stat value="60+" label="Experts, including 15 PhDs" />
               <Stat value={`${site.yearsExperience}+`} label="Years in practice" />
             </div>
           </div>

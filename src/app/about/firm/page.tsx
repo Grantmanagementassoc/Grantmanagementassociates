@@ -56,10 +56,11 @@ export default function FirmPage() {
 
       {/* STATS */}
       <Section>
-        <div className="glass rounded-3xl p-10 md:p-14 grid gap-8 sm:grid-cols-3">
+        <div className="glass rounded-3xl p-10 md:p-14 grid gap-8 sm:grid-cols-2 md:grid-cols-4">
           <Stat value={site.totalSecured} label="Total funding secured" />
-          <Stat value={`${site.yearsExperience}+`} label={`Years since ${site.founded}`} />
           <Stat value="500+" label="Organizations served" />
+          <Stat value="60+" label="Experts, including 15 PhDs" />
+          <Stat value={`${site.yearsExperience}+`} label={`Years since ${site.founded}`} />
         </div>
       </Section>
 
