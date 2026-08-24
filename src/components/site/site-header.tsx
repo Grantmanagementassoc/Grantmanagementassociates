@@ -28,13 +28,13 @@ export function SiteHeader() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-300 ${
-        scrolled ? "glass-strong border-b border-black/5 dark:border-white/5" : "bg-transparent"
+      className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-300 bg-background ${
+        scrolled ? "border-b border-black/5 dark:border-white/5 shadow-sm" : ""
       }`}
     >
-      <div className="mx-auto max-w-[1440px] px-6 flex items-center justify-between h-20 md:h-24">
+      <div className="mx-auto max-w-[1440px] px-6 flex items-center justify-between h-16 md:h-20">
         <Link href="/" className="flex items-center gap-2 group flex-shrink-0" aria-label="GMA home">
-          <Logo className="w-64 h-12 md:w-72 md:h-14" />
+          <Logo className="w-56 h-10 md:w-64 md:h-12" />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-1" aria-label="Primary">
@@ -49,12 +49,12 @@ export function SiteHeader() {
               >
                 <Link
                   href={item.href ?? "#"}
-                  className={`px-3 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
+                  className={`px-3 py-2 rounded-full text-base font-medium whitespace-nowrap transition-colors ${
                     pathname === item.href ? "text-foreground" : "text-muted hover:text-foreground"
                   }`}
                 >
                   {item.label}
-                  {hasChildren && <span className="ml-1 text-[10px] opacity-60">▾</span>}
+                  {hasChildren && <span className="ml-1 text-[12px] opacity-60">▾</span>}
                 </Link>
                 {hasChildren && openMenu === item.label && (
                   <div className="absolute left-1/2 -translate-x-1/2 top-full pt-3 w-[560px]">
@@ -65,9 +65,9 @@ export function SiteHeader() {
                           href={c.href}
                           className="block rounded-xl p-3 hover:bg-black/5 dark:bg-white/5 transition-colors"
                         >
-                          <div className="text-sm font-medium text-foreground">{c.label}</div>
+                          <div className="text-base font-medium text-foreground">{c.label}</div>
                           {c.description && (
-                            <div className="text-xs text-muted mt-1 leading-relaxed">{c.description}</div>
+                            <div className="text-sm text-muted mt-1 leading-relaxed">{c.description}</div>
                           )}
                         </Link>
                       ))}
@@ -81,8 +81,8 @@ export function SiteHeader() {
 
         <div className="hidden lg:flex items-center gap-2 flex-shrink-0">
           <ThemeToggle />
-          <Link href="/contact" className="btn-secondary text-sm whitespace-nowrap">Contact</Link>
-          <Link href="/assessment" className="btn-primary text-sm whitespace-nowrap">Free Strategy Call →</Link>
+          <Link href="/contact" className="btn-secondary text-base whitespace-nowrap">Contact</Link>
+          <Link href="/assessment" className="btn-primary text-base whitespace-nowrap">Free Strategy Call →</Link>
         </div>
 
         <button
@@ -103,11 +103,11 @@ export function SiteHeader() {
           <div className="px-6 py-4 space-y-1">
             {primaryNav.map((item) => (
               <div key={item.label} className="border-b border-black/5 dark:border-black/5 dark:border-white/5 last:border-0 py-2">
-                <Link href={item.href ?? "#"} className="block py-2 text-foreground font-medium">{item.label}</Link>
+                <Link href={item.href ?? "#"} className="block py-2 text-foreground font-medium text-lg">{item.label}</Link>
                 {item.children && (
                   <div className="pl-3 space-y-1">
                     {item.children.map((c) => (
-                      <Link key={c.href} href={c.href} className="block py-1.5 text-sm text-muted hover:text-foreground">
+                      <Link key={c.href} href={c.href} className="block py-1.5 text-base text-muted hover:text-foreground">
                         {c.label}
                       </Link>
                     ))}
