@@ -44,7 +44,14 @@ export type NavLink = { label: string; href: string; description?: string };
 export type NavGroup = { label: string; href?: string; children?: NavLink[] };
 
 export const primaryNav: NavGroup[] = [
-  { label: "About", href: "/about" },
+  {
+    label: "About Us",
+    href: "/about/firm",
+    children: [
+      { label: "Our Firm", href: "/about/firm", description: "Learn about our mission, values, and history." },
+      { label: "Our Team", href: "/about/team", description: "Meet the experts and leadership behind GMA." },
+    ],
+  },
   {
     label: "Services",
     href: "/services",
@@ -82,7 +89,8 @@ export const footerNav = [
   {
     title: "Company",
     links: [
-      { label: "About Us", href: "/about" },
+      { label: "Our Firm", href: "/about/firm" },
+      { label: "Our Team", href: "/about/team" },
       { label: "Careers", href: "/careers" },
       { label: "Partners", href: "/partners" },
       { label: "Contact", href: "/contact" },
