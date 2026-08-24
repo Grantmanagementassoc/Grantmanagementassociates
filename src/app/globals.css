@@ -49,8 +49,8 @@
   .dark {
     color-scheme: dark;
     --bg-main: #05080f;
-    --text-main: #f1f5f9;
-    --text-muted: #94a3b8;
+    --text-main: #ffffff;
+    --text-muted: #f8fafc;
     --glass-bg: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.015));
     --glass-border: rgba(255,255,255,0.08);
     --glass-strong-bg: linear-gradient(180deg, rgba(10, 15, 23, 0.8), rgba(10, 15, 23, 0.6));
@@ -102,7 +102,7 @@
 
 @layer utilities {
   .text-gradient-brand {
-    background: linear-gradient(90deg, #0ea5e9 0%, #22c55e 100%);
+    background: linear-gradient(90deg, #0284c7 0%, #16a34a 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
