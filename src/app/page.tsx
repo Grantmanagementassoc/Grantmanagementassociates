@@ -5,6 +5,7 @@ import { services, industries, caseStudies, resources, testimonials, site } from
 import { db } from "@/db";
 import { sql } from "drizzle-orm";
 import * as Icons from "lucide-react";
+import { SurveyPopup } from "@/components/site/survey-popup";
 
 export default async function HomePage() {
   const featuredStudies = caseStudies.slice(0, 4);
@@ -12,6 +13,7 @@ export default async function HomePage() {
 
   return (
     <>
+      <SurveyPopup />
       {/* HERO */}
       <section className="relative pt-32 pb-24 md:pt-44 md:pb-32 overflow-hidden noise">
         <BackgroundGrid />
