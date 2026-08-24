@@ -38,7 +38,7 @@ function LogoItem({ logo }: { logo: typeof LOGOS[0] }) {
     <div className="flex items-center justify-center h-12 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all dark:invert dark:opacity-80 dark:hover:opacity-100 dark:hover:invert-0">
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src={`https://logo.clearbit.com/${logo.domain}`}
+        src={`https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://${logo.domain}&size=128`}
         alt={logo.name}
         className="max-h-8 max-w-[140px] object-contain"
         onError={() => setError(true)}

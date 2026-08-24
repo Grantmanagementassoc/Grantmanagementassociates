@@ -1,10 +1,9 @@
-const https = require('https');
 const fs = require('fs');
+const https = require('https');
 const path = require('path');
 
-const logos = [
+const LOGOS = [
   { name: "Berkshire Hathaway Energy", domain: "brkenergy.com" },
-  { name: "MidAmerican Energy", domain: "midamericanenergy.com" },
   { name: "Microporous", domain: "microporous.net" },
   { name: "Mainspring Energy", domain: "mainspringenergy.com" },
   { name: "Batteries Plus", domain: "batteriesplus.com" },
@@ -18,44 +17,38 @@ const logos = [
   { name: "Carollo Engineers", domain: "carollo.com" },
 ];
 
-const targetDir = path.join(__dirname, 'public', 'logos');
-if (!fs.existsSync(targetDir)) {
-  fs.mkdirSync(targetDir, { recursive: true });
-}
+const dir = path.join(__dirname, 'public', 'logos');
+if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
 
-function download(domain, dest) {
+async function download(url, dest) {
   return new Promise((resolve, reject) => {
-    https.get(`https://logo.clearbit.com/${domain}`, (res) => {
+    https.get(url, (res) => {
       if (res.statusCode === 200) {
         const file = fs.createWriteStream(dest);
         res.pipe(file);
-        file.on('finish', () => {
-          file.close(resolve);
-        });
+        file.on('finish', () => { file.close(); resolve(true); });
+      } else if (res.statusCode === 301 || res.statusCode === 302) {
+        download(res.headers.location, dest).then(resolve).catch(reject);
       } else {
-        res.resume(); // consume response data to free up memory
-        reject(new Error(`Failed with status: ${res.statusCode}`));
+        // Fallback to google favicon API if clearbit fails
+        resolve(false);
       }
-    }).on('error', (err) => {
-      reject(err);
-    });
+    }).on('error', reject);
   });
 }
 
 async function main() {
-  const downloaded = [];
-  for (const logo of logos) {
-    const dest = path.join(targetDir, `${logo.domain}.png`);
-    try {
-      await download(logo.domain, dest);
-      console.log(`Downloaded ${logo.domain}`);
-      downloaded.push(logo);
-    } catch (e) {
-      console.log(`Failed ${logo.domain}: ${e.message}`);
+  for (const logo of LOGOS) {
+    const filename = logo.domain.replace('.', '_') + '.png';
+    const dest = path.join(dir, filename);
+    let success = await download(`https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://${logo.domain}&size=128`, dest);
+    
+    if (success) {
+      console.log(`Downloaded ${logo.name}`);
+    } else {
+      console.log(`Failed to download ${logo.name}`);
     }
   }
-  console.log("FINAL LIST:");
-  console.log(JSON.stringify(downloaded, null, 2));
 }
 
 main();

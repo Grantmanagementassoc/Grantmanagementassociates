@@ -43,7 +43,7 @@ export default function FirmPage() {
               { t: "Rigor before effort", d: "Our Key Considerations Framework forces disciplined Go/No-Go decisions before hundreds of hours are spent." },
               { t: "Ethics over shortcuts", d: "No success-based fees. No offshore AI. No shortcuts that put your organization at risk." },
               { t: "Human expertise, AI-augmented", d: "AI accelerates identification and analysis — but every narrative is authored by an experienced human." },
-              { t: "Client-first outcomes", d: "We only recommend what we would pursue if the funding were ours." },
+              { t: "Judgment Over Volume", d: "We focus on the opportunities worth pursuing—and advise against those that aren't." },
             ].map((v) => (
               <GlassCard key={v.t}>
                 <div className="text-sm font-semibold text-foreground">{v.t}</div>
