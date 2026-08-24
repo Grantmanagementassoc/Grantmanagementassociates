@@ -181,8 +181,8 @@ export default async function HomePage() {
 
       {/* RESPONSIBLE AI */}
       <Section>
-        <div className="relative overflow-hidden rounded-3xl border border-black/10 dark:border-glass-border bg-gradient-to-br from-ink-900 to-black p-10 md:p-14">
-          <div className="absolute inset-0 grid-lines opacity-20 pointer-events-none" aria-hidden />
+        <div className="relative overflow-hidden rounded-3xl border border-black/10 dark:border-glass-border bg-gradient-to-br from-cyan-50 to-white dark:from-ink-900 dark:to-black p-10 md:p-14">
+          <div className="absolute inset-0 grid-lines opacity-10 dark:opacity-20 pointer-events-none" aria-hidden />
           <div className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-cyan-glow/10 blur-3xl" aria-hidden />
           <div className="relative grid md:grid-cols-2 gap-10 items-center">
             <div>
@@ -207,9 +207,9 @@ export default async function HomePage() {
                 { t: "Human-in-the-loop", d: "AI assists — experts decide." },
                 { t: "Client data ownership", d: "Your IP stays yours." },
               ].map((f) => (
-                <div key={f.t} className="bg-white/5 border border-white/10 rounded-2xl p-5 backdrop-blur-md">
-                  <div className="text-sm font-semibold text-white">{f.t}</div>
-                  <div className="mt-2 text-xs text-white/70 leading-relaxed">{f.d}</div>
+                <div key={f.t} className="bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-2xl p-5 backdrop-blur-md">
+                  <div className="text-sm font-semibold text-foreground">{f.t}</div>
+                  <div className="mt-2 text-xs text-muted leading-relaxed">{f.d}</div>
                 </div>
               ))}
             </div>
