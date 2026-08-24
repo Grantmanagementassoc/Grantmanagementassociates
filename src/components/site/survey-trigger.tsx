@@ -6,7 +6,7 @@ export function SurveyTrigger() {
       onClick={() => window.dispatchEvent(new Event("open-survey"))}
       className="btn-primary"
     >
-      Take Survey →
+      GMA Funding Interest Survey →
     </button>
   );
 }
