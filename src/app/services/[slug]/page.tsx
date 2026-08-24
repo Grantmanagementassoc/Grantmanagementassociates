@@ -65,7 +65,18 @@ export default async function ServiceDetailPage({ params }: { params: Promise<Pa
         </div>
       </section>
 
-      <Section>
+      {service.contentHtml ? (
+        <Section>
+          <div className="glass rounded-3xl p-8 md:p-14 border border-glass-border">
+            <article 
+              className="prose prose-invert prose-lg max-w-none prose-p:text-muted prose-p:leading-relaxed prose-headings:text-foreground prose-headings:font-semibold prose-a:text-cyan-400 prose-strong:text-foreground prose-strong:font-semibold prose-ul:text-muted prose-li:marker:text-cyan-500 prose-table:text-muted prose-th:text-foreground prose-td:border-glass-border prose-th:border-glass-border"
+              dangerouslySetInnerHTML={{ __html: service.contentHtml }}
+            />
+          </div>
+        </Section>
+      ) : (
+        <>
+          <Section>
         <SectionTitle eyebrow="Our approach" title={<>How we deliver <span className="text-gradient-brand">{service.title}</span>.</>} />
         <div className="mt-14 grid gap-5 md:grid-cols-2">
           {service.process.map((step, i) => (
@@ -99,6 +110,8 @@ export default async function ServiceDetailPage({ params }: { params: Promise<Pa
           </GlassCard>
         </div>
       </Section>
+        </>
+      )}
 
       <Section>
         <SectionTitle eyebrow="Related services" title="You might also need." />
