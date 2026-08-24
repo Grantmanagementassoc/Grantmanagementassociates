@@ -434,7 +434,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-0-spatial-informatics-group-llc",
     client: "Spatial Informatics Group, LLC",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$1,000,000",
     amountNumber: 1000000,
     year: 2024,
@@ -447,7 +447,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-1-science-integration-and-enhancem",
     client: "Science Integration and Enhancement of PyreCast: An Open-source Near-term Wildlife Modeling and Forecasting Platform.",
-    industry: "nonprofits",
+    industry: "healthcare",
     amount: "$1,074,750",
     amountNumber: 1074750,
     year: 2024,
@@ -473,7 +473,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-3-the-qualifying-advanced-energy-p",
     client: "The Qualifying Advanced Energy Project Credit (48C) is a tax credit for investments in advanced energy projects. DOE’s Office of Manufacturing & Energy Supply Chains (MESC) manages the 48C(e) program on behalf of the IRS and Treasury. The tax credits will help accelerate Microporous’ $1.35 billion investment in a state-of-the-art facility in Danville, Virginia dedicated to producing ultra-thin, coated wet-process PE lithium-ion battery separators. This major project will create over 2,000 high-paying jobs and marks one of the largest economic development initiatives in Virginia's history.",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$87,000,000",
     amountNumber: 87000000,
     year: 2024,
@@ -486,7 +486,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-4-establish-a-state-of-the-art-man",
     client: "Establish a state-of-the-art manufacturing facility near Pittsburgh to produce 1,000 linear generators annually, creating 291 construction-related jobs and 600 operations positions.",
-    industry: "nonprofits",
+    industry: "manufacturing",
     amount: "$7,028,640",
     amountNumber: 7028640,
     year: 2024,
@@ -499,7 +499,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-5-the-high-level-objectives-of-thi",
     client: "The high-level objectives of this project are to incentivize consumer participation by eliminating recycling fees, launching innovative educational and proportional campaigns, and focusing on reaching disadvantaged communities to ensure equitable access to this program.",
-    industry: "nonprofits",
+    industry: "education",
     amount: "$1,499,000",
     amountNumber: 1499000,
     year: 2024,
@@ -512,7 +512,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-6-client-won-3-of-4-regions-",
     client: "Client won 3 of 4 regions.",
-    industry: "nonprofits",
+    industry: "technology",
     amount: "$2,497,500",
     amountNumber: 2497500,
     year: 2024,
@@ -525,7 +525,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-7-client-won-3-of-4-regions-",
     client: "Client won 3 of 4 regions.",
-    industry: "nonprofits",
+    industry: "tribal",
     amount: "$4,000,000",
     amountNumber: 4000000,
     year: 2024,
@@ -538,7 +538,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-8-market-innovations-are-needed-to",
     client: "Market innovations are needed to compensate underserved, small-acreage landowners for the public benefits of harvest deferral. The Sky Harvest Landowner Access Project uses a new carbon methodology that addresses landowners' needs while creating a more valuable credit to buyers.",
-    industry: "nonprofits",
+    industry: "technology",
     amount: "$6,120,067",
     amountNumber: 6120067,
     year: 2024,
@@ -551,7 +551,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-9-300-ev-charging-ports-across-the",
     client: "300+ EV charging ports across the 20-county Atlanta region.",
-    industry: "nonprofits",
+    industry: "education",
     amount: "$100,000,000",
     amountNumber: 100000000,
     year: 2024,
@@ -564,7 +564,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-10-produce-world-class-separators-",
     client: "Produce world-class separators for lithium-ion batteries integral to the electric vehicle supply chain.",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$9,000,000",
     amountNumber: 9000000,
     year: 2024,
@@ -577,7 +577,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-11-berkshire-hathaway-energy-compa",
     client: "Berkshire Hathaway Energy Company / MidAmerican Energy Company",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$37,800,000",
     amountNumber: 37800000,
     year: 2024,
@@ -590,7 +590,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-12-fyto",
     client: "FYTO",
-    industry: "nonprofits",
+    industry: "transportation",
     amount: "$2,000,000",
     amountNumber: 2000000,
     year: 2024,
@@ -603,7 +603,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-13-fourth-wave",
     client: "Fourth Wave",
-    industry: "nonprofits",
+    industry: "transportation",
     amount: "$109,000",
     amountNumber: 109000,
     year: 2024,
@@ -616,7 +616,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-14-hoonah-indian-association",
     client: "Hoonah Indian Association",
-    industry: "nonprofits",
+    industry: "tribal",
     amount: "$500,000",
     amountNumber: 500000,
     year: 2024,
@@ -629,7 +629,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-15-ashrae",
     client: "ASHRAE",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$2,800,000",
     amountNumber: 2800000,
     year: 2024,
@@ -642,7 +642,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-16-santa-cruz-metropolitan-transit",
     client: "Santa Cruz Metropolitan Transit District (Metro)",
-    industry: "nonprofits",
+    industry: "transportation",
     amount: "$38,589,000",
     amountNumber: 38589000,
     year: 2024,
@@ -668,7 +668,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-18-cec-bestfit-innovative-charging",
     client: "CEC BESTFIT Innovative Charging Solutions (GFO-20-605)",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$996,060",
     amountNumber: 996060,
     year: 2024,
@@ -681,7 +681,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-19-ca-energy-commission",
     client: "CA Energy Commission",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$200,000",
     amountNumber: 200000,
     year: 2024,
@@ -694,7 +694,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-20-ca-energy-commission",
     client: "CA Energy Commission",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$200,000",
     amountNumber: 200000,
     year: 2024,
@@ -707,7 +707,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-21-u-s-department-of-transportatio",
     client: "U.S. Department of Transportation",
-    industry: "nonprofits",
+    industry: "transportation",
     amount: "$2,331,000",
     amountNumber: 2331000,
     year: 2024,
@@ -720,7 +720,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-22--",
     client: "​​",
-    industry: "nonprofits",
+    industry: "transportation",
     amount: "$500,212",
     amountNumber: 500212,
     year: 2024,
@@ -733,7 +733,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-23-kvie-public-television",
     client: "KVIE Public Television",
-    industry: "nonprofits",
+    industry: "technology",
     amount: "$449,770",
     amountNumber: 449770,
     year: 2024,
@@ -746,7 +746,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-24-california-energy-commission",
     client: "California Energy Commission",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$5,000,000",
     amountNumber: 5000000,
     year: 2024,
@@ -759,7 +759,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-25-ca-energy-commission",
     client: "CA Energy Commission",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$2,000,000",
     amountNumber: 2000000,
     year: 2024,
@@ -772,7 +772,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-26-gfo-20-602",
     client: "GFO-20-602",
-    industry: "nonprofits",
+    industry: "transportation",
     amount: "$6,000,000",
     amountNumber: 6000000,
     year: 2024,
@@ -785,7 +785,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-27-u-s-department-of-commerce",
     client: "U.S. Department of Commerce",
-    industry: "nonprofits",
+    industry: "technology",
     amount: "$599,053",
     amountNumber: 599053,
     year: 2024,
@@ -798,7 +798,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-28-u-s-department-of-labor-employm",
     client: "U.S. Department of Labor Employment and Training Administration (DOL-ETA)",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$14,000,000",
     amountNumber: 14000000,
     year: 2024,
@@ -811,7 +811,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-29-san-joaquin-valley-air-pollutio",
     client: "San Joaquin Valley Air Pollution Control District",
-    industry: "nonprofits",
+    industry: "transportation",
     amount: "$669,941",
     amountNumber: 669941,
     year: 2024,
@@ -824,7 +824,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-30-california-department-of-housin",
     client: "California Department of Housing and Community Development",
-    industry: "nonprofits",
+    industry: "transportation",
     amount: "$65,000",
     amountNumber: 65000,
     year: 2024,
@@ -837,7 +837,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-31-national-credit-union-administr",
     client: "National Credit Union Administration (NCUA)",
-    industry: "nonprofits",
+    industry: "tribal",
     amount: "$500,000",
     amountNumber: 500000,
     year: 2024,
@@ -850,7 +850,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-32-federal-home-loan-bank-board-fh",
     client: "Federal Home Loan Bank Board (FHLB)",
-    industry: "nonprofits",
+    industry: "manufacturing",
     amount: "$2,331,000",
     amountNumber: 2331000,
     year: 2024,
@@ -863,7 +863,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-33-california-test-bed-initiative-",
     client: "California Test Bed Initiative (CalTestBed) 2020",
-    industry: "nonprofits",
+    industry: "education",
     amount: "$211,426",
     amountNumber: 211426,
     year: 2024,
@@ -876,7 +876,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-34-doe-fiscal-year-2020-advanced-v",
     client: "DOE - Fiscal Year 2020 Advanced Vehicle Technologies Research",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$3,443,663",
     amountNumber: 3443663,
     year: 2024,
@@ -889,7 +889,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-35-federal-transit-administration",
     client: "Federal Transit Administration",
-    industry: "nonprofits",
+    industry: "transportation",
     amount: "$6,393,031",
     amountNumber: 6393031,
     year: 2024,
@@ -902,7 +902,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-36-california-energy-commission-gf",
     client: "California Energy Commission – GFO-19-305 – Category 2",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$1,998,215",
     amountNumber: 1998215,
     year: 2024,
@@ -915,7 +915,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-37-shasta-county-community-action-",
     client: "Shasta County Community Action Agency",
-    industry: "nonprofits",
+    industry: "tribal",
     amount: "$3,600,000",
     amountNumber: 3600000,
     year: 2024,
@@ -928,7 +928,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-38-calstart",
     client: "CALSTART",
-    industry: "nonprofits",
+    industry: "transportation",
     amount: "$7,838,113",
     amountNumber: 7838113,
     year: 2024,
@@ -941,7 +941,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-39-nikola-motors",
     client: "Nikola Motors",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$1,700,000",
     amountNumber: 1700000,
     year: 2024,
@@ -954,7 +954,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-40-calstart",
     client: "CALSTART",
-    industry: "nonprofits",
+    industry: "technology",
     amount: "$2,160,000",
     amountNumber: 2160000,
     year: 2024,
@@ -967,7 +967,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-41-aha-macav-power-service-amps-de",
     client: "Aha Macav Power Service (AMPS) Department of Energy - Office of Indian Energy",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$4,460,700",
     amountNumber: 4460700,
     year: 2024,
@@ -980,7 +980,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-43-california-energy-commission-gf",
     client: "California Energy Commission GFP-18-901",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$3,500,000",
     amountNumber: 3500000,
     year: 2024,
@@ -993,7 +993,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-44-california-air-resources-board-",
     client: "California Air Resources Board - Off Road Solicitation",
-    industry: "nonprofits",
+    industry: "education",
     amount: "$16,667,167",
     amountNumber: 16667167,
     year: 2024,
@@ -1006,7 +1006,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-45-california-energy-commission-gf",
     client: "California Energy Commission GFP-18-901",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$3,111,200",
     amountNumber: 3111200,
     year: 2024,
@@ -1019,7 +1019,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-46-ladot",
     client: "LADOT",
-    industry: "nonprofits",
+    industry: "transportation",
     amount: "$3,215,977",
     amountNumber: 3215977,
     year: 2024,
@@ -1032,7 +1032,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-47-ca-department-of-housing-commun",
     client: "CA Department of Housing & Community Development",
-    industry: "nonprofits",
+    industry: "manufacturing",
     amount: "$19,960,000",
     amountNumber: 19960000,
     year: 2024,
@@ -1045,7 +1045,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-48-ladot",
     client: "LADOT",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$32,250,000",
     amountNumber: 32250000,
     year: 2024,
@@ -1058,7 +1058,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-49-shasta-regional-transportation-",
     client: "Shasta Regional Transportation Agency (SRTA)",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$8,600,000",
     amountNumber: 8600000,
     year: 2024,
@@ -1071,7 +1071,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-50-california-air-resources-board-",
     client: "California Air Resources Board CALSTART for Ultra-Low NOx Heavy-Duty Truck Demonstration",
-    industry: "nonprofits",
+    industry: "technology",
     amount: "$7,000,000",
     amountNumber: 7000000,
     year: 2024,
@@ -1084,7 +1084,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-51-ca-energy-commission-gfo-16-604",
     client: "CA Energy Commission GFO 16-604",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$10,000,000",
     amountNumber: 10000000,
     year: 2024,
@@ -1097,7 +1097,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-52-el-dorado-county",
     client: "El Dorado County",
-    industry: "nonprofits",
+    industry: "healthcare",
     amount: "$600,000",
     amountNumber: 600000,
     year: 2024,
@@ -1110,7 +1110,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-53-webber-creek",
     client: "Webber Creek",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$196,500",
     amountNumber: 196500,
     year: 2024,
@@ -1123,7 +1123,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-54-cwpp",
     client: "CWPP",
-    industry: "nonprofits",
+    industry: "transportation",
     amount: "$73,250",
     amountNumber: 73250,
     year: 2024,
@@ -1136,7 +1136,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-55-thermalito-water-and-sewer-dist",
     client: "Thermalito Water and Sewer District",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$2,700,000",
     amountNumber: 2700000,
     year: 2024,
@@ -1149,7 +1149,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-56-city-of-redding-shasta-transpor",
     client: "City of Redding/Shasta Transportation Authority",
-    industry: "nonprofits",
+    industry: "transportation",
     amount: "$20,000,000",
     amountNumber: 20000000,
     year: 2024,
@@ -1162,7 +1162,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-57-riverside-county-eda",
     client: "Riverside County EDA",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$549,996",
     amountNumber: 549996,
     year: 2024,
@@ -1175,7 +1175,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-58-recargo",
     client: "Recargo",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$804,220",
     amountNumber: 804220,
     year: 2024,
@@ -1188,7 +1188,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-59-frontier-wind",
     client: "Frontier Wind",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$862,875",
     amountNumber: 862875,
     year: 2024,
@@ -1201,7 +1201,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-60-blue-planet",
     client: "Blue Planet",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$940,767",
     amountNumber: 940767,
     year: 2024,
@@ -1214,7 +1214,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-61-altair",
     client: "AltAir",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$5,000,000",
     amountNumber: 5000000,
     year: 2024,
@@ -1227,7 +1227,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-62-mendocino-county-2016",
     client: "Mendocino County - 2016",
-    industry: "nonprofits",
+    industry: "tribal",
     amount: "$2,000,000",
     amountNumber: 2000000,
     year: 2024,
@@ -1240,7 +1240,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-63-zip-power",
     client: "Zip Power",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$1,400,000",
     amountNumber: 1400000,
     year: 2024,
@@ -1253,7 +1253,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-64-ohmconnect",
     client: "OhmConnect",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$3,900,000",
     amountNumber: 3900000,
     year: 2024,
@@ -1266,7 +1266,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-65-alameda-county",
     client: "Alameda County",
-    industry: "nonprofits",
+    industry: "transportation",
     amount: "$400,000",
     amountNumber: 400000,
     year: 2024,
@@ -1279,7 +1279,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-66-paradise-park-and-recreation-di",
     client: "Paradise Park and Recreation District",
-    industry: "nonprofits",
+    industry: "education",
     amount: "$5,225,277",
     amountNumber: 5225277,
     year: 2024,
@@ -1292,7 +1292,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-67-calstart",
     client: "CALSTART",
-    industry: "nonprofits",
+    industry: "transportation",
     amount: "$545,000",
     amountNumber: 545000,
     year: 2024,
@@ -1305,7 +1305,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-68-chargepoint",
     client: "ChargePoint",
-    industry: "nonprofits",
+    industry: "manufacturing",
     amount: "$2,000,000",
     amountNumber: 2000000,
     year: 2024,
@@ -1318,7 +1318,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-69-chargepoint",
     client: "ChargePoint",
-    industry: "nonprofits",
+    industry: "healthcare",
     amount: "$2,000,000",
     amountNumber: 2000000,
     year: 2024,
@@ -1331,7 +1331,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-70-chargepoint",
     client: "ChargePoint",
-    industry: "nonprofits",
+    industry: "tribal",
     amount: "$2,125,000",
     amountNumber: 2125000,
     year: 2024,
@@ -1344,7 +1344,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-71-lassen-municipal-utility-distri",
     client: "Lassen Municipal Utility District",
-    industry: "nonprofits",
+    industry: "education",
     amount: "$500,348",
     amountNumber: 500348,
     year: 2024,
@@ -1357,7 +1357,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-72-three-rivers-levee-improvement-",
     client: "Three Rivers Levee Improvement Authority (TRLIA)",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$9,703,842",
     amountNumber: 9703842,
     year: 2024,
@@ -1370,7 +1370,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-73-city-of-clearlake",
     client: "City of Clearlake",
-    industry: "nonprofits",
+    industry: "manufacturing",
     amount: "$3,000,000",
     amountNumber: 3000000,
     year: 2024,
@@ -1383,7 +1383,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-74-clemson-university",
     client: "Clemson University",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$10,350,000",
     amountNumber: 10350000,
     year: 2024,
@@ -1396,7 +1396,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-75-home-place-pastures",
     client: "Home Place Pastures",
-    industry: "nonprofits",
+    industry: "manufacturing",
     amount: "$508,784",
     amountNumber: 508784,
     year: 2024,
@@ -1409,7 +1409,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-76-state-of-new-jersey",
     client: "State of New Jersey",
-    industry: "nonprofits",
+    industry: "technology",
     amount: "$508,784",
     amountNumber: 508784,
     year: 2024,
@@ -1435,7 +1435,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-78-apricus-energy-partners",
     client: "Apricus Energy Partners",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$6,700,000",
     amountNumber: 6700000,
     year: 2024,
@@ -1448,7 +1448,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-79-development-of-a-renewable-hydr",
     client: "Development of a renewable hydrogen production facility utilizing electrolysis technology and tube trailer delivery.",
-    industry: "nonprofits",
+    industry: "transportation",
     amount: "$249,946",
     amountNumber: 249946,
     year: 2024,
@@ -1461,7 +1461,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-80-this-funding-will-support-the-c",
     client: "This funding will support the Comanche Nation as they prepare for climate change impacts on Tribal Treaty and Trust resources, economies, regenerative agriculture and food sovereignty, conservation practices, infrastructure, and human health and safety. The Category 1 - Planning grant will help the Comanche Nation secure a resource that will best assess how the Nation can allocate funds that will help the Comanche Nation secure a resource that will best assess how the Nation can allocate funds that will increase sovereignty and ward off negative environmental impacts.",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$43,940,612",
     amountNumber: 43940612,
     year: 2024,
@@ -1474,7 +1474,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-81-american-ruggedized-modular-o-r",
     client: "American Ruggedized Modular O-RAN Radio (ARMOR): The development of the ARMOR platform will support multiple Open Radio Unit variants that are energy efficient. The streamlined radio unit components will support cost-effective, high-power macro radios and in-building/small-cell product lines for mobile network operators.",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$117,877,595",
     amountNumber: 117877595,
     year: 2024,
@@ -1487,7 +1487,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-82-the-project-funds-the-expansion",
     client: "The project funds the expansion of transit services, installation of equipment to accept credit cards on buses; procurement of zero-emission and hydrogen buses; hydrogen fueling stations; construction of a downtown transit plaza; car share and micro-mobility solutions; and an outreach and promotional campaign.",
-    industry: "nonprofits",
+    industry: "transportation",
     amount: "$9,975,000",
     amountNumber: 9975000,
     year: 2024,
@@ -1500,7 +1500,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-83-the-project-will-empower-precas",
     client: "The project will empower precast concrete manufacturers to develop and produce compliant Environmental Product Declarations (EPDs), and provide transparent and verifiable embodied carbon information to buyers and sellers of precast concrete.",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$150,000",
     amountNumber: 150000,
     year: 2024,
@@ -1513,7 +1513,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-84-the-proposed-innovation-is-buil",
     client: "The proposed innovation is building an energy-efficient hardware solution for carbon dioxide removal that can be placed directly at sequestration/usage locations with no additional cost for electricity or pipeline infrastructure.",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$1,555,500",
     amountNumber: 1555500,
     year: 2024,
@@ -1526,7 +1526,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-85-client-won-3-of-4-regions-",
     client: "Client won 3 of 4 regions.",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$3,000,000",
     amountNumber: 3000000,
     year: 2024,
@@ -1539,7 +1539,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-86-pilot-production-of-high-perfor",
     client: "Pilot Production of High-Performance Lithium-Ion Battery Packs",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$2,191,398",
     amountNumber: 2191398,
     year: 2024,
@@ -1552,7 +1552,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-87-accelerating-the-low-rate-initi",
     client: "Accelerating the Low-rate Initial Production of CWUBIC, Current Way's Next Generation Bidirectional OBC",
-    industry: "nonprofits",
+    industry: "manufacturing",
     amount: "$1,500,000",
     amountNumber: 1500000,
     year: 2024,
@@ -1565,7 +1565,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-88-creation-of-the-monterey-bay-el",
     client: "Creation of the Monterey Bay Electric Vehicle Climate Adaptation and Resiliency Framework.",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$4,000,000",
     amountNumber: 4000000,
     year: 2024,
@@ -1578,7 +1578,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-89-multimodal-station-for-mdhd-on-",
     client: "Multimodal Station for MDHD On-road & Other End Uses.",
-    industry: "nonprofits",
+    industry: "technology",
     amount: "$23,462,167",
     amountNumber: 23462167,
     year: 2024,
@@ -1591,7 +1591,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-90-7mw-solar-fiber-optics-grid-int",
     client: "7MW Solar, Fiber Optics, GRID Integrity",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$10,000,000",
     amountNumber: 10000000,
     year: 2024,
@@ -1604,7 +1604,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-91-ramapo-college-of-new-jersey",
     client: "Ramapo College of New Jersey",
-    industry: "nonprofits",
+    industry: "education",
     amount: "$31,700,000",
     amountNumber: 31700000,
     year: 2024,
@@ -1617,7 +1617,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-92-michigan-dot-on-behalf-of-4-rur",
     client: "Michigan DOT on behalf of 4 rural transit agencies",
-    industry: "nonprofits",
+    industry: "transportation",
     amount: "$514,002",
     amountNumber: 514002,
     year: 2024,
@@ -1630,7 +1630,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-93-ohio-dot-on-behalf-of-10-subrec",
     client: "Ohio DOT on behalf of 10 subrecipients",
-    industry: "nonprofits",
+    industry: "transportation",
     amount: "$29,331,665",
     amountNumber: 29331665,
     year: 2024,
@@ -1643,7 +1643,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-94-iowa-dot-on-behalf-of-mta-rbt-h",
     client: "Iowa DOT on behalf of MTA, RBT, HIRTA, CWITA, and Coralville",
-    industry: "nonprofits",
+    industry: "transportation",
     amount: "$17,853,710",
     amountNumber: 17853710,
     year: 2024,
@@ -1656,7 +1656,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-95-enchanted-rock-llc",
     client: "Enchanted Rock, LLC",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$2,142,968",
     amountNumber: 2142968,
     year: 2024,
@@ -1669,7 +1669,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-96-alameda-county",
     client: "Alameda County",
-    industry: "nonprofits",
+    industry: "transportation",
     amount: "$330,000",
     amountNumber: 330000,
     year: 2024,
@@ -1682,7 +1682,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-97-alameda-county",
     client: "Alameda County",
-    industry: "nonprofits",
+    industry: "transportation",
     amount: "$542,000",
     amountNumber: 542000,
     year: 2024,
@@ -1695,7 +1695,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-98-alameda-county",
     client: "Alameda County",
-    industry: "nonprofits",
+    industry: "transportation",
     amount: "$908,000",
     amountNumber: 908000,
     year: 2024,
@@ -1708,7 +1708,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-99-alameda-county",
     client: "Alameda County",
-    industry: "nonprofits",
+    industry: "transportation",
     amount: "$589,000",
     amountNumber: 589000,
     year: 2024,
@@ -1721,7 +1721,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-100-calstart",
     client: "CALSTART",
-    industry: "nonprofits",
+    industry: "transportation",
     amount: "$688,215",
     amountNumber: 688215,
     year: 2024,
@@ -1734,7 +1734,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-101-california-epa-state-water-res",
     client: "California EPA - State Water Resources Control Board",
-    industry: "nonprofits",
+    industry: "healthcare",
     amount: "$648,284",
     amountNumber: 648284,
     year: 2024,
@@ -1747,7 +1747,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-102-climate-change-and-emissions-m",
     client: "Climate Change and Emissions Management (CCEMC) Corporation",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$500,000",
     amountNumber: 500000,
     year: 2024,
@@ -1760,7 +1760,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-103-ca-energy-commission-pon-13-60",
     client: "CA Energy Commission PON-13-606",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$498,475",
     amountNumber: 498475,
     year: 2024,
@@ -1773,7 +1773,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-104-ca-energy-commission-pon-13-60",
     client: "CA Energy Commission PON-13-606",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$474,052",
     amountNumber: 474052,
     year: 2024,
@@ -1786,7 +1786,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-105-ca-energy-commission-pon-13-60",
     client: "CA Energy Commission PON-13-606",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$491,290",
     amountNumber: 491290,
     year: 2024,
@@ -1799,7 +1799,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-106-ca-energy-commission-pon-13-60",
     client: "CA Energy Commission PON-13-606",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$497,357",
     amountNumber: 497357,
     year: 2024,
@@ -1812,7 +1812,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-107-california-energy-commission-p",
     client: "California Energy Commission PON-13-504",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$699,996",
     amountNumber: 699996,
     year: 2024,
@@ -1825,7 +1825,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-108-ca-energy-commission-pon-13-50",
     client: "CA Energy Commission PON-13-501",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$1,700,000",
     amountNumber: 1700000,
     year: 2024,
@@ -1838,7 +1838,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-109-california-energy-commission",
     client: "California Energy Commission",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$360,000",
     amountNumber: 360000,
     year: 2024,
@@ -1851,7 +1851,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-110-department-of-justice",
     client: "Department of Justice",
-    industry: "nonprofits",
+    industry: "tribal",
     amount: "$223,769",
     amountNumber: 223769,
     year: 2024,
@@ -1864,7 +1864,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-111-new-york-state-research-and-de",
     client: "New York State Research and Development Authority",
-    industry: "nonprofits",
+    industry: "manufacturing",
     amount: "$334,000",
     amountNumber: 334000,
     year: 2024,
@@ -1877,7 +1877,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-112-new-york-state-research-and-de",
     client: "New York State Research and Development Authority",
-    industry: "nonprofits",
+    industry: "transportation",
     amount: "$1,000,000",
     amountNumber: 1000000,
     year: 2024,
@@ -1890,7 +1890,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-113-california-energy-commission",
     client: "California Energy Commission",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$71,500",
     amountNumber: 71500,
     year: 2024,
@@ -1903,7 +1903,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-114-california-energy-commission",
     client: "California Energy Commission",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$499,512",
     amountNumber: 499512,
     year: 2024,
@@ -1916,7 +1916,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-115-california-energy-commission",
     client: "California Energy Commission",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$16,000",
     amountNumber: 16000,
     year: 2024,
@@ -1929,7 +1929,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-116-ca-energy-commission-pon-09-00",
     client: "CA Energy Commission PON-09-006",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$5,200,000",
     amountNumber: 5200000,
     year: 2024,
@@ -1942,7 +1942,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-117-new-york-state-research-and-de",
     client: "New York State Research and Development Authority",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$1,000,000",
     amountNumber: 1000000,
     year: 2024,
@@ -1955,7 +1955,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-118-great-valley-center-legacy-fun",
     client: "Great Valley Center Legacy Funds",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$6,500",
     amountNumber: 6500,
     year: 2024,
@@ -1968,7 +1968,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-119-child-abuse-prevention-center",
     client: "Child Abuse Prevention Center",
-    industry: "nonprofits",
+    industry: "transportation",
     amount: "$10,000",
     amountNumber: 10000,
     year: 2024,
@@ -1981,7 +1981,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-120-us-fish-and-wildlife-service",
     client: "US Fish and Wildlife Service",
-    industry: "nonprofits",
+    industry: "manufacturing",
     amount: "$25,000",
     amountNumber: 25000,
     year: 2024,
@@ -1994,7 +1994,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-121-us-fish-and-wildlife-service",
     client: "US Fish and Wildlife Service",
-    industry: "nonprofits",
+    industry: "manufacturing",
     amount: "$25,000",
     amountNumber: 25000,
     year: 2024,
@@ -2007,7 +2007,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-122-state-parks-department",
     client: "State Parks Department",
-    industry: "nonprofits",
+    industry: "manufacturing",
     amount: "$32,000",
     amountNumber: 32000,
     year: 2024,
@@ -2020,7 +2020,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-123-portland-cement-association",
     client: "Portland Cement Association",
-    industry: "nonprofits",
+    industry: "tribal",
     amount: "$45,000",
     amountNumber: 45000,
     year: 2024,
@@ -2033,7 +2033,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-124-association-of-bay-area-govern",
     client: "Association of Bay Area Governments",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$50,000",
     amountNumber: 50000,
     year: 2024,
@@ -2046,7 +2046,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-125-butte-county-resource-conserva",
     client: "Butte County Resource Conservation District",
-    industry: "nonprofits",
+    industry: "tribal",
     amount: "$68,640",
     amountNumber: 68640,
     year: 2024,
@@ -2059,7 +2059,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-126-lindo-channel-monitoring-progr",
     client: "Lindo Channel Monitoring Program",
-    industry: "nonprofits",
+    industry: "tribal",
     amount: "$75,000",
     amountNumber: 75000,
     year: 2024,
@@ -2072,7 +2072,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-127-tehama-county-resource-conserv",
     client: "Tehama County Resource Conservation District",
-    industry: "nonprofits",
+    industry: "tribal",
     amount: "$85,000",
     amountNumber: 85000,
     year: 2024,
@@ -2085,7 +2085,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-128-deer-creek-roads-survey",
     client: "Deer Creek Roads Survey",
-    industry: "nonprofits",
+    industry: "tribal",
     amount: "$175,000",
     amountNumber: 175000,
     year: 2024,
@@ -2098,7 +2098,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-129-california-watershed-funding-d",
     client: "California Watershed Funding Database",
-    industry: "nonprofits",
+    industry: "technology",
     amount: "$211,000",
     amountNumber: 211000,
     year: 2024,
@@ -2111,7 +2111,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-130-state-water-resources-control-",
     client: "State Water Resources Control Board - Subcontract",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$450,000",
     amountNumber: 450000,
     year: 2024,
@@ -2124,7 +2124,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-131-city-of-chico-subcontract-to-c",
     client: "City of Chico subcontract to conduct restoration work",
-    industry: "nonprofits",
+    industry: "manufacturing",
     amount: "$498,000",
     amountNumber: 498000,
     year: 2024,
@@ -2137,7 +2137,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-132-red-bank-and-reeds-creek-water",
     client: "Red Bank and Reeds Creek Watershed Projects",
-    industry: "nonprofits",
+    industry: "tribal",
     amount: "$540,000",
     amountNumber: 540000,
     year: 2024,
@@ -2150,7 +2150,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-133-iron-canyon-fish-ladder",
     client: "Iron Canyon Fish Ladder",
-    industry: "nonprofits",
+    industry: "tribal",
     amount: "$599,821",
     amountNumber: 599821,
     year: 2024,
@@ -2163,7 +2163,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-134-deer-creek-204-project",
     client: "Deer Creek 204 Project",
-    industry: "nonprofits",
+    industry: "tribal",
     amount: "$600,000",
     amountNumber: 600000,
     year: 2024,
@@ -2176,7 +2176,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-135-us-fish-and-wildlife-service",
     client: "US Fish and Wildlife Service",
-    industry: "nonprofits",
+    industry: "healthcare",
     amount: "$630,000",
     amountNumber: 630000,
     year: 2024,
@@ -2189,7 +2189,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-136-resources-legacy-fund",
     client: "Resources Legacy Fund",
-    industry: "nonprofits",
+    industry: "healthcare",
     amount: "$650,000",
     amountNumber: 650000,
     year: 2024,
@@ -2202,7 +2202,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-137-brickyard-creek-watershed-proj",
     client: "Brickyard Creek Watershed Project",
-    industry: "nonprofits",
+    industry: "manufacturing",
     amount: "$659,000",
     amountNumber: 659000,
     year: 2024,
@@ -2215,7 +2215,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-138-national-science-foundation",
     client: "National Science Foundation",
-    industry: "nonprofits",
+    industry: "tribal",
     amount: "$667,000",
     amountNumber: 667000,
     year: 2024,
@@ -2228,7 +2228,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-139-calfed-ecosystem-roundtable",
     client: "CALFED Ecosystem Roundtable",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$671,000",
     amountNumber: 671000,
     year: 2024,
@@ -2241,7 +2241,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-140-sierra-nevada-conservancy",
     client: "Sierra Nevada Conservancy",
-    industry: "nonprofits",
+    industry: "healthcare",
     amount: "$1,000,000",
     amountNumber: 1000000,
     year: 2024,
@@ -2254,7 +2254,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-141-state-water-resources-control-",
     client: "State Water Resources Control Board",
-    industry: "nonprofits",
+    industry: "technology",
     amount: "$1,300,000",
     amountNumber: 1300000,
     year: 2024,
@@ -2267,7 +2267,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-142-calfed",
     client: "CALFED",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$1,400,000",
     amountNumber: 1400000,
     year: 2024,
@@ -2280,7 +2280,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-143-california-energy-commission",
     client: "California Energy Commission",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$2,100,000",
     amountNumber: 2100000,
     year: 2024,
@@ -2293,7 +2293,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-144-california-energy-commission",
     client: "California Energy Commission",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$2,200,000",
     amountNumber: 2200000,
     year: 2024,
@@ -2306,7 +2306,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-145-ca-energy-commission-pon-09-00",
     client: "CA Energy Commission PON-09-006",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$6,400,000",
     amountNumber: 6400000,
     year: 2024,
@@ -2319,7 +2319,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-146-california-energy-commission",
     client: "California Energy Commission",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$15,700,000",
     amountNumber: 15700000,
     year: 2024,
@@ -2332,7 +2332,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-147-department-of-energy",
     client: "Department of Energy",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$3,400,000",
     amountNumber: 3400000,
     year: 2024,
@@ -2345,7 +2345,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-148-department-of-energy",
     client: "Department of Energy",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$25,000,000",
     amountNumber: 25000000,
     year: 2024,
@@ -2358,7 +2358,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-149-improving-online-cte-pathways-",
     client: "Improving Online CTE Pathways Grant Program",
-    industry: "nonprofits",
+    industry: "education",
     amount: "$500,000",
     amountNumber: 500000,
     year: 2024,
@@ -2371,7 +2371,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-150-california-energy-commission-g",
     client: "California Energy Commission GFP-18-302-Sepion",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$2,675,793",
     amountNumber: 2675793,
     year: 2024,
@@ -2384,7 +2384,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-151-california-energy-commission-g",
     client: "California Energy Commission GFP-18-302-Primus Power",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$4,000,000",
     amountNumber: 4000000,
     year: 2024,
@@ -2397,7 +2397,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-152-amply-power-inc",
     client: "AMPLY Power, Inc",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$2,000,000",
     amountNumber: 2000000,
     year: 2024,
@@ -2410,7 +2410,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-153-consol-inc-",
     client: "ConSol, Inc.",
-    industry: "nonprofits",
+    industry: "transportation",
     amount: "$999,936",
     amountNumber: 999936,
     year: 2024,
@@ -2423,7 +2423,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-154-jamboree-housing-corporation",
     client: "Jamboree Housing Corporation",
-    industry: "nonprofits",
+    industry: "manufacturing",
     amount: "$1,000,000",
     amountNumber: 1000000,
     year: 2024,
@@ -2436,7 +2436,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-155-sacramento-municipal-utility-d",
     client: "Sacramento Municipal Utility District",
-    industry: "nonprofits",
+    industry: "tribal",
     amount: "$2,229,000",
     amountNumber: 2229000,
     year: 2024,
@@ -2449,7 +2449,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-156-chargepoint",
     client: "ChargePoint",
-    industry: "nonprofits",
+    industry: "tribal",
     amount: "$2,125,000",
     amountNumber: 2125000,
     year: 2024,
@@ -2462,7 +2462,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-157-tulare-county-regional-transit",
     client: "Tulare County Regional Transit Agency",
-    industry: "nonprofits",
+    industry: "transportation",
     amount: "$33,769,000",
     amountNumber: 33769000,
     year: 2024,
@@ -2475,7 +2475,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-158-santa-barbara-metropolitan-tra",
     client: "Santa Barbara Metropolitan Transit District (SBMTD)",
-    industry: "nonprofits",
+    industry: "clean-energy",
     amount: "$14,480,000",
     amountNumber: 14480000,
     year: 2024,
@@ -2488,7 +2488,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-159-iowa-department-of-transportat",
     client: "Iowa Department of Transportation (IADOT)",
-    industry: "nonprofits",
+    industry: "transportation",
     amount: "$15,844,561",
     amountNumber: 15844561,
     year: 2024,
@@ -2514,7 +2514,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-161-medstar-washington-hospital-ce",
     client: "Medstar Washington Hospital Center",
-    industry: "nonprofits",
+    industry: "healthcare",
     amount: "$3,000,000",
     amountNumber: 3000000,
     year: 2024,
@@ -2527,7 +2527,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-162-rv-jensen",
     client: "RV Jensen",
-    industry: "nonprofits",
+    industry: "transportation",
     amount: "$1,700,000",
     amountNumber: 1700000,
     year: 2024,
@@ -2540,7 +2540,7 @@ export const results: CaseStudy[] = [
   {
     slug: "grant-163--",
     client: "​​",
-    industry: "nonprofits",
+    industry: "healthcare",
     amount: "$15,713,981",
     amountNumber: 15713981,
     year: 2024,
@@ -2876,7 +2876,7 @@ export const caseStudies: CaseStudy[] = [
     agency: "Multiple Agencies",
     amount: "$800,000+",
     amountNumber: 800000,
-    industry: "nonprofits",
+    industry: "healthcare",
     type: "State",
     challenge: "Helping county agencies and local nonprofits bring new funding streams into the area for disaster mitigation, recidivism reduction, and dental health.",
     solution: "Provided capacity building, grant research, and interactive 'Shovel Ready Workshops' to prepare local agencies for competitive grants.",
