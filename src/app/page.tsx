@@ -6,6 +6,7 @@ import { db } from "@/db";
 import { sql } from "drizzle-orm";
 import * as Icons from "lucide-react";
 import { SurveyPopup } from "@/components/site/survey-popup";
+import { SurveyTrigger } from "@/components/site/survey-trigger";
 
 export default async function HomePage() {
   const featuredStudies = caseStudies.slice(0, 4);
@@ -38,6 +39,7 @@ export default async function HomePage() {
 
             <div className="mt-10 flex flex-wrap items-center justify-center gap-3 animate-fade-up" style={{ animationDelay: "220ms" }}>
               <Link href="/assessment" className="btn-primary">Take the 2-min assessment →</Link>
+              <SurveyTrigger />
               <Link href="/case-studies" className="btn-secondary">See how we win</Link>
             </div>
 

@@ -132,14 +132,9 @@ export function SurveyPopup() {
   const [otherText, setOtherText] = useState("");
 
   useEffect(() => {
-    // Check if user has already seen or submitted
-    if (sessionStorage.getItem("gma_survey_seen")) return;
-    
-    const timer = setTimeout(() => {
-      setIsOpen(true);
-      sessionStorage.setItem("gma_survey_seen", "true");
-    }, 3000);
-    return () => clearTimeout(timer);
+    const handleOpen = () => setIsOpen(true);
+    window.addEventListener("open-survey", handleOpen);
+    return () => window.removeEventListener("open-survey", handleOpen);
   }, []);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
