@@ -34,7 +34,7 @@ export function SiteHeader() {
     >
       <div className="mx-auto max-w-[1440px] px-6 flex items-center justify-between h-16 md:h-20">
         <Link href="/" className="flex items-center gap-2 group flex-shrink-0" aria-label="GMA home">
-          <Logo className="w-auto h-20 md:h-24" />
+          <Logo className="w-auto h-16 md:h-20 scale-[1.5] origin-left" />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-1" aria-label="Primary">
