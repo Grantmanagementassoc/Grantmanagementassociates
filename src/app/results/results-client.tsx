@@ -70,8 +70,9 @@ export function ResultsClient({ items }: { items: CaseStudy[] }) {
               <div className="flex items-start justify-between gap-4">
                 <div>
                   <h3 className="text-xl font-bold text-foreground group-hover:text-cyan-300">{cs.client}</h3>
-                  <div className="mt-2 text-xs uppercase tracking-widest text-muted">{cs.type} · {cs.year}</div>
-                  <p className="mt-1 text-sm text-muted">{cs.agency}</p>
+                  <div className="mt-2 text-xs uppercase tracking-widest text-muted">
+                    {industries.find((i) => i.slug === cs.industry)?.name || cs.industry} · {cs.type}
+                  </div>
                 </div>
                 <div className="text-right">
                   <div className="text-2xl md:text-3xl font-semibold text-gradient-gold">{cs.amount}</div>

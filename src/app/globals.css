@@ -251,6 +251,11 @@
     50% { transform: translateY(-8px); }
   }
   .animate-float { animation: float-y 6s ease-in-out infinite; }
+
+  /* Reliable marquee pause on hover */
+  .marquee-container:hover .animate-marquee {
+    animation-play-state: paused !important;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
