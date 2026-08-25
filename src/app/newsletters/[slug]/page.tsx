@@ -16,8 +16,9 @@ export async function generateStaticParams() {
   return Object.keys(availableNewsletters).map((slug) => ({ slug }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }) {
-  const meta = availableNewsletters[params.slug as keyof typeof availableNewsletters];
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const resolvedParams = await params;
+  const meta = availableNewsletters[resolvedParams.slug as keyof typeof availableNewsletters];
   if (!meta) return { title: "Newsletter Not Found" };
   
   return {
@@ -26,8 +27,9 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   };
 }
 
-export default async function NewsletterPage({ params }: { params: { slug: string } }) {
-  const meta = availableNewsletters[params.slug as keyof typeof availableNewsletters];
+export default async function NewsletterPage({ params }: { params: Promise<{ slug: string }> }) {
+  const resolvedParams = await params;
+  const meta = availableNewsletters[resolvedParams.slug as keyof typeof availableNewsletters];
   
   if (!meta) {
     notFound();
