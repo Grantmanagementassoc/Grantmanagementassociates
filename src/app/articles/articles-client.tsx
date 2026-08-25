@@ -24,7 +24,7 @@ export function ArticlesClient({ items, categories }: { items: Article[]; catego
   return (
     <>
       {newsletter && (
-        <Link href={`/articles/${newsletter.slug}`} className="block group mb-12 relative z-10">
+        <Link href={`/newsletters/${newsletter.slug}`} className="block group mb-12 relative z-10">
           <div className="glass rounded-3xl overflow-hidden flex flex-col md:flex-row transition-all duration-300 relative group-hover:border-cyan-400/30 shadow-2xl">
             {newsletter.image && (
               <div className="md:w-2/5 shrink-0 relative overflow-hidden bg-black/20 border-b md:border-b-0 md:border-r border-white/5">
