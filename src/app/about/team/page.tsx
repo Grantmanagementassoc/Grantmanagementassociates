@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { Section, SectionTitle, Eyebrow, GlassCard, CTACard, Breadcrumbs, BackgroundGrid } from "@/components/site/ui";
 import { site, team } from "@/lib/content";
+import { specialistTeams } from "@/data/specialist-teams";
 
 export const metadata: Metadata = {
   title: "Our Team | About Us",
@@ -72,6 +73,43 @@ export default function TeamPage() {
                 </div>
                 <div className="mt-4 text-sm text-muted leading-relaxed prose prose-invert prose-base max-w-none line-clamp-[8] hover:line-clamp-none transition-all prose-p:my-2" dangerouslySetInnerHTML={{ __html: m.bio }} />
               </GlassCard>
+            ))}
+          </div>
+        </div>
+
+        {/* Specialist Teams */}
+        <div className="w-full mt-24">
+          <div className="max-w-3xl mb-12 text-center mx-auto">
+            <h2 className="text-3xl md:text-5xl font-semibold text-foreground leading-[0.98]">
+              Our <span className="text-gradient-brand">Specialist Teams.</span>
+            </h2>
+            <p className="mt-6 text-lg text-muted leading-relaxed">
+              Our multidisciplinary specialist teams bring together deep industry knowledge, technical expertise, and grant and funding experience to help clients navigate complex opportunities.
+            </p>
+          </div>
+
+          <div className="space-y-16">
+            {specialistTeams.map((teamData) => (
+              <div key={teamData.name} className="relative pt-8">
+                {/* Team Header */}
+                <div className="mb-8">
+                  <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">{teamData.name}</h3>
+                  {teamData.description && (
+                    <p className="text-lg text-muted max-w-4xl">{teamData.description}</p>
+                  )}
+                </div>
+
+                {/* Team Members Grid */}
+                <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                  {teamData.members.map((m, idx) => (
+                    <GlassCard key={idx} className="flex flex-col relative z-10 hover:border-cyan-500/30 transition-colors">
+                      <div className="font-semibold text-foreground text-lg">{m.name}</div>
+                      {m.role && <div className="text-sm text-cyan-300/80 mt-1">{m.role}</div>}
+                      <p className="mt-4 text-sm text-muted leading-relaxed">{m.bio}</p>
+                    </GlassCard>
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
         </div>

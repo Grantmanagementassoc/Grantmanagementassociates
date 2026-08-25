@@ -75,6 +75,8 @@ export const primaryNav: NavGroup[] = [
       { label: "Manufacturing", href: "/industries/manufacturing" },
       { label: "Broadband & Telecommunications", href: "/industries/broadband" },
       { label: "Defense & National Security", href: "/industries/defense" },
+      { label: "Agriculture & Rural Development", href: "/industries/agriculture" },
+      { label: "Water Infrastructure", href: "/industries/water-infrastructure" },
     ],
   },
   { label: "Case Studies", href: "/case-studies" },
@@ -443,6 +445,24 @@ export const industries: Industry[] = [
     detail: "We empower startups, scale-ups, and defense-aligned manufacturers to unlock non-dilutive capital, navigating SBIR, STTR, BAA, and OTA pathways for Department of Defense (DOD) funding.",
     stats: [{ label: "DOD funds unlocked", value: "$13B+ ecosystem" }, { label: "Success rate", value: "High" }],
     agencies: ["DOD", "DIU", "DARPA", "Army", "Navy", "Air Force"],
+  },
+  {
+    slug: "agriculture",
+    name: "Agriculture & Rural Development",
+    icon: "Wheat",
+    blurb: "USDA, rural infrastructure, and food-system funding—built for the realities of rural America.",
+    detail: "From agricultural innovation and food systems to rural infrastructure and domestic supply chains, GMA helps organizations turn complex federal and state priorities into fundable projects.",
+    stats: [{ label: "Funding secured", value: "$33M+" }, { label: "Recent wins", value: "10+" }],
+    agencies: ["USDA", "USDA Rural Development", "CDFA", "California Energy Commission"],
+  },
+  {
+    slug: "water-infrastructure",
+    name: "Water Infrastructure",
+    icon: "Droplets",
+    blurb: "Drinking water, wastewater, watershed restoration, and resilience funding.",
+    detail: "GMA helps utilities, municipalities, water districts, and project partners navigate complex funding opportunities and develop strategies for critical water infrastructure.",
+    stats: [{ label: "Projects supported", value: "19" }, { label: "Funding secured", value: "$13.7M+" }],
+    agencies: ["EPA", "FEMA", "HUD", "State Water Agencies"],
   },
 ];
 
