@@ -78,7 +78,7 @@ export default async function HomePage() {
             <div className="glass card-hover rounded-3xl p-8 md:p-10 h-full flex flex-col justify-between relative overflow-hidden">
               <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-sapphire/15 blur-3xl pointer-events-none" aria-hidden />
               <div className="relative">
-                <div className="text-cyan-400">
+                <div className="text-sky-600 dark:text-cyan-400">
                   {(() => {
                     const IconComponent = Icons[services[0].icon as keyof typeof Icons] as React.ElementType;
                     return IconComponent ? <IconComponent size={40} strokeWidth={1.5} /> : null;
@@ -87,7 +87,7 @@ export default async function HomePage() {
                 <h3 className="mt-6 text-3xl md:text-4xl font-semibold text-foreground">{services[0].title}</h3>
                 <p className="mt-4 text-muted max-w-lg leading-relaxed">{services[0].summary}</p>
               </div>
-              <div className="relative mt-8 flex items-center gap-2 text-cyan-300 font-medium">
+              <div className="relative mt-8 flex items-center gap-2 text-sky-700 dark:text-cyan-300 font-medium">
                 Explore <span className="transition-transform group-hover:translate-x-1">→</span>
               </div>
             </div>
@@ -99,13 +99,13 @@ export default async function HomePage() {
               <Link key={s.slug} href={`/services/${s.slug}`} className="group">
                 <GlassCard className="h-full flex flex-col justify-between">
                   <div>
-                    <div className="text-cyan-400">
+                    <div className="text-sky-600 dark:text-cyan-400">
                       {IconComponent && <IconComponent size={28} strokeWidth={1.5} />}
                     </div>
                     <h3 className="mt-4 text-lg font-semibold text-foreground">{s.title}</h3>
                     <p className="mt-2 text-sm text-muted leading-relaxed line-clamp-3">{s.tagline}</p>
                   </div>
-                <div className="mt-4 text-xs text-cyan-300 font-medium flex items-center gap-1">
+                <div className="mt-4 text-xs text-sky-700 dark:text-cyan-300 font-medium flex items-center gap-1">
                   Learn more <span className="transition-transform group-hover:translate-x-1">→</span>
                 </div>
               </GlassCard>
@@ -130,7 +130,7 @@ export default async function HomePage() {
             { n: "04", t: "Manage", d: "Post-award reporting, drawdowns, audit prep, and continuous portfolio strategy." },
           ].map((step, i) => (
             <div key={step.n} className="glass rounded-2xl p-6 relative">
-              <div className="text-xs font-mono text-cyan-300">{step.n}</div>
+              <div className="text-xs font-mono text-sky-700 dark:text-cyan-300">{step.n}</div>
               <h3 className="mt-2 text-xl font-semibold text-foreground">{step.t}</h3>
               <p className="mt-3 text-sm text-muted leading-relaxed">{step.d}</p>
               {i < 3 && (
@@ -160,7 +160,7 @@ export default async function HomePage() {
                     <div className="flex items-start justify-between gap-4">
                       <div>
                         <div className="text-xs uppercase tracking-widest text-muted">{cs.type} · {cs.year}</div>
-                        <h3 className="mt-2 text-xl font-semibold text-foreground group-hover:text-cyan-300 transition-colors line-clamp-2">{cs.client}</h3>
+                        <h3 className="mt-2 text-xl font-semibold text-foreground group-hover:text-sky-700 dark:text-cyan-300 transition-colors line-clamp-2">{cs.client}</h3>
                         <p className="mt-2 text-sm text-muted line-clamp-1">{cs.agency}</p>
                       </div>
                       <div className="text-right shrink-0">
@@ -169,7 +169,7 @@ export default async function HomePage() {
                       </div>
                     </div>
                   </div>
-                  <div className="mt-6 flex items-center gap-2 text-xs text-cyan-300 font-medium">
+                  <div className="mt-6 flex items-center gap-2 text-xs text-sky-700 dark:text-cyan-300 font-medium">
                     Read the case study <span className="transition-transform group-hover:translate-x-1">→</span>
                   </div>
                 </div>
@@ -233,7 +233,7 @@ export default async function HomePage() {
             return (
               <Link key={ind.slug} href={`/industries/${ind.slug}`} className="group">
                 <GlassCard className="h-full">
-                  <div className="text-cyan-400">
+                  <div className="text-sky-600 dark:text-cyan-400">
                     {IconComponent && <IconComponent size={32} strokeWidth={1.5} />}
                   </div>
                   <h3 className="mt-3 text-base font-semibold text-foreground">{ind.name}</h3>
@@ -264,7 +264,7 @@ export default async function HomePage() {
             {[...testimonials, ...testimonials].map((t, i) => (
               <div key={i} className="glass rounded-2xl p-8 flex flex-col justify-between w-[350px] md:w-[400px] shrink-0">
                 <div>
-                  <div className="text-3xl text-cyan-300 leading-none">&ldquo;</div>
+                  <div className="text-3xl text-sky-700 dark:text-cyan-300 leading-none">&ldquo;</div>
                   <p className="mt-4 text-muted leading-relaxed text-sm line-clamp-6">{t.quote}</p>
                 </div>
                 <div className="mt-6 pt-6 border-t border-black/5 dark:border-white/5">
@@ -291,8 +291,8 @@ export default async function HomePage() {
           {latestPosts.map((r) => (
             <Link key={r.slug} href={`/resources/${r.slug}`} className="group">
               <GlassCard className="h-full flex flex-col">
-                <div className="text-[11px] uppercase tracking-widest text-cyan-300">{r.category}</div>
-                <h3 className="mt-3 text-lg font-semibold text-foreground group-hover:text-cyan-300 transition-colors leading-tight">
+                <div className="text-[11px] uppercase tracking-widest text-sky-700 dark:text-cyan-300">{r.category}</div>
+                <h3 className="mt-3 text-lg font-semibold text-foreground group-hover:text-sky-700 dark:text-cyan-300 transition-colors leading-tight">
                   {r.title}
                 </h3>
                 <p className="mt-3 text-sm text-muted leading-relaxed line-clamp-3">{r.excerpt}</p>
