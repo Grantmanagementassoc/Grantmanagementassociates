@@ -5,6 +5,8 @@ import "./globals.css";
 import { SiteHeader } from "@/components/site/site-header";
 import { SiteFooter } from "@/components/site/site-footer";
 import { ThemeProvider } from "@/components/theme-provider";
+import { GoogleAnalytics } from "@next/third-parties/google";
+import { CookieConsent } from "@/components/site/cookie-consent";
 import { site } from "@/lib/content";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
@@ -62,7 +64,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <SiteHeader />
           <main id="main">{children}</main>
           <SiteFooter />
+          <CookieConsent />
         </ThemeProvider>
+        <GoogleAnalytics gaId="G-XXXXXXXXXX" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
