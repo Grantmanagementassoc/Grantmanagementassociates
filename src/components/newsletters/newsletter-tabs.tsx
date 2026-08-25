@@ -60,9 +60,23 @@ export function NewsletterTabs({ categories }: { categories: CategoryData[] }) {
 
         <div className="space-y-6">
           {activeCategory?.grants.length === 0 ? (
-            <div className="text-slate-400 p-8 text-center bg-slate-900/50 border border-glass-border rounded-xl">
-              No specific grants listed for this category in the current digest.
-            </div>
+            activeCategory.category === "Overview" ? (
+              <div className="prose dark:prose-invert max-w-none text-slate-300 bg-slate-900/50 p-8 border border-glass-border rounded-xl">
+                <p className="text-lg leading-relaxed mb-4">
+                  Welcome to the Grant Management Associates Weekly Funding Digest. 
+                </p>
+                <p className="leading-relaxed">
+                  We have carefully curated the most significant new federal, state, and foundational funding opportunities available this week. Our intelligence covers critical sectors including Agriculture, Infrastructure, Defense, and Energy.
+                </p>
+                <p className="leading-relaxed mt-4 text-cyan-300 font-medium">
+                  ← Select a category from the sidebar to explore specific grants, view award ranges, and find direct links to the official NOFOs.
+                </p>
+              </div>
+            ) : (
+              <div className="text-slate-400 p-8 text-center bg-slate-900/50 border border-glass-border rounded-xl">
+                No specific grants listed for this category in the current digest.
+              </div>
+            )
           ) : (
             activeCategory?.grants.map((grant, idx) => (
               <NewsletterCard key={idx} grant={grant} />
