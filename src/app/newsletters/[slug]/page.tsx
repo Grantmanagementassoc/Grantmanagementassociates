@@ -1,7 +1,6 @@
 import { notFound } from "next/navigation";
 import { NewsletterTabs } from "@/components/newsletters/newsletter-tabs";
-import fs from "fs";
-import path from "path";
+
 
 // In a real app, this would come from a database or CMS.
 // For now, we only have one parsed newsletter.
@@ -34,12 +33,11 @@ export default async function NewsletterPage({ params }: { params: { slug: strin
     notFound();
   }
 
-  // Load the parsed JSON data
-  const dataPath = path.join(process.cwd(), "src/data/newsletters", meta.file);
+  // Load the parsed JSON data via dynamic import so Vercel bundles it
   let categories = [];
   try {
-    const fileContents = fs.readFileSync(dataPath, "utf8");
-    categories = JSON.parse(fileContents);
+    const data = await import(`@/data/newsletters/${meta.file}`);
+    categories = data.default || data;
   } catch (error) {
     console.error("Error loading newsletter data:", error);
     notFound();

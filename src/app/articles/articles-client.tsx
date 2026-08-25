@@ -7,7 +7,6 @@ export function ArticlesClient({ items, categories }: { items: Article[]; catego
   const [category, setCategory] = useState<string>("all");
   const [q, setQ] = useState<string>("");
 
-  const newsletter = items.find(i => i.slug === "weekly-funding-digest-aug-17-21-2026");
   const gridItems = items.filter(i => i.slug !== "weekly-funding-digest-aug-17-21-2026");
 
   const filtered = useMemo(() => {
@@ -23,28 +22,6 @@ export function ArticlesClient({ items, categories }: { items: Article[]; catego
 
   return (
     <>
-      {newsletter && (
-        <Link href={`/newsletters/${newsletter.slug}`} className="block group mb-12 relative z-10">
-          <div className="glass rounded-3xl overflow-hidden flex flex-col md:flex-row transition-all duration-300 relative group-hover:border-cyan-400/30 shadow-2xl">
-            {newsletter.image && (
-              <div className="md:w-2/5 shrink-0 relative overflow-hidden bg-black/20 border-b md:border-b-0 md:border-r border-white/5">
-                 <img src={newsletter.image} alt={newsletter.title} className="object-cover w-full h-full min-h-[250px] group-hover:scale-105 transition-transform duration-700" />
-                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-60"></div>
-              </div>
-            )}
-            <div className="p-8 md:p-10 lg:p-12 flex flex-col justify-center relative z-20">
-              <div className="text-xs font-bold tracking-[0.2em] uppercase text-cyan-400 mb-4">{newsletter.category}</div>
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-foreground mb-4 group-hover:text-cyan-300 transition-colors leading-tight">{newsletter.title}</h2>
-              <p className="text-muted text-sm md:text-base leading-relaxed mb-6 max-w-2xl">{newsletter.excerpt}</p>
-              <div className="flex items-center text-xs font-medium text-slate-400 tracking-wider">
-                <span className="uppercase text-cyan-200/70">{newsletter.date ? new Date(newsletter.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : ''}</span>
-                <span className="mx-3 text-glass-border">•</span>
-                <span className="uppercase">{newsletter.author}</span>
-              </div>
-            </div>
-          </div>
-        </Link>
-      )}
 
       <div className="glass rounded-2xl p-5 grid gap-3 md:grid-cols-[1.5fr_1fr] relative z-10">
         <input
