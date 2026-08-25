@@ -37,7 +37,7 @@ export function ArticlesClient({ items, categories }: { items: Article[]; catego
         Showing <span className="text-foreground font-medium">{filtered.length}</span> of {items.length} articles
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-8 relative z-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 relative z-10">
         {filtered.map((post, idx) => (
           <Link href={`/articles/${post.slug}`} key={idx} className="block group">
             <article className="glass h-full rounded-2xl overflow-hidden flex flex-col transition-all duration-300 relative group-hover:border-cyan-400/30">

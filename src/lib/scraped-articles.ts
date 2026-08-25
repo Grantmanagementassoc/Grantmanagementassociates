@@ -29,6 +29,16 @@ export const categories: string[] = [
 
 export const articles: Article[] = [
   {
+    slug: "weekly-funding-digest-aug-17-21-2026",
+    image: "/images/blog/yocha-dehe-wintun-nations-investment-madison-blueprint-kristin-cooper-q3kyc.jpg",
+    title: "GMA Weekly Funding Digest | Week of August 17–21, 2026",
+    category: "Federal Grants, Funding & Policy",
+    date: "2026-08-17",
+    author: "GMA Team",
+    excerpt: "Weekly Funding Intelligence Digest - Vertical Send Playbook. Funding opportunities and deadlines across clean energy, wildfire resilience, tribal, and environmental programs.",
+    bodyText: "<p>Weekly Funding Intelligence Digest.</p>"
+  },
+  {
     "slug": "yocha-dehe-wintun-nations-investment-madison-blueprint-kristin-cooper-q3kyc",
     "image": "/images/blog/yocha-dehe-wintun-nations-investment-madison-blueprint-kristin-cooper-q3kyc.jpg",
     "title": "Yocha Dehe Wintun Nation’s Investment in Madison: A Blueprint for Community-Driven Water Funding Success",
