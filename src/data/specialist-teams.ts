@@ -13,7 +13,7 @@ export const specialistTeams = [
     name: 'Transportation Team',
     description: 'Our transportation specialists support transit, mobility, EV, and infrastructure projects with expertise in funding strategy, grant development, program management, financial analysis, and project planning.',
     members: [
-      { name: 'Ed Ober', role: 'Transportation Lead', bio: 'GMA\\'s COO, Ed brings extensive experience leading complex transportation grant applications and has secured more than $700 million in grant awards over the past decade. His expertise includes program management, grant writing, benefit-cost analysis, budgets, GHG calculations, and operational workflow design.' }
+      { name: 'Ed Ober', role: 'Transportation Lead', bio: "GMA's COO, Ed brings extensive experience leading complex transportation grant applications and has secured more than $700 million in grant awards over the past decade. His expertise includes program management, grant writing, benefit-cost analysis, budgets, GHG calculations, and operational workflow design." }
     ]
   },
   {
@@ -31,7 +31,7 @@ export const specialistTeams = [
     name: 'Education Grant Team',
     description: 'Our education specialists bring experience across higher education, K–12, research institutions, and workforce development, supporting competitive funding opportunities from research grants to community-based initiatives.',
     members: [
-      { name: 'Kristin Cooper', role: 'CEO & Founder', bio: 'Kristin is GMA\\'s CEO and Founder and a former professor in the School of Engineering at CSU Chico. With more than 30 years of experience in grants and program management, she brings deep expertise in university research, federal funding, contracts, and project management.' },
+      { name: 'Kristin Cooper', role: 'CEO & Founder', bio: "Kristin is GMA's CEO and Founder and a former professor in the School of Engineering at CSU Chico. With more than 30 years of experience in grants and program management, she brings deep expertise in university research, federal funding, contracts, and project management." },
       { name: 'Elizabeth Christiansen', role: 'Specialist', bio: 'Elizabeth is an experienced grant professional specializing in NSF and research university proposals. A Grant Professional Certified (GPC) practitioner, she has completed more than 600 grants throughout her career.' },
       { name: 'Sonia Vohnout', role: 'Specialist', bio: 'Sonia is a nationally recognized expert in SBIR/STTR programs, commercialization strategy, and non-dilutive funding. She has more than 30 years of experience helping innovative companies and university-based technologies move toward commercialization.' },
       { name: 'Hunter Gabel', role: 'Specialist', bio: 'Hunter brings more than a decade of experience in grant writing and proposal development. His work spans higher education, K–12 education, agriculture, natural resources, health, and community development.' },
@@ -52,7 +52,7 @@ export const specialistTeams = [
     name: 'Grant Award Winners Bridge Financing Team',
     description: 'Our bridge financing specialists help grant recipients navigate cash-flow challenges associated with reimbursement-based awards and matching fund requirements.',
     members: [
-      { name: 'Arthine Cossey Van Duyne, MBA', role: 'Bridge Debt Financing Lead', bio: 'Arthine brings extensive experience in finance, investment strategy, technology, and public-sector consulting. She leads GMA\\'s bridge debt financing efforts and supports clients preparing funding packages for complex capital needs.' }
+      { name: 'Arthine Cossey Van Duyne, MBA', role: 'Bridge Debt Financing Lead', bio: "Arthine brings extensive experience in finance, investment strategy, technology, and public-sector consulting. She leads GMA's bridge debt financing efforts and supports clients preparing funding packages for complex capital needs." }
     ]
   },
   {
