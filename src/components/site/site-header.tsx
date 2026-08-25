@@ -32,12 +32,12 @@ export function SiteHeader() {
         scrolled ? "border-b border-black/5 dark:border-white/5 shadow-sm" : ""
       }`}
     >
-      <div className="mx-auto max-w-[1440px] px-6 flex items-center justify-between h-16 md:h-20">
-        <Link href="/" className="flex items-center gap-2 group flex-shrink-0" aria-label="GMA home">
+      <div className="mx-auto max-w-[1440px] px-6 flex items-center h-16 md:h-20">
+        <Link href="/" className="flex items-center gap-2 group flex-shrink-0 mr-auto" aria-label="GMA home">
           <Logo className="w-auto h-16 md:h-20 scale-[1.5] origin-left" />
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-1" aria-label="Primary">
+        <nav className="hidden lg:flex items-center gap-1 mr-8" aria-label="Primary">
           {primaryNav.map((item) => {
             const hasChildren = !!item.children?.length;
             return (
