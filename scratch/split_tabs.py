@@ -9,42 +9,56 @@ digest_path = r'C:\Users\lokha\OneDrive\Desktop\grant management\GMT2\scratch\di
 with open(digest_path, 'r', encoding='utf-8') as f:
     digest_html = f.read()
 
+# We need to split only at the actual section headers.
+# These are the headers that appear right before a table or a section.
+actual_headers = [
+    "Water Infrastructure / Workforce Development",
+    "Agriculture / Food Systems and Food Defense",
+    "Agriculture / Risk Management Education",
+    "Transportation / Digital Construction Management",
+    "Manufacturing / Industrial Base and Supply Chain",
+    "Federal Research", # Matches "Federal Research  NSF Restructured Solicitation Suite"
+    "DOE National Laboratory", # Matches "DOE National Laboratory  Water Innovation"
+    "Federal Contract Opportunities", # Matches "Federal Contract Opportunities  Broad Agency Announcements and Post-Phase II"
+    "California State Opportunities",
+    "Other State Opportunities",
+    "Policy Watch"
+]
+
 parts = re.split(r'<p><strong>(.*?)</strong></p>', digest_html)
 
 categories = []
 current_cat = "Overview"
 current_content = parts[0]
 
-valid_categories = [
-    "OPENING SUMMARY  WEEK OF AUGUST 1721, 2026",
-    "OPENING SUMMARY  WEEK OF AUGUST 1721, 2026",
-    "Water Infrastructure / Workforce",
-    "Agriculture / Food Defense",
-    "Transportation / Digital Construction",
-    "Federal Research / NSF",
-    "DOE / Water Innovation",
-    "Manufacturing / Industrial Base",
-    "Federal Contract Opportunities (BAAs and Post-Phase II)",
-    "California State Opportunities",
-    "Other State Opportunities",
-    "Policy Updates",
-    "Immediate Outreach",
-    "Water Infrastructure / Workforce Development",
-    "GMA Weekly Funding Digest"
-]
-
-clean_valid = [re.sub(r'[^A-Za-z0-9]', '', c).lower() for c in valid_categories]
-
 for i in range(1, len(parts), 2):
     title = parts[i].strip()
     content = parts[i+1]
     
-    clean_title = re.sub(r'[^A-Za-z0-9]', '', title).lower()
-    
-    if clean_title in clean_valid:
+    # Check if the title starts with any of the actual headers
+    is_category = False
+    for h in actual_headers:
+        if title.startswith(h) and len(title) < 150:
+            is_category = True
+            # Normalize the category name
+            if "Agriculture" in title: cat_name = "Agriculture"
+            elif "Transportation" in title: cat_name = "Transportation"
+            elif "Manufacturing" in title: cat_name = "Manufacturing"
+            elif "Federal Research" in title: cat_name = "Federal Research"
+            elif "DOE" in title: cat_name = "DOE / Water Innovation"
+            elif "Federal Contract" in title: cat_name = "Federal Contract Opportunities"
+            elif "California" in title: cat_name = "California State Opportunities"
+            elif "Other State" in title: cat_name = "Other State Opportunities"
+            elif "Policy" in title: cat_name = "Policy Updates"
+            elif "Water" in title: cat_name = "Water Infrastructure"
+            else: cat_name = title
+            break
+            
+    # Sub-headers like Biological Sciences, etc. should just be bold text inside the current category
+    if is_category:
         if current_content.strip():
             categories.append({"title": current_cat, "content": current_content})
-        current_cat = title
+        current_cat = cat_name
         current_content = content
     else:
         current_content += f"<p><strong>{title}</strong></p>{content}"
@@ -55,10 +69,6 @@ if current_content.strip():
 filtered_categories = []
 for c in categories:
     title = c['title']
-    if "Overview" in title or "OPENING SUMMARY" in title or "GMA Weekly" in title:
-        title = "Overview"
-    if "Water Infrastructure" in title:
-        title = "Water Infrastructure"
     
     existing = next((x for x in filtered_categories if x['title'] == title), None)
     if existing:
@@ -91,7 +101,7 @@ for idx, cat in enumerate(filtered_categories):
       <h3>{title}</h3>
       <span class="handoff">August 17–21, 2026</span>
     </div>
-    <div style="margin-top:20px; font-size:14px; color:var(--ink); line-height: 1.6;">
+    <div style="margin-top:20px; font-size:14px; color:var(--ink); line-height: 1.6; overflow-x: auto;">
       {cat['content']}
     </div>
   </div>
@@ -111,4 +121,4 @@ with open(out_path, 'w', encoding='utf-8') as f:
 
 print(f"Successfully generated {len(filtered_categories)} tabs.")
 for c in filtered_categories:
-    print(" - " + c['title'])
+    print(f" - {c['title']}: {len(c['content'])} chars")
