@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { NewsletterTabs } from "@/components/newsletters/newsletter-tabs";
-
+import aug17Data from "@/data/newsletters/aug-17-21-2026.json";
 
 // In a real app, this would come from a database or CMS.
 // For now, we only have one parsed newsletter.
@@ -8,7 +8,7 @@ const availableNewsletters = {
   "weekly-funding-digest-aug-17-21-2026": {
     title: "Weekly Funding Digest",
     date: "August 17–21, 2026",
-    file: "aug-17-21-2026.json"
+    data: aug17Data
   }
 };
 
@@ -33,15 +33,7 @@ export default async function NewsletterPage({ params }: { params: { slug: strin
     notFound();
   }
 
-  // Load the parsed JSON data via dynamic import so Vercel bundles it
-  let categories = [];
-  try {
-    const data = await import(`@/data/newsletters/${meta.file}`);
-    categories = data.default || data;
-  } catch (error) {
-    console.error("Error loading newsletter data:", error);
-    notFound();
-  }
+  const categories = meta.data;
 
   return (
     <main className="min-h-screen bg-background text-foreground noise pt-32 pb-16 md:pt-40 md:pb-24">
