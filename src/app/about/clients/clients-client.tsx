@@ -19,8 +19,12 @@ export function ClientsClient({ clients }: { clients: Client[] }) {
     return acc;
   }, {} as Record<string, Client[]>);
 
-  const categories = Object.keys(groupedClients).sort();
+  const categories = ["All", ...Object.keys(groupedClients).sort()];
   const [activeCategory, setActiveCategory] = useState(categories[0]);
+
+  const displayedClients = activeCategory === "All" 
+    ? clients 
+    : groupedClients[activeCategory];
 
   return (
     <>
@@ -44,7 +48,7 @@ export function ClientsClient({ clients }: { clients: Client[] }) {
         </ScrollReveal>
         
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 relative z-10">
-          {groupedClients[activeCategory]
+          {displayedClients
             .sort((a, b) => a.name.localeCompare(b.name))
             .map((client, idx) => (
               <ClientLogoCard key={`${activeCategory}-${idx}`} client={client} />
