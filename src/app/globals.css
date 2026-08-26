@@ -97,7 +97,7 @@
   animation: marquee 160s linear infinite;
 }
 .animate-marquee-logos {
-  animation: marquee 40s linear infinite;
+  animation: marquee 80s linear infinite;
 }
 
 @layer utilities {

@@ -42,11 +42,11 @@ export function SectionTitle({
   align?: "left" | "center";
 }) {
   return (
-    <div className={`max-w-3xl ${align === "center" ? "mx-auto text-center" : ""}`}>
+    <ScrollReveal animation={align === "center" ? "fade-up" : "slide-left"} className={`max-w-3xl ${align === "center" ? "mx-auto text-center" : ""}`}>
       {eyebrow && <Eyebrow>{eyebrow}</Eyebrow>}
       <h2 className="mt-4 text-3xl md:text-5xl font-semibold text-foreground leading-[1.05]">{title}</h2>
       {subtitle && <p className="mt-4 text-base md:text-lg text-muted leading-relaxed">{subtitle}</p>}
-    </div>
+    </ScrollReveal>
   );
 }
 
@@ -60,11 +60,13 @@ export function GlassCard({
   hover?: boolean;
 }) {
   return (
-    <div
-      className={`glass rounded-2xl p-6 ${hover ? "card-hover" : ""} ${className}`}
-    >
-      {children}
-    </div>
+    <ScrollReveal animation="scale-up">
+      <div
+        className={`glass rounded-2xl p-6 ${hover ? "card-hover" : ""} ${className}`}
+      >
+        {children}
+      </div>
+    </ScrollReveal>
   );
 }
 

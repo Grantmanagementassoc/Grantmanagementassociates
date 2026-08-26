@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Section, SectionTitle, Eyebrow, GlassCard, Breadcrumbs, CTACard, BackgroundGrid } from "@/components/site/ui";
 import { openRoles, site } from "@/lib/content";
+import { CareerForm } from "@/components/forms/career-form";
 
 export const metadata: Metadata = {
   title: "Careers",
@@ -50,12 +51,7 @@ export default function CareersPage() {
       </Section>
 
       <Section>
-        <CTACard
-          title="Don't see your role?"
-          subtitle="Send us your resume anyway. Great people find us when the timing isn't perfect."
-          primary={{ label: "Send your resume", href: "/contact" }}
-          secondary={{ label: "About GMA", href: "/about" }}
-        />
+        <CareerForm />
       </Section>
     </>
   );
