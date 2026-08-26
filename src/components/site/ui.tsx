@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { AnimatedNumber } from "./animated-number";
+import { ScrollReveal } from "./scroll-reveal";
 
 export function Section({
   children,
@@ -13,7 +14,9 @@ export function Section({
 }) {
   return (
     <section id={id} className={`mx-auto max-w-[1600px] px-6 py-20 md:py-28 ${className}`}>
-      {children}
+      <ScrollReveal>
+        {children}
+      </ScrollReveal>
     </section>
   );
 }

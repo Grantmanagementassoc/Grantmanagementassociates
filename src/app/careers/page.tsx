@@ -28,26 +28,7 @@ export default function CareersPage() {
         </div>
       </section>
 
-      <Section>
-        <SectionTitle eyebrow="Benefits" title="How we take care of our team." />
-        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {[
-            { t: "Remote-first", d: "Work from anywhere in the U.S." },
-            { t: "Comprehensive health", d: "Medical, dental, vision — fully covered." },
-            { t: "401(k) with match", d: "5% employer match, vested year one." },
-            { t: "Unlimited PTO", d: "Rest is a strategy, not a luxury." },
-            { t: "$3K learning budget", d: "Conferences, certifications, courses." },
-            { t: "Home office stipend", d: "$2,500 to build your workspace." },
-            { t: "Mission-aligned", d: "Every project moves capital into public good." },
-            { t: "Real ownership", d: "Senior team profit-share program." },
-          ].map((b) => (
-            <GlassCard key={b.t}>
-              <div className="font-semibold text-foreground">{b.t}</div>
-              <div className="mt-2 text-sm text-muted">{b.d}</div>
-            </GlassCard>
-          ))}
-        </div>
-      </Section>
+
 
       <Section>
         <SectionTitle eyebrow="Open roles" title="We're hiring." />
