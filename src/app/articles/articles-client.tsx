@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import type { Article } from "@/lib/scraped-articles";
+import { ScrollReveal } from "@/components/site/scroll-reveal";
 
 export function ArticlesClient({ items, categories }: { items: Article[]; categories: string[] }) {
   const [category, setCategory] = useState<string>("all");
@@ -42,32 +43,34 @@ export function ArticlesClient({ items, categories }: { items: Article[]; catego
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 relative z-10">
         {filtered.map((post, idx) => (
-          <Link href={`/articles/${post.slug}`} key={idx} className="block group">
-            <article className="glass h-full rounded-2xl overflow-hidden flex flex-col transition-all duration-300 relative group-hover:border-cyan-400/30">
-              <div className="p-8 flex-grow flex flex-col relative z-20">
-                {(post.image && !post.image.includes('fallback.svg') && !post.image.includes('media.licdn.com')) ? (
-                  <div className="w-full h-48 mb-6 rounded-xl overflow-hidden relative border border-white/5 shrink-0 bg-black/20">
-                    <img src={post.image} alt={post.title} className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" />
+          <ScrollReveal key={idx} random={true}>
+            <Link href={`/articles/${post.slug}`} className="block group h-full">
+              <article className="glass h-full rounded-2xl overflow-hidden flex flex-col transition-all duration-300 relative group-hover:border-cyan-400/30">
+                <div className="p-8 flex-grow flex flex-col relative z-20">
+                  {(post.image && !post.image.includes('fallback.svg') && !post.image.includes('media.licdn.com')) ? (
+                    <div className="w-full h-48 mb-6 rounded-xl overflow-hidden relative border border-white/5 shrink-0 bg-black/20">
+                      <img src={post.image} alt={post.title} className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" />
+                    </div>
+                  ) : (
+                    <div className="w-full h-48 mb-6 rounded-xl overflow-hidden relative border border-white/5 shrink-0 bg-gradient-to-br from-cyan-900/40 to-blue-900/20 flex items-center justify-center">
+                      <div className="w-16 h-16 rounded-full border-2 border-cyan-500/20 border-t-cyan-400 animate-spin opacity-50"></div>
+                    </div>
+                  )}
+                  <div className="text-xs uppercase tracking-widest text-cyan-500 dark:text-cyan-300 font-semibold mb-4">{post.category}</div>
+                  <h2 className="text-xl font-semibold text-foreground group-hover:text-cyan-300 transition-colors duration-300 mb-3">
+                    {post.title}
+                  </h2>
+                  <p className="text-muted text-sm flex-grow opacity-90 leading-relaxed line-clamp-4">
+                    {post.excerpt}
+                  </p>
+                  <div className="mt-6 pt-4 border-t border-black/5 dark:border-white/5 text-cyan-300 font-semibold text-sm group-hover:text-cyan-400 transition-colors duration-300 flex items-center gap-2">
+                    Read Article 
+                    <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
                   </div>
-                ) : (
-                  <div className="w-full h-48 mb-6 rounded-xl overflow-hidden relative border border-white/5 shrink-0 bg-gradient-to-br from-cyan-900/40 to-blue-900/20 flex items-center justify-center">
-                    <div className="w-16 h-16 rounded-full border-2 border-cyan-500/20 border-t-cyan-400 animate-spin opacity-50"></div>
-                  </div>
-                )}
-                <div className="text-xs uppercase tracking-widest text-cyan-500 dark:text-cyan-300 font-semibold mb-4">{post.category}</div>
-                <h2 className="text-xl font-semibold text-foreground group-hover:text-cyan-300 transition-colors duration-300 mb-3">
-                  {post.title}
-                </h2>
-                <p className="text-muted text-sm flex-grow opacity-90 leading-relaxed line-clamp-4">
-                  {post.excerpt}
-                </p>
-                <div className="mt-6 pt-4 border-t border-black/5 dark:border-white/5 text-cyan-300 font-semibold text-sm group-hover:text-cyan-400 transition-colors duration-300 flex items-center gap-2">
-                  Read Article 
-                  <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
                 </div>
-              </div>
-            </article>
-          </Link>
+              </article>
+            </Link>
+          </ScrollReveal>
         ))}
       </div>
       

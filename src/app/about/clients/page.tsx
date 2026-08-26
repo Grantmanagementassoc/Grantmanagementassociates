@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import { Section, SectionTitle, Eyebrow, Breadcrumbs, BackgroundGrid } from "@/components/site/ui";
+import { Eyebrow, Breadcrumbs, BackgroundGrid } from "@/components/site/ui";
 import { clients } from "@/data/clients";
-import { ClientLogoCard } from "@/components/site/client-logo-card";
+import { ClientsClient } from "./clients-client";
 
 export const metadata: Metadata = {
   title: "Our Clients & Partners",
@@ -9,17 +9,6 @@ export const metadata: Metadata = {
 };
 
 export default function ClientsPage() {
-  // Group clients by category
-  const groupedClients = clients.reduce((acc, client) => {
-    const category = client.category || "Other";
-    if (!acc[category]) acc[category] = [];
-    acc[category].push(client);
-    return acc;
-  }, {} as Record<string, typeof clients>);
-
-  // Sort categories alphabetically
-  const categories = Object.keys(groupedClients).sort();
-
   return (
     <>
       <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden noise">
@@ -39,18 +28,7 @@ export default function ClientsPage() {
         </div>
       </section>
 
-      {categories.map((category, index) => (
-        <Section key={category} className={index % 2 === 0 ? "bg-black/5 dark:bg-white/5" : ""}>
-          <SectionTitle title={category} />
-          <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6">
-            {groupedClients[category]
-              .sort((a, b) => a.name.localeCompare(b.name))
-              .map((client, idx) => (
-                <ClientLogoCard key={idx} client={client} />
-            ))}
-          </div>
-        </Section>
-      ))}
+      <ClientsClient clients={clients} />
     </>
   );
 }

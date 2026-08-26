@@ -83,8 +83,8 @@ export const primaryNav: NavGroup[] = [
   },
   { label: "Case Studies", href: "/case-studies" },
   { label: "Articles", href: "/articles" },
-  { label: "Newsletters", href: "/newsletters" },
   { label: "Results", href: "/results" },
+  { label: "Newsletters", href: "/newsletters" },
 ];
 
 export const footerNav = [

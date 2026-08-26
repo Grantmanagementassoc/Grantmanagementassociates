@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, FileText } from "lucide-react";
+import { ScrollReveal } from "@/components/site/scroll-reveal";
 
 export const metadata: Metadata = {
   title: "Newsletters",
@@ -33,31 +34,32 @@ export default function NewslettersPage() {
         <div className="max-w-5xl mx-auto mt-12 relative z-10">
           <div className="grid gap-6">
             {newsletters.map((newsletter) => (
-              <Link
-                key={newsletter.slug}
-                href={`/newsletters/${newsletter.slug}`}
-                className="group relative flex flex-col md:flex-row items-start md:items-center gap-6 p-6 md:p-8 rounded-3xl glass border border-glass-border hover:border-cyan-400/30 transition-all duration-300 shadow-xl"
-              >
-                <div className="h-16 w-16 rounded-full bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                  <FileText className="h-8 w-8 text-cyan-400" />
-                </div>
-                <div className="flex-1">
-                  <div className="flex items-center gap-3 mb-3">
-                    <h3 className="text-2xl font-display font-bold text-white group-hover:text-cyan-400 transition-colors">
-                      {newsletter.title}
-                    </h3>
-                    <span className="text-xs uppercase tracking-wider font-semibold text-cyan-900 bg-cyan-400 px-3 py-1 rounded-full">
-                      {newsletter.date}
-                    </span>
+              <ScrollReveal key={newsletter.slug} random={true}>
+                <Link
+                  href={`/newsletters/${newsletter.slug}`}
+                  className="group relative flex flex-col md:flex-row items-start md:items-center gap-6 p-6 md:p-8 rounded-3xl glass border border-glass-border hover:border-cyan-400/30 transition-all duration-300 shadow-xl"
+                >
+                  <div className="h-16 w-16 rounded-full bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <FileText className="h-8 w-8 text-cyan-400" />
                   </div>
-                  <p className="text-slate-400 text-base max-w-3xl leading-relaxed">
-                    {newsletter.description}
-                  </p>
-                </div>
-                <div className="hidden md:flex items-center gap-2 text-sm font-semibold text-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity -translate-x-4 group-hover:translate-x-0 duration-300">
-                  Read Digest <ArrowRight className="h-5 w-5" />
-                </div>
-              </Link>
+                  <div className="flex-1">
+                    <div className="flex items-center gap-3 mb-3">
+                      <h3 className="text-2xl font-display font-bold text-white group-hover:text-cyan-400 transition-colors">
+                        {newsletter.title}
+                      </h3>
+                      <span className="text-xs uppercase tracking-wider font-semibold text-cyan-900 bg-cyan-400 px-3 py-1 rounded-full">
+                        {newsletter.date}
+                      </span>
+                    </div>
+                    <p className="text-slate-400 text-base max-w-3xl leading-relaxed">
+                      {newsletter.description}
+                    </p>
+                  </div>
+                  <div className="hidden md:flex items-center gap-2 text-sm font-semibold text-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity -translate-x-4 group-hover:translate-x-0 duration-300">
+                    Read Digest <ArrowRight className="h-5 w-5" />
+                  </div>
+                </Link>
+              </ScrollReveal>
             ))}
           </div>
         </div>
