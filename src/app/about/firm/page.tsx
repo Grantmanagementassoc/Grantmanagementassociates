@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Section, SectionTitle, Eyebrow, GlassCard, Stat, CTACard, Breadcrumbs, BackgroundGrid } from "@/components/site/ui";
+import { ScrollReveal } from "@/components/site/scroll-reveal";
 import { site, timeline } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -74,14 +75,16 @@ export default function FirmPage() {
           <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-cyan-glow/50 via-sapphire/30 to-transparent md:-translate-x-1/2" aria-hidden />
           <div className="space-y-10">
             {timeline.map((t, i) => (
-              <div key={t.year} className={`relative pl-14 md:pl-0 md:grid md:grid-cols-2 md:gap-12 ${i % 2 === 0 ? "" : "md:[direction:rtl]"}`}>
-                <div className={`md:[direction:ltr] ${i % 2 === 0 ? "md:text-right md:pr-12" : "md:pl-12"}`}>
-                  <div className="text-xs font-mono text-cyan-300">{t.year}</div>
-                  <h3 className="mt-1 text-xl font-semibold text-foreground">{t.title}</h3>
-                  <p className="mt-2 text-sm text-muted leading-relaxed">{t.body}</p>
+              <ScrollReveal key={t.year} random={true}>
+                <div className={`relative pl-14 md:pl-0 md:grid md:grid-cols-2 md:gap-12 ${i % 2 === 0 ? "" : "md:[direction:rtl]"}`}>
+                  <div className={`md:[direction:ltr] ${i % 2 === 0 ? "md:text-right md:pr-12" : "md:pl-12"}`}>
+                    <div className="text-xs font-mono text-cyan-300">{t.year}</div>
+                    <h3 className="mt-1 text-xl font-semibold text-foreground">{t.title}</h3>
+                    <p className="mt-2 text-sm text-muted leading-relaxed">{t.body}</p>
+                  </div>
+                  <div className={`absolute left-4 md:left-1/2 top-1 md:-translate-x-1/2 w-3 h-3 rounded-full bg-cyan-glow shadow-[0_0_20px_rgba(0,240,255,0.6)]`} aria-hidden />
                 </div>
-                <div className={`absolute left-4 md:left-1/2 top-1 md:-translate-x-1/2 w-3 h-3 rounded-full bg-cyan-glow shadow-[0_0_20px_rgba(0,240,255,0.6)]`} aria-hidden />
-              </div>
+              </ScrollReveal>
             ))}
           </div>
         </div>
