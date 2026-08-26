@@ -61,7 +61,7 @@ function LogoItem({ logo }: { logo: typeof LOGOS[0] }) {
   }
 
   return (
-    <div className="flex items-center justify-center h-12 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all dark:invert dark:opacity-80 dark:hover:opacity-100 dark:hover:invert-0">
+    <div className="flex items-center justify-center h-12 transition-all dark:bg-white/90 dark:p-1.5 dark:rounded-lg opacity-70 hover:opacity-100 grayscale hover:grayscale-0">
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={`https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://${logo.domain}&size=128`}
@@ -77,7 +77,7 @@ export function LogoTicker() {
   const items = [...LOGOS, ...LOGOS];
   return (
     <div className="relative overflow-hidden py-8 border-y border-black/5 dark:border-white/5 mask-fade bg-white/50 dark:bg-black/50 backdrop-blur-sm">
-      <div className="flex gap-16 items-center animate-marquee-logos whitespace-nowrap">
+      <div className="flex w-max gap-16 items-center animate-marquee-logos whitespace-nowrap">
         {items.map((logo, i) => (
           <LogoItem key={i} logo={logo} />
         ))}

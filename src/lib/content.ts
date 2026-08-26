@@ -43,6 +43,8 @@ export const primaryNav: NavGroup[] = [
     children: [
       { label: "Our Firm", href: "/about/firm", description: "Learn about our mission, values, and history." },
       { label: "Our Team", href: "/about/team", description: "Meet the experts and leadership behind GMA." },
+      { label: "Our Clients", href: "/about/clients", description: "See the organizations we partner with." },
+      { label: "Careers", href: "/careers", description: "Join our mission-driven team." },
     ],
   },
   {
