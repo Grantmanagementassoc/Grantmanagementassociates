@@ -42,7 +42,7 @@ const LOGOS = [
   { name: "Lassen MUD", domain: "lmud.org" },
 ];
 
-function LogoItem({ logo }: { logo: typeof LOGOS[0] }) {
+function LogoItem({ logo, colorMode = "grayscale" }: { logo: typeof LOGOS[0]; colorMode?: "grayscale" | "color" }) {
   const [error, setError] = useState(false);
   const [mounted, setMounted] = useState(false);
 
@@ -54,14 +54,14 @@ function LogoItem({ logo }: { logo: typeof LOGOS[0] }) {
 
   if (error) {
     return (
-      <div className="text-muted hover:text-foreground transition-colors text-lg md:text-xl font-display tracking-tight opacity-70 hover:opacity-100 flex items-center h-12">
+      <div className={`transition-colors text-lg md:text-xl font-display tracking-tight flex items-center h-12 ${colorMode === "grayscale" ? "text-muted opacity-50" : "text-foreground opacity-100"}`}>
         {logo.name}
       </div>
     );
   }
 
   return (
-    <div className="flex items-center justify-center h-12 transition-all dark:bg-white/90 dark:p-1.5 dark:rounded-lg opacity-70 hover:opacity-100 grayscale hover:grayscale-0">
+    <div className={`flex items-center justify-center h-12 transition-all dark:bg-white/90 dark:p-1.5 dark:rounded-lg ${colorMode === "grayscale" ? "opacity-50 grayscale hover:opacity-100 hover:grayscale-0" : "opacity-100 grayscale-0"}`}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={`https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://${logo.domain}&size=128`}
@@ -79,11 +79,21 @@ export function LogoTicker() {
     <div className="relative overflow-hidden py-8 border-y border-black/5 dark:border-white/5 mask-fade bg-white/50 dark:bg-black/50 backdrop-blur-sm">
       <div className="flex w-max gap-16 items-center animate-marquee-logos whitespace-nowrap">
         {items.map((logo, i) => (
-          <LogoItem key={i} logo={logo} />
+          <LogoItem key={i} logo={logo} colorMode="grayscale" />
         ))}
       </div>
+      
+      <div className="absolute inset-0 py-8 pointer-events-none mask-center-highlight">
+        <div className="flex w-max gap-16 items-center animate-marquee-logos whitespace-nowrap">
+          {items.map((logo, i) => (
+            <LogoItem key={`color-${i}`} logo={logo} colorMode="color" />
+          ))}
+        </div>
+      </div>
+
       <style>{`
         .mask-fade { mask-image: linear-gradient(90deg, transparent, black 10%, black 90%, transparent); -webkit-mask-image: linear-gradient(90deg, transparent, black 10%, black 90%, transparent); }
+        .mask-center-highlight { mask-image: linear-gradient(90deg, transparent 40%, black 48%, black 52%, transparent 60%); -webkit-mask-image: linear-gradient(90deg, transparent 40%, black 48%, black 52%, transparent 60%); }
       `}</style>
     </div>
   );
