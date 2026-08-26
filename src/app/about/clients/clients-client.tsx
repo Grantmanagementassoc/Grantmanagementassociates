@@ -7,7 +7,7 @@ import { ScrollReveal } from "@/components/site/scroll-reveal";
 
 type Client = {
   name: string;
-  domain: string;
+  domain?: string;
   category?: string;
 };
 
