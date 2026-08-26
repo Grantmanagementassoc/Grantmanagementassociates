@@ -64,7 +64,7 @@ function LogoItem({ logo, colorMode = "grayscale" }: { logo: typeof LOGOS[0]; co
     <div className={`flex items-center justify-center h-12 transition-all dark:bg-white/90 dark:p-1.5 dark:rounded-lg ${colorMode === "grayscale" ? "opacity-50 grayscale hover:opacity-100 hover:grayscale-0" : "opacity-100 grayscale-0"}`}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src={`https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://${logo.domain}&size=128`}
+        src={`https://logo.clearbit.com/${logo.domain}`}
         alt={logo.name}
         className="max-h-8 max-w-[140px] object-contain"
         onError={() => setError(true)}

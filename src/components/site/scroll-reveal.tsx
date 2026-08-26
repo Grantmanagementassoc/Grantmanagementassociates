@@ -29,7 +29,7 @@ export function ScrollReveal({
       initial={initial}
       whileInView={whileInView}
       viewport={{ once: true, margin: "-100px" }}
-      transition={{ duration: 0.6, ease: "easeOut", delay }}
+      transition={{ duration: 1.2, ease: "easeOut", delay }}
       className={className}
     >
       {children}

@@ -11,7 +11,7 @@ export function ClientLogoCard({ client }: { client: { name: string; domain?: st
         <div className="w-16 h-16 flex items-center justify-center shrink-0 dark:bg-white/90 dark:p-1.5 dark:rounded-lg">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src={`https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://${client.domain}&size=128`}
+            src={`https://logo.clearbit.com/${client.domain}`}
             alt={client.name}
             className="max-h-full max-w-full object-contain"
             onError={() => setError(true)}
