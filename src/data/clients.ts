@@ -1,11 +1,13 @@
 export const clients = [
   {
     "name": "Adomani",
-    "category": "Public Company"
+    "category": "Public Company",
+    "domain": "adomani-italia.com"
   },
   {
     "name": "Adventist Health",
-    "category": "Nonprofit"
+    "category": "Nonprofit",
+    "domain": "ah.org"
   },
   {
     "name": "Aha Macav Power Service",
@@ -17,27 +19,33 @@ export const clients = [
   },
   {
     "name": "Airloom",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "airloom.co"
   },
   {
     "name": "AJR Trucking",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "ajrtrucking.com"
   },
   {
     "name": "Alameda County",
-    "category": "State and Local Government"
+    "category": "State and Local Government",
+    "domain": "acgov.org"
   },
   {
     "name": "Alameda County",
-    "category": "State and Local Government"
+    "category": "State and Local Government",
+    "domain": "acgov.org"
   },
   {
     "name": "Alameda County",
-    "category": "State and Local Government"
+    "category": "State and Local Government",
+    "domain": "acgov.org"
   },
   {
     "name": "Alameda County",
-    "category": "State and Local Government"
+    "category": "State and Local Government",
+    "domain": "acgov.org"
   },
   {
     "name": "Alameda Technologies",
@@ -45,19 +53,23 @@ export const clients = [
   },
   {
     "name": "Alaska Ocean Cluster",
-    "category": "Nonprofit"
+    "category": "Nonprofit",
+    "domain": "alaskaoceancluster.com"
   },
   {
     "name": "Allotrope Partners",
-    "category": "Nonprofit"
+    "category": "Nonprofit",
+    "domain": "allotropepartners.com"
   },
   {
     "name": "AltAir",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "altairglobal.com"
   },
   {
     "name": "Amber Kinetics",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "amberkinetics.com"
   },
   {
     "name": "Amber Semiconductor, Inc.",
@@ -69,11 +81,13 @@ export const clients = [
   },
   {
     "name": "Ameresco",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "ameresco.com"
   },
   {
     "name": "American Diversified",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "amerdiv.com"
   },
   {
     "name": "American Honda Motor Company, Inc.",
@@ -81,27 +95,33 @@ export const clients = [
   },
   {
     "name": "Amply",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "amplysoft.com"
   },
   {
     "name": "Anser",
-    "category": "Nonprofit"
+    "category": "Nonprofit",
+    "domain": "anser.org"
   },
   {
     "name": "Applied Thermoelectric Solutions",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "thermoelectricsolutions.com"
   },
   {
     "name": "Arkansas Construction Education",
-    "category": "Foundation"
+    "category": "Foundation",
+    "domain": "myacef.org"
   },
   {
     "name": "Armageddon Energy",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "armageddonenergy.com"
   },
   {
     "name": "ArrayPower",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "arraypower.com"
   },
   {
     "name": "Artic Web Foundation Inc.",
@@ -109,11 +129,13 @@ export const clients = [
   },
   {
     "name": "Ascend",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "ascendertx.com"
   },
   {
     "name": "ASHRAE",
-    "category": "Nonprofit"
+    "category": "Nonprofit",
+    "domain": "ashrae.org"
   },
   {
     "name": "Association of Bay Area Governments",
@@ -121,19 +143,23 @@ export const clients = [
   },
   {
     "name": "At One Ventures",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "atoneventures.com"
   },
   {
     "name": "ATEIOS",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "ateios.com"
   },
   {
     "name": "Atira",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "atiracing.com"
   },
   {
     "name": "Austin Air Systems",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "austinair.com"
   },
   {
     "name": "AutoTek Green",
@@ -141,7 +167,8 @@ export const clients = [
   },
   {
     "name": "Avantus",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "avantus.com.br"
   },
   {
     "name": "Axiom Exergy",
@@ -153,15 +180,18 @@ export const clients = [
   },
   {
     "name": "BARCO",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "barcodelookup.com"
   },
   {
     "name": "Battelle",
-    "category": "Nonprofit"
+    "category": "Nonprofit",
+    "domain": "battelle.org"
   },
   {
     "name": "Ben-En",
-    "category": "Other"
+    "category": "Other",
+    "domain": "benenden.co.uk"
   },
   {
     "name": "Bennet Environmental",
@@ -169,7 +199,8 @@ export const clients = [
   },
   {
     "name": "Bering Sea Fishermen's Association",
-    "category": "Nonprofit"
+    "category": "Nonprofit",
+    "domain": "bsfaak.org"
   },
   {
     "name": "Berkshire Hathaway Energy Company",
@@ -177,7 +208,8 @@ export const clients = [
   },
   {
     "name": "Bidgely",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "bidgely.com"
   },
   {
     "name": "Biodynamic Body Armor",
@@ -185,39 +217,48 @@ export const clients = [
   },
   {
     "name": "Black & Veatch",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "bv.com"
   },
   {
     "name": "BLU3, Inc.",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "bluinc.com"
   },
   {
     "name": "Blue Evolution",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "blueevolution.com"
   },
   {
     "name": "Blue Ocean Barns",
-    "category": "Public Company"
+    "category": "Public Company",
+    "domain": "blueoceanbarns.com"
   },
   {
     "name": "Blue Planet",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "blue-planet-project.com"
   },
   {
     "name": "BodySync",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "bodysync.com"
   },
   {
     "name": "Bosch",
-    "category": "Fortune 500"
+    "category": "Fortune 500",
+    "domain": "bosch.com"
   },
   {
     "name": "Bowersox Investment Group",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "bowersoxgroup.com"
   },
   {
     "name": "BoxPower",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "boxpower.io"
   },
   {
     "name": "Brickyard Creek Watershed Project",
@@ -225,7 +266,8 @@ export const clients = [
   },
   {
     "name": "Breastfeed LA",
-    "category": "Nonprofit"
+    "category": "Nonprofit",
+    "domain": "breastfeedla.org"
   },
   {
     "name": "BRIDGE Housing Corporation",
@@ -237,7 +279,8 @@ export const clients = [
   },
   {
     "name": "Butte County Association of Governments",
-    "category": "State and Local Government"
+    "category": "State and Local Government",
+    "domain": "bcag.org"
   },
   {
     "name": "Butte County Economic Devlopment",
@@ -245,7 +288,8 @@ export const clients = [
   },
   {
     "name": "Butte County Resource Conservation District",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "bcrcd.org"
   },
   {
     "name": "Butte Home Health, Inc.",
@@ -265,7 +309,8 @@ export const clients = [
   },
   {
     "name": "Cal IPC",
-    "category": "Nonprofit"
+    "category": "Nonprofit",
+    "domain": "cal-ipc.org"
   },
   {
     "name": "Cal Land Investors",
@@ -273,7 +318,8 @@ export const clients = [
   },
   {
     "name": "CalCann",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "calcannholdings.com"
   },
   {
     "name": "Calera Corporation",
@@ -281,7 +327,8 @@ export const clients = [
   },
   {
     "name": "Calgren",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "calgren.com"
   },
   {
     "name": "California Center for Sustainable Energy",
@@ -297,7 +344,8 @@ export const clients = [
   },
   {
     "name": "California Native Plant Society",
-    "category": "Nonprofit"
+    "category": "Nonprofit",
+    "domain": "cnps.org"
   },
   {
     "name": "California Onsite Wastewater Association",
@@ -309,23 +357,28 @@ export const clients = [
   },
   {
     "name": "CalSEED",
-    "category": "Association"
+    "category": "Association",
+    "domain": "calseed.org"
   },
   {
     "name": "CALSTART",
-    "category": "Nonprofit"
+    "category": "Nonprofit",
+    "domain": "calstartuplawfirm.com"
   },
   {
     "name": "CALSTART",
-    "category": "Nonprofit"
+    "category": "Nonprofit",
+    "domain": "calstartuplawfirm.com"
   },
   {
     "name": "CALSTART",
-    "category": "Nonprofit"
+    "category": "Nonprofit",
+    "domain": "calstartuplawfirm.com"
   },
   {
     "name": "Camelina Company",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "camelinacompany.es"
   },
   {
     "name": "Camelot Equestrian Park",
@@ -333,11 +386,13 @@ export const clients = [
   },
   {
     "name": "Canary Biofuels",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "canarybiofuels.com"
   },
   {
     "name": "Capital Area Realtors Federal Credit Union",
-    "category": "Nonprofit"
+    "category": "Nonprofit",
+    "domain": "carfcu.org"
   },
   {
     "name": "Carriere Energy 1, LLC",
@@ -357,11 +412,13 @@ export const clients = [
   },
   {
     "name": "Casco Contractors",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "cascocontractors.com"
   },
   {
     "name": "Cenergy",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "5cenergyinc.com"
   },
   {
     "name": "Center for International Trade and Development",
@@ -381,23 +438,28 @@ export const clients = [
   },
   {
     "name": "Chabin Concepts",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "chabinconcepts.com"
   },
   {
     "name": "Chargepoint",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "chargepoint.com"
   },
   {
     "name": "Chargepoint",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "chargepoint.com"
   },
   {
     "name": "Chargepoint",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "chargepoint.com"
   },
   {
     "name": "Chevron",
-    "category": "Fortune 500"
+    "category": "Fortune 500",
+    "domain": "chevron.com"
   },
   {
     "name": "Cicle, Inc.",
@@ -405,19 +467,23 @@ export const clients = [
   },
   {
     "name": "City of Anderson",
-    "category": "State and Local Government"
+    "category": "State and Local Government",
+    "domain": "cityofanderson.com"
   },
   {
     "name": "City of Bakersfield",
-    "category": "State and Local Government"
+    "category": "State and Local Government",
+    "domain": "bakersfieldcity.us"
   },
   {
     "name": "City of Chico",
-    "category": "State and Local Government"
+    "category": "State and Local Government",
+    "domain": "chico.ca.us"
   },
   {
     "name": "City of Clearlake",
-    "category": "State and Local Government"
+    "category": "State and Local Government",
+    "domain": "cityofclearlake.com"
   },
   {
     "name": "City of Lake Worth Beach",
@@ -425,15 +491,18 @@ export const clients = [
   },
   {
     "name": "City of Lakeport",
-    "category": "State and Local Government"
+    "category": "State and Local Government",
+    "domain": "cityoflakeport.com"
   },
   {
     "name": "City of Orland",
-    "category": "State and Local Government"
+    "category": "State and Local Government",
+    "domain": "orlando.gov"
   },
   {
     "name": "City of Phoenix",
-    "category": "State and Local Government"
+    "category": "State and Local Government",
+    "domain": "phoenixoregon.gov"
   },
   {
     "name": "City of Porterville",
@@ -441,27 +510,33 @@ export const clients = [
   },
   {
     "name": "City of Prescott",
-    "category": "State and Local Government"
+    "category": "State and Local Government",
+    "domain": "prescott-az.gov"
   },
   {
     "name": "City of Willows",
-    "category": "State and Local Government"
+    "category": "State and Local Government",
+    "domain": "cityofwillows.org"
   },
   {
     "name": "Clean Coalition",
-    "category": "Nonprofit"
+    "category": "Nonprofit",
+    "domain": "clean-coalition.org"
   },
   {
     "name": "Clean Tech Grants",
-    "category": "Clean Energy"
+    "category": "Clean Energy",
+    "domain": "cleantechgrants.com"
   },
   {
     "name": "Cleantech San Diego",
-    "category": "Nonprofit"
+    "category": "Nonprofit",
+    "domain": "cleantechsandiego.org"
   },
   {
     "name": "Clemson University",
-    "category": "Colleges and Universities"
+    "category": "Colleges and Universities",
+    "domain": "clemson.edu"
   },
   {
     "name": "Climate Change and Emissions Management (CCEMC) Corporation",
@@ -473,15 +548,18 @@ export const clients = [
   },
   {
     "name": "Collaboratev",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "collaborate.vet"
   },
   {
     "name": "Columbia Packaging Group",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "columbiapkg.com"
   },
   {
     "name": "Common Mission Project",
-    "category": "Nonprofit"
+    "category": "Nonprofit",
+    "domain": "commonmission.us"
   },
   {
     "name": "Community Action Agency of Butte County, Inc.",
@@ -493,7 +571,8 @@ export const clients = [
   },
   {
     "name": "Community Environmental Council",
-    "category": "Nonprofit"
+    "category": "Nonprofit",
+    "domain": "cecsb.org"
   },
   {
     "name": "Concentric Energies and Resource Group",
@@ -501,15 +580,18 @@ export const clients = [
   },
   {
     "name": "ConSol",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "coned.com"
   },
   {
     "name": "Constructive Systems Inc.",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "constructivesystemsinc.com"
   },
   {
     "name": "Coulomb Solutions",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "coulombsolutions.com"
   },
   {
     "name": "Coulomb Technologies",
@@ -517,11 +599,13 @@ export const clients = [
   },
   {
     "name": "County of Alameda",
-    "category": "State and Local Government"
+    "category": "State and Local Government",
+    "domain": "acgov.net"
   },
   {
     "name": "County of Mendocino",
-    "category": "State and Local Government"
+    "category": "State and Local Government",
+    "domain": "mendocino.ca.us"
   },
   {
     "name": "County of Riverside Economic Development Agency",
@@ -545,19 +629,23 @@ export const clients = [
   },
   {
     "name": "Current Ways",
-    "category": "Other"
+    "category": "Other",
+    "domain": "currentways.com"
   },
   {
     "name": "D3 Technologies",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "8d.com"
   },
   {
     "name": "DC-America",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "dcamerica.net"
   },
   {
     "name": "Deep Sea Vision",
-    "category": "Nonprofit"
+    "category": "Nonprofit",
+    "domain": "deepseavision.com"
   },
   {
     "name": "Diamond House Recovery",
@@ -569,15 +657,18 @@ export const clients = [
   },
   {
     "name": "Ebb Carbon",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "ebbcarbon.com"
   },
   {
     "name": "ECO TLP",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "ecotlp.com"
   },
   {
     "name": "Ecology Action",
-    "category": "Nonprofit"
+    "category": "Nonprofit",
+    "domain": "ecology-action.org"
   },
   {
     "name": "Ecority",
@@ -585,15 +676,18 @@ export const clients = [
   },
   {
     "name": "Edisun",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "edisungroup.com"
   },
   {
     "name": "EJ Water",
-    "category": "Nonprofit"
+    "category": "Nonprofit",
+    "domain": "ejwatercoop.com"
   },
   {
     "name": "El Dorado County",
-    "category": "State and Local Government"
+    "category": "State and Local Government",
+    "domain": "edcgov.us"
   },
   {
     "name": "Electric Vehicle Communities Alliance",
@@ -601,15 +695,18 @@ export const clients = [
   },
   {
     "name": "Element Energy",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "elementenergy.com"
   },
   {
     "name": "E-Motorwerks",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "emotorwerks.com"
   },
   {
     "name": "Emrgy",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "emrgy.com"
   },
   {
     "name": "Enchanted Rock Energy",
@@ -617,7 +714,8 @@ export const clients = [
   },
   {
     "name": "Endeavor Energy",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "endeavor-energy.com"
   },
   {
     "name": "ENEL X - North America",
@@ -625,7 +723,8 @@ export const clients = [
   },
   {
     "name": "Ener-core",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "enercoreservices.com"
   },
   {
     "name": "Energy and Environment, Inc.",
@@ -633,15 +732,18 @@ export const clients = [
   },
   {
     "name": "Energy Systems Group",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "energysystemsgroup.com"
   },
   {
     "name": "Energy Vault",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "energyvault.com"
   },
   {
     "name": "Engie",
-    "category": "Fortune 500"
+    "category": "Fortune 500",
+    "domain": "engie.fr"
   },
   {
     "name": "Enlytics",
@@ -649,11 +751,13 @@ export const clients = [
   },
   {
     "name": "Environmental Health Coalition",
-    "category": "Nonprofit"
+    "category": "Nonprofit",
+    "domain": "environmentalhealth.org"
   },
   {
     "name": "Enzinc",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "enzinc.com"
   },
   {
     "name": "e-Radio USA Inc.",
@@ -661,15 +765,18 @@ export const clients = [
   },
   {
     "name": "Etrans",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "etransfers.com"
   },
   {
     "name": "Eventix",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "eventix.io"
   },
   {
     "name": "Exodigo",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "exodigo.com"
   },
   {
     "name": "Faith Technologies, Inc",
@@ -677,7 +784,8 @@ export const clients = [
   },
   {
     "name": "Farad Power",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "faradpower.com"
   },
   {
     "name": "Fastrack Power",
@@ -689,11 +797,13 @@ export const clients = [
   },
   {
     "name": "FlowTech",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "flowtech.co.uk"
   },
   {
     "name": "Form Energy",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "formenergy.com"
   },
   {
     "name": "FouthWave",
@@ -705,7 +815,8 @@ export const clients = [
   },
   {
     "name": "Frontier Wind",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "frontierwindows.net"
   },
   {
     "name": "FYTO, Inc.",
@@ -713,7 +824,8 @@ export const clients = [
   },
   {
     "name": "Gallo",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "gallowayprecision.com"
   },
   {
     "name": "GCC Innovation",
@@ -721,11 +833,13 @@ export const clients = [
   },
   {
     "name": "Generate Capital",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "generatecapital.com"
   },
   {
     "name": "Genesis Dimensions",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "genesisdimensions.com"
   },
   {
     "name": "Georgia Alternative Fuels",
@@ -733,23 +847,28 @@ export const clients = [
   },
   {
     "name": "GeoStabilization International",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "geostabilization.com"
   },
   {
     "name": "GKN Powder Metallurgy",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "gknpm.com"
   },
   {
     "name": "Glenn County",
-    "category": "State and Local Government"
+    "category": "State and Local Government",
+    "domain": "countyofglenn.net"
   },
   {
     "name": "GoTenna",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "gotenna.com"
   },
   {
     "name": "Great River Energy",
-    "category": "Nonprofit"
+    "category": "Nonprofit",
+    "domain": "greatriverenergy.com"
   },
   {
     "name": "Great Valley Center Legacy Funds",
@@ -757,7 +876,8 @@ export const clients = [
   },
   {
     "name": "Green H2",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "greenheck.com"
   },
   {
     "name": "Green Impact Manufacturing",
@@ -765,11 +885,13 @@ export const clients = [
   },
   {
     "name": "GreenDOT",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "greendot.com"
   },
   {
     "name": "Grossmont Union High School District",
-    "category": "Education"
+    "category": "Education",
+    "domain": "guhsd.net"
   },
   {
     "name": "Gruppo EF Technologies USA",
@@ -777,11 +899,13 @@ export const clients = [
   },
   {
     "name": "Handsome Brook Farms",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "handsomebrookfarms.com"
   },
   {
     "name": "HDR Inc.",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "hdrinc.com"
   },
   {
     "name": "Holocene Climate Corporation",
@@ -793,15 +917,18 @@ export const clients = [
   },
   {
     "name": "Honeywell",
-    "category": "Fortune 500"
+    "category": "Fortune 500",
+    "domain": "honeywell.com"
   },
   {
     "name": "Hoonah Indian Association",
-    "category": "Tribal"
+    "category": "Tribal",
+    "domain": "hiatribe.org"
   },
   {
     "name": "Housing Tools",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "housing-tools.com"
   },
   {
     "name": "Howard Developments",
@@ -817,11 +944,13 @@ export const clients = [
   },
   {
     "name": "IISLab",
-    "category": "Other"
+    "category": "Other",
+    "domain": "iis-lab.org"
   },
   {
     "name": "Intertie",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "tiendainterrapidisimo.com"
   },
   {
     "name": "Intinsycs",
@@ -841,11 +970,13 @@ export const clients = [
   },
   {
     "name": "Irwin Industries",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "irwinind.com"
   },
   {
     "name": "Jamboree Housing",
-    "category": "Nonprofit"
+    "category": "Nonprofit",
+    "domain": "jamboreehousing.com"
   },
   {
     "name": "JATON LLC",
@@ -857,7 +988,8 @@ export const clients = [
   },
   {
     "name": "JMA Wireless",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "jmawireless.com"
   },
   {
     "name": "K2 Development Companies",
@@ -873,7 +1005,8 @@ export const clients = [
   },
   {
     "name": "Kings View",
-    "category": "Nonprofit"
+    "category": "Nonprofit",
+    "domain": "kingsview.lk"
   },
   {
     "name": "Kirell-Ingomar",
@@ -881,11 +1014,13 @@ export const clients = [
   },
   {
     "name": "KnewCo.",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "knewconscious.com"
   },
   {
     "name": "KSN Inc.",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "ksninc.com"
   },
   {
     "name": "LA Department of Transportation",
@@ -901,7 +1036,8 @@ export const clients = [
   },
   {
     "name": "Lake County",
-    "category": "Other"
+    "category": "Other",
+    "domain": "lakecountyil.gov"
   },
   {
     "name": "Lake Oroville Area Public Utility District",
@@ -917,7 +1053,8 @@ export const clients = [
   },
   {
     "name": "Leviton",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "leviton.com"
   },
   {
     "name": "Lindo Channel Monitoring Program",
@@ -933,23 +1070,28 @@ export const clients = [
   },
   {
     "name": "Longobart-Ross Consulting",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "longobart-ross.com"
   },
   {
     "name": "Loop Energy",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "loopenergy.com"
   },
   {
     "name": "Lucid Energy",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "lucid-energy.com"
   },
   {
     "name": "Lundberg Family Farms",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "lundberg.com"
   },
   {
     "name": "Magnelan",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "landro.no"
   },
   {
     "name": "Manex Manufacturing",
@@ -977,19 +1119,23 @@ export const clients = [
   },
   {
     "name": "MBK Engineers",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "mbkengineers.com"
   },
   {
     "name": "McAllister & Quinn",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "jm-aq.com"
   },
   {
     "name": "McConnell Foundation",
-    "category": "Foundation"
+    "category": "Foundation",
+    "domain": "mcconnellfoundation.ca"
   },
   {
     "name": "MCHC Health Centers",
-    "category": "Nonprofit"
+    "category": "Nonprofit",
+    "domain": "mchcinc.org"
   },
   {
     "name": "Medstar Washington Hospital  Center",
@@ -997,7 +1143,8 @@ export const clients = [
   },
   {
     "name": "Mendocino County",
-    "category": "State and Local Government"
+    "category": "State and Local Government",
+    "domain": "mendocinotourism.org"
   },
   {
     "name": "Michigan DOT",
@@ -1009,7 +1156,8 @@ export const clients = [
   },
   {
     "name": "MidAmerican Energy Company",
-    "category": "Utility"
+    "category": "Utility",
+    "domain": "therecplex.com"
   },
   {
     "name": "Mindfulness Project e.V.",
@@ -1021,11 +1169,13 @@ export const clients = [
   },
   {
     "name": "Modesto Junior College",
-    "category": "Colleges and Universities"
+    "category": "Colleges and Universities",
+    "domain": "mjc.edu"
   },
   {
     "name": "Modoc Medical Center",
-    "category": "State and Local Government"
+    "category": "State and Local Government",
+    "domain": "modocmedicalcenter.org"
   },
   {
     "name": "MOLEAER INC.",
@@ -1033,15 +1183,18 @@ export const clients = [
   },
   {
     "name": "Momentum",
-    "category": "Other"
+    "category": "Other",
+    "domain": "momentumdash.com"
   },
   {
     "name": "Montrose Environmental",
-    "category": "Public Company"
+    "category": "Public Company",
+    "domain": "montrose-env.com"
   },
   {
     "name": "Morgan Olson",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "morganolson.com"
   },
   {
     "name": "Moxie Seed",
@@ -1049,7 +1202,8 @@ export const clients = [
   },
   {
     "name": "National Asian Pacific Center on Aging",
-    "category": "Nonprofit"
+    "category": "Nonprofit",
+    "domain": "napca.org"
   },
   {
     "name": "National Carbon Technologies",
@@ -1065,7 +1219,8 @@ export const clients = [
   },
   {
     "name": "Nativus Power",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "nativuspower.com"
   },
   {
     "name": "Natural Ocean Well Co.",
@@ -1089,19 +1244,23 @@ export const clients = [
   },
   {
     "name": "Nikola",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "nikolamotor.com"
   },
   {
     "name": "NISC",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "nisc.coop"
   },
   {
     "name": "Noresco",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "noresco.com"
   },
   {
     "name": "NorTec",
-    "category": "State and Local Government"
+    "category": "State and Local Government",
+    "domain": "nortecorrientes.com"
   },
   {
     "name": "North American Repower",
@@ -1109,15 +1268,18 @@ export const clients = [
   },
   {
     "name": "Northwood Technical College",
-    "category": "Colleges and Universities"
+    "category": "Colleges and Universities",
+    "domain": "northwoodtech.edu"
   },
   {
     "name": "NRG",
-    "category": "Public Company"
+    "category": "Public Company",
+    "domain": "nrg.com"
   },
   {
     "name": "Nussbaum",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "nussbaum.com"
   },
   {
     "name": "Ohio DOT",
@@ -1129,15 +1291,18 @@ export const clients = [
   },
   {
     "name": "OhmConnect",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "ohmconnect.com"
   },
   {
     "name": "One World Play Project",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "oneworldplayproject.com"
   },
   {
     "name": "Opus One",
-    "category": "Public Company"
+    "category": "Public Company",
+    "domain": "opusonewinery.com"
   },
   {
     "name": "Oregon Institute of Technology",
@@ -1145,7 +1310,8 @@ export const clients = [
   },
   {
     "name": "Oregon State University",
-    "category": "Colleges and Universities"
+    "category": "Colleges and Universities",
+    "domain": "oregonstate.edu"
   },
   {
     "name": "Orion Racking",
@@ -1153,7 +1319,8 @@ export const clients = [
   },
   {
     "name": "PacStar",
-    "category": "Public Company"
+    "category": "Public Company",
+    "domain": "pacstarfinancial.com"
   },
   {
     "name": "Painted Desert Energy",
@@ -1169,11 +1336,13 @@ export const clients = [
   },
   {
     "name": "Paradise Irrigation District",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "pidwater.com"
   },
   {
     "name": "Paradise Recreation and Park District",
-    "category": "State and Local Government"
+    "category": "State and Local Government",
+    "domain": "paradiseprpd.com"
   },
   {
     "name": "Paratelic Systems",
@@ -1181,15 +1350,18 @@ export const clients = [
   },
   {
     "name": "Patheon",
-    "category": "Public Company"
+    "category": "Public Company",
+    "domain": "patheon.com"
   },
   {
     "name": "Pathion",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "pathion.com"
   },
   {
     "name": "PBS KVIE",
-    "category": "Nonprofit"
+    "category": "Nonprofit",
+    "domain": "kvie.org"
   },
   {
     "name": "Pepsi Corporation",
@@ -1197,15 +1369,18 @@ export const clients = [
   },
   {
     "name": "Phoenix Plastics",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "phoenixplastics.com"
   },
   {
     "name": "Photometics",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "photometics.com"
   },
   {
     "name": "PIB Law",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "piblaw.com"
   },
   {
     "name": "PinTail Energy",
@@ -1213,23 +1388,28 @@ export const clients = [
   },
   {
     "name": "Planes of Fame Air Museum",
-    "category": "Nonprofit"
+    "category": "Nonprofit",
+    "domain": "planesoffame.org"
   },
   {
     "name": "POM Wonderful",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "pomwonderful.com"
   },
   {
     "name": "Port of Long Beach",
-    "category": "State and Local Government"
+    "category": "State and Local Government",
+    "domain": "polb.com"
   },
   {
     "name": "Portland Cement Association",
-    "category": "Nonprofit"
+    "category": "Nonprofit",
+    "domain": "cement.org"
   },
   {
     "name": "Portland State University",
-    "category": "Colleges and Universities"
+    "category": "Colleges and Universities",
+    "domain": "pdx.edu"
   },
   {
     "name": "Power Anywhere USA",
@@ -1237,27 +1417,33 @@ export const clients = [
   },
   {
     "name": "Power Play",
-    "category": "Other"
+    "category": "Other",
+    "domain": "powerplay.com"
   },
   {
     "name": "PowerHydrant",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "powerhydrant.com"
   },
   {
     "name": "POWIN",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "pow-inc.com"
   },
   {
     "name": "Practical Academics",
-    "category": "Other"
+    "category": "Other",
+    "domain": "practicalacademics.com"
   },
   {
     "name": "Prelapse",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "prelapse.io"
   },
   {
     "name": "Premier Mushrooms",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "premiermushrooms.com"
   },
   {
     "name": "Prevent Child Abuse California",
@@ -1265,7 +1451,8 @@ export const clients = [
   },
   {
     "name": "Primus Power",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "primuspower.com"
   },
   {
     "name": "Pro Polish / Funicular Energy",
@@ -1273,7 +1460,8 @@ export const clients = [
   },
   {
     "name": "Pronoia",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "pronoia.africa"
   },
   {
     "name": "Prosper Sustainability, LLC",
@@ -1285,15 +1473,18 @@ export const clients = [
   },
   {
     "name": "Public Health Institute",
-    "category": "Nonprofit"
+    "category": "Nonprofit",
+    "domain": "phi.org"
   },
   {
     "name": "Pure Forge",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "pureforge.com"
   },
   {
     "name": "PV Solutions",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "pv-solutions.com"
   },
   {
     "name": "Qnetic Corporation",
@@ -1301,7 +1492,8 @@ export const clients = [
   },
   {
     "name": "R Terra",
-    "category": "Other"
+    "category": "Other",
+    "domain": "rterra.com.br"
   },
   {
     "name": "R3 Renewables LLC",
@@ -1313,11 +1505,13 @@ export const clients = [
   },
   {
     "name": "Ramapo College of New Jersey",
-    "category": "Colleges and Universities"
+    "category": "Colleges and Universities",
+    "domain": "ramapo.edu"
   },
   {
     "name": "Reactivate",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "reactivateconsulting.com.au"
   },
   {
     "name": "Red Bank and Reeds Creek Watershed Projects",
@@ -1325,7 +1519,8 @@ export const clients = [
   },
   {
     "name": "Recargo",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "recargo.com.au"
   },
   {
     "name": "Regional Climate Project Working Group",
@@ -1333,7 +1528,8 @@ export const clients = [
   },
   {
     "name": "ReJoule",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "rejouleenergy.com"
   },
   {
     "name": "Renewable Developers",
@@ -1361,7 +1557,8 @@ export const clients = [
   },
   {
     "name": "Ride Zum",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "ridezum.com"
   },
   {
     "name": "Rio Tinto Borates and Lithium",
@@ -1377,7 +1574,8 @@ export const clients = [
   },
   {
     "name": "Rock Creek Reclamation District",
-    "category": "Utility"
+    "category": "Utility",
+    "domain": "rockcreekreclamation.com"
   },
   {
     "name": "Romeo Power, Inc.",
@@ -1385,7 +1583,8 @@ export const clients = [
   },
   {
     "name": "RV Jensen",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "rvjensen.com"
   },
   {
     "name": "Sacramento Municipal Utility District",
@@ -1401,11 +1600,13 @@ export const clients = [
   },
   {
     "name": "SafeR3",
-    "category": "Other"
+    "category": "Other",
+    "domain": "saferwholesale.com"
   },
   {
     "name": "San Mateo County",
-    "category": "State and Local Government"
+    "category": "State and Local Government",
+    "domain": "smccd.edu"
   },
   {
     "name": "Sandell Development LLC",
@@ -1413,7 +1614,8 @@ export const clients = [
   },
   {
     "name": "Santa Barbara MTD",
-    "category": "State and Local Government"
+    "category": "State and Local Government",
+    "domain": "sbmtd.gov"
   },
   {
     "name": "Santa Cruz Metropolitan Transit District",
@@ -1421,15 +1623,18 @@ export const clients = [
   },
   {
     "name": "Santa Lucia Preserve",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "santaluciapreserve.com"
   },
   {
     "name": "Savion Energy",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "savionenergy.com"
   },
   {
     "name": "Schneider Electric",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "se.com"
   },
   {
     "name": "SCS Renewables",
@@ -1437,15 +1642,18 @@ export const clients = [
   },
   {
     "name": "See Political",
-    "category": "Other"
+    "category": "Other",
+    "domain": "seepolitical.com"
   },
   {
     "name": "Sepion",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "sepiontechnologies.com"
   },
   {
     "name": "Severn",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "severnschool.com"
   },
   {
     "name": "Shasta County RTPA",
@@ -1461,7 +1669,8 @@ export const clients = [
   },
   {
     "name": "Shell Oil",
-    "category": "Fortune 500"
+    "category": "Fortune 500",
+    "domain": "shell-lubes.co.jp"
   },
   {
     "name": "Siemens Industry, Inc.",
@@ -1473,7 +1682,8 @@ export const clients = [
   },
   {
     "name": "Sigma Powertrain",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "sigmapowertrain.com"
   },
   {
     "name": "SignetEV",
@@ -1481,7 +1691,8 @@ export const clients = [
   },
   {
     "name": "Sistine Solar",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "sistinesolar.com"
   },
   {
     "name": "SJV Biodiesel",
@@ -1489,11 +1700,13 @@ export const clients = [
   },
   {
     "name": "Solar City",
-    "category": "Public Company"
+    "category": "Public Company",
+    "domain": "solarcityenergysolutions.com"
   },
   {
     "name": "Solar Code",
-    "category": "Other"
+    "category": "Other",
+    "domain": "solarcode.com"
   },
   {
     "name": "South Feather Power and Water",
@@ -1501,15 +1714,18 @@ export const clients = [
   },
   {
     "name": "SPARKL",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "sparklight.com"
   },
   {
     "name": "Sparks Consulting",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "sparks-consulting.ch"
   },
   {
     "name": "Stable Auto",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "stable.auto"
   },
   {
     "name": "Stairways Recovery, Inc.",
@@ -1517,7 +1733,8 @@ export const clients = [
   },
   {
     "name": "Stanford University",
-    "category": "Colleges and Universities"
+    "category": "Colleges and Universities",
+    "domain": "stanford.edu"
   },
   {
     "name": "Starfire Capital Partners",
@@ -1529,7 +1746,8 @@ export const clients = [
   },
   {
     "name": "State of Colorado",
-    "category": "State and Local Government"
+    "category": "State and Local Government",
+    "domain": "stateofcoloradofinancings.com"
   },
   {
     "name": "State of Michigan Transportation",
@@ -1537,7 +1755,8 @@ export const clients = [
   },
   {
     "name": "State of New Jersey",
-    "category": "State and Local Government"
+    "category": "State and Local Government",
+    "domain": "nj.gov"
   },
   {
     "name": "Steer Davies Gleave",
@@ -1549,7 +1768,8 @@ export const clients = [
   },
   {
     "name": "StorEn",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "storenvy.com"
   },
   {
     "name": "StormFisher Ltd.",
@@ -1557,7 +1777,8 @@ export const clients = [
   },
   {
     "name": "Strategic Growth Council",
-    "category": "State and Local Government"
+    "category": "State and Local Government",
+    "domain": "strategicgrowthcouncil.com"
   },
   {
     "name": "Stuart Management LLC",
@@ -1577,7 +1798,8 @@ export const clients = [
   },
   {
     "name": "Surface Tech",
-    "category": "Other"
+    "category": "Other",
+    "domain": "surface-tech.com"
   },
   {
     "name": "Surprise Valley Geothermal",
@@ -1585,15 +1807,18 @@ export const clients = [
   },
   {
     "name": "Sustainable Silicon Valley",
-    "category": "Nonprofit"
+    "category": "Nonprofit",
+    "domain": "sustainablesv.org"
   },
   {
     "name": "Sylvatex",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "sylvatex.com"
   },
   {
     "name": "Synova",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "synova.ch"
   },
   {
     "name": "Tahoe-Reno Industrial Park",
@@ -1601,27 +1826,33 @@ export const clients = [
   },
   {
     "name": "TeMix",
-    "category": "Other"
+    "category": "Other",
+    "domain": "temixa.com"
   },
   {
     "name": "Terra Verde",
-    "category": "Other"
+    "category": "Other",
+    "domain": "terra-verde.ch"
   },
   {
     "name": "TerViva",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "terviva.com"
   },
   {
     "name": "Tesla Motors",
-    "category": "Fortune 500"
+    "category": "Fortune 500",
+    "domain": "teslamotorsclub.com"
   },
   {
     "name": "The Change Leader",
-    "category": "Other"
+    "category": "Other",
+    "domain": "changinghighered.com"
   },
   {
     "name": "The Ferguson Group",
-    "category": "Other"
+    "category": "Other",
+    "domain": "thefergusongroup.com"
   },
   {
     "name": "The Obodo Collective",
@@ -1633,11 +1864,13 @@ export const clients = [
   },
   {
     "name": "ThermoLift",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "thermolift.com"
   },
   {
     "name": "Thorn Run",
-    "category": "Other"
+    "category": "Other",
+    "domain": "thornrunchiropractic.com"
   },
   {
     "name": "Three Rivers Levee Improvement Authority (TRLIA)",
@@ -1645,11 +1878,13 @@ export const clients = [
   },
   {
     "name": "Timco International",
-    "category": "Other"
+    "category": "Other",
+    "domain": "timcotr.com"
   },
   {
     "name": "Town of Paradise",
-    "category": "State and Local Government"
+    "category": "State and Local Government",
+    "domain": "townofparadise.com"
   },
   {
     "name": "Town of Portola",
@@ -1657,11 +1892,13 @@ export const clients = [
   },
   {
     "name": "Trevi Systems",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "trevisystems.com"
   },
   {
     "name": "Trex",
-    "category": "Other"
+    "category": "Other",
+    "domain": "trex-arms.com"
   },
   {
     "name": "Trilithon Capital",
@@ -1673,7 +1910,8 @@ export const clients = [
   },
   {
     "name": "True North Housing Alliance",
-    "category": "Nonprofit"
+    "category": "Nonprofit",
+    "domain": "truenorthbutte.org"
   },
   {
     "name": "Tulare County Regional Transit Agency",
@@ -1689,7 +1927,8 @@ export const clients = [
   },
   {
     "name": "United Hydrogen",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "unitedhydrogen.com"
   },
   {
     "name": "United Needs",
@@ -1701,27 +1940,33 @@ export const clients = [
   },
   {
     "name": "Universal Fuel Technologies",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "unifuel.in"
   },
   {
     "name": "Universe Energy",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "universeenergy.ai"
   },
   {
     "name": "University of Alaska, Fairbanks",
-    "category": "Colleges and Universities"
+    "category": "Colleges and Universities",
+    "domain": "uaf.edu"
   },
   {
     "name": "University of California, Riverside",
-    "category": "Colleges and Universities"
+    "category": "Colleges and Universities",
+    "domain": "ucr.edu"
   },
   {
     "name": "Upendo",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "goupendo.com"
   },
   {
     "name": "Urban X",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "urban-x.com"
   },
   {
     "name": "Valor Equity Partners",
@@ -1729,23 +1974,28 @@ export const clients = [
   },
   {
     "name": "Verdagy",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "verdagy.com"
   },
   {
     "name": "Veterans Housing Development",
-    "category": "State and Local Government"
+    "category": "State and Local Government",
+    "domain": "veteranshousingdevelopment.org"
   },
   {
     "name": "Viatec",
-    "category": "Nonprofit"
+    "category": "Nonprofit",
+    "domain": "viatec.ua"
   },
   {
     "name": "VideoMaker",
-    "category": "Other"
+    "category": "Other",
+    "domain": "videomaker.com"
   },
   {
     "name": "Village MD",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "villagemd.com"
   },
   {
     "name": "Volta Charging, LLC",
@@ -1761,19 +2011,23 @@ export const clients = [
   },
   {
     "name": "Water and Land Solutions",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "waterandlandsolutions.com"
   },
   {
     "name": "WaterFunder",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "waterfunder.com"
   },
   {
     "name": "WattHub",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "watthub.com"
   },
   {
     "name": "Watts On",
-    "category": "Other"
+    "category": "Other",
+    "domain": "watts-online.jp"
   },
   {
     "name": "Webber Creek",
@@ -1785,7 +2039,8 @@ export const clients = [
   },
   {
     "name": "WIH Resource Group",
-    "category": "Other"
+    "category": "Other",
+    "domain": "wihrg.com"
   },
   {
     "name": "Willdan Engineering",
@@ -1797,7 +2052,8 @@ export const clients = [
   },
   {
     "name": "World lab",
-    "category": "Other"
+    "category": "Other",
+    "domain": "worldlabel.com"
   },
   {
     "name": "Wrightspeed, Inc.",
@@ -1813,7 +2069,8 @@ export const clients = [
   },
   {
     "name": "Yakama Forest Products",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "yakamaforestproducts.com"
   },
   {
     "name": "Yield RMG",
@@ -1821,7 +2078,8 @@ export const clients = [
   },
   {
     "name": "Youth Business USA",
-    "category": "Nonprofit"
+    "category": "Nonprofit",
+    "domain": "ybusa.org"
   },
   {
     "name": "Yuba College",
@@ -1833,7 +2091,8 @@ export const clients = [
   },
   {
     "name": "Zep Solar",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "zepsolar.com"
   },
   {
     "name": "ZeroNet Go LLC",
@@ -1841,15 +2100,18 @@ export const clients = [
   },
   {
     "name": "ZEV Station",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "zev-station.com"
   },
   {
     "name": "Zevv",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "zevv.com"
   },
   {
     "name": "Zip Power",
-    "category": "Other"
+    "category": "Other",
+    "domain": "zippower.com"
   },
   {
     "name": "Wallace Chan Farms",
@@ -1861,23 +2123,28 @@ export const clients = [
   },
   {
     "name": "Quantum Loophole",
-    "category": "Other"
+    "category": "Other",
+    "domain": "quantumloophole.com"
   },
   {
     "name": "Precast-Prestressed Concrete Institute",
-    "category": "Other"
+    "category": "Other",
+    "domain": "pci.org"
   },
   {
     "name": "Pacific Environment",
-    "category": "Other"
+    "category": "Other",
+    "domain": "pacificenvironment.org"
   },
   {
     "name": "Next NRG",
-    "category": "Other"
+    "category": "Other",
+    "domain": "nextnrg.it"
   },
   {
     "name": "Migo",
-    "category": "Other"
+    "category": "Other",
+    "domain": "mi5.gov.uk"
   },
   {
     "name": "LOKL Wind",
@@ -1885,7 +2152,8 @@ export const clients = [
   },
   {
     "name": "Innophos",
-    "category": "Other"
+    "category": "Other",
+    "domain": "innophos.com"
   },
   {
     "name": "Global Rice Solutions",
@@ -1897,11 +2165,13 @@ export const clients = [
   },
   {
     "name": "American River Dental",
-    "category": "Other"
+    "category": "Other",
+    "domain": "americanriverdental.com"
   },
   {
     "name": "Inlyte Energy",
-    "category": "Other"
+    "category": "Other",
+    "domain": "inlyteenergy.com"
   },
   {
     "name": "Cove, PBC",
@@ -1909,7 +2179,8 @@ export const clients = [
   },
   {
     "name": "Avalo",
-    "category": "Other"
+    "category": "Other",
+    "domain": "avaloncommunities.com"
   },
   {
     "name": "Aggreplex",
@@ -1929,15 +2200,18 @@ export const clients = [
   },
   {
     "name": "Salt Lake City School District",
-    "category": "Other"
+    "category": "Other",
+    "domain": "slcschools.org"
   },
   {
     "name": "IMC-Metals America",
-    "category": "Other"
+    "category": "Other",
+    "domain": "imc-ma.com"
   },
   {
     "name": "Kent Power",
-    "category": "Other"
+    "category": "Other",
+    "domain": "kps-austin-honda.com"
   },
   {
     "name": "Blue Arc Labs",
@@ -1945,7 +2219,8 @@ export const clients = [
   },
   {
     "name": "Safe Food Alliance",
-    "category": "Other"
+    "category": "Other",
+    "domain": "safefoodalliance.com"
   },
   {
     "name": "Carbon Solutions Northwest",
@@ -1965,7 +2240,8 @@ export const clients = [
   },
   {
     "name": "National Strategies",
-    "category": "Other"
+    "category": "Other",
+    "domain": "nationalstrategies.com"
   },
   {
     "name": "Jennings Public School District",
@@ -1973,15 +2249,18 @@ export const clients = [
   },
   {
     "name": "Agra Public Schools",
-    "category": "Other"
+    "category": "Other",
+    "domain": "agra.k12.ok.us"
   },
   {
     "name": "Banner Public Affairs",
-    "category": "Other"
+    "category": "Other",
+    "domain": "bannerpublicaffairs.com"
   },
   {
     "name": "Bear Cognition",
-    "category": "Other"
+    "category": "Other",
+    "domain": "bearcognition.com"
   },
   {
     "name": "Central Electric Cooperative, Inc.",
@@ -1989,11 +2268,13 @@ export const clients = [
   },
   {
     "name": "Centre WISP",
-    "category": "Other"
+    "category": "Other",
+    "domain": "centrewisp.com"
   },
   {
     "name": "City of Lindsay",
-    "category": "Other"
+    "category": "Other",
+    "domain": "cityoflindsay.com"
   },
   {
     "name": "Divine Power LLC",
@@ -2001,15 +2282,18 @@ export const clients = [
   },
   {
     "name": "Ecite Motors",
-    "category": "Other"
+    "category": "Other",
+    "domain": "ecitemotors.com"
   },
   {
     "name": "Edelman",
-    "category": "Other"
+    "category": "Other",
+    "domain": "edelman.com"
   },
   {
     "name": "Global Power Products",
-    "category": "Other"
+    "category": "Other",
+    "domain": "globalpowerproducts.com"
   },
   {
     "name": "Joybound People and Pets",
@@ -2017,7 +2301,8 @@ export const clients = [
   },
   {
     "name": "Layer 9",
-    "category": "Other"
+    "category": "Other",
+    "domain": "layer3.xyz"
   },
   {
     "name": "Linoktech",
@@ -2033,11 +2318,13 @@ export const clients = [
   },
   {
     "name": "Spraying Systems",
-    "category": "Other"
+    "category": "Other",
+    "domain": "spray.com"
   },
   {
     "name": "Switch Communications",
-    "category": "Other"
+    "category": "Other",
+    "domain": "switchcommunications.co.uk"
   },
   {
     "name": "Trilogy Networks, Inc.",
@@ -2045,11 +2332,13 @@ export const clients = [
   },
   {
     "name": "United Plant Growers",
-    "category": "Other"
+    "category": "Other",
+    "domain": "upg-grow.com"
   },
   {
     "name": "Walker Engineering",
-    "category": "Other"
+    "category": "Other",
+    "domain": "walkertx.com"
   },
   {
     "name": "Clean Bus Solutions",
@@ -2081,7 +2370,8 @@ export const clients = [
   },
   {
     "name": "Aether Fuels",
-    "category": "Other"
+    "category": "Other",
+    "domain": "aetherfuels.com"
   },
   {
     "name": "Weyerhaeuser NR Company",
@@ -2089,7 +2379,8 @@ export const clients = [
   },
   {
     "name": "Moxy Oid",
-    "category": "Other"
+    "category": "Other",
+    "domain": "moxyoid.com"
   },
   {
     "name": "McKinstry Essention",
@@ -2109,19 +2400,23 @@ export const clients = [
   },
   {
     "name": "Starz Electronics",
-    "category": "Other"
+    "category": "Other",
+    "domain": "starzelectronics.com"
   },
   {
     "name": "Mainspring Energy",
-    "category": "Other"
+    "category": "Other",
+    "domain": "mainspringenergy.com"
   },
   {
     "name": "Connect Humanity",
-    "category": "Other"
+    "category": "Other",
+    "domain": "connecthumanity.fund"
   },
   {
     "name": "WSU Tech",
-    "category": "Other"
+    "category": "Other",
+    "domain": "wsutech.edu"
   },
   {
     "name": "Greenlining Institute",
@@ -2129,15 +2424,18 @@ export const clients = [
   },
   {
     "name": "Tilson",
-    "category": "Other"
+    "category": "Other",
+    "domain": "tilsonhomes.com"
   },
   {
     "name": "LiCAP Technologies",
-    "category": "Other"
+    "category": "Other",
+    "domain": "licaptech.com"
   },
   {
     "name": "RaceTrac",
-    "category": "Other"
+    "category": "Other",
+    "domain": "racetrac.com"
   },
   {
     "name": "Umami Bioworks",
@@ -2153,11 +2451,13 @@ export const clients = [
   },
   {
     "name": "XGS Energy",
-    "category": "Other"
+    "category": "Other",
+    "domain": "xgsenergy.com"
   },
   {
     "name": "Orbillion Bio",
-    "category": "Other"
+    "category": "Other",
+    "domain": "orbillion.com"
   },
   {
     "name": "Natures Delight Organics, Inc.",
@@ -2165,7 +2465,8 @@ export const clients = [
   },
   {
     "name": "Manaflex",
-    "category": "Other"
+    "category": "Other",
+    "domain": "manaflex.com"
   },
   {
     "name": "Keyawa Orchards",
@@ -2173,7 +2474,8 @@ export const clients = [
   },
   {
     "name": "GAWFCO",
-    "category": "Other"
+    "category": "Other",
+    "domain": "gawfco.com"
   },
   {
     "name": "Dignity Educational & Workforce Solutions",
@@ -2181,11 +2483,13 @@ export const clients = [
   },
   {
     "name": "Aspen Environmental Group",
-    "category": "Other"
+    "category": "Other",
+    "domain": "aspeneg.com"
   },
   {
     "name": "GridWrap",
-    "category": "Other"
+    "category": "Other",
+    "domain": "gridwrap.com"
   },
   {
     "name": "Seven States Power Corporation",
@@ -2193,35 +2497,43 @@ export const clients = [
   },
   {
     "name": "Phoenix Solar Thermal",
-    "category": "Other"
+    "category": "Other",
+    "domain": "phoenixsolarthermal.com"
   },
   {
     "name": "First America",
-    "category": "Other"
+    "category": "Other",
+    "domain": "firstam.com"
   },
   {
     "name": "Sol by Sunna Design",
-    "category": "Other"
+    "category": "Other",
+    "domain": "solarlighting.com"
   },
   {
     "name": "A2 Energy",
-    "category": "Other"
+    "category": "Other",
+    "domain": "1a-energy.ch"
   },
   {
     "name": "Carbon Blade",
-    "category": "Other"
+    "category": "Other",
+    "domain": "carbon-blade.com"
   },
   {
     "name": "Heroik Strategies",
-    "category": "Other"
+    "category": "Other",
+    "domain": "heroikstrategies.com"
   },
   {
     "name": "Precision AI",
-    "category": "Other"
+    "category": "Other",
+    "domain": "precisionairandplumbing.com"
   },
   {
     "name": "Engo Planet",
-    "category": "Other"
+    "category": "Other",
+    "domain": "engoplanet.com"
   },
   {
     "name": "Dishaka, LLC",
@@ -2237,11 +2549,13 @@ export const clients = [
   },
   {
     "name": "Materials Processing Institute",
-    "category": "Other"
+    "category": "Other",
+    "domain": "mpiuk.com"
   },
   {
     "name": "Unico Properties",
-    "category": "Other"
+    "category": "Other",
+    "domain": "unicoprop.com"
   },
   {
     "name": "Redflow, LLC",
@@ -2249,11 +2563,13 @@ export const clients = [
   },
   {
     "name": "Endurant Energy",
-    "category": "Other"
+    "category": "Other",
+    "domain": "endurant.com"
   },
   {
     "name": "Solano County",
-    "category": "Other"
+    "category": "Other",
+    "domain": "solanocounty.com"
   },
   {
     "name": "Stritchco EVS LLC",
@@ -2261,19 +2577,23 @@ export const clients = [
   },
   {
     "name": "DC Energy Services",
-    "category": "Other"
+    "category": "Other",
+    "domain": "dcenergyservices.com"
   },
   {
     "name": "Omega Walnut",
-    "category": "Other"
+    "category": "Other",
+    "domain": "omegawalnut.com"
   },
   {
     "name": "Gigablue",
-    "category": "Other"
+    "category": "Other",
+    "domain": "gigablue.de"
   },
   {
     "name": "Trigo",
-    "category": "Other"
+    "category": "Other",
+    "domain": "trigo-group.com"
   },
   {
     "name": "Estes Energy Solutions",
@@ -2285,7 +2605,8 @@ export const clients = [
   },
   {
     "name": "G2H2 Inc.",
-    "category": "Other"
+    "category": "Other",
+    "domain": "ghincea.eu"
   },
   {
     "name": "Reactive Technologies USA Inc.",
@@ -2293,15 +2614,18 @@ export const clients = [
   },
   {
     "name": "Ames Goldsmith",
-    "category": "Other"
+    "category": "Other",
+    "domain": "amesgoldsmith.com"
   },
   {
     "name": "Converge Strategies",
-    "category": "Other"
+    "category": "Other",
+    "domain": "convergestrategies.com"
   },
   {
     "name": "Universal Energy",
-    "category": "Other"
+    "category": "Other",
+    "domain": "universalenergy.com"
   },
   {
     "name": "Alternative Life Cycles, LLC",
@@ -2321,11 +2645,13 @@ export const clients = [
   },
   {
     "name": "Scout Economics",
-    "category": "Other"
+    "category": "Other",
+    "domain": "scouteconomics.com"
   },
   {
     "name": "Simplifyber",
-    "category": "Other"
+    "category": "Other",
+    "domain": "simplifyber.com"
   },
   {
     "name": "Pacific-Ultrapower Chinese Station",
@@ -2333,6 +2659,7 @@ export const clients = [
   },
   {
     "name": "GRIT, LLC",
-    "category": "Other"
+    "category": "Other",
+    "domain": "grit-llc.com"
   }
 ];

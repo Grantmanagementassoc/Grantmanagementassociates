@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Section, SectionTitle, Eyebrow, Breadcrumbs, BackgroundGrid } from "@/components/site/ui";
 import { clients } from "@/data/clients";
+import { ClientLogoCard } from "@/components/site/client-logo-card";
 
 export const metadata: Metadata = {
   title: "Our Clients & Partners",
@@ -45,13 +46,7 @@ export default function ClientsPage() {
             {groupedClients[category]
               .sort((a, b) => a.name.localeCompare(b.name))
               .map((client, idx) => (
-                <div key={idx} className="flex flex-col items-center text-center gap-4 p-6 glass rounded-2xl border border-glass-border card-hover hover:border-cyan-300/50 transition-colors bg-white/5 dark:bg-white/5 backdrop-blur-md">
-                  {/* Graceful Fallback: Just display a sleek badge/initial since we don't have their domain for the logo yet */}
-                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-cyan-500/20 to-sapphire/20 border border-cyan-500/30 flex items-center justify-center text-cyan-300 font-bold text-xl shrink-0">
-                    {client.name.charAt(0).toUpperCase()}
-                  </div>
-                  <div className="text-sm font-semibold text-foreground leading-tight">{client.name}</div>
-                </div>
+                <ClientLogoCard key={idx} client={client} />
             ))}
           </div>
         </Section>
