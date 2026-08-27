@@ -368,7 +368,7 @@ export type Industry = {
 export const industries: Industry[] = [
   {
     slug: "clean-energy",
-    image: "/images/generated/13.png",
+    image: "/images/generated/25.png",
     name: "Clean Energy & Sustainability",
     icon: "Zap",
     blurb: "IRA, IIJA, and DOE Loan Programs — we've navigated them from day one.",
@@ -379,7 +379,7 @@ export const industries: Industry[] = [
   },
   {
     slug: "transportation",
-    image: "/images/generated/14.png",
+    image: "/images/generated/27.png",
     name: "Transportation & Transit",
     icon: "Train",
     blurb: "FTA Low-No, RAISE, CRISI, INFRA, Bridge, Charging & Fueling — done, done, done.",
@@ -390,7 +390,7 @@ export const industries: Industry[] = [
   },
   {
     slug: "technology",
-    image: "/images/generated/15.png",
+    image: "/images/generated/29.png",
     name: "Technology & Innovation",
     icon: "Satellite",
     blurb: "CHIPS, NIST, NSF, DoD RDT&E — bringing federal capital to deep tech.",
@@ -401,7 +401,7 @@ export const industries: Industry[] = [
   },
   {
     slug: "healthcare",
-    image: "/images/generated/16.png",
+    image: "/images/generated/31.png",
     name: "Healthcare & Research",
     icon: "Dna",
     blurb: "NIH, HRSA, CDC, BARDA — from R01s to translational research consortia.",
@@ -412,7 +412,7 @@ export const industries: Industry[] = [
   },
   {
     slug: "education",
-    image: "/images/generated/17.png",
+    image: "/images/generated/33.png",
     name: "Education",
     icon: "GraduationCap",
     blurb: "ED, NSF, Perkins, TRIO, GEAR UP, and workforce Title I/II.",
@@ -422,7 +422,7 @@ export const industries: Industry[] = [
   },
   {
     slug: "nonprofits",
-    image: "/images/generated/18.png",
+    image: "/images/generated/35.png",
     name: "Nonprofits & Community Development",
     icon: "Leaf",
     blurb: "MissionMomentum brings predictable grant capacity to lean development teams.",
@@ -432,7 +432,7 @@ export const industries: Industry[] = [
   },
   {
     slug: "tribal",
-    image: "/images/generated/19.png",
+    image: "/images/generated/37.png",
     name: "Tribal Nations",
     icon: "Feather",
     blurb: "BIA, IHS, EPA-IEED, DOE-IE, and Tribal set-asides across IIJA/IRA.",
@@ -442,7 +442,7 @@ export const industries: Industry[] = [
   },
   {
     slug: "manufacturing",
-    image: "/images/generated/20.png",
+    image: "/images/generated/39.png",
     name: "Manufacturing",
     icon: "Cog",
     blurb: "MEP, DOE-AMMTO, DoD IBAS, EDA Build to Scale — capital for U.S. manufacturing.",
@@ -452,7 +452,7 @@ export const industries: Industry[] = [
   },
   {
     slug: "broadband",
-    image: "/images/generated/21.png",
+    image: "/images/generated/41.png",
     name: "Broadband & Telecommunications",
     icon: "Wifi",
     blurb: "Broadband Grant Consulting — BEAD, ReConnect & Infrastructure Funding.",
@@ -462,7 +462,7 @@ export const industries: Industry[] = [
   },
   {
     slug: "defense",
-    image: "/images/generated/22.png",
+    image: "/images/generated/43.png",
     name: "Defense & National Security",
     icon: "Shield",
     blurb: "Your Trusted Advisors in Defense Innovation.",
@@ -472,7 +472,7 @@ export const industries: Industry[] = [
   },
   {
     slug: "agriculture",
-    image: "/images/generated/23.png",
+    image: "/images/generated/44.png",
     name: "Agriculture & Rural Development",
     icon: "Wheat",
     blurb: "USDA, rural infrastructure, and food-system funding—built for the realities of rural America.",
@@ -482,7 +482,7 @@ export const industries: Industry[] = [
   },
   {
     slug: "water-infrastructure",
-    image: "/images/generated/24.png",
+    image: "/images/generated/45.png",
     name: "Water Infrastructure",
     icon: "Droplets",
     blurb: "Drinking water, wastewater, watershed restoration, and resilience funding.",
