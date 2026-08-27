@@ -2762,7 +2762,7 @@ export const team = [
     name: "Kristin Cooper",
     role: "Founder and CEO",
     bio: `<p>Kristin Cooper is a funding strategist and government affairs expert with over 30 years of experience helping organizations compete for and win federal, state, and foundation funding. She founded Grant Management Associates in 2009 with a clear mission: bring strategic intelligence to the grant funding process — not just good writing, but the analytical rigor to know which opportunities are worth pursuing and the methodology to win them.</p><p>Under Kristin's leadership, GMA has secured over $2.5 billion in funding for clients. She developed GMA's proprietary Key Considerations Analysis (KCA) methodology, which evaluates competitive positioning, organizational fit, and scoring criteria before a single word of a proposal is written. This "Go/No-Go" approach is why GMA's clients don't waste resources on lost causes — and why they win at an extraordinary rate when they do pursue.</p><p>Before founding GMA, Kristin served as a Full Professor at California State University, Chico's College of Engineering, where she directed grant-funded programs across five colleges. She was the founding director of CSU Chico's Environmental Resource Program and the Concrete Management Program. Kristin also served as a registered federal lobbyist, where she was instrumental in securing a $100 million line item in the Department of Energy budget.</p><p>Today, Kristin leads GMA's evolution into a funding intelligence platform — integrating AI-powered grant matching with decades of human strategic judgment. She oversees a team that spans defence, energy, infrastructure, agriculture, and workforce development — the sectors where federal dollars are flowing and where GMA's clients are winning.</p><h3>By the Numbers</h3><ul><li>$2.5 Billion in funding secured for clients</li><li>500+ client organizations served</li><li>30+ years of funding strategy experience</li><li>Pioneered the AI Grant Matching Engine for systematic opportunity identification</li></ul><h3>Kristin's Certifications & Professional Credentials</h3><ul><li>Certified Sustainable Development Practitioner | Association of Energy Engineers</li><li>Certified Professional Contracts Manager (CPCM)</li><li>Master Certificate in Concrete Fundamentals | Hanley Wood, World of Concrete</li><li>Green Building and Sustainable Design Certificate Program | UC Davis; Land Use and Natural Resources, and Business and Technology coordinated with Leadership in Energy and Environmental Design (LEED)</li><li>Sustainability Performance Metrics | Natural Logic, Short Course Certification on the selection and use sustainability performance metrics and incentives.</li><li>Special Certification in Environmental Justice | (Train the Trainer), United States Environmental Protection Agency</li></ul>`,
-    image: "/team/1.jpeg"
+    image: "/images/team/kristin.svg"
   },
   {
     name: "Mark Sue, MBA",
@@ -2780,7 +2780,7 @@ export const team = [
     name: "Brad Zerbe",
     role: "Director of Business Development",
     bio: `<p>Brad Zerbe has over thirty years of experience in grant writing, fundraising, lending, and business consulting. He is the former political director for the nation’s largest PAC, and finance director for the chairman of the U.S. Senate Finance Committee. He is a former registered federal, state, and state procurement lobbyist. He has worked for three of the nation’s five largest financial institutions in securities and banking compliance.</p><p>Brad has graded grants in national competitions and served as Chairman and CEO of nonprofit organizations and won over $400 million in grants. In college, he competed in debate, finishing second in the nation, and won his school’s highest scholarship for leadership.</p>`,
-    image: "/team/4.jpeg"
+    image: "/images/team/brad.svg"
   },
   {
     name: "Laurie Goldberg, Esq.",
@@ -2798,7 +2798,7 @@ export const team = [
     name: "Sarthak Tandon",
     role: "Chief of Staff and EA to CEO",
     bio: `<p>Sarthak Tandon is an experienced operations and executive support professional serving as Chief of Staff and Executive Assistant to the CEO. He partners closely with the CEO on strategic priorities, executive coordination, operational planning, and cross-functional initiatives, helping translate organizational goals into structured and actionable execution.</p><p>At Grant Management Associates, Sarthak supports client-facing processes, internal workflows, team collaboration, and executive-level priorities, ensuring effective communication and alignment across stakeholders. His experience in process-driven environments, combined with a strong focus on organization, proactive problem-solving, and detail-oriented execution, enables him to serve as a trusted partner to leadership and contribute to the efficient and strategic functioning of the organization.</p>`,
-    image: "/team/7.png"
+    image: "/images/team/sarthak.svg"
   }
 ];
 
