@@ -2,16 +2,16 @@
 
 import { useState } from "react";
 
-export function ClientLogoCard({ client }: { client: { name: string; domain?: string } }) {
+export function ClientLogoCard({ client }: { client: { name: string; domain?: string; image?: string } }) {
   const [error, setError] = useState(false);
 
   return (
     <div className="flex flex-col items-center justify-center text-center gap-4 p-6 glass rounded-2xl border border-glass-border card-hover hover:border-cyan-300/50 transition-colors bg-white/5 dark:bg-white/5 backdrop-blur-md h-40">
-      {client.domain && !error ? (
+      {client.image || (client.domain && !error) ? (
         <div className="w-16 h-16 flex items-center justify-center shrink-0 dark:bg-white/90 dark:p-1.5 dark:rounded-lg">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src={`https://icon.horse/icon/${client.domain}`}
+            src={client.image || `https://icon.horse/icon/${client.domain}`}
             alt={client.name}
             className="max-h-full max-w-full object-contain"
             onError={() => setError(true)}
