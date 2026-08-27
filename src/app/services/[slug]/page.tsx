@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import { Section, SectionTitle, Eyebrow, GlassCard, Breadcrumbs, CTACard, Accordion, BackgroundGrid } from "@/components/site/ui";
 import { services } from "@/lib/content";
 import * as Icons from "lucide-react";
@@ -29,6 +30,9 @@ export default async function ServiceDetailPage({ params }: { params: Promise<Pa
       <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden noise">
         <BackgroundGrid />
         <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[900px] h-[900px] rounded-full bg-sapphire/10 blur-[120px] pointer-events-none" aria-hidden />
+        {service.image && (
+          <Image src={service.image} alt="Background" fill className="object-cover opacity-10 absolute inset-0 z-[-1] pointer-events-none mix-blend-luminosity" priority />
+        )}
         <div className="relative mx-auto max-w-[1600px] px-6">
           <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Services", href: "/services" }, { label: service.title }]} />
           <div className="grid md:grid-cols-[1.4fr_1fr] gap-12 items-end">

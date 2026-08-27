@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Section, SectionTitle, Eyebrow, GlassCard, Stat, CTACard, Breadcrumbs, BackgroundGrid } from "@/components/site/ui";
 import { ScrollReveal } from "@/components/site/scroll-reveal";
 import { site, timeline } from "@/lib/content";
@@ -14,6 +15,7 @@ export default function FirmPage() {
       <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden noise">
         <BackgroundGrid />
         <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[900px] h-[900px] rounded-full bg-sapphire/10 blur-[120px] pointer-events-none" aria-hidden />
+        <Image src="/images/generated/5.png" alt="Background" fill className="object-cover opacity-10 absolute inset-0 z-[-1] pointer-events-none mix-blend-luminosity" priority />
         <div className="relative mx-auto max-w-[1600px] px-6">
           <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "About Us", href: "/about/firm" }, { label: "Our Firm" }]} />
           <div className="max-w-3xl">

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import { Section, SectionTitle, Eyebrow, GlassCard, Breadcrumbs, CTACard, BackgroundGrid } from "@/components/site/ui";
 import { industries, caseStudies } from "@/lib/content";
 import * as Icons from "lucide-react";
@@ -29,6 +30,9 @@ export default async function IndustryDetail({ params }: { params: Promise<Param
       <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden noise">
         <BackgroundGrid />
         <div className="absolute -top-40 right-0 w-[700px] h-[700px] rounded-full bg-sapphire/15 blur-[120px] pointer-events-none" aria-hidden />
+        {ind.image && (
+          <Image src={ind.image} alt="Background" fill className="object-cover opacity-10 absolute inset-0 z-[-1] pointer-events-none mix-blend-luminosity" priority />
+        )}
         <div className="relative mx-auto max-w-[1600px] px-6">
           <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Industries", href: "/industries" }, { label: ind.name }]} />
           <div className="max-w-3xl">

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Section, SectionTitle, Eyebrow, GlassCard, Stat, Accordion, CTACard, BackgroundGrid } from "@/components/site/ui";
 import { LogoTicker } from "@/components/site/logo-ticker";
 import { services, industries, caseStudies, resources, testimonials, site } from "@/lib/content";
@@ -19,6 +20,7 @@ export default async function HomePage() {
       <section className="relative pt-32 pb-24 md:pt-44 md:pb-32 overflow-hidden noise">
         <BackgroundGrid />
         <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[900px] h-[900px] rounded-full bg-sapphire/10 blur-[120px] pointer-events-none" aria-hidden />
+        <Image src="/images/generated/1.png" alt="Hero Background" fill className="object-cover opacity-10 absolute inset-0 z-[-1] pointer-events-none mix-blend-luminosity" priority />
         <div className="absolute top-40 right-10 w-72 h-72 rounded-full bg-cyan-glow/10 blur-[80px] pointer-events-none animate-float" aria-hidden />
 
         <div className="relative mx-auto max-w-[1600px] px-6">
@@ -77,6 +79,7 @@ export default async function HomePage() {
           <Link href={`/services/${services[0].slug}`} className="md:col-span-2 md:row-span-2 group">
             <div className="glass card-hover rounded-3xl p-8 md:p-10 h-full flex flex-col justify-between relative overflow-hidden">
               <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-sapphire/15 blur-3xl pointer-events-none" aria-hidden />
+              <div className="absolute inset-0 z-0 opacity-20"><Image src="/images/generated/8.png" alt="Service Image" fill className="object-cover mix-blend-luminosity" /></div>
               <div className="relative">
                 <div className="text-sky-600 dark:text-cyan-400">
                   {(() => {
@@ -183,6 +186,7 @@ export default async function HomePage() {
       <Section>
         <div className="relative overflow-hidden rounded-3xl border border-black/10 dark:border-glass-border bg-gradient-to-br from-cyan-50 to-white dark:from-slate-900 dark:to-black p-10 md:p-14">
           <div className="absolute inset-0 grid-lines opacity-10 dark:opacity-20 pointer-events-none" aria-hidden />
+          <Image src="/images/generated/4.png" alt="Action Section Background" fill className="object-cover opacity-10 mix-blend-overlay z-[-1]" />
           <div className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-cyan-glow/10 blur-3xl" aria-hidden />
           <div className="relative grid md:grid-cols-2 gap-10 items-center">
             <div>
