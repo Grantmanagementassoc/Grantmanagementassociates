@@ -15,7 +15,7 @@ export default function ContactPage() {
       <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden noise">
         <BackgroundGrid />
         <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[900px] h-[900px] rounded-full bg-sapphire/10 blur-[120px] pointer-events-none" aria-hidden />
-        <Image src="/images/generated/7.png" alt="Background" fill className="object-cover opacity-10 absolute inset-0 z-[-1] pointer-events-none mix-blend-luminosity" priority />
+        <Image src="/images/generated/13.png" alt="Background" fill className="object-cover opacity-10 absolute inset-0 z-[-1] pointer-events-none mix-blend-luminosity" priority />
         <div className="relative mx-auto max-w-[1600px] px-6">
           <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Contact" }]} />
           <div className="max-w-3xl">
