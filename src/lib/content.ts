@@ -174,7 +174,7 @@ export const services: Service[] = [
   },
   {
     slug: "funding-identification",
-    image: "/images/generated/17.png",
+    image: "/images/generated/15.png",
     contentHtml: `<p><strong>Funding Identification</strong></p><p><strong>Stop hunting. Start pursuing the right opportunities.</strong></p><p>Finding funding is only valuable when the opportunities actually fit your organization, projects, and priorities. GMA combines intelligent matching with experienced analyst review to identify, prioritize, and deliver funding opportunities worth your attention.</p><p><strong>TYPICAL TIMELINE</strong></p><p><strong>Ongoing subscription — first funding brief within 14 days</strong></p><p><strong>OUTCOMES</strong></p><ul><li>Curated funding opportunities aligned with your priorities </li><li>Ranked pipeline based on strategic fit and competitiveness </li><li>Clear visibility into upcoming deadlines and funding activity </li></ul><p><strong><a href="/contact" className="btn-primary inline-flex mt-4 mr-4 no-underline"></a></strong><strong><a href="/contact" className="btn-primary inline-flex mt-4 mr-4 no-underline">Start a Conversation →</a></strong><strong><a href="/assessment" className="btn-primary inline-flex mt-4 mr-4 no-underline">Take the Assessment</a></strong></p><p><strong>OUR APPROACH</strong></p><p><strong>How we deliver Funding Identification.</strong></p><p><strong>STEP 01 — Build Your Funding Profile</strong></p><p>We start by understanding your organization, capabilities, geography, projects, funding priorities, and previous funding experience.</p><p><strong>STEP 02 — Intelligent Opportunity Matching</strong></p><p>Our technology continuously scans a broad universe of federal, state, and foundation opportunities to identify programs aligned with your profile.</p><p><strong>STEP 03 — Analyst Review &amp; Prioritization</strong></p><p>Our team filters the results, adds strategic context, and prioritizes opportunities based on fit, timing, competitiveness, and real-world relevance.</p><p><strong>STEP 04 — Curated Funding Delivery</strong></p><p>You receive a clear, actionable funding brief highlighting the opportunities most worth considering—without having to sort through hundreds of alerts.</p><p><strong>DELIVERABLES</strong></p><p><strong>What You Receive</strong></p><ul><li>Customized funding pipeline </li><li>Curated funding opportunity briefings </li><li>Ranked opportunities based on strategic fit </li><li>Deadline and funding calendar </li><li>Ongoing visibility into relevant programs and announcements </li></ul><p><strong>FAQ</strong></p><p><strong>How is this different from Grants.gov alerts?</strong></p><p>Grants.gov and other databases provide broad notifications based on keywords and categories. GMA goes further by combining intelligent matching with human review to identify opportunities that are more relevant to your organization and priorities.</p><p><strong>Do you only identify federal funding opportunities?</strong></p><p>No. Depending on your organization's needs, our funding identification process can include federal, state, local, foundation, and other relevant funding opportunities.</p><p><strong>What happens when we find an opportunity we want to pursue?</strong></p><p>GMA can help you evaluate the opportunity through a Go/No-Go Analysis and, if appropriate, support your team with proposal development and grant management services.</p><p><strong>WHY GMA</strong></p><p><strong>Funding Intelligence, Not Just Funding Alerts.</strong></p><p>The challenge isn't simply finding more opportunities. It's knowing which opportunities deserve your time and resources.</p><p><strong>Focused on Fit</strong></p><p>We look beyond keywords to understand how opportunities align with your organization's capabilities, priorities, and projects.</p><p><strong>Technology + Human Judgment</strong></p><p>Our technology helps identify opportunities at scale, while experienced analysts provide the context that automated alerts alone cannot.</p><p><strong>Built for Action</strong></p><p>We prioritize opportunities so your team can spend less time searching and more time deciding what to pursue.</p><p><strong>Connected to the Full Funding Lifecycle</strong></p><p>When the right opportunity is identified, GMA can support your next steps—from Go/No-Go analysis to proposal development and post-award management.</p><p><strong>RELATED SERVICES</strong></p><p>Your current related services are good, but I would slightly adjust them to create a stronger client journey:</p><p><strong>AI-Powered Grant Matching</strong></p><p>Find and rank opportunities using GMA's proprietary matching technology.</p><p><strong>Go / No-Go Analysis</strong></p><p>Know whether an opportunity is worth pursuing before committing significant time and resources.</p><p><strong>Grant Writing &amp; Management</strong></p><p>Move from a promising opportunity to a competitive proposal and successful award management.</p><p><strong><a href="/contact" className="btn-primary inline-flex mt-4 mr-4 no-underline">FINAL CTA</a></strong></p><p><strong>Ready to Stop Searching and Start Strategizing?</strong></p><p>Let GMA help you build a clearer view of the funding opportunities ahead—and focus your resources on the ones that matter most.</p><p><strong>Start a Conversation →</strong></p>`,
     title: "Funding Identification",
     tagline: "Stop hunting. Start matching.",
@@ -316,7 +316,7 @@ export const services: Service[] = [
   },
   {
     slug: "capital-strategy",
-    image: "/images/generated/23.png",
+    image: "/images/generated/19.png",
     title: "Capital Strategy & Funding Readiness",
     tagline: "Prepare your organization for successful funding outcomes.",
     summary: "Comprehensive capital strategy and readiness planning to ensure your organization is positioned to win and manage large-scale funding.",
@@ -442,7 +442,7 @@ export const industries: Industry[] = [
   },
   {
     slug: "manufacturing",
-    image: "/images/generated/39.png",
+    image: "/images/generated/34.png",
     name: "Manufacturing",
     icon: "Cog",
     blurb: "MEP, DOE-AMMTO, DoD IBAS, EDA Build to Scale — capital for U.S. manufacturing.",
@@ -472,7 +472,7 @@ export const industries: Industry[] = [
   },
   {
     slug: "agriculture",
-    image: "/images/generated/45.png",
+    image: "/images/generated/39.png",
     name: "Agriculture & Rural Development",
     icon: "Wheat",
     blurb: "USDA, rural infrastructure, and food-system funding—built for the realities of rural America.",
@@ -482,7 +482,7 @@ export const industries: Industry[] = [
   },
   {
     slug: "water-infrastructure",
-    image: "/images/generated/24.png",
+    image: "/images/generated/40.png",
     name: "Water Infrastructure",
     icon: "Droplets",
     blurb: "Drinking water, wastewater, watershed restoration, and resilience funding.",
