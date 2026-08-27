@@ -186,7 +186,7 @@ export default async function HomePage() {
       <Section>
         <div className="relative overflow-hidden rounded-3xl border border-black/10 dark:border-glass-border bg-gradient-to-br from-cyan-50 to-white dark:from-slate-900 dark:to-black p-10 md:p-14">
           <div className="absolute inset-0 grid-lines opacity-10 dark:opacity-20 pointer-events-none" aria-hidden />
-          <Image src="/images/generated/21.png" alt="Action Section Background" fill className="object-cover opacity-10 mix-blend-overlay z-[-1]" />
+          <Image src="/images/generated/7.png" alt="Action Section Background" fill className="object-cover opacity-10 mix-blend-overlay z-[-1]" />
           <div className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-cyan-glow/10 blur-3xl" aria-hidden />
           <div className="relative grid md:grid-cols-2 gap-10 items-center">
             <div>
