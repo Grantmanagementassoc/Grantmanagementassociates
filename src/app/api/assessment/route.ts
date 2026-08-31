@@ -1,7 +1,6 @@
 import { NextResponse } from "next/server";
 import { db } from "@/db";
 import { assessmentResponses } from "@/db/schema";
-import { sql } from "drizzle-orm";
 
 export const dynamic = "force-dynamic";
 
@@ -69,7 +68,7 @@ export async function POST(req: Request) {
         contactEmail: body.contactEmail.toLowerCase().trim(),
         contactPhone: body.contactPhone ?? null,
         score,
-        recommendations: sql`${JSON.stringify(recommendations)}::jsonb`,
+        recommendations,
       })
       .returning({ id: assessmentResponses.id });
     return NextResponse.json({ ok: true, id: row.id, score, recommendations });

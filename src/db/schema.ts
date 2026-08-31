@@ -35,7 +35,7 @@ export const assessmentResponses = pgTable("assessment_responses", {
   contactEmail: text("contact_email").notNull(),
   contactPhone: text("contact_phone"),
   score: integer("score"),
-  recommendations: jsonb("recommendations"),
+  recommendations: text("recommendations").array(),
   status: text("status").default("new").notNull(),
   assignedTo: integer("assigned_to"),
   internalNotes: text("internal_notes"),
