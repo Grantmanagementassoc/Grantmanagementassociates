@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Section, SectionTitle, Eyebrow, GlassCard, Breadcrumbs, CTACard, BackgroundGrid } from "@/components/site/ui";
-import { openRoles, site } from "@/lib/content";
+import { site } from "@/lib/content";
 import { CareerForm } from "@/components/forms/career-form";
 
 export const metadata: Metadata = {
@@ -31,24 +31,6 @@ export default function CareersPage() {
 
 
 
-      <Section>
-        <SectionTitle eyebrow="Open roles" title="We're hiring." />
-        <div className="mt-10 grid gap-4">
-          {openRoles.map((r) => (
-            <Link key={r.slug} href={`/careers/${r.slug}`} className="group">
-              <div className="glass card-hover rounded-2xl p-6 grid md:grid-cols-[1.4fr_1fr_1fr_auto] items-center gap-4">
-                <div>
-                  <div className="text-xs uppercase tracking-widest text-cyan-300">{r.dept}</div>
-                  <div className="mt-1 text-lg font-semibold text-foreground group-hover:text-cyan-300 transition-colors">{r.title}</div>
-                </div>
-                <div className="text-sm text-muted">{r.location}</div>
-                <div className="text-sm text-muted">{r.type}</div>
-                <div className="text-cyan-300 text-sm justify-self-start md:justify-self-end">View role →</div>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </Section>
 
       <Section>
         <CareerForm />

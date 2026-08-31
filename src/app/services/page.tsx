@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Section, SectionTitle, Eyebrow, GlassCard, Breadcrumbs, CTACard, Accordion, BackgroundGrid } from "@/components/site/ui";
 import { services } from "@/lib/content";
+import { ServicesFlowchart } from "@/components/services/services-flowchart";
+import { ProcessTimeline } from "@/components/services/process-timeline";
 import * as Icons from "lucide-react";
 
 export const metadata: Metadata = {
@@ -30,26 +32,7 @@ export default function ServicesPage() {
       </section>
 
       <Section>
-        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-5">
-          {services.map((s) => (
-            <Link key={s.slug} href={`/services/${s.slug}`} className="group">
-              <GlassCard className="h-full flex flex-col">
-                <div className="text-cyan-400">
-                  {(() => {
-                    const IconComponent = Icons[s.icon as keyof typeof Icons] as React.ElementType;
-                    return IconComponent ? <IconComponent size={32} strokeWidth={1.5} /> : null;
-                  })()}
-                </div>
-                <h3 className="mt-4 text-xl font-semibold text-foreground group-hover:text-cyan-300 transition-colors">{s.title}</h3>
-                <p className="mt-2 text-sm text-cyan-300/80">{s.tagline}</p>
-                <p className="mt-4 text-sm text-muted leading-relaxed line-clamp-3">{s.summary}</p>
-                <div className="mt-6 pt-4 border-t border-black/5 dark:border-white/5 text-xs text-cyan-300 flex items-center gap-1">
-                  Learn more <span className="transition-transform group-hover:translate-x-1">→</span>
-                </div>
-              </GlassCard>
-            </Link>
-          ))}
-        </div>
+        <ServicesFlowchart services={services} />
       </Section>
 
       <Section>
@@ -58,14 +41,7 @@ export default function ServicesPage() {
           title={<>A predictable process, <span className="text-gradient-brand">a proven outcome</span>.</>}
           align="center"
         />
-        <div className="mt-14 grid md:grid-cols-5 gap-3">
-          {["Discover", "Match", "Decide", "Execute", "Manage"].map((step, i) => (
-            <div key={step} className="glass rounded-2xl p-6">
-              <div className="font-mono text-xs text-cyan-300">0{i + 1}</div>
-              <div className="mt-2 text-lg font-semibold text-foreground">{step}</div>
-            </div>
-          ))}
-        </div>
+        <ProcessTimeline steps={["Discover", "Match", "Decide", "Execute", "Manage"]} />
       </Section>
 
       <Section>

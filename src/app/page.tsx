@@ -11,7 +11,24 @@ import { SurveyTrigger } from "@/components/site/survey-trigger";
 
 export default async function HomePage() {
   const featuredStudies = caseStudies.slice(0, 4);
-  const latestPosts = resources.slice(0, 3);
+  const latestPosts = [
+    {
+      slug: "/newsletters/weekly-funding-digest-aug-17-21-2026",
+      category: "Digest",
+      title: "Weekly Funding Digest: Aug 17–21, 2026",
+      excerpt: "Our comprehensive weekly breakdown of new federal, state, and foundational funding opportunities across key sectors.",
+      date: "2026-08-17",
+      readMinutes: 5
+    },
+    ...resources.slice(0, 2).map(r => ({
+      slug: `/resources/${r.slug}`,
+      category: r.category,
+      title: r.title,
+      excerpt: r.excerpt,
+      date: r.date,
+      readMinutes: r.readMinutes
+    }))
+  ];
 
   return (
     <>
@@ -154,7 +171,7 @@ export default async function HomePage() {
           />
           <Link href="/case-studies" className="btn-ghost">All case studies →</Link>
         </div>
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-6 md:grid-cols-2 md:auto-rows-fr">
           {featuredStudies.map((cs) => (
             <Link key={cs.slug} href={`/case-studies/${cs.slug}`} className="group">
               <GlassCard className="h-full">
@@ -231,7 +248,7 @@ export default async function HomePage() {
           />
           <Link href="/industries" className="btn-ghost">All industries →</Link>
         </div>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 md:auto-rows-fr lg:auto-rows-[1fr]">
           {industries.slice(0, 8).map((ind) => {
             const IconComponent = Icons[ind.icon as keyof typeof Icons] as React.ElementType;
             return (
@@ -291,9 +308,9 @@ export default async function HomePage() {
           />
           <Link href="/resources" className="btn-ghost">All resources →</Link>
         </div>
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-3 md:auto-rows-fr">
           {latestPosts.map((r) => (
-            <Link key={r.slug} href={`/resources/${r.slug}`} className="group">
+            <Link key={r.slug} href={r.slug} className="group">
               <GlassCard className="h-full flex flex-col">
                 <div className="text-[11px] uppercase tracking-widest text-sky-700 dark:text-cyan-300">{r.category}</div>
                 <h3 className="mt-3 text-lg font-semibold text-foreground group-hover:text-sky-700 dark:text-cyan-300 transition-colors leading-tight">
