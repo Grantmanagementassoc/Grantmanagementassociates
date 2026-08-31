@@ -35,6 +35,8 @@ export function NewsletterForm({ source = "footer" }: { source?: string }) {
         <input
           type="email"
           required
+          pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
+          title="Please provide a valid email address."
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="you@organization.org"

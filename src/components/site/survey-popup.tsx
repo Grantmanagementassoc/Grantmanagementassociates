@@ -197,6 +197,8 @@ export function SurveyPopup() {
                   id="email" 
                   name="email"
                   required
+                  pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
+                  title="Please provide a valid email address."
                   placeholder="name@example.com"
                   className="w-full bg-black/20 border border-glass-border rounded-lg px-4 py-2.5 text-foreground placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-cyan-500/50"
                 />

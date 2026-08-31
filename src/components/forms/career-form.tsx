@@ -64,14 +64,14 @@ export function CareerForm({ roleSlug = "general" }: { roleSlug?: string }) {
           </div>
           <div className="space-y-2">
             <label htmlFor="email" className="text-sm font-medium text-foreground">Email Address *</label>
-            <input required type="email" id="email" name="email" className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-foreground focus:outline-none focus:border-cyan-500 transition-colors" placeholder="jane@example.com" />
+            <input required type="email" id="email" name="email" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" title="Please provide a valid email address." className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-foreground focus:outline-none focus:border-cyan-500 transition-colors" placeholder="jane@example.com" />
           </div>
         </div>
 
         <div className="grid sm:grid-cols-2 gap-6">
           <div className="space-y-2">
             <label htmlFor="phone" className="text-sm font-medium text-foreground">Phone Number</label>
-            <input type="tel" id="phone" name="phone" className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-foreground focus:outline-none focus:border-cyan-500 transition-colors" placeholder="(555) 123-4567" />
+            <input type="tel" id="phone" name="phone" pattern="^\+?[\d\s\-\(\)]{7,20}$" title="Please provide a valid phone number with country code (e.g. +1234567890)." className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-foreground focus:outline-none focus:border-cyan-500 transition-colors" placeholder="(555) 123-4567" />
           </div>
           <div className="space-y-2">
             <label htmlFor="linkedinUrl" className="text-sm font-medium text-foreground">LinkedIn Profile</label>

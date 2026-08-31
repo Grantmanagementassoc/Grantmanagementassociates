@@ -47,6 +47,12 @@ export async function POST(req: Request) {
     if (!body.organizationName || !body.contactName || !body.contactEmail) {
       return NextResponse.json({ error: "Organization, name, and email required." }, { status: 400 });
     }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(body.contactEmail)) {
+      return NextResponse.json({ error: "Please provide a valid email address." }, { status: 400 });
+    }
+    if (body.contactPhone && !/^\+?[1-9]\d{1,14}$/.test(body.contactPhone.replace(/[\s-()]/g, ''))) {
+      return NextResponse.json({ error: "Please provide a valid phone number with country code." }, { status: 400 });
+    }
     const { score, recommendations } = scoreAssessment(body);
     const [row] = await db
       .insert(assessmentResponses)
@@ -62,7 +68,7 @@ export async function POST(req: Request) {
         contactEmail: body.contactEmail.toLowerCase().trim(),
         contactPhone: body.contactPhone ?? null,
         score,
-        recommendations,
+        recommendations: JSON.stringify(recommendations),
       })
       .returning({ id: assessmentResponses.id });
     return NextResponse.json({ ok: true, id: row.id, score, recommendations });

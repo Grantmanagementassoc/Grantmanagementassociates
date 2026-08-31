@@ -11,6 +11,14 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Name and email are required" }, { status: 400 });
     }
 
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      return NextResponse.json({ error: "Please provide a valid email address." }, { status: 400 });
+    }
+    
+    if (phone && !/^\+?[1-9]\d{1,14}$/.test(phone.replace(/[\s-()]/g, ''))) {
+      return NextResponse.json({ error: "Please provide a valid phone number with country code." }, { status: 400 });
+    }
+
     await db.insert(jobApplications).values({
       fullName,
       email,

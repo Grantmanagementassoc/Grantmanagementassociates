@@ -11,8 +11,11 @@ export async function POST(req: Request) {
     if (!name || !email || !message) {
       return NextResponse.json({ error: "Name, email, and message are required." }, { status: 400 });
     }
-    if (!/.+@.+\..+/.test(email)) {
-      return NextResponse.json({ error: "Please provide a valid email." }, { status: 400 });
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      return NextResponse.json({ error: "Please provide a valid email address." }, { status: 400 });
+    }
+    if (phone && !/^\+?[1-9]\d{1,14}$/.test(phone.replace(/[\s-()]/g, ''))) {
+      return NextResponse.json({ error: "Please provide a valid phone number with country code." }, { status: 400 });
     }
     const [row] = await db
       .insert(contactSubmissions)

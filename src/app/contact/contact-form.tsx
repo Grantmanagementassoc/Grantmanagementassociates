@@ -79,6 +79,17 @@ export function ContactForm() {
 }
 
 function Field({ label, name, type = "text", required = false }: { label: string; name: string; type?: string; required?: boolean }) {
+  let pattern;
+  let title;
+  
+  if (type === "email") {
+    pattern = "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$";
+    title = "Please provide a valid email address.";
+  } else if (type === "tel") {
+    pattern = "^\\+?[\\d\\s\\-\\(\\)]{7,20}$";
+    title = "Please provide a valid phone number with country code (e.g. +1234567890).";
+  }
+
   return (
     <div>
       <label className="text-xs uppercase tracking-widest text-muted block mb-2">{label}{required && <span className="text-cyan-300"> *</span>}</label>
@@ -86,6 +97,8 @@ function Field({ label, name, type = "text", required = false }: { label: string
         name={name}
         type={type}
         required={required}
+        pattern={pattern}
+        title={title}
         className="w-full rounded-full bg-black/5 dark:bg-black/5 dark:bg-white/5 border border-glass-border px-4 py-2.5 text-sm text-foreground placeholder:text-muted outline-none focus:border-cyan-400/50 transition-colors"
       />
     </div>
