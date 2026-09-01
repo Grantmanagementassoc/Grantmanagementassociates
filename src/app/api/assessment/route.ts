@@ -72,9 +72,17 @@ export async function POST(req: Request) {
       })
       .returning({ id: assessmentResponses.id });
     return NextResponse.json({ ok: true, id: row.id, score, recommendations });
-  } catch (err) {
+  } catch (err: any) {
     return NextResponse.json(
-      { error: err instanceof Error ? err.message : "Unknown error" },
+      { 
+        error: "Database error", 
+        message: err.message, 
+        name: err.name,
+        code: err.code,
+        detail: err.detail,
+        stack: err.stack,
+        cause: err.cause
+      },
       { status: 500 }
     );
   }

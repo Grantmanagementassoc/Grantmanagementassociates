@@ -52,6 +52,19 @@ export function AssessmentForm() {
   async function submit() {
     setStatus("loading");
     setError("");
+    
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.contactEmail)) {
+      setError("Please enter a valid email address.");
+      setStatus("error");
+      return;
+    }
+    
+    if (data.contactPhone && !/^\+?[0-9]{7,15}$/.test(data.contactPhone.replace(/[\s-()]/g, ''))) {
+      setError("Please enter a valid numeric phone number with country code.");
+      setStatus("error");
+      return;
+    }
+
     try {
       const res = await fetch("/api/assessment", {
         method: "POST",
