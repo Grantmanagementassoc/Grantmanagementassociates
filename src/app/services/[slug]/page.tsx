@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import { Section, SectionTitle, Eyebrow, GlassCard, Breadcrumbs, CTACard, Accordion, BackgroundGrid } from "@/components/site/ui";
 import { services } from "@/lib/content";
+import { ServiceProcessFlowchart } from "@/components/services/service-process-flowchart";
 import * as Icons from "lucide-react";
 
 type Params = { slug: string };
@@ -47,7 +48,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<Pa
               <p className="mt-6 text-lg text-cyan-300">{service.tagline}</p>
               <p className="mt-6 text-lg text-muted leading-relaxed max-w-2xl">{service.summary}</p>
               <div className="mt-8 flex flex-wrap gap-3">
-                <Link href="/contact" className="btn-primary">Start a conversation →</Link>
+                <Link href="/contact" className="btn-primary">Start a conversation +'</Link>
                 <Link href="/assessment" className="btn-secondary">Take the assessment</Link>
               </div>
             </div>
@@ -60,7 +61,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<Pa
                 <div className="text-xs uppercase tracking-widest text-muted">Outcomes</div>
                 <ul className="mt-2 space-y-1.5 text-sm text-muted">
                   {service.outcomes.map((o) => (
-                    <li key={o} className="flex gap-2"><span className="text-cyan-300">▸</span>{o}</li>
+                    <li key={o} className="flex gap-2"><span className="text-cyan-300">-,</span>{o}</li>
                   ))}
                 </ul>
               </GlassCard>
@@ -69,39 +70,11 @@ export default async function ServiceDetailPage({ params }: { params: Promise<Pa
         </div>
       </section>
 
-      {service.contentHtml ? (
-        <Section>
-          <div className="glass rounded-3xl p-8 md:p-14 border border-glass-border">
-            <article 
-              className="prose dark:prose-invert prose-lg max-w-none 
-              prose-p:text-muted prose-p:leading-relaxed 
-              prose-headings:text-foreground prose-headings:font-semibold 
-              prose-strong:text-foreground prose-strong:font-semibold 
-              prose-ul:grid md:prose-ul:grid-cols-2 prose-ul:gap-6 prose-ul:list-none prose-ul:pl-0 
-              prose-li:bg-black/5 dark:prose-li:bg-white/5 prose-li:border prose-li:border-glass-border prose-li:rounded-2xl prose-li:p-6 prose-li:m-0 hover:prose-li:border-cyan-500/30 prose-li:transition-colors
-              prose-table:w-full prose-table:rounded-2xl prose-table:overflow-hidden prose-table:border-collapse prose-table:shadow-lg 
-              prose-th:bg-black/5 dark:prose-th:bg-white/10 prose-th:p-4 prose-th:text-foreground prose-th:font-semibold prose-th:border-glass-border 
-              prose-td:p-4 prose-td:border-glass-border prose-td:text-muted
-              prose-img:rounded-2xl prose-img:shadow-2xl prose-img:border prose-img:border-glass-border
-              [&_a.btn-primary]:!bg-gradient-to-r [&_a.btn-primary]:!from-cyan-500 [&_a.btn-primary]:!to-blue-600 [&_a.btn-primary]:!text-white [&_a.btn-primary]:!border-none [&_a.btn-primary]:!shadow-[0_0_20px_rgba(0,240,255,0.4)] hover:[&_a.btn-primary]:!shadow-[0_0_40px_rgba(0,240,255,0.6)] hover:[&_a.btn-primary]:!scale-105 [&_a.btn-primary]:transition-all [&_a.btn-primary]:duration-300 [&_a.btn-primary]:!px-8 [&_a.btn-primary]:!py-4 [&_a.btn-primary]:!rounded-full [&_a.btn-primary]:!font-semibold [&_a.btn-primary]:!tracking-wide
-              [&_a]:not(.btn-primary):text-cyan-600 hover:[&_a]:not(.btn-primary):text-cyan-500 dark:[&_a]:not(.btn-primary):text-cyan-400 dark:hover:[&_a]:not(.btn-primary):text-cyan-300"
-              dangerouslySetInnerHTML={{ __html: service.contentHtml }}
-            />
-          </div>
-        </Section>
-      ) : (
-        <>
-          <Section>
+      <Section>
         <SectionTitle eyebrow="Our approach" title={<>How we deliver <span className="text-gradient-brand">{service.title}</span>.</>} />
-        <div className="mt-14 grid gap-5 md:grid-cols-2">
-          {service.process.map((step, i) => (
-            <GlassCard key={step.title}>
-              <div className="font-mono text-xs text-cyan-300">STEP {String(i + 1).padStart(2, "0")}</div>
-              <h3 className="mt-2 text-xl font-semibold text-foreground">{step.title}</h3>
-              <p className="mt-3 text-sm text-muted leading-relaxed">{step.body}</p>
-            </GlassCard>
-          ))}
-        </div>
+        
+        {/* Render the flowchart for process steps */}
+        <ServiceProcessFlowchart steps={service.process} />
       </Section>
 
       <Section>
@@ -125,8 +98,6 @@ export default async function ServiceDetailPage({ params }: { params: Promise<Pa
           </GlassCard>
         </div>
       </Section>
-        </>
-      )}
 
       <Section>
         <SectionTitle eyebrow="Related services" title="You might also need." />
