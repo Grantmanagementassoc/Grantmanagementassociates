@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Section, SectionTitle, Eyebrow, GlassCard, CTACard, Breadcrumbs, BackgroundGrid } from "@/components/site/ui";
-import { site } from "@/lib/content";
-import teamRaw from "@/data/team.json";
+import { site, team } from "@/lib/content";
 import { specialistTeams } from "@/data/specialist-teams";
-
-const team = teamRaw as Array<{ name: string; role: string; image: string; bio: string }>;
 
 export const metadata: Metadata = {
   title: "Our Team | About Us",
