@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Section, SectionTitle, Eyebrow, GlassCard, Breadcrumbs, CTACard, Accordion, BackgroundGrid } from "@/components/site/ui";
 import { services } from "@/lib/content";
-import { ServicesFlowchart } from "@/components/services/services-flowchart";
 import { ProcessTimeline } from "@/components/services/process-timeline";
 import * as Icons from "lucide-react";
 
@@ -32,7 +31,26 @@ export default function ServicesPage() {
       </section>
 
       <Section>
-        <ServicesFlowchart services={services} />
+        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-5">
+          {services.map((s) => (
+            <Link key={s.slug} href={`/services/${s.slug}`} className="group">
+              <GlassCard className="h-full flex flex-col items-center text-center">
+                <div className="h-12 w-12 rounded-full bg-sky-900/40 border border-sky-800/30 flex items-center justify-center text-sky-400 mb-4 group-hover:scale-110 group-hover:text-cyan-300 transition-all duration-300">
+                  {(() => {
+                    const IconComponent = Icons[s.icon as keyof typeof Icons] as React.ElementType;
+                    return IconComponent ? <IconComponent size={24} strokeWidth={1.5} /> : null;
+                  })()}
+                </div>
+                <h3 className="text-lg font-semibold text-foreground group-hover:text-cyan-300 transition-colors">{s.title}</h3>
+                <p className="mt-2 text-sm text-cyan-300/80">{s.tagline}</p>
+                <p className="mt-4 text-sm text-muted leading-relaxed line-clamp-3">{s.summary}</p>
+                <div className="mt-auto pt-6 border-t border-black/5 dark:border-white/5 text-xs text-sky-400 flex items-center gap-1 w-full justify-center group-hover:text-cyan-300">
+                  Learn more <span className="transition-transform group-hover:translate-x-1">→</span>
+                </div>
+              </GlassCard>
+            </Link>
+          ))}
+        </div>
       </Section>
 
       <Section>
