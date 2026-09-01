@@ -322,7 +322,8 @@ export const services: Service[] = [
     deliverables: ["Funding Readiness Report", "Capital Strategy Roadmap"],
     timeline: "4-8 weeks",
     faq: [{ q: "What is funding readiness?", a: "It ensures you have the necessary audits, policies, and match capital identified before applying." }],
-      {
+      },
+  {
     slug: "award-management",
     image: "/images/generated/20.png",
     title: "Award and Post-Award Grant Consulting",
@@ -340,7 +341,8 @@ export const services: Service[] = [
     faq: [
       { q: "What is 2 CFR 200?", a: "It is the Uniform Administrative Requirements, Cost Principles, and Audit Requirements for Federal Awards." }
     ],
-    ];
+      },
+];
 
 export type Industry = {
   image?: string;
