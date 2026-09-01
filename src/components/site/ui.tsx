@@ -54,17 +54,15 @@ export function GlassCard({
   children,
   className = "",
   hover = true,
-  stretch = false,
 }: {
   children: ReactNode;
   className?: string;
   hover?: boolean;
-  stretch?: boolean;
 }) {
   return (
-    <ScrollReveal animation="scale-up" random={true} className={stretch ? "h-full" : ""}>
+    <ScrollReveal animation="scale-up" random={true}>
       <div
-        className={`glass rounded-2xl p-6 ${stretch ? "h-full flex flex-col" : ""} ${hover ? "card-hover" : ""} ${className}`}
+        className={`glass rounded-2xl p-6 ${hover ? "card-hover" : ""} ${className}`}
       >
         {children}
       </div>
