@@ -32,14 +32,14 @@ export default function ContactPage() {
 
       <Section>
         <div className="grid lg:grid-cols-[1.4fr_1fr] gap-8">
-          <GlassCard hover={false} className="p-8 md:p-10">
+          <GlassCard hover={false} className="p-8 md:p-10" stretch={true}>
             <Eyebrow>Send us a message</Eyebrow>
             <div className="mt-6">
               <ContactForm />
             </div>
           </GlassCard>
-          <div className="space-y-4">
-            <GlassCard hover={false}>
+          <div className="grid grid-rows-3 gap-4 h-full">
+            <GlassCard hover={false} stretch={true}>
               <div className="text-xs uppercase tracking-widest text-muted">Direct</div>
               <div className="mt-3 space-y-2">
                 <a href={site.phoneHref} className="block text-lg text-foreground hover:text-cyan-300 transition-colors">{site.phone}</a>
@@ -47,14 +47,14 @@ export default function ContactPage() {
               </div>
             </GlassCard>
             {site.addresses.map((a) => (
-              <GlassCard key={a.city} hover={false}>
+              <GlassCard key={a.city} hover={false} stretch={true}>
                 <div className="text-xs uppercase tracking-widest text-muted">{a.label}</div>
                 <div className="mt-2 text-foreground font-semibold">{a.city}, {a.state}</div>
                 <div className="mt-1 text-sm text-muted">{a.line1}</div>
                 <div className="text-sm text-muted">{a.city}, {a.state} {a.zip}</div>
               </GlassCard>
             ))}
-            <GlassCard hover={false}>
+            <GlassCard hover={false} stretch={true}>
               <div className="text-xs uppercase tracking-widest text-muted">Response promise</div>
               <div className="mt-3 flex items-center gap-3">
                 <div className="w-2 h-2 rounded-full bg-cyan-300 animate-pulse" />
