@@ -48,7 +48,7 @@ export default function TeamPage() {
                   <div className="text-lg text-cyan-300 mt-2 font-semibold tracking-wide uppercase">{team[0].role}</div>
                 </div>
               </div>
-              <div className="text-lg md:text-xl text-muted leading-relaxed prose prose-invert max-w-none prose-p:my-4 prose-h3:text-cyan-300 prose-h3:text-2xl prose-h3:mt-8 prose-ul:my-4 prose-li:my-2" dangerouslySetInnerHTML={{ __html: team[0].bio }} />
+              <div className="text-lg md:text-xl text-muted leading-relaxed prose prose-invert max-w-none prose-p:my-4 prose-h3:text-cyan-300 prose-h3:text-2xl prose-h3:mt-8 prose-ul:my-4 prose-li:my-2" dangerouslySetInnerHTML={{ __html: team[0].bio || "" }} />
             </GlassCard>
             {/* Vertical trunk line */}
             <div className="hidden lg:block absolute left-1/2 bottom-[-3rem] w-px h-12 bg-gradient-to-b from-cyan-500/50 to-glass-border" />
@@ -75,7 +75,9 @@ export default function TeamPage() {
                     <div className="text-xs text-cyan-300/80 mt-0.5">{m.role}</div>
                   </div>
                 </div>
-                <div className="mt-4 text-sm text-muted leading-relaxed prose prose-invert prose-base max-w-none line-clamp-[8] hover:line-clamp-none transition-all prose-p:my-2" dangerouslySetInnerHTML={{ __html: m.bio }} />
+                {m.bio && (
+                  <div className="mt-4 text-sm text-muted leading-relaxed prose prose-invert prose-base max-w-none line-clamp-[8] hover:line-clamp-none transition-all prose-p:my-2" dangerouslySetInnerHTML={{ __html: m.bio }} />
+                )}
               </GlassCard>
             ))}
           </div>
