@@ -62,7 +62,7 @@ export function ServicesFlowchart({ services }: { services: Service[] }) {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, margin: "-100px" }}
-        className="flex flex-col lg:flex-row items-center lg:items-stretch justify-center gap-8 lg:gap-4 relative w-full"
+        className="flex flex-col lg:flex-row items-center lg:items-start justify-center gap-8 lg:gap-4 relative w-full"
       >
         {services.map((s, index) => {
           const IconComponent = Icons[s.icon as keyof typeof Icons] as React.ElementType;
@@ -90,7 +90,7 @@ export function ServicesFlowchart({ services }: { services: Service[] }) {
               )}
 
               <Link href={`/services/${s.slug}`} className="group block w-full h-full">
-                <GlassCard stretch={true} className="h-full flex flex-col items-center text-center transition-all duration-300 group-hover:-translate-y-2 group-hover:shadow-[0_10px_40px_-10px_rgba(0,240,255,0.2)]">
+                <GlassCard stretch={true} className="h-[420px] flex flex-col items-center text-center transition-all duration-300 group-hover:-translate-y-2 group-hover:shadow-[0_10px_40px_-10px_rgba(0,240,255,0.2)]">
                   <div className="h-16 w-16 rounded-full bg-cyan-950/40 border border-cyan-800/30 flex items-center justify-center text-cyan-400 mb-6 group-hover:scale-110 group-hover:text-cyan-300 transition-all duration-300 shadow-inner">
                     {IconComponent && <IconComponent size={28} strokeWidth={1.5} />}
                   </div>

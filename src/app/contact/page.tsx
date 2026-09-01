@@ -38,7 +38,7 @@ export default function ContactPage() {
               <ContactForm />
             </div>
           </GlassCard>
-          <div className="grid grid-rows-3 gap-4 h-full">
+          <div className="grid auto-rows-fr gap-4">
             <GlassCard hover={false} stretch={true}>
               <div className="text-xs uppercase tracking-widest text-muted">Direct</div>
               <div className="mt-3 space-y-2">
