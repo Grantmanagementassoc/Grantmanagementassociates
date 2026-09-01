@@ -41,7 +41,11 @@ export default function TeamPage() {
             <GlassCard className="flex flex-col md:flex-row gap-8 relative z-10 border-cyan-500/30 shadow-[0_0_30px_rgba(0,240,255,0.1)]">
               <div className="flex flex-col items-center md:items-start shrink-0">
                 <div className="w-48 h-48 md:w-64 md:h-64 rounded-3xl bg-gradient-to-br from-cyan-glow to-sapphire flex items-center justify-center text-xl font-bold text-white shadow-[0_0_40px_rgba(0,240,255,0.2)] overflow-hidden">
-                  <Image src={team[0].image || ""} alt={team[0].name} width={256} height={256} className="object-cover object-top w-full h-full" />
+                  {team[0].image ? (
+                    <Image src={team[0].image} alt={team[0].name} width={256} height={256} className="object-cover object-top w-full h-full" />
+                  ) : (
+                    <span className="text-7xl opacity-50">{team[0].name.charAt(0)}</span>
+                  )}
                 </div>
                 <div className="mt-8 text-center md:text-left">
                   <div className="text-3xl md:text-4xl font-bold text-foreground">{team[0].name}</div>
@@ -68,7 +72,11 @@ export default function TeamPage() {
               <GlassCard key={m.name} className="flex flex-col relative z-10 hover:border-cyan-500/30 transition-colors">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-glow/20 to-sapphire/20 flex items-center justify-center text-base font-semibold text-foreground border border-glass-border overflow-hidden shrink-0">
-                    <Image src={m.image || ""} alt={m.name} width={48} height={48} className="object-cover w-full h-full" />
+                    {m.image ? (
+                      <Image src={m.image} alt={m.name} width={48} height={48} className="object-cover w-full h-full" />
+                    ) : (
+                      <span className="text-xl opacity-50">{m.name.charAt(0)}</span>
+                    )}
                   </div>
                   <div>
                     <div className="font-semibold text-foreground">{m.name}</div>
