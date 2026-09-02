@@ -10,6 +10,53 @@ import { SurveyPopup } from "@/components/site/survey-popup";
 import { SurveyTrigger } from "@/components/site/survey-trigger";
 
 export default async function HomePage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What's your average engagement size?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Federal proposals typically run $25K–$150K per submission depending on complexity. Retainers and alliances are custom-scoped.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do you work success-based?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No — success-based grant fees are discouraged by most federal agencies and misalign incentives. We work fixed-fee or hourly.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How fast can you start?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Kickoff within 5 business days for standard engagements. Rush engagements available for shovel-ready proposals.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Where is my data processed?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Exclusively on U.S.-based, SOC 2 infrastructure. No offshore AI tools, ever. See our Responsible AI page.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do you handle post-award management?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes — Federal Financial Reports, performance reports, drawdowns, and audit prep. Many clients retain us for the full award lifecycle.",
+        },
+      },
+    ],
+  };
+
   const featuredStudies = caseStudies.slice(0, 4);
   const latestPosts = [
     {
@@ -32,6 +79,10 @@ export default async function HomePage() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <SurveyPopup />
       {/* HERO */}
       <section className="relative pt-32 pb-24 md:pt-44 md:pb-32 overflow-hidden noise">
