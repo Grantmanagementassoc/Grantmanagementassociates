@@ -26,6 +26,19 @@ interface GrantData {
   "Link to Announcement"?: string;
 }
 
+// Helper to extract the first URL from a string that might contain HTML anchors
+function extractFirstUrl(text: string | undefined): string | null {
+  if (!text || text === "N/A") return null;
+  const hrefMatch = text.match(/href=["'](https?:\/\/[^"']+)["']/);
+  if (hrefMatch && hrefMatch[1]) return hrefMatch[1];
+  const urlMatch = text.match(/(https?:\/\/[^\s<]+)/);
+  if (urlMatch && urlMatch[1]) return urlMatch[1].replace(/["']$/, '');
+  if (!text.includes('<a') && !text.includes(' ') && text.length > 4) {
+    return text.startsWith('http') ? text : `https://${text}`;
+  }
+  return null;
+}
+
 export function NewsletterCard({ grant, isPolicy }: { grant: GrantData; isPolicy?: boolean }) {
   // If it's explicitly passed as a policy or has policy-specific fields
   if (isPolicy || grant["What It Is"] || grant["Document"]) {
@@ -33,17 +46,12 @@ export function NewsletterCard({ grant, isPolicy }: { grant: GrantData; isPolicy
   }
 
   // STANDARD OPPORTUNITY CARD
-  const link = grant["Link to NOFO"] || grant["Link to Solicitation"];
+  const linkText = grant["Link to NOFO"] || grant["Link to Solicitation"];
+  const validLink = extractFirstUrl(linkText);
+  const isLinkValid = !!validLink;
   const title = grant["Description"] || "Funding Opportunity"; // Description is usually the actual title in this JSON structure
   const subTitle = grant["Opportunity #"];
   
-  // Link validation fallback
-  let validLink = link;
-  if (validLink && validLink !== "N/A" && !validLink.startsWith("http")) {
-    validLink = `https://${validLink}`;
-  }
-  const isLinkValid = validLink && validLink !== "N/A" && validLink.includes("http");
-
   return (
     <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-6 hover:shadow-lg hover:shadow-emerald-900/5 transition-all duration-300">
       {/* Header */}
@@ -73,11 +81,11 @@ export function NewsletterCard({ grant, isPolicy }: { grant: GrantData; isPolicy
           >
             View Solicitation <ExternalLink className="h-4 w-4" />
           </a>
-        ) : link ? (
+        ) : (
           <div className="flex items-center gap-2 px-4 py-2 bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 text-sm font-semibold rounded-lg whitespace-nowrap cursor-not-allowed" title="Link unavailable">
             No Link Provided
           </div>
-        ) : null}
+        )}
       </div>
 
       {/* Primary Stats - 4 Field Strip */}
@@ -131,14 +139,9 @@ export function NewsletterCard({ grant, isPolicy }: { grant: GrantData; isPolicy
 // ALTERNATE POLICY CARD
 function PolicyCard({ grant }: { grant: GrantData }) {
   const title = grant["Description"] || grant["Document"] || "Policy Update";
-  const link = grant["Link to Announcement"];
-  
-  // Link validation fallback
-  let validLink = link;
-  if (validLink && validLink !== "N/A" && !validLink.startsWith("http")) {
-    validLink = `https://${validLink}`;
-  }
-  const isLinkValid = validLink && validLink !== "N/A" && validLink.includes("http");
+  const linkText = grant["Link to Announcement"];
+  const validLink = extractFirstUrl(linkText);
+  const isLinkValid = !!validLink;
 
   return (
     <div className="bg-white dark:bg-slate-900 border-l-4 border-l-amber-500 border-y border-r border-y-slate-200 border-r-slate-200 dark:border-y-slate-800 dark:border-r-slate-800 rounded-r-xl p-6 hover:shadow-lg transition-all duration-300">
@@ -158,7 +161,7 @@ function PolicyCard({ grant }: { grant: GrantData }) {
             </div>
           )}
         </div>
-        {isLinkValid && (
+        {isLinkValid ? (
           <a
             href={validLink}
             target="_blank"
@@ -167,6 +170,10 @@ function PolicyCard({ grant }: { grant: GrantData }) {
           >
             View Announcement <ExternalLink className="h-4 w-4" />
           </a>
+        ) : (
+          <div className="flex items-center gap-2 px-4 py-2 bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 text-sm font-semibold rounded-lg whitespace-nowrap cursor-not-allowed" title="Link unavailable">
+            No Link Provided
+          </div>
         )}
       </div>
 
