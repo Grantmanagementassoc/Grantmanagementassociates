@@ -60,6 +60,14 @@ export default async function HomePage() {
   const featuredStudies = caseStudies.slice(0, 4);
   const latestPosts = [
     {
+      slug: "/newsletters/weekly-funding-digest-aug-24-28-2026",
+      category: "Digest",
+      title: "Weekly Funding Digest: Aug 24–28, 2026",
+      excerpt: "Our comprehensive weekly breakdown of new federal, state, and foundational funding opportunities across key sectors.",
+      date: "2026-08-24",
+      readMinutes: 6
+    },
+    {
       slug: "/newsletters/weekly-funding-digest-aug-17-21-2026",
       category: "Digest",
       title: "Weekly Funding Digest: Aug 17–21, 2026",
@@ -67,7 +75,7 @@ export default async function HomePage() {
       date: "2026-08-17",
       readMinutes: 5
     },
-    ...resources.slice(0, 2).map(r => ({
+    ...resources.slice(2, 3).map(r => ({
       slug: `/resources/${r.slug}`,
       category: r.category,
       title: r.title,

@@ -5,8 +5,16 @@ import { ArrowRight, Share2, Link as LinkIcon, Mail } from "lucide-react";
 import { NewsletterTabs } from "@/components/newsletters/newsletter-tabs";
 import aug17Data from "@/data/newsletters/aug-17-21-2026.json";
 
+import aug24Data from "@/data/newsletters/aug-24-28-2026.json";
+
 // In a real app, this would come from a database or CMS.
 const availableNewsletters = {
+  "weekly-funding-digest-aug-24-28-2026": {
+    title: "Weekly Funding Digest",
+    date: "August 24–28, 2026",
+    author: "GMA Editorial Team",
+    data: aug24Data
+  },
   "weekly-funding-digest-aug-17-21-2026": {
     title: "Weekly Funding Digest",
     date: "August 17–21, 2026",

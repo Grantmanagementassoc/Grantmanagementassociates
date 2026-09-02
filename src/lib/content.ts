@@ -2649,7 +2649,7 @@ export const results: CaseStudy[] = [
 export type Resource = {
   slug: string;
   title: string;
-  category: "Insight" | "Whitepaper" | "News" | "Guide";
+  category: "Insight" | "Whitepaper" | "News" | "Guide" | "Digest";
   date: string; // ISO
   readMinutes: number;
   author: string;
@@ -2659,6 +2659,28 @@ export type Resource = {
 };
 
 export const resources: Resource[] = [
+  {
+    slug: "/newsletters/weekly-funding-digest-aug-24-28-2026",
+    title: "Weekly Funding Digest: Aug 24–28, 2026",
+    category: "Digest",
+    date: "2026-08-24",
+    readMinutes: 6,
+    author: "GMA Editorial Team",
+    excerpt: "Our comprehensive weekly breakdown of new federal, state, and foundational funding opportunities across key sectors.",
+    body: [],
+    tags: ["newsletter", "funding digest"]
+  },
+  {
+    slug: "/newsletters/weekly-funding-digest-aug-17-21-2026",
+    title: "Weekly Funding Digest: Aug 17–21, 2026",
+    category: "Digest",
+    date: "2026-08-17",
+    readMinutes: 5,
+    author: "GMA Editorial Team",
+    excerpt: "Our comprehensive weekly breakdown of new federal, state, and foundational funding opportunities across key sectors.",
+    body: [],
+    tags: ["newsletter", "funding digest"]
+  },
   {
     slug: "nuclear-funding-surge-2025",
     title: "Seizing the Nuclear Funding Surge: How Federal Policy Is Unlocking Billions",
