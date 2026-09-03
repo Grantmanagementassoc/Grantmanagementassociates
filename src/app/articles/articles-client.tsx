@@ -43,7 +43,7 @@ export function ArticlesClient({ items, categories }: { items: Article[]; catego
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 relative z-10">
         {filtered.map((post, idx) => (
-          <ScrollReveal key={idx} random={true}>
+          <ScrollReveal key={idx}>
             <Link href={`/articles/${post.slug}`} className="block group h-full">
               <article className="glass h-full rounded-2xl overflow-hidden flex flex-col transition-all duration-300 relative group-hover:border-cyan-400/30">
                 <div className="p-8 flex-grow flex flex-col relative z-20">

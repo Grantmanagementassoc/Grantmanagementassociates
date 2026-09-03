@@ -77,7 +77,7 @@ export default function FirmPage() {
           <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-cyan-glow/50 via-sapphire/30 to-transparent md:-translate-x-1/2" aria-hidden />
           <div className="space-y-10">
             {timeline.map((t, i) => (
-              <ScrollReveal key={t.year} random={true}>
+              <ScrollReveal key={t.year}>
                 <div className={`relative pl-14 md:pl-0 md:grid md:grid-cols-2 md:gap-12 ${i % 2 === 0 ? "" : "md:[direction:rtl]"}`}>
                   <div className={`md:[direction:ltr] ${i % 2 === 0 ? "md:text-right md:pr-12" : "md:pl-12"}`}>
                     <div className="text-xs font-mono text-cyan-300">{t.year}</div>

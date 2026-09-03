@@ -9,22 +9,13 @@ export function ScrollReveal({
   className = "",
   delay = 0,
   animation = "fade-up",
-  random = false,
 }: { 
   children: ReactNode; 
   className?: string;
   delay?: number;
   animation?: "fade-up" | "slide-left" | "slide-right" | "scale-up" | "fade-in";
-  random?: boolean;
 }) {
-  const [currentAnim, setCurrentAnim] = useState(animation);
-
-  useEffect(() => {
-    if (random) {
-      const options = ["fade-up", "slide-left", "slide-right", "scale-up", "fade-in"] as const;
-      setCurrentAnim(options[Math.floor(Math.random() * options.length)]);
-    }
-  }, [random]);
+  const currentAnim = animation;
 
   const variants = {
     "fade-up": { initial: { opacity: 0, y: 30 }, whileInView: { opacity: 1, y: 0 } },

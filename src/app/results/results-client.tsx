@@ -81,10 +81,11 @@ export function ResultsClient({ items }: { items: CaseStudy[] }) {
             <GlassCard className="h-full">
               <div className="flex items-start justify-between gap-4">
                 <div>
-                  <h3 className="text-xl font-bold text-foreground group-hover:text-cyan-300">{cs.client}</h3>
-                  <div className="mt-2 text-xs uppercase tracking-widest text-muted">
-                    {industries.find((i) => i.slug === cs.industry)?.name || cs.industry} · {cs.type}
-                  </div>
+                  <div className="text-xs uppercase tracking-widest text-muted">{cs.type} · {cs.year}</div>
+                  <h3 className="mt-2 text-xl font-bold text-foreground group-hover:text-cyan-300">
+                    {cs.client || cs.agency || "Confidential Client"}
+                  </h3>
+                  <p className="mt-1 text-sm text-muted line-clamp-1">{cs.agency}</p>
                 </div>
                 <div className="text-right">
                   <div className="text-2xl md:text-3xl font-semibold text-gradient-gold">{cs.amount}</div>

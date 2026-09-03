@@ -32,36 +32,6 @@ export function CaseStudiesClient({ items }: { items: CaseStudy[] }) {
 
   return (
     <>
-      <div className="glass rounded-2xl p-5 grid gap-3 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
-        <input
-          value={q}
-          onChange={(e) => setQ(e.target.value)}
-          placeholder="Search client, agency, or challenge…"
-          className="rounded-full bg-black/5 dark:bg-white/5 border border-glass-border px-4 py-2.5 text-sm text-foreground placeholder:text-muted outline-none focus:border-cyan-400/50"
-        />
-        <select value={industry} onChange={(e) => setIndustry(e.target.value)} className="rounded-full bg-black/5 dark:bg-white/5 border border-glass-border px-4 py-2.5 text-sm text-foreground outline-none focus:border-cyan-400/50">
-          <option value="all" className="bg-background text-foreground">All industries</option>
-          {industries.map((i) => <option key={i.slug} value={i.slug} className="bg-background text-foreground">{i.name}</option>)}
-        </select>
-        <select value={type} onChange={(e) => setType(e.target.value)} className="rounded-full bg-black/5 dark:bg-white/5 border border-glass-border px-4 py-2.5 text-sm text-foreground outline-none focus:border-cyan-400/50">
-          <option value="all" className="bg-background text-foreground">All funding types</option>
-          <option value="Federal" className="bg-background text-foreground">Federal</option>
-          <option value="State" className="bg-background text-foreground">State</option>
-          <option value="Local" className="bg-background text-foreground">Local</option>
-          <option value="Private" className="bg-background text-foreground">Private</option>
-        </select>
-        <select value={range} onChange={(e) => setRange(e.target.value)} className="rounded-full bg-black/5 dark:bg-white/5 border border-glass-border px-4 py-2.5 text-sm text-foreground outline-none focus:border-cyan-400/50">
-          <option value="all" className="bg-background text-foreground">All amounts</option>
-          <option value="sub-1m" className="bg-background text-foreground">Under $1M</option>
-          <option value="1-10m" className="bg-background text-foreground">$1M–$10M</option>
-          <option value="10-100m" className="bg-background text-foreground">$10M–$100M</option>
-          <option value="100m-plus" className="bg-background text-foreground">$100M+</option>
-        </select>
-      </div>
-
-      <div className="mt-4 text-xs text-muted">
-        Showing <span className="text-foreground font-medium">{filtered.length}</span> of {items.length}
-      </div>
 
       <div className="mt-8 grid gap-6 md:grid-cols-2">
         {filtered.map((cs) => (

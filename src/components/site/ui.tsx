@@ -60,7 +60,7 @@ export function GlassCard({
   hover?: boolean;
 }) {
   return (
-    <ScrollReveal animation="scale-up" random={true}>
+    <ScrollReveal animation="scale-up">
       <div
         className={`glass rounded-2xl p-6 ${hover ? "card-hover" : ""} ${className}`}
       >

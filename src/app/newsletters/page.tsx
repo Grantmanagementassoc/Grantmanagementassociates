@@ -44,7 +44,7 @@ export default function NewslettersPage() {
         <div className="max-w-5xl mx-auto mt-12 relative z-10">
           <div className="grid gap-6">
             {newsletters.map((newsletter) => (
-              <ScrollReveal key={newsletter.slug} random={true}>
+              <ScrollReveal key={newsletter.slug}>
                 <Link
                   href={`/newsletters/${newsletter.slug}`}
                   className="group relative flex flex-col md:flex-row items-start md:items-center gap-6 p-6 md:p-8 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-emerald-500/50 dark:hover:border-emerald-500/50 hover:shadow-lg hover:shadow-emerald-900/5 transition-all duration-300"
