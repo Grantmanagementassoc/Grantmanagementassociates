@@ -10,6 +10,12 @@ export const metadata: Metadata = {
 
 const newsletters = [
   {
+    slug: "weekly-funding-digest-sept-7-11-2026",
+    title: "Weekly Funding Digest",
+    date: "September 7–11, 2026",
+    description: "Our comprehensive weekly breakdown of new federal, state, and foundational funding opportunities across key sectors.",
+  },
+  {
     slug: "weekly-funding-digest-aug-31-sept-4-2026",
     title: "Weekly Funding Digest",
     date: "August 31–September 4, 2026",

@@ -6,9 +6,16 @@ import { NewsletterTabs } from "@/components/newsletters/newsletter-tabs";
 import aug17Data from "@/data/newsletters/aug-17-21-2026.json";
 import aug24Data from "@/data/newsletters/aug-24-28-2026.json";
 import aug31Data from "@/data/newsletters/aug-31-sept-4-2026.json";
+import sept7Data from "@/data/newsletters/sept-7-11-2026.json";
 
 // In a real app, this would come from a database or CMS.
 const availableNewsletters = {
+  "weekly-funding-digest-sept-7-11-2026": {
+    title: "Weekly Funding Digest",
+    date: "September 7–11, 2026",
+    author: "GMA Editorial Team",
+    data: sept7Data
+  },
   "weekly-funding-digest-aug-31-sept-4-2026": {
     title: "Weekly Funding Digest",
     date: "August 31–September 4, 2026",
