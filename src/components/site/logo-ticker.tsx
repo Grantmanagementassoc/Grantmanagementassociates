@@ -2,6 +2,9 @@
 import { useState, useEffect } from "react";
 
 const LOGOS = [
+  { name: "Rio Tinto", image: "/logos/rio-tinto.svg" },
+  { name: "Enel", image: "/logos/enel.svg" },
+  { name: "Siemens", domain: "siemens.com" },
   { name: "San Jose Water", domain: "sjwater.com" },
   { name: "American Honda", domain: "honda.com" },
   { name: "ASHRAE", domain: "ashrae.org" },
@@ -42,7 +45,7 @@ const LOGOS = [
   { name: "Lassen MUD", domain: "lmud.org" },
 ];
 
-function LogoItem({ logo, colorMode = "grayscale" }: { logo: typeof LOGOS[0]; colorMode?: "grayscale" | "color" }) {
+function LogoItem({ logo, colorMode = "grayscale" }: { logo: typeof LOGOS[0] & { image?: string; domain?: string }; colorMode?: "grayscale" | "color" }) {
   const [error, setError] = useState(false);
   const [mounted, setMounted] = useState(false);
 
@@ -64,7 +67,7 @@ function LogoItem({ logo, colorMode = "grayscale" }: { logo: typeof LOGOS[0]; co
     <div className={`flex items-center justify-center h-12 transition-all dark:bg-white/90 dark:p-1.5 dark:rounded-lg ${colorMode === "grayscale" ? "opacity-50 grayscale hover:opacity-100 hover:grayscale-0" : "opacity-100 grayscale-0"}`}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src={`https://icon.horse/icon/${logo.domain}`}
+        src={logo.image || `https://icon.horse/icon/${logo.domain}`}
         alt={logo.name}
         className="max-h-8 max-w-[140px] object-contain"
         onError={() => setError(true)}
