@@ -33,15 +33,35 @@ export default function DefenseTechnologyPage() {
     organization: "",
     email: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    router.push("/defense-technology/thank-you");
+    setIsSubmitting(true);
+    try {
+      await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.fullName,
+          email: formData.email,
+          organization: formData.organization,
+          serviceInterest: "Defense Playbook Download",
+          message: "Lead captured from Defense & Technology playbook download form.",
+        }),
+      });
+      router.push("/industries/defense/thank-you");
+    } catch (error) {
+      console.error("Error submitting form", error);
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -151,8 +171,8 @@ export default function DefenseTechnologyPage() {
                 </div>
 
                 <div className="pt-4">
-                  <button type="submit" className="w-full bg-[#0f2142] hover:bg-[#1a325a] text-white font-semibold py-3.5 px-4 rounded transition-colors shadow-lg shadow-[#0f2142]/20">
-                    Get the playbook
+                  <button type="submit" disabled={isSubmitting} className="w-full bg-[#0f2142] hover:bg-[#1a325a] text-white font-semibold py-3.5 px-4 rounded transition-colors shadow-lg shadow-[#0f2142]/20 disabled:opacity-50">
+                    {isSubmitting ? "Submitting..." : "Get the playbook"}
                   </button>
                 </div>
                 

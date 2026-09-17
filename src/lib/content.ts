@@ -76,7 +76,7 @@ export const primaryNav: NavGroup[] = [
       { label: "Tribal Nations", href: "/industries/tribal" },
       { label: "Manufacturing", href: "/industries/manufacturing" },
       { label: "Broadband & Telecommunications", href: "/industries/broadband" },
-      { label: "Defense & Technology", href: "/defense-technology" },
+      { label: "Defense & Technology", href: "/industries/defense" },
       { label: "Agriculture & Rural Development", href: "/industries/agriculture" },
       { label: "Water Infrastructure", href: "/industries/water-infrastructure" },
     ],

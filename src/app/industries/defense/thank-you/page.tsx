@@ -10,7 +10,7 @@ export default function ThankYouPage() {
         <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[900px] h-[900px] rounded-full bg-sapphire/10 blur-[120px] pointer-events-none" aria-hidden />
         <div className="relative mx-auto max-w-[1600px] px-6 w-full text-center">
           <div className="flex justify-center mb-8">
-            <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Defense & Technology", href: "/defense-technology" }, { label: "Thank You" }]} />
+            <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Defense & Technology", href: "/industries/defense" }, { label: "Thank You" }]} />
           </div>
           
           <div className="max-w-2xl mx-auto">
