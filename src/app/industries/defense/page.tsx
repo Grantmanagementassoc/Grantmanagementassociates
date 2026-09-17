@@ -121,8 +121,28 @@ export default function DefenseTechnologyPage() {
         </div>
       </section>
 
+      {/* SECTION 1.5: INTRODUCTION */}
+      <section className="bg-white text-black py-24">
+        <div className="mx-auto max-w-[1000px] px-6 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-wide text-[#0f2142] mb-8 leading-tight">
+            Helping Defense and Dual-Use Companies Navigate the Path to Government Adoption
+          </h2>
+          <div className="space-y-6 text-lg text-black/70 leading-relaxed">
+            <p>
+              Success in the defense market requires more than innovative technology. Companies must navigate complex funding pathways, capture strategies, acquisition processes, government relationships, compliance requirements, and the transition from prototype to scalable production.
+            </p>
+            <p>
+              <strong className="text-[#0f2142] font-semibold">GMA's Defense & Technology Practice</strong> helps companies identify, shape, fund, and execute the institutional pathway from emerging technology to enduring government adoption.
+            </p>
+            <p>
+              Discover a practical roadmap for building a defense capture strategy, navigating funding and acquisition pathways, strengthening government relationships, and preparing your company for long-term growth.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* SECTION 2: CASE STUDIES (Light Background) */}
-      <section className="bg-[#fcfbf9] text-brand-dark py-24">
+      <section className="bg-[#fcfbf9] text-brand-dark py-24 border-t border-slate-100">
         <div className="mx-auto max-w-[1400px] px-6">
           <div className="grid lg:grid-cols-[1fr_600px] gap-12 items-center mb-16">
             <div>
