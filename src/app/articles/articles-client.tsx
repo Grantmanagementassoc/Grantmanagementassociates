@@ -8,7 +8,9 @@ export function ArticlesClient({ items, categories }: { items: Article[]; catego
   const [category, setCategory] = useState<string>("all");
   const [q, setQ] = useState<string>("");
 
-  const gridItems = items.filter(i => i.slug !== "weekly-funding-digest-aug-17-21-2026");
+  const gridItems = items
+    .filter(i => i.slug !== "weekly-funding-digest-aug-17-21-2026")
+    .sort((a, b) => new Date(b.date || 0).getTime() - new Date(a.date || 0).getTime());
 
   const filtered = useMemo(() => {
     return gridItems.filter((a) => {
