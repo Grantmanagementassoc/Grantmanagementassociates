@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const cheerio = require('cheerio'); // Next.js typically has cheerio or we can use regex, let's just use simple regex for speed if cheerio isn't installed.
 
-const dir = 'C:\\\\Users\\\\lokha\\\\OneDrive\\\\Desktop\\\\grant management\\\\Basic_LinkedInDataExport_08-21-2026.zip\\\\Articles\\\\Articles';
+const dir = 'c:\\\\Users\\\\lokha\\\\OneDrive\\\\Desktop\\\\grant management\\\\GMT2\\\\temp_linkedin\\\\Articles\\\\Articles';
 const files = fs.readdirSync(dir).filter(f => f.endsWith('.html'));
 
 const dataFile = './src/data/scraped_content.json';

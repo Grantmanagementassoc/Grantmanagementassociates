@@ -29,6 +29,34 @@ export const categories: string[] = [
 
 export const articles: Article[] = [
   {
+    "slug": "funding-pulse-weekly-grant-policy-outlook-week-september-cooper-vtjuc",
+    "image": "https://media.licdn.com/mediaD5612AQERtqbE6JiAXA",
+    "title": "Funding Pulse: Weekly Grant & Policy Outlook\nWeek of September 15, 2026 | Start of Fall Outlook Edition",
+    "category": "LinkedIn Article",
+    "date": "2026-09-16",
+    "author": "GMA Team",
+    "excerpt": "The bottom line for executives The federal grantmaking machine is running on a Continuing Resolution through December 11, 2026 , and that single fact..."
+  },
+  {
+    "slug": "funding-pulse-weekly-grant-policy-outlook-kristin-cooper-yowmc",
+    "image": "https://media.licdn.com/mediaD5612AQEucCYY0tDenQ",
+    "title": "Funding Pulse: Weekly Grant & Policy Outlook",
+    "category": "LinkedIn Article",
+    "date": "2026-08-31",
+    "author": "GMA Team",
+    "excerpt": "Week of September 1, 2026 | Grant Management Associates The Compressed Q4 and What It Means for Your Funding Pipeline Congress returns this week to o..."
+  },
+  {
+    "slug": "announcing-defense-industrial-powerhouse-playbook-gma-kristin-cooper-zr05c",
+    "image": "https://media.licdn.com/mediaD5612AQHh21tbXPIXUQ",
+    "title": "Announcing: The Defense Industrial Powerhouse Playbook\nGMA DEFENSE & TECH PRACTICE",
+    "category": "LinkedIn Article",
+    "date": "2026-09-01",
+    "author": "GMA Team",
+    "excerpt": "&nbsp; The Defense Industrial Powerhouse — a playbook for founders, prepared by GMA's Defense &amp; Technology Practice in conjunction with BlackMoun..."
+  },
+
+  {
     slug: "weekly-funding-digest-aug-17-21-2026",
     image: "/images/blog/yocha-dehe-wintun-nations-investment-madison-blueprint-kristin-cooper-q3kyc.jpg",
     title: "GMA Weekly Funding Digest | Week of August 17–21, 2026",
