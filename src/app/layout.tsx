@@ -8,6 +8,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { CookieConsent } from "@/components/site/cookie-consent";
 import { site } from "@/lib/content";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const outfit = Outfit({ subsets: ["latin"], variable: "--font-display" });
@@ -67,6 +68,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <CookieConsent />
         </ThemeProvider>
         <GoogleAnalytics gaId="G-XXXXXXXXXX" />
+        <Analytics />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
