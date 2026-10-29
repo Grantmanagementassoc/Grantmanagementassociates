@@ -23,8 +23,7 @@ export const specialistTeams = [
       { name: 'Mark Goldstein', role: 'Broadband & Telecommunications Lead', bio: 'Mark brings 34 years of telecommunications and technology consulting experience, with expertise in broadband deployment, mapping, and community engagement. He has led major broadband initiatives and winning applications supporting infrastructure projects across the country.' },
       { name: 'Professor Hayley Stone, MPA', role: 'Senior GIS Analyst', bio: 'Hayley specializes in GIS, infrastructure mapping, broadband gap analysis, and rural planning. Her technical and project management expertise helps clients address the complex data and planning requirements of broadband funding programs.' },
       { name: 'Brad Zerbe', role: 'Broadband Grants & Strategic Planning', bio: 'Brad brings decades of experience in broadband policy, grant development, education technology, and strategic planning. His background includes leading statewide broadband initiatives, mapping programs, and E-Rate education technology efforts.' },
-      { name: 'James Dodenhoff, MBA', role: 'Technical Writer & Finance Specialist', bio: 'James combines more than 25 years of industry experience with expertise in technical writing and financial analysis. He supports broadband proposals by translating complex technical and financial information into strong, competitive applications.' },
-      { name: 'Laurie Goldberg, Esq.', role: 'Broadband Consultant', bio: 'Laurie brings experience in broadband strategy, grant development, public policy, and stakeholder engagement. She supports local governments and ISPs with strategic planning, regulatory considerations, and program development.' }
+      { name: 'James Dodenhoff, MBA', role: 'Technical Writer & Finance Specialist', bio: 'James combines more than 25 years of industry experience with expertise in technical writing and financial analysis. He supports broadband proposals by translating complex technical and financial information into strong, competitive applications.' }
     ]
   },
   {
@@ -59,7 +58,6 @@ export const specialistTeams = [
     name: 'Grant Research Team',
     description: 'Our dedicated research specialists identify funding opportunities, monitor emerging programs, and help clients evaluate competitiveness and develop a strategic approach before pursuing an application.',
     members: [
-      { name: 'Laurie Goldberg, Esq.', role: 'Grant Research Team Lead', bio: 'Laurie is an experienced grant writer and researcher who monitors newly released and emerging funding opportunities. Her background as a business attorney and entrepreneur brings an additional strategic perspective to grant research and opportunity assessment.' },
       { name: 'Dori Marty', role: 'Senior Grant Researcher', bio: 'Dori brings extensive experience in grant research and opportunity monitoring, supported by a 30-year career in higher education. She has completed numerous grant research projects and helps clients identify opportunities aligned with their goals.' },
       { name: 'Hunter Gabel', role: 'Grant Research Associate', bio: 'Hunter combines grant writing and research expertise with experience across education, agriculture, natural resources, health, and community development. He supports clients with targeted research and strategic opportunity identification.' }
     ]

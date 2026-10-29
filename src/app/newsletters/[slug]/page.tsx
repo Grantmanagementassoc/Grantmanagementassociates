@@ -7,9 +7,51 @@ import aug17Data from "@/data/newsletters/aug-17-21-2026.json";
 import aug24Data from "@/data/newsletters/aug-24-28-2026.json";
 import aug31Data from "@/data/newsletters/aug-31-sept-4-2026.json";
 import sept7Data from "@/data/newsletters/sept-7-11-2026.json";
+import sept14Data from "@/data/newsletters/sept-14-18-2026.json";
+import sept21Data from "@/data/newsletters/sept-21-25-2026.json";
+import sept28Data from "@/data/newsletters/sept-28-oct-2-2026.json";
+import oct5Data from "@/data/newsletters/oct-5-9-2026.json";
+import oct12Data from "@/data/newsletters/oct-12-16-2026.json";
+import oct19Data from "@/data/newsletters/oct-19-23-2026.json";
 
 // In a real app, this would come from a database or CMS.
 const availableNewsletters = {
+  "weekly-funding-digest-oct-19-23-2026": {
+    title: "Weekly Funding Digest",
+    date: "October 19–23, 2026",
+    author: "GMA Editorial Team",
+    data: oct19Data
+  },
+  "weekly-funding-digest-oct-12-16-2026": {
+    title: "Weekly Funding Digest",
+    date: "October 12–16, 2026",
+    author: "GMA Editorial Team",
+    data: oct12Data
+  },
+  "weekly-funding-digest-oct-5-9-2026": {
+    title: "Weekly Funding Digest",
+    date: "October 5–9, 2026",
+    author: "GMA Editorial Team",
+    data: oct5Data
+  },
+  "weekly-funding-digest-sept-28-oct-2-2026": {
+    title: "Weekly Funding Digest",
+    date: "September 28–October 2, 2026",
+    author: "GMA Editorial Team",
+    data: sept28Data
+  },
+  "weekly-funding-digest-sept-21-25-2026": {
+    title: "Weekly Funding Digest",
+    date: "September 21–25, 2026",
+    author: "GMA Editorial Team",
+    data: sept21Data
+  },
+  "weekly-funding-digest-sept-14-18-2026": {
+    title: "Weekly Funding Digest",
+    date: "September 14–18, 2026",
+    author: "GMA Editorial Team",
+    data: sept14Data
+  },
   "weekly-funding-digest-sept-7-11-2026": {
     title: "Weekly Funding Digest",
     date: "September 7–11, 2026",

@@ -60,36 +60,36 @@ export default async function HomePage() {
   const featuredStudies = caseStudies.slice(0, 4);
   const latestPosts = [
     {
-      slug: "/newsletters/weekly-funding-digest-sept-7-11-2026",
+      slug: "/newsletters/weekly-funding-digest-oct-19-23-2026",
       category: "Digest",
-      title: "Weekly Funding Digest: Sept 7–11, 2026",
+      title: "Weekly Funding Digest: Oct 19–23, 2026",
       excerpt: "Our comprehensive weekly breakdown of new federal, state, and foundational funding opportunities across key sectors.",
-      date: "2026-09-07",
+      date: "2026-10-19",
+      readMinutes: 7
+    },
+    {
+      slug: "/newsletters/weekly-funding-digest-oct-12-16-2026",
+      category: "Digest",
+      title: "Weekly Funding Digest: Oct 12–16, 2026",
+      excerpt: "Our comprehensive weekly breakdown of new federal, state, and foundational funding opportunities across key sectors.",
+      date: "2026-10-12",
       readMinutes: 6
     },
     {
-      slug: "/newsletters/weekly-funding-digest-aug-31-sept-4-2026",
+      slug: "/newsletters/weekly-funding-digest-oct-5-9-2026",
       category: "Digest",
-      title: "Weekly Funding Digest: Aug 31–Sept 4, 2026",
+      title: "Weekly Funding Digest: Oct 5–9, 2026",
       excerpt: "Our comprehensive weekly breakdown of new federal, state, and foundational funding opportunities across key sectors.",
-      date: "2026-08-31",
+      date: "2026-10-05",
       readMinutes: 6
     },
     {
-      slug: "/newsletters/weekly-funding-digest-aug-24-28-2026",
+      slug: "/newsletters/weekly-funding-digest-sept-28-oct-2-2026",
       category: "Digest",
-      title: "Weekly Funding Digest: Aug 24–28, 2026",
+      title: "Weekly Funding Digest: Sept 28–Oct 2, 2026",
       excerpt: "Our comprehensive weekly breakdown of new federal, state, and foundational funding opportunities across key sectors.",
-      date: "2026-08-24",
+      date: "2026-09-28",
       readMinutes: 6
-    },
-    {
-      slug: "/newsletters/weekly-funding-digest-aug-17-21-2026",
-      category: "Digest",
-      title: "Weekly Funding Digest: Aug 17–21, 2026",
-      excerpt: "Our comprehensive weekly breakdown of new federal, state, and foundational funding opportunities across key sectors.",
-      date: "2026-08-17",
-      readMinutes: 5
     },
     ...resources.slice(3, 4).map(r => ({
       slug: `/resources/${r.slug}`,
@@ -254,7 +254,7 @@ export default async function HomePage() {
                   <div>
                     <div className="flex items-start justify-between gap-4">
                       <div>
-                        <div className="text-xs uppercase tracking-widest text-muted">{cs.type} · {cs.year}</div>
+                        <div className="text-xs uppercase tracking-widest text-muted">{cs.year ? `${cs.type} · ${cs.year}` : cs.type}</div>
                         <h3 className="mt-2 text-xl font-semibold text-foreground group-hover:text-sky-700 dark:text-cyan-300 transition-colors line-clamp-2">{cs.client}</h3>
                         <p className="mt-2 text-sm text-muted line-clamp-1">{cs.agency}</p>
                       </div>

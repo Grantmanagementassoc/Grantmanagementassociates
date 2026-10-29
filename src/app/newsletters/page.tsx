@@ -10,6 +10,42 @@ export const metadata: Metadata = {
 
 const newsletters = [
   {
+    slug: "weekly-funding-digest-oct-19-23-2026",
+    title: "Weekly Funding Digest",
+    date: "October 19–23, 2026",
+    description: "Our comprehensive weekly breakdown of new federal, state, and foundational funding opportunities across key sectors.",
+  },
+  {
+    slug: "weekly-funding-digest-oct-12-16-2026",
+    title: "Weekly Funding Digest",
+    date: "October 12–16, 2026",
+    description: "Our comprehensive weekly breakdown of new federal, state, and foundational funding opportunities across key sectors.",
+  },
+  {
+    slug: "weekly-funding-digest-oct-5-9-2026",
+    title: "Weekly Funding Digest",
+    date: "October 5–9, 2026",
+    description: "Our comprehensive weekly breakdown of new federal, state, and foundational funding opportunities across key sectors.",
+  },
+  {
+    slug: "weekly-funding-digest-sept-28-oct-2-2026",
+    title: "Weekly Funding Digest",
+    date: "September 28–October 2, 2026",
+    description: "Our comprehensive weekly breakdown of new federal, state, and foundational funding opportunities across key sectors.",
+  },
+  {
+    slug: "weekly-funding-digest-sept-21-25-2026",
+    title: "Weekly Funding Digest",
+    date: "September 21–25, 2026",
+    description: "Our comprehensive weekly breakdown of new federal, state, and foundational funding opportunities across key sectors.",
+  },
+  {
+    slug: "weekly-funding-digest-sept-14-18-2026",
+    title: "Weekly Funding Digest",
+    date: "September 14–18, 2026",
+    description: "Our comprehensive weekly breakdown of new federal, state, and foundational funding opportunities across key sectors.",
+  },
+  {
     slug: "weekly-funding-digest-sept-7-11-2026",
     title: "Weekly Funding Digest",
     date: "September 7–11, 2026",

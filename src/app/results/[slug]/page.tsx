@@ -35,7 +35,7 @@ export default async function CaseStudyDetail({ params }: { params: Promise<Para
             <div>
               <div className="flex flex-wrap gap-2">
                 <span className="text-[11px] uppercase tracking-widest px-2.5 py-1 rounded-full border border-glass-border bg-black/5 dark:bg-white/5 text-muted">{cs.type}</span>
-                <span className="text-[11px] uppercase tracking-widest px-2.5 py-1 rounded-full border border-glass-border bg-black/5 dark:bg-white/5 text-muted">{cs.year}</span>
+                {cs.year && <span className="text-[11px] uppercase tracking-widest px-2.5 py-1 rounded-full border border-glass-border bg-black/5 dark:bg-white/5 text-muted">{cs.year}</span>}
                 {ind && <Link href={`/industries/${ind.slug}`} className="text-[11px] uppercase tracking-widest px-2.5 py-1 rounded-full border border-glass-border bg-black/5 dark:bg-white/5 text-cyan-300 hover:bg-white/10">{ind.name}</Link>}
               </div>
               <h1 className="mt-6 text-4xl md:text-6xl font-semibold text-foreground leading-[1.02]">{cs.client}</h1>
@@ -78,14 +78,14 @@ export default async function CaseStudyDetail({ params }: { params: Promise<Para
 
       {related.length > 0 && (
         <Section>
-          <h2 className="text-2xl font-semibold text-foreground mb-6">Related case studies</h2>
+          <h2 className="text-2xl font-semibold text-foreground mb-6">Related wins</h2>
           <div className="grid gap-5 md:grid-cols-2">
             {related.map((r) => (
-              <Link key={r.slug} href={`/case-studies/${r.slug}`} className="group">
+              <Link key={r.slug} href={`/results/${r.slug}`} className="group">
                 <GlassCard>
                   <div className="flex justify-between">
                     <div>
-                      <div className="text-xs uppercase tracking-widest text-muted">{r.year}</div>
+                      {r.year && <div className="text-xs uppercase tracking-widest text-muted">{r.year}</div>}
                       <h3 className="mt-2 text-lg font-semibold text-foreground group-hover:text-cyan-300">{r.client}</h3>
                     </div>
                     <div className="text-xl font-semibold text-gradient-gold">{r.amount}</div>

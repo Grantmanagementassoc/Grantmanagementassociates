@@ -24,6 +24,15 @@ interface GrantData {
   "The Requirement That Shapes Scoping"?: string;
   "Program Context"?: string;
   "Link to Announcement"?: string;
+  
+  // Additional Policy fields
+  "Reference #"?: string;
+  "Issuing Agency"?: string;
+  "Effective Date"?: string;
+  "Summary"?: string;
+  "Who It Affects"?: string;
+  "GMA Action Items"?: string;
+  "Link to Source"?: string;
 }
 
 // Helper to extract the first URL from a string that might contain HTML anchors
@@ -41,7 +50,7 @@ function extractFirstUrl(text: string | undefined): string | null {
 
 export function NewsletterCard({ grant, isPolicy }: { grant: GrantData; isPolicy?: boolean }) {
   // If it's explicitly passed as a policy or has policy-specific fields
-  if (isPolicy || grant["What It Is"] || grant["Document"]) {
+  if (isPolicy || grant["What It Is"] || grant["Document"] || grant["Summary"] || grant["Who It Affects"] || grant["GMA Action Items"]) {
     return <PolicyCard grant={grant} />;
   }
 
@@ -139,9 +148,13 @@ export function NewsletterCard({ grant, isPolicy }: { grant: GrantData; isPolicy
 // ALTERNATE POLICY CARD
 function PolicyCard({ grant }: { grant: GrantData }) {
   const title = grant["Description"] || grant["Document"] || "Policy Update";
-  const linkText = grant["Link to Announcement"];
+  const linkText = grant["Link to Announcement"] || grant["Link to Source"];
   const validLink = extractFirstUrl(linkText);
   const isLinkValid = !!validLink;
+
+  const agency = grant["Issuing Agency"];
+  const refNum = grant["Reference #"];
+  const effectiveDate = grant["Effective Date"] || grant["Posting Date"];
 
   return (
     <div className="bg-white dark:bg-slate-900 border-l-4 border-l-amber-500 border-y border-r border-y-slate-200 border-r-slate-200 dark:border-y-slate-800 dark:border-r-slate-800 rounded-r-xl p-6 hover:shadow-lg transition-all duration-300">
@@ -155,8 +168,19 @@ function PolicyCard({ grant }: { grant: GrantData }) {
           <h4 className="text-xl font-display font-semibold text-slate-900 dark:text-white mb-2">
             {title}
           </h4>
+          {refNum && (
+            <div className="text-sm font-medium text-slate-500 dark:text-slate-400 mb-1">
+              Reference: {refNum}
+            </div>
+          )}
+          {agency && (
+            <div className="flex items-center gap-2 text-amber-700 dark:text-amber-400 font-medium text-sm">
+              <Building className="h-4 w-4" />
+              <span>{agency}</span>
+            </div>
+          )}
           {grant["Document"] && grant["Document"] !== title && (
-            <div className="text-sm font-medium text-slate-500 dark:text-slate-400">
+            <div className="text-sm font-medium text-slate-500 dark:text-slate-400 mt-1">
               {grant["Document"]}
             </div>
           )}
@@ -168,7 +192,7 @@ function PolicyCard({ grant }: { grant: GrantData }) {
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-4 py-2 bg-amber-100 hover:bg-amber-200 text-amber-900 dark:bg-amber-500/10 dark:hover:bg-amber-500/20 dark:text-amber-400 text-sm font-semibold rounded-lg transition-colors whitespace-nowrap"
           >
-            View Announcement <ExternalLink className="h-4 w-4" />
+            View Source <ExternalLink className="h-4 w-4" />
           </a>
         ) : (
           <div className="flex items-center gap-2 px-4 py-2 bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 text-sm font-semibold rounded-lg whitespace-nowrap cursor-not-allowed" title="Link unavailable">
@@ -177,19 +201,36 @@ function PolicyCard({ grant }: { grant: GrantData }) {
         )}
       </div>
 
+      {effectiveDate && (
+        <div className="mb-4 inline-block text-xs font-semibold uppercase tracking-wider text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 px-3 py-1 rounded-md">
+          Effective Date: {effectiveDate}
+        </div>
+      )}
+
       {/* Details */}
       <div className="space-y-4 text-sm text-slate-700 dark:text-slate-300 bg-slate-50 dark:bg-slate-800/30 p-5 rounded-lg border border-slate-100 dark:border-transparent">
-        {grant["What It Is"] && (
+        {(grant["Summary"] || grant["What It Is"]) && (
           <div>
-            <span className="font-semibold text-slate-900 dark:text-white block mb-1">What It Is:</span>
-            <div className="leading-relaxed prose prose-slate dark:prose-invert prose-sm max-w-none" dangerouslySetInnerHTML={{ __html: grant["What It Is"] }} />
+            <span className="font-semibold text-slate-900 dark:text-white block mb-1">
+              {grant["Summary"] ? "Summary:" : "What It Is:"}
+            </span>
+            <div className="leading-relaxed prose prose-slate dark:prose-invert prose-sm max-w-none" dangerouslySetInnerHTML={{ __html: grant["Summary"] || grant["What It Is"] || "" }} />
           </div>
         )}
         
-        {grant["The Requirement That Shapes Scoping"] && (
+        {(grant["Who It Affects"] || grant["The Requirement That Shapes Scoping"]) && (
           <div className="pt-3 border-t border-slate-200 dark:border-slate-700/50 mt-3">
-            <span className="font-semibold text-slate-900 dark:text-white block mb-1">Impact on Scoping:</span>
-            <div className="leading-relaxed prose prose-slate dark:prose-invert prose-sm max-w-none" dangerouslySetInnerHTML={{ __html: grant["The Requirement That Shapes Scoping"] }} />
+            <span className="font-semibold text-slate-900 dark:text-white block mb-1">
+              {grant["Who It Affects"] ? "Who It Affects:" : "Impact on Scoping:"}
+            </span>
+            <div className="leading-relaxed prose prose-slate dark:prose-invert prose-sm max-w-none" dangerouslySetInnerHTML={{ __html: grant["Who It Affects"] || grant["The Requirement That Shapes Scoping"] || "" }} />
+          </div>
+        )}
+
+        {grant["GMA Action Items"] && (
+          <div className="pt-3 border-t border-slate-200 dark:border-slate-700/50 mt-3">
+            <span className="font-semibold text-slate-900 dark:text-white block mb-1">GMA Action Items:</span>
+            <div className="leading-relaxed prose prose-slate dark:prose-invert prose-sm max-w-none" dangerouslySetInnerHTML={{ __html: grant["GMA Action Items"] }} />
           </div>
         )}
         

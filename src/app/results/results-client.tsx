@@ -77,11 +77,13 @@ export function ResultsClient({ items }: { items: CaseStudy[] }) {
 
       <div className="mt-8 grid gap-6 md:grid-cols-2">
         {filtered.map((cs) => (
-          <div key={cs.slug} className="group">
+          <Link key={cs.slug} href={`/results/${cs.slug}`} className="group block h-full">
             <GlassCard className="h-full">
               <div className="flex items-start justify-between gap-4">
                 <div>
-                  <div className="text-xs uppercase tracking-widest text-muted">{cs.type} · {cs.year}</div>
+                  <div className="text-xs uppercase tracking-widest text-muted">
+                    {cs.year ? `${cs.type} · ${cs.year}` : cs.type}
+                  </div>
                   <h3 className="mt-2 text-xl font-bold text-foreground group-hover:text-cyan-300">
                     {cs.client || cs.agency || "Confidential Client"}
                   </h3>
@@ -93,7 +95,7 @@ export function ResultsClient({ items }: { items: CaseStudy[] }) {
               </div>
               <p className="mt-4 text-sm text-muted line-clamp-2">{cs.challenge}</p>
             </GlassCard>
-          </div>
+          </Link>
         ))}
       </div>
 

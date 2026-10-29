@@ -87,7 +87,7 @@ export function NewsletterTabs({ categories }: { categories: CategoryData[] }) {
             )
           ) : (
             activeCategory?.grants.map((grant, idx) => (
-              <NewsletterCard key={idx} grant={grant} isPolicy={activeCategory.category === "Policy Updates"} />
+              <NewsletterCard key={idx} grant={grant} isPolicy={activeCategory.category.toLowerCase().includes("policy")} />
             ))
           )}
         </div>

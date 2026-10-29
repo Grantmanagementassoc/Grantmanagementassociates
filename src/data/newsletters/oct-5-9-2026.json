@@ -1,0 +1,171 @@
+[
+  {
+    "category": "Overview",
+    "grants": [
+      {
+        "Description": "Opening Summary",
+        "Program Focus": "<p><strong>OPENING SUMMARY — WEEK OF OCTOBER 5 – 9, 2026</strong></p><p><strong>Utility Cybersecurity</strong>: <p>DOE CESER RMUC Advanced Cybersecurity Technical Assistance (CWX-028-CESER) — <strong>$100,000,000</strong> through ConnectWerx, no cost share. <strong>Nonprofits with formal partnerships with six or more co-ops or public utilities only.</strong> Due <strong>October 20, 2026</strong>.</p></p><p><strong>Environmental Technology / SBIR</strong>: <p>EPA SBIR Phase I (68HERW26R0102) — <strong>$100,000</strong> six-month contracts across ten topics, including PFAS, water reuse, battery recycling, and critical minerals. <strong>U.S. small businesses; five registrations required.</strong> Due <strong>November 8, 2026</strong> (a Sunday).</p></p><p><strong>Heliophysics Research</strong>: <p>NASA ROSES-2025 B.7 Heliophysics Low-Cost Access to Space (NNH25ZDA001N-LCAS) — new element; funding not posted on Grants.gov. <strong>Binding two-step process.</strong> Step-1 due <strong>November 20, 2026</strong>; Step-2 due March 16, 2027.</p><p>NASA ROSES-2025 B.8 Heliophysics Spaceflight Science Foundations (NNH25ZDA001N-SSF) — new element; funding and scope not posted on Grants.gov. Step-1 due <strong>November 20, 2026</strong>; Step-2 due February 5, 2027.</p></p><p><strong>Engineering Research / Computing</strong>: <p>NSF EFRI Wave-Based Computing (NSF 26-524) — <strong>$15,000,000</strong> per year; EAGERs of $100,000–$400,000 and four-year awards up to <strong>$2,000,000</strong>. <strong>Mandatory concept outline by November 19, 2026; no outline, no proposal.</strong> Full proposals due <strong>February 11, 2027</strong>.</p></p><p><strong>Humanities / Digital Preservation</strong>: <p>NEH National Digital Newspaper Program (20270113-PJ) — about <strong>$3,000,000</strong> across 11 cooperative agreements of up to <strong>$325,000</strong>. <strong>Nonprofits, IHEs, state and local governments, and Tribes.</strong> Due <strong>January 13, 2027</strong>.</p></p><p><strong>Tribal Community Development (Forecast)</strong>: <p>HUD ICDBG FY 2026 (PIH-2600-DC-0023) — forecast of <strong>$90,000,000</strong> across about 60 grants of $500,000–$2,250,000, no match. <strong>Tribes and authorized tribal organizations only.</strong> Estimated due <strong>March 31, 2027</strong>; NOFO expected about December 16, 2026.</p></p><p><strong>California State Opportunities</strong>: <p>CDFW FY 2027/28 Boating Access — <strong>$3,000,000</strong> for boating access facilities and amenities. <strong>25% non-federal match.</strong> Due <strong>November 5, 2026</strong>.</p><p>GO-Biz Cannabis Equity Grants for Local Jurisdictions — <strong>$15,000,000</strong> for cities and counties with, or developing, cannabis equity programs. Due <strong>December 1, 2026</strong>.</p><p>CWDB/Caltrans High Road to Construction Careers 2026, Round Two (forecast) — about <strong>$19,000,000</strong> across roughly 13 awards. <strong>Current HRCC grantees only.</strong> Solicitation expected fall 2026; awards March 2027.</p></p><p><strong>Grid Modernization / Energy Storage</strong>: <p>NYSERDA PON 6240 — up to <strong>$3,000,000</strong> to develop and demonstrate an AI-supported battery-storage health-monitoring platform in National Grid's New York territory. Due <strong>November 10, 2026</strong>; eligibility and cost share to be confirmed in the PON Summary.</p></p>"
+      }
+    ]
+  },
+  {
+    "category": "Utility Cybersecurity",
+    "grants": [
+      {
+        "Description": "DOE CESER via ConnectWerx — CWX-028-CESER: Rural and Municipal Utility Cybersecurity (RMUC) Advanced Cybersecurity Technical Assistance",
+        "Opportunity #": "CWX-028-CESER. Funded under IIJA § 40124 (42 U.S.C. § 18723); administered by ConnectWerx (Advanced Technology International) under a DOE Partnership Intermediary Agreement.",
+        "Agency / Funder": "U.S. Department of Energy — Office of Cybersecurity, Energy Security, and Emergency Response (CESER), through ConnectWerx. Questions through the CWX question form on the opportunity page; question deadline October 13, 2026.",
+        "Total Funding": "<strong>$100,000,000</strong> made available for the RMUC TA program.",
+        "Award Range": "Not stated. DOE will fund proposals of various sizes and scales within the program budget; payments are tied to negotiated milestones.",
+        "Eligible Applicants": "Not-for-profit entities only, with <strong>formal partnerships with at least six eligible utilities</strong> (rural electric cooperatives, municipally owned utilities, or utilities owned by a state or political subdivision) that show a demonstrated cybersecurity need. Applicants must be U.S.-organized, majority domestically owned, and have a U.S. place of business; Country-of-Risk and foreign talent program certifications apply.</p><p>Beneficiaries may also include investor-owned utilities selling under 4,000,000 MWh per year; the performer must verify and document beneficiary eligibility. FFRDCs may participate only as subrecipients, capped at 10% of the federal share.</p><p>Utilities themselves are beneficiaries and partners, not applicants.",
+        "Deadline": "October 20, 2026, 2:00 p.m. ET (a Tuesday), through the CWX AMP portal. AMP access must be requested first.</p><p>Submissions can be edited until the deadline; late submissions are not accepted. Questions due October 13.",
+        "Program Focus": "Two focus areas, proposed separately or together:</p><p>• Focus Area 1, Technical Assistance — policy-directive implementation, tool integration (including Project Armor hardening), assessments (CCE, C2M2, NRECA Cyber Goals, APPA accelerator tools), roadmapping, training and certification, exercises, and verification and validation;</p><p>• Focus Area 2, Threat Information Sharing — deploying a Protective DNS (PDNS) service and coordinating with CESER's Energy Threat Analysis Center and CRISP.</p><p>Review weighs statutory priority and need, number of utilities served, technical merit, readiness, measurable improvement, organizational capability, cost effectiveness, verification and validation, and sustainability. The Project Overview &amp; Plan is capped at 6 pages (Times New Roman 12).</p><p>Fit is state rural electric and public power associations and cybersecurity nonprofits that already serve co-ops and munis. With 12 days to the deadline, signed partnerships with six utilities are the critical path.",
+        "Funding Instrument": "Business-to-business agreement with ConnectWerx under DOE's Partnership Intermediary Agreement — not a grant. Milestone-based payments after DOE review.",
+        "Cost Share / Match": "None.",
+        "Primary Sector": "Utility Cybersecurity; Rural Electric Cooperatives; Public Power; Grid Resilience; Technical Assistance",
+        "Link to Solicitation": "<a href=\"https://www.connectwerx.org/portfolio-items/cwx-028-ceser-rural-and-municipal-utility-advanced-cybersecurity-rmuc-technical-assistance-ta/\">CWX-028 opportunity page</a>; <a href=\"https://www.connectwerx.org/wp-content/uploads/2026/09/ConnectWerx-Office-Hours-Slides-CESER-RMUC.-Final.pdf\">Office Hours slides (PDF)</a>; <a href=\"https://register.ati.org/\">CWX AMP registration</a>",
+        "Posting Date": "September 30, 2026 (page updated October 1, 2026)"
+      }
+    ]
+  },
+  {
+    "category": "Environmental Technology",
+    "grants": [
+      {
+        "Description": "U.S. Environmental Protection Agency — 2026 Small Business Innovation Research (SBIR) Phase I Solicitation",
+        "Opportunity #": "68HERW26R0102 (FedConnect). EPA SBIR awards are contracts, not grants.",
+        "Agency / Funder": "U.S. Environmental Protection Agency — SBIR Program. Questions through the EPA SBIR contact form; FedConnect support at (800) 899-6665.",
+        "Total Funding": "Not stated on EPA's site.",
+        "Award Range": "Phase I: <strong>$100,000</strong> for six months. Phase II (based on Phase I results): $400,000 over two years, plus a commercialization option of up to $100,000 for firms that secure third-party investment.",
+        "Eligible Applicants": "U.S. small businesses meeting SBA SBIR eligibility (see SBIR.gov).</p><p>Required before submission: EIN, active SAM.gov registration set to allow contracts or all awards, UEI, FedConnect account, and SBA Company Registry SBC Control ID. EPA warns registration can take 6–8 weeks, so firms not already registered are at risk of missing the deadline.",
+        "Deadline": "November 8, 2026, 11:59 p.m. ET via FedConnect (a Sunday); plan to submit by Friday, November 6. Opened September 24, 2026.",
+        "Program Focus": "Proposals must respond to one of ten topics:</p><p>• Clean and Safe Water — 1A monitoring for water reuse; 1B PFAS in sewage sludge and biosolids; 1C PFAS removal or destruction in groundwater;</p><p>• Air Quality — 2A sensors for PFAS in environmental matrices (including water); 2B carbon monoxide monitoring;</p><p>• Circular Economy — 3A food-waste prevention and recycling; 3B critical-mineral recovery from lithium-ion batteries and safe battery recycling and reuse; 3C mitigating critical-mineral mining impacts or extracting critical minerals from acid mine drainage;</p><p>• Safer Chemicals — 4A lower-concern rubber anti-degradants; 4B improved lead test kits.</p><p>Scoring is one-third technical, one-third relevance, and one-third commercial. EPA discourages Phase I proposals involving human-subjects research because of IRB timelines.</p><p>Topics 3B and 3C fit circular-manufacturing and battery-recycling clients, including in the Puerto Rico portfolio; the PFAS topics fit water-technology clients.",
+        "Funding Instrument": "Contract (SBIR Phase I). Awards typically start in early December.",
+        "Cost Share / Match": "None.",
+        "Primary Sector": "Environmental Technology; PFAS; Water Reuse; Battery Recycling and Critical Minerals; Air Monitoring; Small Business R&amp;D",
+        "Link to Solicitation": "<a href=\"https://www.epa.gov/sbir\">EPA SBIR program page</a>; <a href=\"https://www.epa.gov/sbir/how-apply-sbir-contract\">How to Apply and 2026 topics</a>; <a href=\"https://www.fedconnect.net/FedConnect/default.aspx?ReturnUrl=%2fFedConnect%2f%3fdoc%3d68HERW26R0102%26agency%3dEPA&amp;doc=68HERW26R0102&amp;agency=EPA\">Solicitation on FedConnect</a>",
+        "Posting Date": "September 24, 2026"
+      }
+    ]
+  },
+  {
+    "category": "Heliophysics Research",
+    "grants": [
+      {
+        "Description": "NASA Science Mission Directorate — ROSES-2025 Program Element B.7 Heliophysics Low-Cost Access to Space (H-LCAS)",
+        "Opportunity #": "NNH25ZDA001N-SSF; Assistance Listing 43.001 (Science). Grants.gov opportunity 364039.",
+        "Agency / Funder": "National Aeronautics and Space Administration, Science Mission Directorate, Heliophysics Division. Program contact Dr. Kelly Korreck, hq-hpd-ssf@mail.nasa.gov. General ROSES questions to sara@nasa.gov.",
+        "Total Funding": "N/A",
+        "Award Range": "N/A",
+        "Eligible Applicants": "Proposers must be affiliated with an institution registered in NSPIRES. ROSES is generally open to all organization types, for-profit and nonprofit; NASA generally funds only U.S. institutions, and non-U.S. organizations participate on a no-exchange-of-funds basis.",
+        "Deadline": "Step-1 proposals due <strong>November 20, 2026</strong> (a Friday); Step-2 proposals due <strong>February 5, 2027</strong>. No Step-1, no Step-2.</p><p>A virtual telecon for potential proposers is set for October 26 at noon ET; connection details will be posted on the NSPIRES page.",
+        "Program Focus": "New element added by the October 8 amendment. The Grants.gov synopsis does not describe the science scope; pull the B.8 text from NSPIRES before scoping.</p><p>One proposal per PI, except an Institutional PI for a Co-I/Science PI without PI status at the submitting institution. The interagency-award rules in B.1 Section 1.1.1 apply. Dual-anonymous review under the ROSES DAPR guidelines; NASA strongly encourages the standard SMD Open Science Data Management Plan template.",
+        "Funding Instrument": "Grant or cooperative agreement.",
+        "Cost Share / Match": "None.",
+        "Primary Sector": "Heliophysics; Spaceflight Science; Space Research",
+        "Link to NOFO": "<a href=\"https://simpler.grants.gov/opportunity/60fe4b26-ef81-4bbd-96cc-4aaafd725587\">B.8 on Simpler.Grants.gov</a>; <a href=\"https://solicitation.nasaprs.com/NNH25ZDA001N-SSF\">NSPIRES program element</a>; <a href=\"https://www.grants.gov/search-results-detail/364039\">Grants.gov listing</a>",
+        "Posting Date": "October 8, 2026"
+      }
+    ]
+  },
+  {
+    "category": "Engineering Research",
+    "grants": [
+      {
+        "Description": "U.S. National Science Foundation — Emerging Frontiers in Research and Innovation: Wave-Based Computing (EFRI-WBC)",
+        "Opportunity #": "NSF 26-524 (replaces NSF 24-508); Assistance Listings 47.041 (Engineering), 47.049 (Mathematical and Physical Sciences), and 47.084 (Technology, Innovation and Partnerships).",
+        "Agency / Funder": "NSF Directorate for Engineering, Office of Emerging Frontiers and Multidisciplinary Activities (EFMA), with MPS and TIP. All program contacts at EFRI2027-2028@nsf.gov.",
+        "Total Funding": "<strong>$30,000,000</strong> ($15,000,000 in each of FY 2027 and FY 2028), pending funds. 15–30 awards, up to 15 per year.",
+        "Award Range": "Track 1 (EAGER, exploratory): <strong>$100,000–$400,000</strong> for up to two years. Track 2 (multidisciplinary): up to <strong>$2,000,000</strong> over four years, with at least three PI/co-PIs.",
+        "Eligible Applicants": "Accredited U.S. two- and four-year IHEs, and U.S. non-profit, non-academic research organizations such as museums, observatories, research labs, and professional societies. At an IHE, the lead PI must be full-time tenured or tenure-track faculty, and the PI or a co-PI must hold such an appointment in an engineering college or department.</p><p>One proposal per PI or co-PI per fiscal year, and NSF normally makes no more than one award per lead institution per cycle. Multi-organization projects submit one proposal with subawards.",
+        "Deadline": "Mandatory two-page concept outline by email by <strong>November 19, 2026</strong>, 5:00 p.m. submitter's local time; full proposals by invitation only, due <strong>February 11, 2027</strong>, 5:00 p.m. local time.</p><p>The FY 2028 cycle follows the same pattern: concept outlines by November 16, 2027, full proposals by February 10, 2028.",
+        "Program Focus": "Foundational research on computing that harnesses wave dynamics — free-space, waveguide, metasurface, plasmonic, and acoustic platforms — as energy-efficient accelerators working alongside digital computers, including for AI/ML. Three thrusts:</p><p>• Thrust 1 — physical principles of integrated wave-based computing, including emerging optical materials;</p><p>• Thrust 2 — information processing with waves (analog, digital, mixed-signal, neuromorphic, quantum);</p><p>• Thrust 3 — proof-of-concept testbeds measured against at least one computing metric.</p><p>Track 2 must address all three thrusts. Spin-wave computing, and optical components simply coupled to GPUs, are out of scope. Industry collaboration is encouraged, including through GOALI.</p><p>Photonics and semiconductor clients fit as industry partners on university teams; the concept-outline date is the real gate.",
+        "Funding Instrument": "Standard or continuing grant.",
+        "Cost Share / Match": "Voluntary committed cost sharing is prohibited.",
+        "Primary Sector": "Photonics; Advanced Computing; AI Hardware; Chip-Scale Integration; Engineering Research",
+        "Link to NOFO": "<a href=\"https://www.nsf.gov/funding/opportunities/efri-wbc-emerging-frontiers-research-innovation-efri-wave-based\">EFRI-WBC program page</a>; <a href=\"https://www.nsf.gov/funding/opportunities/efri-wbc-emerging-frontiers-research-innovation-efri-wave-based/nsf26-524/solicitation\">NSF 26-524 solicitation</a>",
+        "Posting Date": "August 17, 2026 (program page updated October 5, 2026)"
+      }
+    ]
+  },
+  {
+    "category": "Humanities",
+    "grants": [
+      {
+        "Description": "National Endowment for the Humanities — National Digital Newspaper Program (NDNP)",
+        "Opportunity #": "20270113-PJ; Assistance Listing 45.042 (National Digital Newspaper Program). Grants.gov opportunity 364030.",
+        "Agency / Funder": "National Endowment for the Humanities — Division of Collections and Infrastructure, in partnership with the Library of Congress. Program questions to collections@neh.gov, 202-606-8570.",
+        "Total Funding": "Approximately <strong>$3,000,000</strong>, about 11 cooperative agreements.",
+        "Award Range": "Up to <strong>$325,000</strong>, inclusive of direct and indirect costs, for up to two years.",
+        "Eligible Applicants": "U.S. 501(c)(3) nonprofits, accredited public or nonprofit institutions of higher education, state and local governments and their agencies, and federally recognized Tribal governments. For-profit, foreign, and individual applicants are ineligible, and fiscal sponsors may not apply for ineligible groups. One application per organization.",
+        "Deadline": "January 13, 2027, 11:59 p.m. ET via Grants.gov (a Wednesday). Notification July 2027; projects may start September 1, 2027 through September 1, 2028.",
+        "Program Focus": "Selecting and digitizing about 100,000 pages of historically significant, public-domain U.S. newspapers published 1690–1963 (preferably from microfilm) to Library of Congress technical standards for Chronicling America, with title essays of about 500 words each. A selection advisory board is required.</p><p>Selection rules depend on the state's prior NDNP awards: first through third awards focus on papers of record; fourth and later awards move toward 18th-century and statehood-era titles, under-covered perspectives, and ceased or ownerless titles.</p><p>The NOFO bars funds for DEI and environmental-justice activities, among other restricted uses, and NEH may prefer applicants with lower indirect cost rates (EO 14332). Fit is state libraries, historical societies, and universities with access to master negative microfilm.",
+        "Funding Instrument": "Cooperative agreement (outright funds), with substantial NEH and Library of Congress involvement.",
+        "Cost Share / Match": "None required; voluntary cost share is not considered in review.",
+        "Primary Sector": "Humanities; Digital Preservation; Libraries and Archives; Historical Newspapers",
+        "Link to NOFO": "<a href=\"https://simpler.grants.gov/opportunity/0103dde3-1103-4ac8-9a84-99f93c9fe951\">NDNP on Simpler.Grants.gov</a>; <a href=\"https://www.neh.gov/sites/default/files/2026-10/NDNP%202027%20NOFO.pdf\">NDNP 2027 NOFO (PDF)</a>; <a href=\"https://www.neh.gov/grants/preservation/national-digital-newspaper-program\">NEH program page</a>",
+        "Posting Date": "October 6, 2026"
+      }
+    ]
+  },
+  {
+    "category": "Tribal Community Development (Forecast)",
+    "grants": [
+      {
+        "Description": "U.S. Department of Housing and Urban Development — Indian Community Development Block Grant (ICDBG) Program, FY 2026 (Forecast)",
+        "Opportunity #": "PIH-2600-DC-0023 (forecast); Assistance Listing 14.862 (Indian Community Development Block Grant Program). Grants.gov opportunity 364031.",
+        "Agency / Funder": "U.S. Department of Housing and Urban Development — Office of Native American Programs (ONAP). Contact ONAP-ICDBG@hud.gov.",
+        "Total Funding": "<strong>$90,000,000</strong> (forecast), about 60 awards.",
+        "Award Range": "<strong>$500,000–$2,250,000</strong> per the forecast.",
+        "Eligible Applicants": "Indian tribes and Alaska Native villages eligible under 24 CFR 1003.5(a). A tribal organization eligible under Title I of ISDEAA may apply on a tribe's behalf with concurring resolutions. Individuals, foreign entities, and sole proprietorships are ineligible.",
+        "Deadline": "Forecast only. Estimated NOFO posting December 16, 2026; estimated application due date March 31, 2027; estimated award and project start July 28, 2027.",
+        "Program Focus": "Competitive Single Purpose grants for projects that create decent housing, suitable living environments, and economic opportunities, principally benefiting low- and moderate-income persons (24 CFR 1003.208).</p><p>Imminent Threat grants are separate: first-come, first-served requests to the Area ONAP under Notice PIH 2025-09, not tied to this deadline.</p><p>Tribal clients should line up project scoping, cost estimates, and tribal council resolutions now so applications can move as soon as the NOFO posts.",
+        "Funding Instrument": "Grant.",
+        "Cost Share / Match": "None per the forecast.",
+        "Primary Sector": "Tribal Community Development; Housing; Community Facilities; Economic Development",
+        "Link to NOFO": "<a href=\"https://simpler.grants.gov/opportunity/7ac1671e-c51b-4985-a308-704e8a4ef08d\">ICDBG forecast on Simpler.Grants.gov</a>; <a href=\"https://www.hud.gov/grants/\">HUD grants page</a>; <a href=\"https://www.grants.gov/search-results-detail/364031\">Grants.gov listing</a>",
+        "Posting Date": "October 6, 2026 (forecast)"
+      }
+    ]
+  },
+  {
+    "category": "California State Opportunities",
+    "grants": [
+      {
+        "Description": "California Department of Fish and Wildlife — FY 2027/28 Boating Access Grant Program",
+        "Opportunity #": "California Grants Portal ID 192864; departmental grant ID 164637. Funded under SB 150.",
+        "Agency / Funder": "California Workforce Development Board (CWDB), in partnership with the California Department of Transportation (Caltrans). Contact Solicitations, (916) 657-1440, Solicitations@cwdb.ca.gov.",
+        "Total Funding": "Approximately <strong>$19,000,000</strong> in state funds; about 13 awards.",
+        "Award Range": "Dependent; to be set in the Round Two solicitation.",
+        "Eligible Applicants": "<strong>Closed competition: current HRCC grantees only.</strong> The portal lists businesses, nonprofits, and public agencies statewide, but the description limits Round Two to existing grantees.</p><p>Past grantee performance, including timely participant data collection and reporting under prior HRCC grants, will be considered.",
+        "Deadline": "Forecast only. The Round Two solicitation is expected in fall 2026, with no due date posted yet.</p><p>Expected award announcement March 2027; 24-month performance period.",
+        "Program Focus": "The second and final round of HRCC 2026 funding, directed to regions with demonstrated construction hiring demand. Program objectives:</p><p>• meet demand by training workers for public infrastructure and construction projects;</p><p>• promote access to joint-apprenticeship programs for people facing barriers to the trades, including women, veterans, and justice-involved individuals;</p><p>• boost employment, incomes, and economic activity in communities that need it most.</p><p>Relevant only to workforce boards and training partners already holding HRCC grants. Eligibility details, award amounts, and evaluation criteria will come with the Round Two solicitation and may change.",
+        "Funding Instrument": "Grant; reimbursement.",
+        "Cost Share / Match": "None.",
+        "Primary Sector": "Construction Workforce; Pre-Apprenticeship and Apprenticeship; Public Infrastructure; Workforce Development",
+        "Link to Solicitation": "<a href=\"https://www.grants.ca.gov/grants/high-road-to-construction-careers-2026/\">HRCC 2026 on the California Grants Portal</a>; <a href=\"https://cwdb.ca.gov/cwdb-home/grant-information/hrcc-2026-r2/\">CWDB HRCC 2026 Round Two page</a>",
+        "Posting Date": "October 6, 2026 (forecast)"
+      }
+    ]
+  },
+  {
+    "category": "Other State Opportunities",
+    "grants": [
+      {
+        "Description": "NYSERDA — Grid Modernization Utility Challenge – National Grid (PON 6240), Round 1",
+        "Opportunity #": "PON 6240, Round 1.",
+        "Agency / Funder": "New York State Energy Research and Development Authority (NYSERDA), with National Grid. Contacts Crystal Soo, (646) 873-7864, and Jim Hastings, (518) 738-2964; emails are on the solicitation page.",
+        "Total Funding": "Up to <strong>$3,000,000</strong> total.",
+        "Award Range": "Not stated on the solicitation page; confirm in the PON Summary.",
+        "Eligible Applicants": "Not stated on the solicitation page. The PON Summary and Attachment F (National Grid Challenge) control; neither document loaded for this digest.",
+        "Deadline": "<strong>November 10, 2026</strong> (Round 1) via the NYSERDA portal (a Tuesday). Confirm the submission time in the PON Summary; NYSERDA solicitations commonly close at 3:00 p.m. ET.",
+        "Program Focus": "Design, development, and demonstration of an AI-supported battery energy storage system (BESS) health-monitoring platform for grid-connected batteries in National Grid's New York service territory, enabling predictive diagnostics, failure detection, and lifecycle optimization. In operation, the platform is expected to learn battery response and continually refine BESS key performance indicators.</p><p>The package includes a Proposal Form, Statement of Work and Budget Template, TRL-CRL Calculator, Sample Agreement, Commercialization Plan Template, National Grid Challenge attachment, and Technical Questionnaire.</p><p>Fit is storage-analytics and BESS software clients with a credible route to a utility demonstration.",
+        "Funding Instrument": "NYSERDA agreement (sample agreement in Attachment D).",
+        "Cost Share / Match": "Not stated on the solicitation page. NYSERDA technology demonstration PONs often require cost share (PON 6149, Grid Enhancing Technologies, requires 50%); confirm before budgeting.",
+        "Primary Sector": "Grid Modernization; Battery Energy Storage; AI and Predictive Analytics; Utility Demonstration; New York",
+        "Link to Solicitation": "<a href=\"https://portal.nyserda.ny.gov/CORE_Solicitation_Detail_Page?SolicitationId=a0rcr00001L7CxyAAF\">PON 6240 on the NYSERDA portal</a>",
+        "Posting Date": "Week of October 5, 2026 (Round 1; exact posting date not shown)"
+      }
+    ]
+  }
+]
