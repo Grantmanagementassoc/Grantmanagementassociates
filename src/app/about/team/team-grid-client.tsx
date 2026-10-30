@@ -12,7 +12,7 @@ interface TeamMember {
 }
 
 function TeamCard({ member, onClick, large }: { member: TeamMember; onClick: () => void; large?: boolean }) {
-  const cardH = large ? "h-[480px]" : "h-[380px]";
+  const cardH = large ? "h-[480px]" : "h-[390px]";
   const imgH = large ? "h-[370px]" : "h-[280px]";
   const nameSize = large ? "text-xl" : "text-base";
 
@@ -41,8 +41,8 @@ function TeamCard({ member, onClick, large }: { member: TeamMember; onClick: () 
         </div>
       </div>
       <div className="flex-1 p-4 bg-black flex flex-col items-start justify-center">
-        <h3 className={`${nameSize} font-bold text-white line-clamp-1`}>{member.name}</h3>
-        <p className="text-sm text-cyan-400 mt-1 line-clamp-2">{member.role}</p>
+        <h3 className={`${nameSize} font-bold text-white line-clamp-2 leading-snug`}>{member.name}</h3>
+        <p className="text-sm text-cyan-400 mt-1 line-clamp-2 leading-snug">{member.role}</p>
       </div>
     </div>
   );
@@ -53,6 +53,33 @@ export function TeamGridClient({ team }: { team: TeamMember[] }) {
 
   const ceo = team[0];
   const rest = team.slice(1);
+
+  // Dynamic grid classes matching exact item count so there are never empty gaps
+  const gridColsClass =
+    rest.length === 1
+      ? "grid-cols-1 max-w-sm mx-auto"
+      : rest.length === 2
+      ? "grid-cols-1 sm:grid-cols-2 max-w-2xl mx-auto"
+      : rest.length === 3
+      ? "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-4xl mx-auto"
+      : rest.length === 4
+      ? "grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 max-w-5xl mx-auto"
+      : rest.length === 5
+      ? "grid-cols-1 sm:grid-cols-2 lg:grid-cols-5"
+      : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6";
+
+  const treeColsClass =
+    rest.length === 1
+      ? "grid-cols-1 max-w-sm mx-auto"
+      : rest.length === 2
+      ? "grid-cols-2 max-w-2xl mx-auto"
+      : rest.length === 3
+      ? "grid-cols-3 max-w-4xl mx-auto"
+      : rest.length === 4
+      ? "grid-cols-4 max-w-5xl mx-auto"
+      : rest.length === 5
+      ? "grid-cols-5"
+      : "grid-cols-6";
 
   return (
     <>
@@ -65,35 +92,39 @@ export function TeamGridClient({ team }: { team: TeamMember[] }) {
         </ScrollReveal>
 
         {/* Vertical trunk line from CEO down */}
-        <div className="hidden lg:block w-px h-12 bg-gradient-to-b from-cyan-500/60 to-glass-border" />
+        <div className="hidden lg:block w-px h-10 bg-gradient-to-b from-cyan-500/60 to-glass-border" />
 
-        {/* Horizontal branch line */}
-        <div className="hidden lg:block relative w-full max-w-[85%] h-px bg-glass-border">
-          {/* Drop lines for each column */}
-          {rest.map((_, i) => {
-            const pos = rest.length === 1 ? 50 : (i / (rest.length - 1)) * 100;
-            return (
-              <div
-                key={i}
-                className="absolute top-0 w-px h-8 bg-glass-border"
-                style={{ left: `${pos}%` }}
-              />
-            );
-          })}
+        {/* Horizontal branch line & drop lines — matches cards grid with exact pixel alignment */}
+        <div className={`hidden lg:grid ${treeColsClass} gap-6 w-full h-8 relative`}>
+          {rest.map((_, i) => (
+            <div key={i} className="relative h-full flex justify-center">
+              {/* Drop line from horizontal branch down to card */}
+              <div className="w-px h-full bg-glass-border" />
+
+              {/* Branch connecting to left column */}
+              {i > 0 && (
+                <div className="absolute top-0 right-1/2 w-[calc(50%+12px)] h-px bg-glass-border" />
+              )}
+
+              {/* Branch connecting to right column */}
+              {i < rest.length - 1 && (
+                <div className="absolute top-0 left-1/2 w-[calc(50%+12px)] h-px bg-glass-border" />
+              )}
+            </div>
+          ))}
         </div>
 
         {/* Remaining team members in a row */}
-        <div className={`grid gap-6 w-full mt-8 lg:mt-0 ${
-          rest.length <= 3
-            ? "sm:grid-cols-2 lg:grid-cols-3"
-            : rest.length <= 4
-            ? "sm:grid-cols-2 lg:grid-cols-4"
-            : rest.length <= 6
-            ? "sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6"
-            : "sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6"
-        }`}>
+        <div className={`grid gap-6 w-full mt-8 lg:mt-0 ${gridColsClass}`}>
           {rest.map((m, idx) => (
-            <ScrollReveal key={idx}>
+            <ScrollReveal
+              key={idx}
+              className={
+                rest.length === 5 && idx === 4
+                  ? "sm:col-span-2 lg:col-span-1 sm:w-full sm:max-w-[calc(50%-12px)] lg:max-w-none sm:mx-auto lg:mx-0"
+                  : ""
+              }
+            >
               <TeamCard member={m} onClick={() => setSelectedMember(m)} />
             </ScrollReveal>
           ))}
