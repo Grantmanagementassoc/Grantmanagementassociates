@@ -10,6 +10,13 @@ export const metadata: Metadata = {
 
 const newsletters = [
   {
+    slug: "weekly-funding-digest-oct-26-30-2026",
+    title: "Weekly Funding Digest",
+    date: "October 26–30, 2026",
+    description: "Our comprehensive weekly breakdown of new federal, state, and foundational funding opportunities across key sectors.",
+    isLatest: true,
+  },
+  {
     slug: "weekly-funding-digest-oct-19-23-2026",
     title: "Weekly Funding Digest",
     date: "October 19–23, 2026",
@@ -101,13 +108,18 @@ export default function NewslettersPage() {
                     <FileText className="h-8 w-8 text-emerald-600 dark:text-emerald-400" />
                   </div>
                   <div className="flex-1">
-                    <div className="flex items-center gap-3 mb-3">
+                    <div className="flex flex-wrap items-center gap-3 mb-3">
                       <h3 className="text-2xl font-display font-bold text-slate-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
                         {newsletter.title}
                       </h3>
                       <span className="text-xs uppercase tracking-wider font-semibold text-slate-700 dark:text-slate-200 bg-slate-100 dark:bg-slate-800 px-3 py-1 rounded-full border border-slate-200 dark:border-slate-700">
                         {newsletter.date}
                       </span>
+                      {newsletter.isLatest && (
+                        <span className="text-xs uppercase tracking-wider font-bold text-emerald-700 dark:text-emerald-300 bg-emerald-100 dark:bg-emerald-950/80 px-2.5 py-0.5 rounded-full border border-emerald-300 dark:border-emerald-700/50">
+                          Latest Issue
+                        </span>
+                      )}
                     </div>
                     <p className="text-slate-600 dark:text-slate-400 text-base max-w-3xl leading-relaxed">
                       {newsletter.description}

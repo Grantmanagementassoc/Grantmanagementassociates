@@ -13,9 +13,16 @@ import sept28Data from "@/data/newsletters/sept-28-oct-2-2026.json";
 import oct5Data from "@/data/newsletters/oct-5-9-2026.json";
 import oct12Data from "@/data/newsletters/oct-12-16-2026.json";
 import oct19Data from "@/data/newsletters/oct-19-23-2026.json";
+import oct26Data from "@/data/newsletters/oct-26-30-2026.json";
 
 // In a real app, this would come from a database or CMS.
 const availableNewsletters = {
+  "weekly-funding-digest-oct-26-30-2026": {
+    title: "Weekly Funding Digest",
+    date: "October 26–30, 2026",
+    author: "GMA Editorial Team",
+    data: oct26Data
+  },
   "weekly-funding-digest-oct-19-23-2026": {
     title: "Weekly Funding Digest",
     date: "October 19–23, 2026",

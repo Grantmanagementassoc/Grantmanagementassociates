@@ -66,7 +66,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <SiteFooter />
           <CookieConsent />
         </ThemeProvider>
-        <GoogleAnalytics gaId="G-XXXXXXXXXX" />
+        <GoogleAnalytics gaId="G-F228CZMQ4G" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
