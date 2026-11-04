@@ -29,6 +29,12 @@ export function ContactForm() {
 
   return (
     <form onSubmit={onSubmit} className="grid gap-4">
+      {/* Honeypot anti-spam field */}
+      <div className="hidden" aria-hidden="true" style={{ display: "none", position: "absolute", left: "-9999px" }}>
+        <label htmlFor="_website_hp">Leave this field blank</label>
+        <input type="text" id="_website_hp" name="_website_hp" tabIndex={-1} autoComplete="off" />
+        <input type="hidden" name="_rendered_at" value={Date.now()} />
+      </div>
       <div className="grid md:grid-cols-2 gap-4">
         <Field label="Full name" name="name" required />
         <Field label="Work email" name="email" type="email" required />

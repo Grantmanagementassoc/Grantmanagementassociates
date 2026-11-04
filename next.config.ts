@@ -20,6 +20,26 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  async redirects() {
+    return [
+      { source: '/founder', destination: '/about/team', permanent: true },
+      { source: '/blog', destination: '/articles', permanent: true },
+      { source: '/blog/:path*', destination: '/articles', permanent: true },
+      { source: '/post/:slug', destination: '/articles/:slug', permanent: true },
+      { source: '/contact-us', destination: '/contact', permanent: true },
+      { source: '/previously-awarded-grants', destination: '/results', permanent: true },
+      { source: '/client-recommendations', destination: '/case-studies', permanent: true },
+      { source: '/grant-writing-consulting', destination: '/services/grant-writing', permanent: true },
+      { source: '/partnering-with-gma', destination: '/partners', permanent: true },
+      { source: '/specialty-services', destination: '/services', permanent: true },
+      { source: '/department-of-defense', destination: '/industries/defense', permanent: true },
+      { source: '/funding-identification-proposal-pre', destination: '/services/funding-identification', permanent: true },
+      { source: '/broadband-grants', destination: '/industries/broadband', permanent: true },
+      { source: '/tax-credit', destination: '/services/capital-strategy', permanent: true },
+      { source: '/european-clients', destination: '/services', permanent: true },
+      { source: '/about', destination: '/about/firm', permanent: true },
+    ];
+  },
 };
 
 export default nextConfig;

@@ -66,7 +66,18 @@ export function SiteFooter() {
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 10-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.51 1.49-3.9 3.78-3.9 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.89h-2.33v6.99A10 10 0 0022 12z"/></svg>
             </a>
           </div>
-          <div className="text-xs text-muted space-x-4">
+          <div className="text-xs text-muted flex flex-wrap items-center gap-4">
+            <button
+              onClick={() => {
+                if (typeof window !== "undefined") {
+                  window.dispatchEvent(new Event("open-cookie-settings"));
+                }
+              }}
+              type="button"
+              className="hover:text-foreground underline underline-offset-2 cursor-pointer transition-colors"
+            >
+              Cookie Settings
+            </button>
             <a href={site.phoneHref} className="hover:text-foreground">{site.phone}</a>
             <a href={site.emailHref} className="hover:text-foreground">{site.email}</a>
           </div>

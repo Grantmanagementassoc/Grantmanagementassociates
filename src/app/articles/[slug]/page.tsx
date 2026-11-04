@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { articles } from "@/lib/scraped-articles";
 import { BackgroundGrid } from "@/components/site/ui";
@@ -7,6 +8,44 @@ export async function generateStaticParams() {
   return articles.map((a) => ({
     slug: a.slug,
   }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const resolvedParams = await params;
+  const decodedSlug = decodeURIComponent(resolvedParams.slug);
+  const article = articles.find((a) => a.slug === resolvedParams.slug || a.slug === decodedSlug || encodeURIComponent(a.slug) === resolvedParams.slug);
+
+  if (!article) {
+    return {
+      title: "Article Not Found",
+    };
+  }
+
+  const cleanDescription = (article.excerpt || article.bodyText?.replace(/<[^>]+>/g, "").slice(0, 160) || "Funding intelligence and strategic insights from Grant Management Associates.").slice(0, 160);
+  const canonicalUrl = `https://www.grantmanagementassoc.com/articles/${article.slug}`;
+
+  return {
+    title: article.title,
+    description: cleanDescription,
+    alternates: {
+      canonical: canonicalUrl,
+    },
+    openGraph: {
+      title: article.title,
+      description: cleanDescription,
+      url: canonicalUrl,
+      type: "article",
+      publishedTime: article.date,
+      authors: [article.author || "Kristin Cooper"],
+      images: article.image ? [{ url: article.image }] : undefined,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: article.title,
+      description: cleanDescription,
+      images: article.image ? [article.image] : undefined,
+    },
+  };
 }
 
 export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
@@ -35,8 +74,34 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     notFound();
   }
 
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: article.title,
+    description: article.excerpt || article.title,
+    datePublished: article.date ? `${article.date}T00:00:00Z` : undefined,
+    author: {
+      "@type": "Person",
+      name: article.author || "Kristin Cooper",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Grant Management Associates",
+      url: "https://www.grantmanagementassoc.com",
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://www.grantmanagementassoc.com/articles/${article.slug}`,
+    },
+    image: article.image ? `https://www.grantmanagementassoc.com${article.image}` : undefined,
+  };
+
   return (
     <main className="min-h-screen bg-background text-foreground noise pt-32 pb-16 relative overflow-hidden">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
       <BackgroundGrid />
       
       <div className="container mx-auto px-4 max-w-4xl relative z-10">

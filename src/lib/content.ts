@@ -122,6 +122,7 @@ export const footerNav = [
     title: "Legal",
     links: [
       { label: "Privacy Policy", href: "/privacy-policy" },
+      { label: "Cookie Policy", href: "/cookie-policy" },
       { label: "Terms of Service", href: "/terms" },
       { label: "Accessibility", href: "/accessibility" },
       { label: "Sitemap", href: "/sitemap" },
@@ -715,7 +716,7 @@ export const results: CaseStudy[] = [
     year: 2024,
     type: "State",
     agency: "CARB Advanced Technology Demonstration \u2013 Green Zones (proposed award Mar 2024, revised 2025)",
-    challenge: "CARB Advanced Technology Demonstration \u2013 Green Zones (proposed award Mar 2024, revised 2025). Award secured by GMA in 2024.",
+    challenge: "Monterey Bay Municipal Fleet Electrification and Workforce Accelerator Technology Demonstration and Pilot Projects (Green Zones). $15,713,981 CARB / $31,432,827 Total Project. Award secured by GMA in 2024.",
     approach: "GMA provided comprehensive grant strategy and application development.",
     result: "$15,713,981 awarded."
   },
@@ -2086,7 +2087,7 @@ export const results: CaseStudy[] = [
     amountNumber: 1700000,
     type: "Federal",
     agency: "USDA Higher Blends Infrastructure Incentive Program (HBIIP)",
-    challenge: "\u200b\u200b County of Monterey\u200b California Air Resources Board (CARB) Monterey Bay Municipal Fleet Electrification and Workforce Accelerator Technology Demonstration and Pilot Projects (Green Zones) $15,713,981 CARB/$31,432.827 Total Project Ready to Pursue Your Next Funding opportunity? With $2.5 billion+ secured and a 90.2% win rate, GMA helps organizations at every scale compete for and win the funding they need. SCHEDULE A STRATEGY CALL VIEW OUR SERVICES bottom of page",
+    challenge: "USDA Higher Blends Infrastructure Incentive Program (HBIIP) funding secured by GMA.",
     approach: "GMA provided comprehensive grant strategy and application development.",
     result: "$1,700,000 awarded."
   },
@@ -2816,7 +2817,9 @@ export const team = [
   }
 ];
 
-export const timeline = [
+// Timeline pulled pending factual verification of Salt Lake City founding and milestones
+export const timeline: { year: string; title: string; body: string }[] = [];
+const _timelineDraft = [
   { year: "2009", title: "GMA Founded", body: "Kristin Cooper opens GMA in Salt Lake City focused on federal grantmaking." },
   { year: "2013", title: "First $10M Federal Win", body: "GMA delivers a landmark DOT award — establishing the transit practice." },
   { year: "2016", title: "WOSB & NWBOC Certified", body: "Formal Women-Owned Small Business certifications completed." },
@@ -2826,7 +2829,9 @@ export const timeline = [
   { year: "2025", title: "$2.5B Secured", body: "Cumulative funding secured for clients crosses $2.5 billion." },
 ];
 
-export const openRoles = [
+// Open roles taken down per request; general application form is active
+export const openRoles: { slug: string; title: string; dept: string; location: string; type: string }[] = [];
+const _openRolesDraft = [
   { slug: "senior-grant-writer", title: "Senior Grant Writer", dept: "Delivery", location: "Remote (US)", type: "Full-time" },
   { slug: "federal-strategy-lead", title: "Federal Strategy Lead", dept: "Strategy", location: "Washington, DC / Remote", type: "Full-time" },
   { slug: "nonprofit-advisor", title: "Nonprofit Advisor (MissionMomentum)", dept: "Nonprofit Practice", location: "Remote (US)", type: "Full-time" },

@@ -14,9 +14,9 @@ export function Section({
 }) {
   return (
     <section id={id} className={`mx-auto max-w-[1600px] px-6 py-20 md:py-28 ${className}`}>
-      <ScrollReveal>
+
         {children}
-      </ScrollReveal>
+
     </section>
   );
 }

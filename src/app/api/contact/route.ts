@@ -7,7 +7,15 @@ export const dynamic = "force-dynamic";
 export async function POST(req: Request) {
   try {
     const body = await req.json();
-    const { name, email, phone, organization, serviceInterest, budget, message } = body ?? {};
+    const { name, email, phone, organization, serviceInterest, budget, message, _website_hp, _rendered_at } = body ?? {};
+
+    // Anti-spam honeypot and time-trap protection
+    if (_website_hp) {
+      return NextResponse.json({ ok: true });
+    }
+    if (_rendered_at && Date.now() - Number(_rendered_at) < 1000) {
+      return NextResponse.json({ ok: true });
+    }
     if (!name || !email || !message) {
       return NextResponse.json({ error: "Name, email, and message are required." }, { status: 400 });
     }

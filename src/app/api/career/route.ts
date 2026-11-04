@@ -5,7 +5,15 @@ import { jobApplications } from "@/db/schema";
 export async function POST(req: Request) {
   try {
     const body = await req.json();
-    const { fullName, email, phone, linkedinUrl, resumeUrl, coverLetter, roleSlug } = body;
+    const { fullName, email, phone, linkedinUrl, resumeUrl, coverLetter, roleSlug, _website_hp, _rendered_at } = body;
+
+    // Anti-spam honeypot and time-trap protection
+    if (_website_hp) {
+      return NextResponse.json({ success: true });
+    }
+    if (_rendered_at && Date.now() - Number(_rendered_at) < 1000) {
+      return NextResponse.json({ success: true });
+    }
 
     if (!fullName || !email) {
       return NextResponse.json({ error: "Name and email are required" }, { status: 400 });

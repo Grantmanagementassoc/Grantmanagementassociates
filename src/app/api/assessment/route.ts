@@ -43,7 +43,15 @@ function scoreAssessment(p: Payload): { score: number; recommendations: string[]
 
 export async function POST(req: Request) {
   try {
-    const body = (await req.json()) as Payload;
+    const body = (await req.json()) as Payload & { _website_hp?: string; _rendered_at?: number };
+
+    // Anti-spam honeypot and time-trap protection
+    if (body._website_hp) {
+      return NextResponse.json({ score: 75, recommendations: ["Thank you. Your assessment has been received."] });
+    }
+    if (body._rendered_at && Date.now() - Number(body._rendered_at) < 1000) {
+      return NextResponse.json({ score: 75, recommendations: ["Thank you. Your assessment has been received."] });
+    }
     if (!body.organizationName || !body.contactName || !body.contactEmail) {
       return NextResponse.json({ error: "Organization, name, and email required." }, { status: 400 });
     }

@@ -32,6 +32,8 @@ const steps = ["Organization", "Project", "History", "Goals", "Contact"];
 export function AssessmentForm() {
   const [step, setStep] = useState(0);
   const [data, setData] = useState<Data>(empty);
+  const [honeypot, setHoneypot] = useState("");
+  const [renderedAt] = useState(() => Date.now());
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [result, setResult] = useState<{ score: number; recommendations: string[] } | null>(null);
   const [error, setError] = useState<string>("");
@@ -69,7 +71,7 @@ export function AssessmentForm() {
       const res = await fetch("/api/assessment", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
+        body: JSON.stringify({ ...data, _website_hp: honeypot, _rendered_at: renderedAt }),
       });
       const json = await res.json();
       if (!res.ok) throw new Error(json.error || "Something went wrong");

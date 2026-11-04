@@ -92,7 +92,7 @@ export default async function HomePage() {
       readMinutes: 6
     },
     ...resources.slice(3, 4).map(r => ({
-      slug: `/resources/${r.slug}`,
+      slug: r.slug.startsWith("/") ? r.slug : `/newsletters/${r.slug}`,
       category: r.category,
       title: r.title,
       excerpt: r.excerpt,
@@ -299,7 +299,7 @@ export default async function HomePage() {
             <div className="grid grid-cols-2 gap-4">
               {[
                 { t: "U.S.-based partners only", d: "No offshore processing, ever." },
-                { t: "SOC 2 compliant", d: "Enterprise-grade security controls." },
+                { t: "SOC 2 Type II AI partners", d: "Enterprise-grade security controls via vetted U.S. partners." },
                 { t: "Human-in-the-loop", d: "AI assists — experts decide." },
                 { t: "Client data ownership", d: "Your IP stays yours." },
               ].map((f) => (

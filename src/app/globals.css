@@ -163,13 +163,14 @@
     padding: 0.82rem 1.35rem;
     border-radius: 6px;
     font-weight: 600;
-    color: #fff;
-    background: #0ea5e9;
-    border: 1px solid #0ea5e9;
+    color: #ffffff;
+    background: #0284c7;
+    border: 1px solid #0284c7;
     transition: background 160ms ease, border-color 160ms ease;
   }
-  .btn-primary:hover { background: #0284c7; border-color: #0284c7; }
-  .dark .btn-primary:hover { background: #38bdf8; border-color: #38bdf8; }
+  .btn-primary:hover { background: #0369a1; border-color: #0369a1; }
+  .dark .btn-primary { background: #0284c7; border-color: #0284c7; color: #ffffff; }
+  .dark .btn-primary:hover { background: #0369a1; border-color: #0369a1; }
 
   .btn-secondary {
     display: inline-flex;

@@ -69,7 +69,10 @@ function LogoItem({ logo, colorMode = "grayscale" }: { logo: typeof LOGOS[0] & {
       <img
         src={logo.image || `https://icon.horse/icon/${logo.domain}`}
         alt={logo.name}
-        className="max-h-8 max-w-[140px] object-contain"
+        width={140}
+        height={32}
+        loading="lazy"
+        className="max-h-8 max-w-[140px] w-auto h-auto object-contain"
         onError={() => setError(true)}
       />
     </div>

@@ -52,11 +52,18 @@ export function CareerForm({ roleSlug = "general" }: { roleSlug?: string }) {
   return (
     <div className="glass rounded-2xl p-8 md:p-12">
       <div className="mb-8">
-        <h2 className="text-2xl md:text-3xl font-semibold text-foreground">Join our team</h2>
-        <p className="mt-2 text-muted">Fill out the form below to apply. We are always looking for talented individuals.</p>
+        <h2 className="text-2xl md:text-3xl font-semibold text-foreground">Join our network</h2>
+        <p className="mt-2 text-muted">We are always looking for exceptional grant writers, researchers, and funding strategists to join our team. Submit your details below to join our talent network.</p>
       </div>
       
       <form onSubmit={handleSubmit} className="space-y-6">
+        {/* Anti-spam honeypot */}
+        <div className="hidden" aria-hidden="true" style={{ display: "none", position: "absolute", left: "-9999px" }}>
+          <label htmlFor="_website_hp">Leave this field blank</label>
+          <input type="text" id="_website_hp" name="_website_hp" tabIndex={-1} autoComplete="off" />
+          <input type="hidden" name="_rendered_at" value={Date.now()} />
+        </div>
+
         <div className="grid sm:grid-cols-2 gap-6">
           <div className="space-y-2">
             <label htmlFor="fullName" className="text-sm font-medium text-foreground">Full Name *</label>
@@ -64,7 +71,7 @@ export function CareerForm({ roleSlug = "general" }: { roleSlug?: string }) {
           </div>
           <div className="space-y-2">
             <label htmlFor="email" className="text-sm font-medium text-foreground">Email Address *</label>
-            <input required type="email" id="email" name="email" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" title="Please provide a valid email address." className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-foreground focus:outline-none focus:border-cyan-500 transition-colors" placeholder="jane@example.com" />
+            <input required type="email" id="email" name="email" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" title="Please provide a valid email address." className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-foreground focus:outline-none focus:border-cyan-500 transition-colors" placeholder="jane@organization.com" />
           </div>
         </div>
 
