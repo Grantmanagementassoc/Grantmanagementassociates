@@ -112,10 +112,11 @@ export default async function HomePage() {
       <section className="relative pt-32 pb-24 md:pt-44 md:pb-32 overflow-hidden noise">
         <BackgroundGrid />
         <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[900px] h-[900px] rounded-full bg-sapphire/10 blur-[120px] pointer-events-none" aria-hidden />
-        <Image src="/images/generated/1.png" alt="Hero Background" fill className="object-cover opacity-10 absolute inset-0 z-[-1] pointer-events-none mix-blend-luminosity" priority />
+        <Image src="/images/generated/1.png" alt="Grant Management Associates Funding Strategy Team" fill className="object-cover opacity-35 dark:opacity-25 absolute inset-0 z-0 pointer-events-none transition-opacity duration-700" priority />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background z-[1] pointer-events-none" aria-hidden />
         <div className="absolute top-40 right-10 w-72 h-72 rounded-full bg-cyan-glow/10 blur-[80px] pointer-events-none animate-float" aria-hidden />
 
-        <div className="relative mx-auto max-w-[1600px] px-6">
+        <div className="relative z-10 mx-auto max-w-[1600px] px-6">
           <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
             <Eyebrow>AI-Powered Grant Matching · Go/No-Go Strategy · Proposal Execution</Eyebrow>
 
@@ -134,7 +135,7 @@ export default async function HomePage() {
             <div className="mt-10 flex flex-wrap items-center justify-center gap-3 animate-fade-up" style={{ animationDelay: "220ms" }}>
               <Link href="/assessment" className="btn-primary">Take the 2-min assessment →</Link>
               <SurveyTrigger />
-              <Link href="/case-studies" className="btn-secondary">See how we win</Link>
+              <Link href="/results" className="btn-secondary">See how we win</Link>
             </div>
 
             <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 w-full max-w-5xl mx-auto">

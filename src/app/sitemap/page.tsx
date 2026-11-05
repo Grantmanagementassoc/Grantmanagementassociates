@@ -103,6 +103,7 @@ export default function SitemapPage() {
             <div className="text-xs uppercase tracking-widest text-cyan-300">Tools & Legal</div>
             <ul className="mt-4 space-y-2">
               {[
+                ["/methodology", "KCA Methodology & Guide"],
                 ["/assessment", "2-Min Funding Assessment"],
                 ["/responsible-ai", "Responsible AI Commitment"],
                 ["/privacy-policy", "Privacy Policy"],

@@ -30,7 +30,7 @@ export default async function CaseStudyDetail({ params }: { params: Promise<Para
         <BackgroundGrid />
         <div className="absolute -top-40 right-0 w-[700px] h-[700px] rounded-full bg-gold-glow/10 blur-[120px] pointer-events-none" aria-hidden />
         <div className="relative mx-auto max-w-[1600px] px-6">
-          <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Case Studies", href: "/case-studies" }, { label: cs.client }]} />
+          <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Results", href: "/results" }, { label: cs.client }]} />
           <div className="grid md:grid-cols-[1.4fr_1fr] gap-10 items-end">
             <div>
               <div className="flex flex-wrap gap-2">

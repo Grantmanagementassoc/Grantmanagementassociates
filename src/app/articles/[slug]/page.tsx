@@ -22,7 +22,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   }
 
   const cleanDescription = (article.excerpt || article.bodyText?.replace(/<[^>]+>/g, "").slice(0, 160) || "Funding intelligence and strategic insights from Grant Management Associates.").slice(0, 160);
-  const canonicalUrl = `https://www.grantmanagementassoc.com/articles/${article.slug}`;
+  const canonicalUrl = (article.linkedinUrl && article.linkedinUrl.trim().length > 0)
+    ? article.linkedinUrl
+    : `https://www.grantmanagementassoc.com/articles/${article.slug}`;
 
   return {
     title: article.title,
@@ -33,7 +35,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     openGraph: {
       title: article.title,
       description: cleanDescription,
-      url: canonicalUrl,
+      url: `https://www.grantmanagementassoc.com/articles/${article.slug}`,
       type: "article",
       publishedTime: article.date,
       authors: [article.author || "Kristin Cooper"],
@@ -93,6 +95,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       "@type": "WebPage",
       "@id": `https://www.grantmanagementassoc.com/articles/${article.slug}`,
     },
+    ...(article.linkedinUrl ? { isBasedOn: article.linkedinUrl } : {}),
     image: article.image ? `https://www.grantmanagementassoc.com${article.image}` : undefined,
   };
 

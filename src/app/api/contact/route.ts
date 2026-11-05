@@ -1,13 +1,14 @@
 import { NextResponse } from "next/server";
 import { db } from "@/db";
 import { contactSubmissions } from "@/db/schema";
+import { dispatchLead } from "@/lib/integrations";
 
 export const dynamic = "force-dynamic";
 
 export async function POST(req: Request) {
   try {
     const body = await req.json();
-    const { name, email, phone, organization, serviceInterest, budget, message, _website_hp, _rendered_at } = body ?? {};
+    const { name, email, phone, organization, serviceInterest, budget, message, optInNewsletter, _website_hp, _rendered_at } = body ?? {};
 
     // Anti-spam honeypot and time-trap protection
     if (_website_hp) {
@@ -37,6 +38,19 @@ export async function POST(req: Request) {
         message: String(message),
       })
       .returning({ id: contactSubmissions.id });
+
+    // Pipedrive & Shared Inbox notification
+    await dispatchLead({
+      name: String(name),
+      email: String(email),
+      phone: phone ? String(phone) : null,
+      organization: organization ? String(organization) : null,
+      sourceTag: "website-contact",
+      notes: String(message),
+      details: { serviceInterest, budget, submissionId: row.id },
+      optInNewsletter: Boolean(optInNewsletter),
+    });
+
     return NextResponse.json({ ok: true, id: row.id });
   } catch (err) {
     console.error("Database insert error:", err);

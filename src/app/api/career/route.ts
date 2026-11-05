@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { db } from "@/db";
 import { jobApplications } from "@/db/schema";
+import { dispatchLead } from "@/lib/integrations";
 
 export async function POST(req: Request) {
   try {
@@ -27,7 +28,7 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Please provide a valid phone number with country code." }, { status: 400 });
     }
 
-    await db.insert(jobApplications).values({
+    const [row] = await db.insert(jobApplications).values({
       fullName,
       email,
       phone,
@@ -35,6 +36,16 @@ export async function POST(req: Request) {
       resumeUrl,
       coverLetter,
       roleSlug: roleSlug || "general",
+    }).returning({ id: jobApplications.id });
+
+    // Pipedrive & Shared Inbox notification
+    await dispatchLead({
+      name: fullName,
+      email,
+      phone: phone || null,
+      sourceTag: "career-application",
+      notes: coverLetter || `Application for talent pool: ${roleSlug || "general"}`,
+      details: { roleSlug: roleSlug || "general", linkedinUrl, resumeUrl, applicationId: row?.id },
     });
 
     return NextResponse.json({ success: true });

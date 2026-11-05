@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { db } from "@/db";
 import { newsletterSubscribers } from "@/db/schema";
+import { dispatchLead } from "@/lib/integrations";
 
 export const dynamic = "force-dynamic";
 
@@ -18,10 +19,21 @@ export async function POST(req: Request) {
     if (!email || typeof email !== "string" || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       return NextResponse.json({ error: "Please provide a valid email address." }, { status: 400 });
     }
+    const cleanEmail = email.toLowerCase().trim();
     await db
       .insert(newsletterSubscribers)
-      .values({ email: email.toLowerCase().trim(), source: source ?? "unknown" })
+      .values({ email: cleanEmail, source: source ?? "newsletter-signup" })
       .onConflictDoNothing();
+
+    // Pipedrive & Shared Inbox notification
+    await dispatchLead({
+      name: cleanEmail.split("@")[0],
+      email: cleanEmail,
+      sourceTag: `newsletter-${source ?? "signup"}`,
+      notes: "Subscribed to GMA Weekly Funding Digest",
+      optInNewsletter: true,
+    });
+
     return NextResponse.json({ ok: true });
   } catch (err) {
     return NextResponse.json(
