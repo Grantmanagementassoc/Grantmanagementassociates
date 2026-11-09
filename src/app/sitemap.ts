@@ -3,6 +3,7 @@ import { services, industries, caseStudies, results, site } from "@/lib/content"
 import { articles } from "@/lib/scraped-articles";
 
 const newsletterSlugs = [
+  "weekly-funding-digest-nov-2-6-2026",
   "weekly-funding-digest-oct-26-30-2026",
   "weekly-funding-digest-oct-19-23-2026",
   "weekly-funding-digest-oct-12-16-2026",

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
 };
 
 const newsletterSlugs = [
+  { slug: "weekly-funding-digest-nov-2-6-2026", title: "Nov 2–6, 2026" },
   { slug: "weekly-funding-digest-oct-26-30-2026", title: "Oct 26–30, 2026" },
   { slug: "weekly-funding-digest-oct-19-23-2026", title: "Oct 19–23, 2026" },
   { slug: "weekly-funding-digest-oct-12-16-2026", title: "Oct 12–16, 2026" },
