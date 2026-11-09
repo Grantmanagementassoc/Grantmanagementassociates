@@ -54,6 +54,18 @@ export function NewsletterCard({ grant, isPolicy }: { grant: GrantData; isPolicy
     return <PolicyCard grant={grant} />;
   }
 
+  // Executive Opening Summary Card
+  if (grant["Description"] === "Opening Summary") {
+    return (
+      <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-6 md:p-8 shadow-sm">
+        <div 
+          className="prose prose-slate dark:prose-invert max-w-none text-slate-700 dark:text-slate-300 leading-relaxed [&_p]:mb-4 [&_strong]:text-slate-900 dark:[&_strong]:text-white [&_a]:text-emerald-600 dark:[&_a]:text-emerald-400 [&_a]:underline hover:[&_a]:text-emerald-700"
+          dangerouslySetInnerHTML={{ __html: grant["Program Focus"] || "" }} 
+        />
+      </div>
+    );
+  }
+
   // STANDARD OPPORTUNITY CARD
   const linkText = grant["Link to NOFO"] || grant["Link to Solicitation"];
   const validLink = extractFirstUrl(linkText);
