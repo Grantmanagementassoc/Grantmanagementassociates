@@ -1,8 +1,9 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Share2, Link as LinkIcon, Mail } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { NewsletterTabs } from "@/components/newsletters/newsletter-tabs";
+import { ShareButtons } from "@/components/newsletters/share-buttons";
 import aug17Data from "@/data/newsletters/aug-17-21-2026.json";
 import aug24Data from "@/data/newsletters/aug-24-28-2026.json";
 import aug31Data from "@/data/newsletters/aug-31-sept-4-2026.json";
@@ -174,20 +175,7 @@ export default async function NewsletterPage({ params }: { params: Promise<{ slu
               </div>
             </div>
 
-            <div className="flex items-center gap-4">
-              <span className="text-sm font-semibold text-slate-500 dark:text-slate-400">Share Digest:</span>
-              <div className="flex gap-2">
-                <button className="h-10 w-10 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex items-center justify-center text-slate-600 dark:text-slate-300 hover:text-emerald-600 dark:hover:text-emerald-400 hover:border-emerald-600 dark:hover:border-emerald-400 transition-colors shadow-sm" title="Share via Email">
-                  <Mail className="h-4 w-4" />
-                </button>
-                <button className="h-10 w-10 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex items-center justify-center text-slate-600 dark:text-slate-300 hover:text-emerald-600 dark:hover:text-emerald-400 hover:border-emerald-600 dark:hover:border-emerald-400 transition-colors shadow-sm" title="Copy Link">
-                  <LinkIcon className="h-4 w-4" />
-                </button>
-                <button className="h-10 w-10 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex items-center justify-center text-slate-600 dark:text-slate-300 hover:text-emerald-600 dark:hover:text-emerald-400 hover:border-emerald-600 dark:hover:border-emerald-400 transition-colors shadow-sm" title="Share">
-                  <Share2 className="h-4 w-4" />
-                </button>
-              </div>
-            </div>
+            <ShareButtons title={meta.title} date={meta.date} />
           </div>
 
           {/* CTA Banner */}
