@@ -33,6 +33,7 @@ export default function DefenseTechnologyPage() {
     email: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [renderedAt] = useState(() => Date.now());
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -54,6 +55,7 @@ export default function DefenseTechnologyPage() {
           organization: formData.organization,
           serviceInterest: "Defense Playbook Download",
           message: "Lead captured from Defense & Technology playbook download form.",
+          _rendered_at: renderedAt,
         }),
       });
       router.push("/industries/defense/thank-you");

@@ -10,13 +10,41 @@ export async function POST(req: Request) {
     const body = await req.json();
     const { name, email, phone, organization, serviceInterest, budget, message, optInNewsletter, _website_hp, _rendered_at } = body ?? {};
 
-    // Anti-spam honeypot and time-trap protection
+    // Anti-spam protection:
+    // 1. Honeypot check
     if (_website_hp) {
       return NextResponse.json({ ok: true });
     }
-    if (_rendered_at && Date.now() - Number(_rendered_at) < 1000) {
+
+    // 2. Time-trap: humans take at least 1.5 seconds to complete and submit
+    if (_rendered_at && Date.now() - Number(_rendered_at) < 1500) {
       return NextResponse.json({ ok: true });
     }
+
+    // 3. Drop numeric-only messages (XRumer spam bot pattern sending digits like "7264767418")
+    const letterCount = (String(message || "").match(/[a-zA-Z]/g) || []).length;
+    if (letterCount < 3) {
+      return NextResponse.json({ ok: true });
+    }
+
+    // 4. Drop randomized gibberish names (e.g. "YRhMLpOXTCBFbTjLBJrZZ")
+    const cleanName = String(name || "").trim();
+    if (
+      cleanName.length > 12 &&
+      !cleanName.includes(" ") &&
+      (cleanName.match(/[A-Z]/g) || []).length >= 3 &&
+      (cleanName.match(/[a-z]/g) || []).length >= 3
+    ) {
+      return NextResponse.json({ ok: true });
+    }
+
+    // 5. Drop Gmail dot-trick bot addresses (e.g. "j.il.e.qokul.a63.4@gmail.com")
+    const emailStr = String(email || "").toLowerCase().trim();
+    const userPart = emailStr.split("@")[0] || "";
+    if (emailStr.includes("@gmail.com") && (userPart.match(/\./g) || []).length >= 3) {
+      return NextResponse.json({ ok: true });
+    }
+
     if (!name || !email || !message) {
       return NextResponse.json({ error: "Name, email, and message are required." }, { status: 400 });
     }
