@@ -91,7 +91,8 @@ export const clients = [
   },
   {
     "name": "American Honda Motor Company, Inc.",
-    "category": "Fortune 500"
+    "category": "Fortune 500",
+    "domain": "honda.com"
   },
   {
     "name": "Amply",
@@ -204,7 +205,8 @@ export const clients = [
   },
   {
     "name": "Berkshire Hathaway Energy Company",
-    "category": "Fortune 500"
+    "category": "Fortune 500",
+    "domain": "bhenergy.com"
   },
   {
     "name": "Bidgely",
@@ -353,7 +355,8 @@ export const clients = [
   },
   {
     "name": "California State University, Fresno",
-    "category": "Colleges and Universities"
+    "category": "Colleges and Universities",
+    "domain": "fresnostate.edu"
   },
   {
     "name": "CalSEED",
@@ -621,7 +624,8 @@ export const clients = [
   },
   {
     "name": "CSU Office of the Chancellor",
-    "category": "Colleges and Universities"
+    "category": "Colleges and Universities",
+    "domain": "calstate.edu"
   },
   {
     "name": "CUP Sciences",
@@ -719,7 +723,8 @@ export const clients = [
   },
   {
     "name": "ENEL X - North America",
-    "category": "Private Company"
+    "category": "Private Company",
+    "image": "/logos/enel.svg"
   },
   {
     "name": "Ener-core",
@@ -1152,7 +1157,9 @@ export const clients = [
   },
   {
     "name": "Microporous, LLC",
-    "category": "Private Company"
+    "category": "Private Company",
+    "image": "/logos/microporous_net.png",
+    "domain": "microporous.net"
   },
   {
     "name": "MidAmerican Energy Company",
@@ -1306,7 +1313,8 @@ export const clients = [
   },
   {
     "name": "Oregon Institute of Technology",
-    "category": "Colleges and Universities"
+    "category": "Colleges and Universities",
+    "domain": "oit.edu"
   },
   {
     "name": "Oregon State University",
@@ -1365,7 +1373,8 @@ export const clients = [
   },
   {
     "name": "Pepsi Corporation",
-    "category": "Fortune 500"
+    "category": "Fortune 500",
+    "domain": "pepsico.com"
   },
   {
     "name": "Phoenix Plastics",
@@ -1562,7 +1571,8 @@ export const clients = [
   },
   {
     "name": "Rio Tinto Borates and Lithium",
-    "category": "Public Company"
+    "category": "Public Company",
+    "image": "/logos/rio-tinto.svg"
   },
   {
     "name": "Riverside County EDA",
@@ -1674,7 +1684,8 @@ export const clients = [
   },
   {
     "name": "Siemens Industry, Inc.",
-    "category": "Private Company"
+    "category": "Private Company",
+    "domain": "siemens.com"
   },
   {
     "name": "Sierra Nevada Conservancy",
@@ -2003,7 +2014,8 @@ export const clients = [
   },
   {
     "name": "Volvo Car USA",
-    "category": "Fortune 500"
+    "category": "Fortune 500",
+    "domain": "volvocars.com"
   },
   {
     "name": "Ward Telematics",
@@ -2061,7 +2073,9 @@ export const clients = [
   },
   {
     "name": "Xcimer Energy, Inc.",
-    "category": "Private Company"
+    "category": "Private Company",
+    "image": "/logos/xcimer_net.png",
+    "domain": "xcimer.net"
   },
   {
     "name": "Xtreme Energetics (XE Solar)",
@@ -2083,7 +2097,8 @@ export const clients = [
   },
   {
     "name": "Yuba College",
-    "category": "Colleges and Universities"
+    "category": "Colleges and Universities",
+    "domain": "yc.yccd.edu"
   },
   {
     "name": "ZAP Construction",
@@ -2314,7 +2329,9 @@ export const clients = [
   },
   {
     "name": "Spatial Informatics Group, LLC",
-    "category": "Other"
+    "category": "Other",
+    "image": "/logos/sig-gis_com.png",
+    "domain": "sig-gis.com"
   },
   {
     "name": "Spraying Systems",
@@ -2545,7 +2562,9 @@ export const clients = [
   },
   {
     "name": "Golden Empire Transit (GET) Bus",
-    "category": "Other"
+    "category": "Other",
+    "image": "/logos/getbus_org.png",
+    "domain": "getbus.org"
   },
   {
     "name": "Materials Processing Institute",

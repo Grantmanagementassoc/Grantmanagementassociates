@@ -6,35 +6,14 @@ import Link from "next/link";
 const GA_ID = "G-F228CZMQ4G";
 const CONSENT_KEY = "gma-cookie-consent";
 
-function loadGoogleAnalytics() {
+function updateConsent(granted: boolean) {
   if (typeof window === "undefined") return;
-
-  // Check if script already injected
-  if (document.getElementById("ga4-script")) return;
-
   const win = window as any;
-  win.dataLayer = win.dataLayer || [];
-  function gtag(...args: any[]) {
-    win.dataLayer.push(args);
+  if (typeof win.gtag === "function") {
+    win.gtag("consent", "update", {
+      analytics_storage: granted ? "granted" : "denied",
+    });
   }
-  win.gtag = gtag;
-
-  gtag("js", new Date());
-  gtag("consent", "default", {
-    analytics_storage: "granted",
-    ad_storage: "denied",
-    ad_user_data: "denied",
-    ad_personalization: "denied",
-  });
-  gtag("config", GA_ID, {
-    anonymize_ip: true,
-  });
-
-  const script = document.createElement("script");
-  script.id = "ga4-script";
-  script.async = true;
-  script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
-  document.head.appendChild(script);
 }
 
 export function CookieConsent() {
@@ -45,20 +24,16 @@ export function CookieConsent() {
     const isGpcActive = typeof navigator !== "undefined" && (navigator as any).globalPrivacyControl === true;
     const consent = localStorage.getItem(CONSENT_KEY);
 
-    if (isGpcActive && !consent) {
-      // Honor GPC: default to rejected
-      localStorage.setItem(CONSENT_KEY, "rejected");
-      (window as any)[`ga-disable-${GA_ID}`] = true;
+    if (consent === "accepted") {
+      (window as any)[`ga-disable-${GA_ID}`] = false;
+      updateConsent(true);
       setShow(false);
-      return;
-    }
-
-    if (!consent) {
-      setShow(true);
-    } else if (consent === "accepted") {
-      loadGoogleAnalytics();
-    } else if (consent === "rejected") {
+    } else if (consent === "rejected" || isGpcActive) {
       (window as any)[`ga-disable-${GA_ID}`] = true;
+      updateConsent(false);
+      setShow(false);
+    } else {
+      setShow(true);
     }
 
     // Listen for footer "Cookie Settings" trigger
@@ -70,18 +45,14 @@ export function CookieConsent() {
   const handleAccept = useCallback(() => {
     localStorage.setItem(CONSENT_KEY, "accepted");
     (window as any)[`ga-disable-${GA_ID}`] = false;
-    loadGoogleAnalytics();
+    updateConsent(true);
     setShow(false);
   }, []);
 
   const handleReject = useCallback(() => {
     localStorage.setItem(CONSENT_KEY, "rejected");
     (window as any)[`ga-disable-${GA_ID}`] = true;
-    if (typeof (window as any).gtag === "function") {
-      (window as any).gtag("consent", "update", {
-        analytics_storage: "denied",
-      });
-    }
+    updateConsent(false);
     setShow(false);
   }, []);
 

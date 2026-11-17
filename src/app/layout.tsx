@@ -6,6 +6,7 @@ import { SiteHeader } from "@/components/site/site-header";
 import { SiteFooter } from "@/components/site/site-footer";
 import { ThemeProvider } from "@/components/theme-provider";
 import { CookieConsent } from "@/components/site/cookie-consent";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { site } from "@/lib/content";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
@@ -65,6 +66,23 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <SiteFooter />
           <CookieConsent />
         </ThemeProvider>
+        <script
+          id="google-consent-mode-init"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('consent', 'default', {
+                'analytics_storage': 'denied',
+                'ad_storage': 'denied',
+                'ad_user_data': 'denied',
+                'ad_personalization': 'denied',
+                'wait_for_update': 500
+              });
+            `,
+          }}
+        />
+        <GoogleAnalytics gaId="G-F228CZMQ4G" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
